@@ -1,6 +1,6 @@
 # 🔭 Sitio Web de Astronomía
 
-Proyecto web interactivo sobre astronomía construido con **React** y **Vite**, preconfigurado para desplegarse automáticamente en **GitHub Pages**.
+Proyecto web interactivo sobre astronomía construido con **React** y **Vite**.
 
 ## 🚀 Cómo ejecutar en local
 
@@ -9,10 +9,9 @@ npm install
 npm run dev
 ```
 
-## 🌐 Publicación en GitHub Pages
+## 📦 Compilar para producción
 
-El proyecto incluye el flujo automático en `.github/workflows/deploy.yml`.
-1. Sube el código a la rama `main` de tu repositorio en GitHub.
-2. En tu repositorio de GitHub, ve a **Settings → Pages**.
-3. En **Build and deployment > Source**, selecciona **GitHub Actions**.
-4. Cada vez que hagas `git push`, la página se actualizará sola.
+```bash
+npm run build
+```
+Los archivos listos para producción se generan en la carpeta `dist/`.
