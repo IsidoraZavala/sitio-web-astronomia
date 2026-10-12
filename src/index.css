@@ -1,16 +1,45 @@
 :root {
-  --bg-space: #070913;
-  --bg-card: rgba(17, 23, 45, 0.75);
-  --bg-card-hover: rgba(26, 35, 68, 0.88);
-  --border-subtle: rgba(148, 163, 184, 0.16);
-  --border-accent: rgba(99, 102, 241, 0.45);
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --accent-indigo: #6366f1;
-  --accent-cyan: #22d3ee;
-  --accent-amber: #fbbf24;
-  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  /* Paleta 100% colores sólidos (sin degradados ni efectos de luz) */
+  --bg-page: #F3F6F9;
+  --bg-surface: #FFFFFF;
+  --bg-subtle: #E8EEF5;
+  --bg-navbar: #162B45;
+  --text-navbar: #F8FAFC;
+  --text-primary: #102A43;
+  --text-secondary: #334E68;
+  --text-muted: #627D98;
+  --border-color: #CBD5E1;
+  --border-strong: #94A3B8;
+  --primary-solid: #1D4E89;
+  --primary-solid-hover: #143A66;
+  --accent-amber: #C05621;
+  --accent-amber-bg: #FEEBC8;
+  --accent-green: #276749;
+  --accent-green-bg: #C6F6D5;
+  --accent-blue-bg: #DCEEFB;
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Source Serif 4', Georgia, serif;
+}
+
+[data-theme='dark-solid'] {
+  /* Tema oscuro mate 100% sólido (sin brillos ni luces) */
+  --bg-page: #101823;
+  --bg-surface: #1A2636;
+  --bg-subtle: #243447;
+  --bg-navbar: #0B111A;
+  --text-navbar: #F0F4F8;
+  --text-primary: #F0F4F8;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+  --border-color: #334E68;
+  --border-strong: #486581;
+  --primary-solid: #2B6CB0;
+  --primary-solid-hover: #3182CE;
+  --accent-amber: #DD6B20;
+  --accent-amber-bg: #3B2314;
+  --accent-green: #38A169;
+  --accent-green-bg: #173628;
+  --accent-blue-bg: #1E3A5F;
 }
 
 * {
@@ -21,16 +50,16 @@
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--bg-space);
-  background-image:
-    radial-gradient(circle at 15% 20%, rgba(99, 102, 241, 0.14) 0%, transparent 40%),
-    radial-gradient(circle at 85% 75%, rgba(34, 211, 238, 0.1) 0%, transparent 45%);
+  background-color: var(--bg-page);
   color: var(--text-primary);
   min-height: 100vh;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
-button, input, select {
+button,
+input,
+select,
+textarea {
   font-family: inherit;
 }
