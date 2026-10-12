@@ -1,0 +1,36 @@
+:root {
+  --bg-space: #070913;
+  --bg-card: rgba(17, 23, 45, 0.75);
+  --bg-card-hover: rgba(26, 35, 68, 0.88);
+  --border-subtle: rgba(148, 163, 184, 0.16);
+  --border-accent: rgba(99, 102, 241, 0.45);
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent-indigo: #6366f1;
+  --accent-cyan: #22d3ee;
+  --accent-amber: #fbbf24;
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-space);
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(99, 102, 241, 0.14) 0%, transparent 40%),
+    radial-gradient(circle at 85% 75%, rgba(34, 211, 238, 0.1) 0%, transparent 45%);
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+button, input, select {
+  font-family: inherit;
+}
