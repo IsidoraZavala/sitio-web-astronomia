@@ -1,96 +1,198 @@
-import { SpaceIllustration } from './SpaceIllustration'
+import {
+  IconBook,
+  IconChatBranch,
+  IconCheckCircle,
+  IconCompass,
+  IconGlobe,
+  IconShieldQuestion,
+} from './Icons'
+import { Space3DViewer } from './Space3DViewer'
+import { TypewriterTitle } from './TypewriterTitle'
 
-export function HomeView({ onExploreDilemmas, onOpenLibrary, onStartFeaturedDilemma }) {
+export function HomeView({
+  onExploreDilemmas,
+  onOpenLibrary,
+  onStartFeaturedDilemma,
+  onSelectSpecificDilemma,
+}) {
   return (
     <div className="home-view">
-      {/* Pantalla principal de inicio */}
-      <section className="hero-solid-card">
-        <div className="hero-text-col">
-          <span className="section-kicker">Laboratorio interactivo de ética espacial</span>
-          <h1 className="hero-main-title">Órbita Ética</h1>
-          <p className="hero-central-message">
-            «El futuro del espacio también plantea decisiones éticas. Explora conflictos reales de
-            la actividad espacial, toma decisiones y descubre cómo distintas perspectivas
-            filosóficas pueden ayudarte a analizarlas».
-          </p>
-          <p className="hero-subtext">
-            Una plataforma educativa donde cada caso representa un problema científico y tecnológico
-            real que involucra conflictos de valores, responsabilidades e intereses.
-          </p>
+      {/* PRIMERA SECCIÓN: Ocupa de borde a borde (100vw) en color negro espacio (#05060A) */}
+      <section className="hero-solid-card hero-edge-to-edge-black">
+        <div className="hero-edge-inner">
+          <div className="hero-text-col">
+            <TypewriterTitle
+              as="h1"
+              className="hero-main-title"
+              text="El futuro del espacio también plantea decisiones éticas."
+              highlightText="decisiones éticas."
+              speed={32}
+            />
+            <p className="hero-lead">
+              Explora dilemas espaciales mediante un diálogo filosófico interactivo donde las
+              preguntas evolucionan según tus respuestas.
+            </p>
 
-          <div className="hero-cta-row">
-            <button className="btn-primary btn-lg" onClick={onExploreDilemmas}>
-              Explorar dilemas
-            </button>
-            <button className="btn-secondary btn-lg" onClick={onStartFeaturedDilemma}>
-              Iniciar Caso 01 (Constelaciones satelitales)
-            </button>
+            <div className="hero-cta-row">
+              <button className="btn-primary btn-lg icon-btn" onClick={onExploreDilemmas}>
+                <IconGlobe size={17} /> Explorar dilemas →
+              </button>
+            </div>
           </div>
-        </div>
 
-        <div className="hero-visual-col">
-          <SpaceIllustration type="hero" />
-          <p className="visual-caption">
-            Representación esquemática: órbitas terrestres bajas, observación astronómica y tráfico
-            satelital.
-          </p>
+          <div className="hero-visual-col">
+            <Space3DViewer initialMode="marte" autoCycle={true} />
+          </div>
         </div>
       </section>
 
-      {/* Cómo funciona el recorrido interactivo */}
-      <section className="home-process-section">
+      {/* RUTA VISUAL EN 5 PASOS CON ICONOS */}
+      <section style={{ marginTop: '3rem', marginBottom: '3rem' }}>
         <div className="section-heading-block">
-          <h2>¿Qué puedes hacer en Órbita Ética?</h2>
-          <p>
-            No te limitarás a leer información teórica. En cada dilema recorrerás seis etapas para
-            involucrarte en el problema, tomar una postura, justificarla y contrastarla con
-            diferentes formas de razonamiento ético:
-          </p>
+          <TypewriterTitle
+            as="h2"
+            text="Ruta de deliberación en 5 pasos"
+            speed={28}
+          />
         </div>
 
-        <div className="steps-overview-grid">
+        <div
+          className="steps-overview-grid"
+          style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(195px, 1fr))' }}
+        >
           <div className="step-overview-card">
-            <span className="step-number-box">1</span>
-            <h3>Contexto</h3>
-            <p>Conoce la evidencia científica, los supuestos del caso y los actores involucrados.</p>
+            <span className="step-number-box">
+              <IconGlobe size={16} />
+            </span>
+            <h3>1. El dilema</h3>
+            <p>Datos reales, supuestos y actores en tensión.</p>
           </div>
           <div className="step-overview-card">
-            <span className="step-number-box">2</span>
-            <h3>Decisión</h3>
-            <p>Elige una alternativa como parte de un comité evaluador y define condiciones.</p>
+            <span className="step-number-box">
+              <IconChatBranch size={16} />
+            </span>
+            <h3>2. Diálogo</h3>
+            <p>Preguntas ramificadas y experimentos mentales.</p>
           </div>
           <div className="step-overview-card">
-            <span className="step-number-box">3</span>
-            <h3>Justificación</h3>
-            <p>Explica los motivos, consecuencias o principios que respaldan tu postura inicial.</p>
+            <span className="step-number-box">
+              <IconCompass size={16} />
+            </span>
+            <h3>3. Perspectivas</h3>
+            <p>Utilitarismo, deontología y justicia distributiva.</p>
           </div>
           <div className="step-overview-card">
-            <span className="step-number-box">4</span>
-            <h3>Análisis filosófico</h3>
-            <p>Contrasta tu decisión desde el utilitarismo, la deontología y la justicia distributiva.</p>
+            <span className="step-number-box">
+              <IconShieldQuestion size={16} />
+            </span>
+            <h3>4. Objeciones</h3>
+            <p>Defiende o matiza tu postura ante críticas.</p>
           </div>
           <div className="step-overview-card">
-            <span className="step-number-box">5</span>
-            <h3>Reconsideración</h3>
-            <p>Evalúa si mantienes tu postura con nuevos argumentos o si prefieres modificarla.</p>
-          </div>
-          <div className="step-overview-card">
-            <span className="step-number-box">6</span>
-            <h3>Reflexión final</h3>
-            <p>Compara lado a lado tu razonamiento inicial y final y guarda tu recorrido.</p>
+            <span className="step-number-box">
+              <IconCheckCircle size={16} />
+            </span>
+            <h3>5. Cierre</h3>
+            <p>Síntesis de tu postura y preguntas abiertas.</p>
           </div>
         </div>
+      </section>
 
+      {/* LOS 4 DILEMAS ESPACIALES */}
+      <section style={{ marginBottom: '3rem' }}>
+        <div className="section-heading-block">
+          <TypewriterTitle
+            as="h2"
+            text="Dilemas espaciales"
+            speed={28}
+          />
+        </div>
+
+        <div className="catalog-grid">
+          <article className="dilemma-catalog-card">
+            <div className="dilemma-card-visual" style={{ background: '#05060A', padding: '12px' }}>
+              <Space3DViewer initialMode="marte" compact={true} />
+            </div>
+            <div className="dilemma-card-body">
+              <h2>01. ¿Explorar Marte mientras existen urgencias en la Tierra?</h2>
+              <p>Financiamiento público de una misión a Marte frente a salud y educación.</p>
+              <button
+                className="btn-primary icon-btn"
+                onClick={() =>
+                  onSelectSpecificDilemma?.('mision-marte') || onStartFeaturedDilemma()
+                }
+              >
+                <IconChatBranch size={16} /> Iniciar diálogo →
+              </button>
+            </div>
+          </article>
+
+          <article className="dilemma-catalog-card">
+            <div className="dilemma-card-visual" style={{ background: '#05060A', padding: '12px' }}>
+              <Space3DViewer initialMode="orbita" compact={true} />
+            </div>
+            <div className="dilemma-card-body">
+              <h2>02. ¿Quién tiene derecho a ocupar la órbita terrestre?</h2>
+              <p>Megaconstelaciones satelitales frente a la observación astronómica.</p>
+              <button
+                className="btn-primary icon-btn"
+                onClick={() =>
+                  onSelectSpecificDilemma?.('ocupacion-orbita') || onExploreDilemmas()
+                }
+              >
+                <IconChatBranch size={16} /> Iniciar diálogo →
+              </button>
+            </div>
+          </article>
+
+          <article className="dilemma-catalog-card">
+            <div className="dilemma-card-visual" style={{ background: '#05060A', padding: '12px' }}>
+              <Space3DViewer initialMode="basura" compact={true} />
+            </div>
+            <div className="dilemma-card-body">
+              <h2>03. ¿Quién debe hacerse cargo de la basura espacial?</h2>
+              <p>Responsabilidad histórica frente a la seguridad orbital de todos los países.</p>
+              <button
+                className="btn-primary icon-btn"
+                onClick={() =>
+                  onSelectSpecificDilemma?.('basura-espacial') || onExploreDilemmas()
+                }
+              >
+                <IconChatBranch size={16} /> Iniciar diálogo →
+              </button>
+            </div>
+          </article>
+
+          <article className="dilemma-catalog-card">
+            <div className="dilemma-card-visual" style={{ background: '#05060A', padding: '12px' }}>
+              <Space3DViewer initialMode="luna" compact={true} />
+            </div>
+            <div className="dilemma-card-body">
+              <h2>04. ¿Es ético explotar los recursos de la Luna?</h2>
+              <p>Extracción de hielo lunar frente a la preservación científica y equidad.</p>
+              <button
+                className="btn-primary icon-btn"
+                onClick={() =>
+                  onSelectSpecificDilemma?.('recursos-luna') || onExploreDilemmas()
+                }
+              >
+                <IconChatBranch size={16} /> Iniciar diálogo →
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section className="home-process-section">
         <div className="home-bottom-strip">
           <div>
-            <strong>¿Quieres conocer primero las teorías éticas?</strong>
-            <p>
-              Consulta las fichas de nuestra biblioteca filosófica con definiciones, autores y
-              ejemplos aplicados a la exploración espacial.
-            </p>
+            <strong className="icon-heading" style={{ fontSize: '18px' }}>
+              <IconBook size={20} /> Biblioteca de Perspectivas Éticas
+            </strong>
+            <p>Consulta las fichas breves de cada corriente filosófica.</p>
           </div>
-          <button className="btn-secondary" onClick={onOpenLibrary}>
-            Ir a Perspectivas éticas →
+          <button className="btn-secondary icon-btn" onClick={onOpenLibrary}>
+            Ver perspectivas →
           </button>
         </div>
       </section>

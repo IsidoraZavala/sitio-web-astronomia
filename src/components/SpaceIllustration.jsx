@@ -1,136 +1,116 @@
+import { useId } from 'react'
+
 export function SpaceIllustration({ type = 'hero' }) {
-  if (type === 'hero') {
-    return (
-      <svg
-        viewBox="0 0 420 300"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="illustration-svg"
-        role="img"
-        aria-label="Ilustración esquemática de la Tierra, órbitas y satélites"
-      >
-        {/* Fondo sólido del recuadro */}
-        <rect width="420" height="300" rx="8" fill="#162B45" />
+  const id = useId().replaceAll(':', '')
+  const hero = type === 'hero'
+  const moon = type === 'luna'
+  const mars = !hero && !['orbita', 'basura', 'luna'].includes(type)
+  const debris = type === 'basura'
+  const label = hero
+    ? 'Ilustración de la Tierra, órbitas y satélites'
+    : moon
+    ? 'La Luna y sus recursos'
+    : mars
+    ? 'Una trayectoria entre la Tierra y Marte'
+    : debris
+    ? 'Fragmentos de basura espacial alrededor de la Tierra'
+    : 'Constelaciones satelitales alrededor de la Tierra'
 
-        {/* Estrellas planas sólidas */}
-        <circle cx="48" cy="44" r="2.5" fill="#D9E2EC" />
-        <circle cx="96" cy="82" r="2" fill="#9FB3C8" />
-        <circle cx="356" cy="52" r="3" fill="#D9E2EC" />
-        <circle cx="378" cy="128" r="2" fill="#9FB3C8" />
-        <circle cx="64" cy="240" r="2.5" fill="#D9E2EC" />
-        <circle cx="332" cy="248" r="2" fill="#9FB3C8" />
-        <circle cx="150" cy="36" r="2" fill="#D9E2EC" />
-
-        {/* Anillos orbitales sólidos */}
-        <ellipse
-          cx="210"
-          cy="150"
-          rx="165"
-          ry="72"
-          transform="rotate(-18 210 150)"
-          stroke="#486581"
-          strokeWidth="2"
-          strokeDasharray="6 6"
-        />
-        <ellipse
-          cx="210"
-          cy="150"
-          rx="132"
-          ry="108"
-          transform="rotate(24 210 150)"
-          stroke="#627D98"
-          strokeWidth="2"
-        />
-
-        {/* Planeta Tierra en colores planos sólidos */}
-        <circle cx="210" cy="150" r="58" fill="#2B6CB0" stroke="#F0F4F8" strokeWidth="3" />
-        {/* Continentes estilizados sólidos */}
-        <path
-          d="M182 115C194 112 206 118 210 128C214 138 202 150 192 156C182 162 170 154 168 140C166 126 172 118 182 115Z"
-          fill="#2F855A"
-        />
-        <path
-          d="M224 148C236 144 250 154 252 168C254 180 242 192 228 190C216 188 212 174 216 162C219 153 220 150 224 148Z"
-          fill="#2F855A"
-        />
-
-        {/* Satélite 1 (arriba izquierda) */}
-        <g transform="translate(68, 128) rotate(-18)">
-          <rect x="0" y="6" width="14" height="8" fill="#CBD5E1" stroke="#102A43" strokeWidth="1.5" />
-          <rect x="16" y="3" width="12" height="14" rx="2" fill="#D97706" stroke="#102A43" strokeWidth="1.5" />
-          <rect x="30" y="6" width="14" height="8" fill="#CBD5E1" stroke="#102A43" strokeWidth="1.5" />
-        </g>
-
-        {/* Satélite 2 (derecha) */}
-        <g transform="translate(316, 102) rotate(22)">
-          <rect x="0" y="6" width="14" height="8" fill="#CBD5E1" stroke="#102A43" strokeWidth="1.5" />
-          <rect x="16" y="3" width="12" height="14" rx="2" fill="#E2E8F0" stroke="#102A43" strokeWidth="1.5" />
-          <rect x="30" y="6" width="14" height="8" fill="#CBD5E1" stroke="#102A43" strokeWidth="1.5" />
-        </g>
-
-        {/* Nodos de posición orbital */}
-        <circle cx="118" cy="212" r="6" fill="#D97706" stroke="#F0F4F8" strokeWidth="2" />
-        <circle cx="292" cy="84" r="6" fill="#38A169" stroke="#F0F4F8" strokeWidth="2" />
-      </svg>
-    )
-  }
-
-  if (type === 'orbita') {
-    return (
-      <svg viewBox="0 0 320 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="card-svg">
-        <rect width="320" height="140" fill="#162B45" />
-        <circle cx="160" cy="145" r="78" fill="#2B6CB0" stroke="#D9E2EC" strokeWidth="2.5" />
-        <path d="M55 95 Q160 20 265 95" stroke="#9FB3C8" strokeWidth="2" strokeDasharray="5 5" fill="none" />
-        <path d="M35 72 Q160 -5 285 72" stroke="#D9E2EC" strokeWidth="2" fill="none" />
-        {/* Satélites en fila */}
-        <rect x="82" y="48" width="12" height="8" fill="#D97706" />
-        <rect x="134" y="34" width="12" height="8" fill="#D97706" />
-        <rect x="186" y="36" width="12" height="8" fill="#D97706" />
-        <rect x="234" y="52" width="12" height="8" fill="#D97706" />
-      </svg>
-    )
-  }
-
-  if (type === 'basura') {
-    return (
-      <svg viewBox="0 0 320 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="card-svg">
-        <rect width="320" height="140" fill="#1F2937" />
-        <circle cx="160" cy="70" r="32" fill="#2B6CB0" stroke="#E2E8F0" strokeWidth="2" />
-        <ellipse cx="160" cy="70" rx="95" ry="42" stroke="#9CA3AF" strokeWidth="1.5" strokeDasharray="3 4" />
-        <ellipse cx="160" cy="70" rx="118" ry="52" stroke="#D97706" strokeWidth="1.5" strokeDasharray="2 5" />
-        {/* Fragmentos sólidos */}
-        <circle cx="72" cy="58" r="3.5" fill="#D97706" />
-        <circle cx="94" cy="96" r="3" fill="#E5E7EB" />
-        <rect x="236" y="44" width="7" height="7" transform="rotate(20 236 44)" fill="#D97706" />
-        <circle cx="252" cy="84" r="4" fill="#9CA3AF" />
-        <rect x="115" y="26" width="6" height="6" fill="#E5E7EB" />
-        <circle cx="208" cy="108" r="3.5" fill="#D97706" />
-      </svg>
-    )
-  }
-
-  if (type === 'luna') {
-    return (
-      <svg viewBox="0 0 320 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="card-svg">
-        <rect width="320" height="140" fill="#1E293B" />
-        <circle cx="160" cy="70" r="44" fill="#CBD5E1" stroke="#94A3B8" strokeWidth="2" />
-        <circle cx="144" cy="56" r="9" fill="#94A3B8" />
-        <circle cx="178" cy="82" r="12" fill="#94A3B8" />
-        <circle cx="152" cy="92" r="6" fill="#94A3B8" />
-        {/* Marcador polo sur */}
-        <rect x="148" y="106" width="24" height="8" rx="2" fill="#2B6CB0" stroke="#F8FAFC" strokeWidth="1.5" />
-      </svg>
-    )
-  }
+  // Colores 100% sólidos (sin radialGradient) sobre fondo negro espacio (#05060A)
+  const planetColor = moon ? '#94A3B8' : mars ? '#C05621' : '#1B4965'
 
   return (
-    <svg viewBox="0 0 320 140" fill="none" xmlns="http://www.w3.org/2000/svg" className="card-svg">
-      <rect width="320" height="140" fill="#162B45" />
-      {/* Tierra a Marte */}
-      <circle cx="76" cy="86" r="22" fill="#2B6CB0" stroke="#F0F4F8" strokeWidth="2" />
-      <circle cx="246" cy="52" r="16" fill="#C05621" stroke="#F0F4F8" strokeWidth="2" />
-      <path d="M98 80 Q170 30 230 52" stroke="#F0F4F8" strokeWidth="2" strokeDasharray="5 5" fill="none" />
-      <circle cx="168" cy="54" r="4.5" fill="#D97706" />
+    <svg
+      viewBox={hero ? '0 0 500 430' : '0 55 500 280'}
+      className={hero ? 'illustration-svg' : 'card-svg'}
+      role="img"
+      aria-label={label}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <clipPath id={id + '-clip'}>
+          <circle cx="250" cy="215" r={hero ? 101 : 78} />
+        </clipPath>
+      </defs>
+      <rect width="500" height="430" fill="#05060A" />
+      {Array.from({ length: 38 }, (_, i) => (
+        <circle
+          key={i}
+          cx={20 + ((i * 127) % 460)}
+          cy={28 + ((i * 83) % 365)}
+          r={i % 6 === 0 ? 1.6 : 0.9}
+          fill={i % 3 === 0 ? '#FFFFFF' : '#64748B'}
+        />
+      ))}
+      <g stroke="#334155" fill="none" strokeWidth="1">
+        <circle cx="250" cy="215" r="153" />
+        <circle cx="250" cy="215" r="183" strokeDasharray="3 7" />
+        <path d="M250 15V45M250 385V415M40 215H70M430 215H460" />
+      </g>
+      <ellipse
+        cx="250"
+        cy="215"
+        rx="208"
+        ry="77"
+        transform="rotate(-28 250 215)"
+        stroke="#F59E0B"
+        strokeWidth="1.2"
+        fill="none"
+      />
+      <ellipse
+        cx="250"
+        cy="215"
+        rx="169"
+        ry="116"
+        transform="rotate(38 250 215)"
+        stroke="#64748B"
+        strokeWidth="1"
+        fill="none"
+      />
+      <circle cx="250" cy="215" r={hero ? 101 : 78} fill={planetColor} stroke="#E2E8F0" strokeWidth="1.5" />
+      {moon ? (
+        <g fill="#475569">
+          <circle cx="219" cy="187" r="20" />
+          <circle cx="274" cy="243" r="25" />
+          <circle cx="271" cy="168" r="12" />
+          <circle cx="217" cy="258" r="10" />
+        </g>
+      ) : (
+        !mars && (
+          <g clipPath={'url(#' + id + '-clip)'}>
+            <g fill="#2F855A">
+              <path d="M157 161l35-37 39 2 18 19-14 22-27 8-7 18 16 19-16 25-18-14-5-24-28-12z" />
+              <path d="M212 220l24 5 18 21-12 18-7 33-18 22-6-31-14-22 7-21z" />
+              <path d="M265 125l23 8 18 22 28 7 29 37-20 21-29-19-22 5-11 34-22 12-15-24 4-31-13-16 17-17z" />
+            </g>
+            <g fill="none" stroke="#2C6E91" strokeWidth="1">
+              <ellipse cx="250" cy="215" rx="48" ry="102" />
+              <ellipse cx="250" cy="215" rx="81" ry="102" />
+              <path d="M145 215H355M156 175Q250 196 345 175M156 255Q250 234 345 255" />
+            </g>
+          </g>
+        )
+      )}
+      <path d="M67 278C118 302 216 290 300 250S438 170 438 141" stroke="#F59E0B" strokeWidth="1.5" fill="none" />
+      {debris ? (
+        Array.from({ length: 16 }, (_, i) => (
+          <rect
+            key={i}
+            x={250 + Math.cos(i * 1.8) * 170}
+            y={215 + Math.sin(i * 1.8) * 87}
+            width="5"
+            height="5"
+            fill={i % 2 ? '#F59E0B' : '#CBD5E1'}
+          />
+        ))
+      ) : (
+        <g transform="translate(384 153) rotate(-28)">
+          <path d="M-23-8h16v16h-16zM7-8h16v16H7z" fill="#CBD5E1" stroke="#0F172A" strokeWidth="1" />
+          <rect x="-6" y="-10" width="12" height="20" rx="2" fill="#F59E0B" />
+        </g>
+      )}
+      {mars && <circle cx="96" cy="265" r="25" fill="#1B4965" stroke="#E2E8F0" strokeWidth="1.5" />}
+      <circle cx="108" cy="284" r="4" fill="#F59E0B" />
     </svg>
   )
 }

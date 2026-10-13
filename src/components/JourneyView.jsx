@@ -1,3 +1,6 @@
+import { IconCheckCircle, IconScale } from './Icons'
+import { TypewriterTitle } from './TypewriterTitle'
+
 export function JourneyView({
   progresoGuardado,
   onOpenDilema,
@@ -9,22 +12,14 @@ export function JourneyView({
   return (
     <div className="journey-view">
       <div className="page-title-block">
-        <span className="section-kicker">Historial personal en este navegador</span>
-        <h1>Mi recorrido: reflexiones realizadas</h1>
-        <p>
-          Aquí puedes consultar los dilemas que has explorado y comparar tus posturas iniciales y
-          finales. Los datos se guardan localmente en tu navegador sin necesidad de cuentas ni
-          contraseñas.
-        </p>
+        <TypewriterTitle as="h1" text="Mi recorrido" speed={30} />
+        <p>Revisa la evolución de tu postura en cada dilema explorado.</p>
       </div>
 
       {entradas.length === 0 ? (
         <div className="empty-journey-box">
-          <h2>Aún no has registrado reflexiones</h2>
-          <p>
-            Ingresa al catálogo de dilemas, toma una postura y avanza por las etapas del
-            laboratorio para que tus argumentaciones aparezcan aquí.
-          </p>
+          <h2>Aún no has registrado deliberaciones</h2>
+          <p>Inicia un dilema del catálogo para construir tu postura paso a paso.</p>
           <button
             className="btn-primary"
             style={{ marginTop: '1rem' }}
@@ -39,69 +34,50 @@ export function JourneyView({
             {entradas.map((item) => (
               <article key={item.dilemaId} className="journey-card">
                 <div className="journey-card-top">
-                  <div>
-                    <span className="stage-badge">
-                      Caso {item.dilemaNumero} · {item.tema}
-                    </span>
-                    <h2>{item.dilemaTitulo}</h2>
-                  </div>
-                  <div className="journey-meta-right">
-                    <span
-                      className={`dilemma-status-badge ${
-                        item.completado ? 'status-done' : 'status-progress'
-                      }`}
-                    >
-                      {item.completado
-                        ? '✓ Completado'
-                        : `En curso (Etapa ${item.etapaActual}/6)`}
-                    </span>
-                    <span className="small-muted">Actualizado: {item.fechaActualizacion}</span>
-                  </div>
+                  <h2 className="icon-heading">
+                    <IconScale size={22} /> {item.dilemaNumero}. {item.dilemaTitulo}
+                  </h2>
+                  <span
+                    className={`dilemma-status-badge ${
+                      item.completado ? 'status-done' : 'status-progress'
+                    }`}
+                  >
+                    {item.completado
+                      ? '✓ Completado'
+                      : `Paso ${item.momentoActual || item.etapaActual || 1}/5`}
+                  </span>
                 </div>
 
                 <div className="two-col-grid" style={{ marginTop: '1rem' }}>
                   <div className="comparison-box box-initial">
-                    <span className="comparison-tag">Postura inicial</span>
                     <p>
-                      <strong>Decisión:</strong> {item.decisionInicialTexto}
+                      <strong>1) Posición inicial:</strong>{' '}
+                      {item.posicionInicial || item.decisionInicialTexto || '(No registrada)'}
                     </p>
-                    <p style={{ marginTop: '0.4rem' }}>
-                      <strong>Justificación:</strong>{' '}
-                      {item.justificacionInicial || '(Sin texto registrado)'}
+                    <p style={{ marginTop: '6px' }}>
+                      <strong>2) Valor importante:</strong>{' '}
+                      {item.principioImportante || item.justificacionInicial || '(No registrado)'}
                     </p>
                   </div>
 
                   <div className="comparison-box box-final">
-                    <span className="comparison-tag tag-accent">Postura tras el análisis</span>
                     <p>
-                      <strong>Decisión final:</strong> {item.decisionFinalTexto}
+                      <strong>4) Defensa ante objeción:</strong>{' '}
+                      {item.respuestaAObjecion || '(Pendiente)'}
                     </p>
-                    <p style={{ marginTop: '0.4rem' }}>
-                      <strong>Justificación final:</strong>{' '}
-                      {item.justificacionFinal || '(Pendiente de completar en Etapa 5)'}
+                    <p style={{ marginTop: '6px' }}>
+                      <strong>5) Posición actual:</strong>{' '}
+                      {item.posicionActualTexto || item.posicionActualEstado || '(En curso)'}
                     </p>
                   </div>
                 </div>
 
-                {item.perspectivaConvincente && (
-                  <div className="journey-extra-notes">
-                    <span>
-                      <strong>Perspectiva más convincente:</strong> {item.perspectivaConvincente}
-                    </span>
-                    {item.argumentosNuevos && (
-                      <span>
-                        <strong>Nuevos factores considerados:</strong> {item.argumentosNuevos}
-                      </span>
-                    )}
-                  </div>
-                )}
-
                 <div className="journey-card-actions">
                   <button
-                    className="btn-primary btn-sm"
+                    className="btn-primary btn-sm icon-btn"
                     onClick={() => onOpenDilema(item.dilemaId)}
                   >
-                    Abrir este caso en el laboratorio →
+                    <IconCheckCircle size={15} /> Abrir deliberación →
                   </button>
                 </div>
               </article>
@@ -110,7 +86,7 @@ export function JourneyView({
 
           <div className="journey-bottom-actions">
             <button className="btn-secondary btn-sm" onClick={onClearProgress}>
-              Borrar historial guardado en este navegador
+              Borrar historial
             </button>
           </div>
         </>

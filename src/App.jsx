@@ -1,23 +1,28 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import './App.css'
+import './design.css'
 import { AboutView } from './components/AboutView'
 import { CatalogView } from './components/CatalogView'
 import { DilemmaExperience } from './components/DilemmaExperience'
 import { HomeView } from './components/HomeView'
+import {
+  IconBook,
+  IconCheckCircle,
+  IconCompass,
+  IconGlobe,
+  IconHome,
+  IconLayers,
+} from './components/Icons'
 import { JourneyView } from './components/JourneyView'
 import { LibraryView } from './components/LibraryView'
 import { DILEMAS_CATALOGO, PERSPECTIVAS_BIBLIOTECA } from './data/dilemasData'
 
 const STORAGE_KEY = 'orbita_etica_recorrido_v1'
-const THEME_KEY = 'orbita_etica_tema_solido'
 
 function App() {
   const [seccionActiva, setSeccionActiva] = useState('inicio')
   const [dilemaActivoId, setDilemaActivoId] = useState(null)
-
-  const [temaSolido, setTemaSolido] = useState(() => {
-    return localStorage.getItem(THEME_KEY) || 'light-solid'
-  })
+  const [menuAbierto, setMenuAbierto] = useState(false)
 
   const [progresoGuardado, setProgresoGuardado] = useState(() => {
     try {
@@ -28,11 +33,6 @@ function App() {
     }
   })
 
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', temaSolido)
-    localStorage.setItem(THEME_KEY, temaSolido)
-  }, [temaSolido])
-
   const guardarProgresoDilema = (datosDilema) => {
     setProgresoGuardado((prev) => {
       const actualizado = {
@@ -42,7 +42,7 @@ function App() {
       try {
         localStorage.setItem(STORAGE_KEY, JSON.stringify(actualizado))
       } catch {
-        // continuar en memoria de sesión si localStorage no está disponible
+        // continuar en memoria de sesión
       }
       return actualizado
     })
@@ -56,11 +56,13 @@ function App() {
   const abrirDilema = (id) => {
     setDilemaActivoId(id)
     setSeccionActiva('experiencia-dilema')
+    setMenuAbierto(false)
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   const navegarSeccion = (seccion) => {
     setSeccionActiva(seccion)
+    setMenuAbierto(false)
     if (seccion !== 'experiencia-dilema') {
       setDilemaActivoId(null)
     }
@@ -72,76 +74,73 @@ function App() {
 
   return (
     <div className="orbita-app">
-      {/* Barra de navegación con las 5 secciones propuestas en el documento */}
       <header className="top-navbar">
         <div className="navbar-inner">
           <button className="brand-btn" onClick={() => navegarSeccion('inicio')}>
             <span className="brand-mark">ÓÉ</span>
-            <div>
-              <span className="brand-name">Órbita Ética</span>
-              <span className="brand-subtitle">Laboratorio de decisiones éticas espaciales</span>
-            </div>
+            <span className="brand-name">Órbita Ética</span>
           </button>
 
-          <nav className="main-nav-links" aria-label="Navegación principal">
+          <button
+            className="mobile-menu-btn"
+            onClick={() => setMenuAbierto(!menuAbierto)}
+            aria-expanded={menuAbierto}
+          >
+            Menú
+          </button>
+
+          <nav
+            className={`main-nav-links ${menuAbierto ? 'menu-open' : ''}`}
+            aria-label="Navegación principal"
+          >
             <button
-              className={`nav-item-btn ${seccionActiva === 'inicio' ? 'active' : ''}`}
+              className={`nav-item-btn icon-btn ${seccionActiva === 'inicio' ? 'active' : ''}`}
               onClick={() => navegarSeccion('inicio')}
             >
-              Página de inicio
+              <IconHome size={14} /> Inicio
             </button>
             <button
-              className={`nav-item-btn ${
+              className={`nav-item-btn icon-btn ${
                 seccionActiva === 'catalogo' || seccionActiva === 'experiencia-dilema'
                   ? 'active'
                   : ''
               }`}
               onClick={() => navegarSeccion('catalogo')}
             >
-              Explorar dilemas
+              <IconGlobe size={14} /> Dilemas
             </button>
             <button
-              className={`nav-item-btn ${seccionActiva === 'biblioteca' ? 'active' : ''}`}
+              className={`nav-item-btn icon-btn ${seccionActiva === 'biblioteca' ? 'active' : ''}`}
               onClick={() => navegarSeccion('biblioteca')}
             >
-              Perspectivas éticas
+              <IconCompass size={14} /> Perspectivas
             </button>
             <button
-              className={`nav-item-btn ${seccionActiva === 'proyecto' ? 'active' : ''}`}
+              className={`nav-item-btn icon-btn ${seccionActiva === 'proyecto' ? 'active' : ''}`}
               onClick={() => navegarSeccion('proyecto')}
             >
-              Sobre el proyecto
+              <IconLayers size={14} /> Proyecto
             </button>
             <button
-              className={`nav-item-btn ${seccionActiva === 'recorrido' ? 'active' : ''}`}
+              className={`nav-item-btn icon-btn ${seccionActiva === 'recorrido' ? 'active' : ''}`}
               onClick={() => navegarSeccion('recorrido')}
             >
-              Mi recorrido
+              <IconCheckCircle size={14} /> Mi recorrido
               {cantidadReflexiones > 0 && (
                 <span className="nav-count-pill">{cantidadReflexiones}</span>
               )}
             </button>
           </nav>
-
-          <button
-            className="theme-toggle-btn"
-            onClick={() =>
-              setTemaSolido((prev) => (prev === 'light-solid' ? 'dark-solid' : 'light-solid'))
-            }
-            title="Alternar entre fondo sólido claro y fondo sólido oscuro mate"
-          >
-            {temaSolido === 'light-solid' ? 'Color: Claro Sólido' : 'Color: Oscuro Mate'}
-          </button>
         </div>
       </header>
 
-      {/* Contenido principal */}
       <main className="main-content-wrapper">
         {seccionActiva === 'inicio' && (
           <HomeView
             onExploreDilemmas={() => navegarSeccion('catalogo')}
             onOpenLibrary={() => navegarSeccion('biblioteca')}
-            onStartFeaturedDilemma={() => abrirDilema('ocupacion-orbita')}
+            onStartFeaturedDilemma={() => abrirDilema('mision-marte')}
+            onSelectSpecificDilemma={abrirDilema}
           />
         )}
 
@@ -157,9 +156,11 @@ function App() {
           <DilemmaExperience
             key={dilemaSeleccionado.id}
             dilema={dilemaSeleccionado}
-            initialProgress={progresoGuardado[dilemaSeleccionado.id]}
+            progresoInicial={progresoGuardado[dilemaSeleccionado.id]}
+            perspectivasBiblioteca={PERSPECTIVAS_BIBLIOTECA}
             onSaveProgress={guardarProgresoDilema}
             onBackToCatalog={() => navegarSeccion('catalogo')}
+            onGoToJourney={() => navegarSeccion('recorrido')}
           />
         )}
 
@@ -186,8 +187,7 @@ function App() {
 
       <footer className="solid-footer">
         <p>
-          <strong>Órbita Ética</strong> — Plataforma educativa e interactiva de deliberación ética
-          sobre la actividad espacial.
+          <strong>Órbita Ética</strong>
         </p>
       </footer>
     </div>

@@ -1,16 +1,13 @@
-import { SpaceIllustration } from './SpaceIllustration'
+import { IconChatBranch } from './Icons'
+import { Space3DViewer } from './Space3DViewer'
+import { TypewriterTitle } from './TypewriterTitle'
 
 export function CatalogView({ dilemas, progresoGuardado, onSelectDilema }) {
   return (
     <div className="catalog-view">
       <div className="page-title-block">
-        <span className="section-kicker">Catálogo de casos</span>
-        <h1>Explorar dilemas espaciales</h1>
-        <p>
-          Selecciona un caso para ingresar al laboratorio interactivo de seis etapas. Cada tarjeta
-          plantea una tensión real entre el avance científico-tecnológico y distintos valores
-          éticos.
-        </p>
+        <TypewriterTitle as="h1" text="Explorar dilemas espaciales" speed={28} />
+        <p>Elige un caso para iniciar el diálogo filosófico interactivo.</p>
       </div>
 
       <div className="catalog-grid">
@@ -18,45 +15,42 @@ export function CatalogView({ dilemas, progresoGuardado, onSelectDilema }) {
           const registro = progresoGuardado[dilema.id]
           const estaCompletado = registro?.completado
           const enCurso = registro && !registro.completado
+          const momentoActual = registro?.momentoActual || registro?.etapaActual || 1
 
           return (
             <article key={dilema.id} className="dilemma-catalog-card">
-              <div className="dilemma-card-visual">
-                <SpaceIllustration type={dilema.tipoIlustracion} />
-                <span className="dilemma-number-badge">Caso {dilema.numero}</span>
+              <div
+                className="dilemma-card-visual"
+                style={{ background: '#05060A', padding: '12px' }}
+              >
+                <Space3DViewer initialMode={dilema.modo3D || 'marte'} compact={true} />
                 {estaCompletado && (
-                  <span className="dilemma-status-badge status-done">✓ Recorrido completado</span>
+                  <span className="dilemma-status-badge status-done">✓ Completado</span>
                 )}
                 {enCurso && (
                   <span className="dilemma-status-badge status-progress">
-                    En curso (Etapa {registro.etapaActual}/6)
+                    Paso {momentoActual}/5
                   </span>
                 )}
               </div>
 
               <div className="dilemma-card-body">
-                <span className="dilemma-theme-tag">Tema: {dilema.tema}</span>
                 <h2>
                   {dilema.numero}. {dilema.titulo}
                 </h2>
                 <p>{dilema.subtitulo}</p>
 
-                <div className="dilemma-card-meta">
-                  <span>{dilema.actores.length} actores involucrados</span>
-                  <span>·</span>
-                  <span>3 perspectivas éticas</span>
-                </div>
-
                 <div className="dilemma-card-actions">
                   <button
-                    className="btn-primary btn-full"
+                    className="btn-primary btn-full icon-btn"
                     onClick={() => onSelectDilema(dilema.id)}
                   >
+                    <IconChatBranch size={16} />
                     {estaCompletado
-                      ? 'Revisar o repetir dilema'
+                      ? 'Revisar deliberación'
                       : enCurso
-                      ? `Continuar en Etapa ${registro.etapaActual}`
-                      : 'Iniciar experiencia interactiva →'}
+                      ? `Continuar en Paso ${momentoActual}`
+                      : 'Iniciar diálogo →'}
                   </button>
                 </div>
               </div>

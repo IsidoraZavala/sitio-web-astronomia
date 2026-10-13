@@ -1,45 +1,27 @@
 :root {
-  /* Paleta 100% colores sólidos (sin degradados ni efectos de luz) */
-  --bg-page: #F3F6F9;
+  /* Página general clara (colores sólidos) + Hero en negro espacio (#05060A) */
+  --bg-space-black: #05060A;
+  --bg-page: #F6F5F0;
   --bg-surface: #FFFFFF;
-  --bg-subtle: #E8EEF5;
-  --bg-navbar: #162B45;
+  --bg-subtle: #EAE8E0;
+  --bg-navbar: #05060A;
   --text-navbar: #F8FAFC;
-  --text-primary: #102A43;
-  --text-secondary: #334E68;
-  --text-muted: #627D98;
-  --border-color: #CBD5E1;
-  --border-strong: #94A3B8;
-  --primary-solid: #1D4E89;
-  --primary-solid-hover: #143A66;
-  --accent-amber: #C05621;
-  --accent-amber-bg: #FEEBC8;
-  --accent-green: #276749;
-  --accent-green-bg: #C6F6D5;
-  --accent-blue-bg: #DCEEFB;
+  --text-primary: #142228;
+  --text-secondary: #3B4D54;
+  --text-muted: #64777E;
+  --border-color: #D6D3C9;
+  --border-strong: #B0ACA0;
+  --primary-solid: #142834;
+  --primary-solid-hover: #0C1A22;
+  --accent-blue: #1D4E89;
+  --accent-blue-bg: #E2ECF5;
+  --accent-amber: #B85D19;
+  --accent-amber-bg: #F9E8D2;
+  --accent-green: #1E6B52;
+  --accent-green-bg: #DDF3EA;
+  /* Fuente Inter unificada en toda la página (igual que el título principal) */
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-serif: 'Source Serif 4', Georgia, serif;
-}
-
-[data-theme='dark-solid'] {
-  /* Tema oscuro mate 100% sólido (sin brillos ni luces) */
-  --bg-page: #101823;
-  --bg-surface: #1A2636;
-  --bg-subtle: #243447;
-  --bg-navbar: #0B111A;
-  --text-navbar: #F0F4F8;
-  --text-primary: #F0F4F8;
-  --text-secondary: #CBD5E1;
-  --text-muted: #94A3B8;
-  --border-color: #334E68;
-  --border-strong: #486581;
-  --primary-solid: #2B6CB0;
-  --primary-solid-hover: #3182CE;
-  --accent-amber: #DD6B20;
-  --accent-amber-bg: #3B2314;
-  --accent-green: #38A169;
-  --accent-green-bg: #173628;
-  --accent-blue-bg: #1E3A5F;
+  --font-serif: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 * {
@@ -54,6 +36,7 @@ body {
   color: var(--text-primary);
   min-height: 100vh;
   line-height: 1.6;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -61,5 +44,59 @@ button,
 input,
 select,
 textarea {
-  font-family: inherit;
+  font-family: var(--font-sans);
+}
+
+/* Cursor para el efecto de máquina de escribir en títulos */
+.typewriter-cursor {
+  display: inline-block;
+  margin-left: 2px;
+  font-weight: 400;
+  color: #F59E0B;
+}
+
+.typewriter-cursor.typing {
+  animation: blinkCursor 0.65s infinite;
+}
+
+.typewriter-cursor.done {
+  opacity: 0;
+  transition: opacity 0.4s ease 0.8s;
+}
+
+@keyframes blinkCursor {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Diseño adaptable para el panel lateral de construcción progresiva de postura */
+@media (max-width: 960px) {
+  .deliberation-layout-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Utilidades de alineación para iconos en botones y títulos */
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.icon-heading {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
 }

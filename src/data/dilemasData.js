@@ -3,790 +3,1519 @@ export const PERSPECTIVAS_BIBLIOTECA = [
     id: 'utilitarismo',
     nombre: 'Utilitarismo',
     categoria: 'Teoría ética general',
-    resumenCorto: 'Evalúa las acciones según sus consecuencias y el balance global de bienestar o perjuicio que producen.',
+    resumenCorto: 'Evalúa las decisiones por sus consecuencias sobre el bienestar general.',
     definicion:
-      'Corriente consecuencialista según la cual una decisión es éticamente justificable cuando promueve el mayor beneficio o bienestar posible para el mayor número de personas (y seres sintientes) afectados, minimizando los daños previsibles.',
-    autores: ['Jeremy Bentham (1748–1832)', 'John Stuart Mill (1806–1873)', 'Peter Singer (1946–)'],
+      'Sostiene que una decisión es justa si promueve el mayor bienestar posible y reduce el sufrimiento. En el espacio, compara beneficios futuros e inciertos con el alivio de urgencias actuales.',
+    autores: ['Jeremy Bentham', 'John Stuart Mill', 'Peter Singer'],
     principiosCentrales: [
-      'Imparcialidad: el bienestar de cada persona afectada cuenta por igual.',
-      'Consecuencialismo: importa el resultado real y medible de la acción, no solo la buena intención.',
-      'Maximización del beneficio neto: comparar beneficios totales frente a costos, daños y riesgos.',
+      'Evaluar políticas por sus consecuencias reales sobre el bienestar.',
+      'Ponderar tanto la magnitud del beneficio como su probabilidad.',
+      'Considerar a las personas actuales y a las generaciones futuras.',
     ],
     preguntasHabituales: [
-      '¿Qué consecuencias concretas genera esta decisión a corto, mediano y largo plazo?',
-      '¿Los beneficios globales superan claramente los perjuicios ocasionados?',
-      '¿Existe otra alternativa que logre beneficios similares causando menos daño?',
+      '¿Cómo comparar beneficios futuros e inciertos con necesidades urgentes hoy?',
+      '¿Qué uso de los recursos genera mayor bienestar verificable?',
     ],
     ejemploEspacial:
-      'Al evaluar una megaconstelación satelital, el utilitarismo pondera la mejora en conectividad para millones de personas en zonas remotas frente al deterioro de la observación astronómica mundial y el riesgo de colisiones en órbita.',
+      'Puede objetar una misión a Marte si ese dinero salva vidas hoy de forma segura, o apoyarla si sus innovaciones (clima, medicina) previenen crisis globales mayores.',
   },
   {
     id: 'deontologia',
     nombre: 'Deontología',
     categoria: 'Teoría ética general',
-    resumenCorto: 'Se centra en los deberes morales, el respeto a las normas y las obligaciones que no deben vulnerarse.',
+    resumenCorto: 'Se basa en deberes y derechos que deben respetarse más allá de los resultados.',
     definicion:
-      'Marco ético basado en el cumplimiento de deberes, principios y derechos fundamentales. Sostiene que ciertas acciones son correctas o incorrectas en sí mismas, independientemente de cuán rentables o convenientes sean sus resultados.',
-    autores: ['Immanuel Kant (1724–1804)', 'W. D. Ross (1877–1971)', 'Onora O’Neill (1941–)'],
+      'Afirma que existen obligaciones morales y derechos básicos que no pueden postergarse en nombre de beneficios futuros, junto con el deber racional de cultivar el conocimiento.',
+    autores: ['Immanuel Kant', 'Christine Korsgaard', 'W. D. Ross'],
     principiosCentrales: [
-      'Respeto a las personas y actores: no instrumentalizar a otros únicamente como medios para un fin privado.',
-      'Universalizabilidad: actuar según reglas que todos los operadores podrían seguir sin contradicción.',
-      'Deber de no dañar y responsabilidad: cumplir normas internacionales y prevenir daños previsibles.',
+      'Tratar a cada persona como un fin y nunca solo como un medio.',
+      'Cumplir primero los deberes de justicia básica hacia los ciudadanos.',
+      'Actuar bajo reglas que todos los afectados puedan aceptar.',
     ],
     preguntasHabituales: [
-      '¿Qué deberes y obligaciones fundamentales deben respetarse en este caso?',
-      '¿Podría universalizarse esta práctica si todas las empresas o países hicieran lo mismo?',
-      '¿Se está respetando la autonomía y los derechos de las comunidades afectadas?',
+      '¿Qué obligaciones deben respetarse con independencia de los resultados?',
+      '¿Es justo usar impuestos de personas vulnerables para metas que no disfrutarán?',
     ],
     ejemploEspacial:
-      'Desde la deontología, ningún actor privado o estatal debería apropiarse de facto de una órbita o degradar un bien común científico si esa máxima no puede sostenerse cuando todos los demás operadores actúan igual.',
+      'Destaca la tensión entre el deber estatal de asegurar derechos básicos en la Tierra y el deber humano de investigar y comprender el universo.',
   },
   {
     id: 'justicia-distributiva',
     nombre: 'Justicia distributiva',
     categoria: 'Teoría ética general',
-    resumenCorto: 'Analiza cómo se reparten equitativamente los beneficios, costos, cargas y riesgos entre distintos grupos.',
+    resumenCorto: 'Analiza cómo se reparten costos, riesgos y beneficios en la sociedad.',
     definicion:
-      'Enfoque ético y político que examina la equidad en la distribución de bienes comunes, oportunidades, recursos y riesgos. Cuestiona las situaciones en que un grupo concentra las ganancias mientras otros asumen las cargas o externalidades.',
-    autores: ['John Rawls (1921–2002)', 'Amartya Sen (1933–)', 'Iris Marion Young (1949–2006)'],
+      'Examina quién paga los costos de una política y quién recibe sus beneficios. Según John Rawls, las desigualdades solo son justas si benefician a los menos aventajados.',
+    autores: ['John Rawls', 'Amartya Sen', 'Martha Nussbaum'],
     principiosCentrales: [
-      'Equidad en cargas y beneficios: quien obtiene ganancias de una actividad debe asumir sus costos y riesgos.',
-      'Protección de los más vulnerables: las desigualdades solo son aceptables si benefician a quienes están en desventaja.',
-      'Acceso justo a los bienes comunes: el espacio ultraterrestre es incumbencia de toda la humanidad.',
+      'Garantizar un umbral digno de derechos y capacidades básicas.',
+      'Evitar que toda la población pague costos cuyos beneficios se concentran en pocos.',
+      'Exigir retorno social de las inversiones públicas.',
     ],
     preguntasHabituales: [
-      '¿Quién recibe los beneficios directos de este proyecto y quién asume los costos o riesgos?',
-      '¿Las comunidades en desventaja tienen acceso real a los beneficios prometidos?',
-      '¿Están participando en la decisión todos los grupos que sufrirán sus consecuencias?',
+      '¿Cómo se reparten los costos y beneficios de la actividad espacial?',
+      '¿Qué umbral social debe asegurarse antes de financiar megamisiones?',
     ],
     ejemploEspacial:
-      'En la explotación de recursos lunares o el uso de órbitas bajas, la justicia distributiva cuestiona si unas pocas potencias y corporaciones tecnológicas monopolizan el acceso mientras el resto de los países pierde oportunidades futuras.',
+      'Cuestiona que los impuestos de toda la población financien misiones cuyos contratos y patentes quedan en manos de consorcios o potencias tecnológicas.',
   },
   {
-    id: 'justicia-intergeneracional',
-    nombre: 'Ética ambiental y justicia intergeneracional',
+    id: 'valor-conocimiento',
+    nombre: 'Valor epistémico de la ciencia',
     categoria: 'Enfoque especializado',
-    resumenCorto: 'Evalúa nuestra responsabilidad hacia el entorno orbital y hacia las generaciones futuras.',
+    resumenCorto: 'Defiende que comprender el universo tiene valor por sí mismo.',
     definicion:
-      'Marco ético que amplía la responsabilidad moral hacia la preservación de entornos frágiles (como la órbita terrestre y los cuerpos celestes) y hacia los derechos e intereses de las generaciones humanas venideras.',
-    autores: ['Hans Jonas (1903–1993)', 'Edith Brown Weiss (1942–)', 'Holmes Rolston III (1932–2025)'],
+      'Distingue entre la utilidad práctica de la ciencia y su valor intrínseco: ampliar la comprensión humana del cosmos como parte esencial de la cultura.',
+    autores: ['Aristóteles', 'Karl Popper', 'Carl Sagan', 'Philip Kitcher'],
     principiosCentrales: [
-      'Principio de precaución ante daños irreversibles o acumulativos.',
-      'Conservación de opciones: dejar a las generaciones futuras un entorno orbital utilizable y seguro.',
-      'Cuidado del patrimonio científico y natural del cosmos.',
+      'El saber fundamental vale por sí mismo, no solo por su rentabilidad.',
+      'Exigir utilidad inmediata destruiría la ciencia básica.',
+      'Armonizar la investigación con la deliberación democrática.',
     ],
     preguntasHabituales: [
-      '¿Esta decisión compromete la seguridad o libertad de acción de las próximas generaciones?',
-      '¿Estamos generando un daño acumulativo difícil o imposible de revertir?',
-      '¿Qué obligaciones de preservación tenemos sobre entornos más allá de la Tierra?',
+      'Si una investigación no produjera beneficios prácticos, ¿seguiría siendo valioso financiarla?',
+      '¿Cómo defender el valor del saber ante quienes exigen utilidad inmediata?',
     ],
     ejemploEspacial:
-      'La acumulación de basura espacial puede desencadenar colisiones en cascada (Síndrome de Kessler), clausurando órbitas enteras durante décadas y privando a las generaciones futuras del acceso seguro al espacio.',
+      'Buscar vida pasada en Marte o observar galaxias lejanas responde preguntas fundamentales de la humanidad más allá del lucro.',
+  },
+  {
+    id: 'etica-ambiental-espacial',
+    nombre: 'Sostenibilidad espacial',
+    categoria: 'Enfoque especializado',
+    resumenCorto: 'Promueve el cuidado de las órbitas y de otros cuerpos celestes.',
+    definicion:
+      'Cuestiona tratar el espacio como un depósito infinito de desechos o una mina sin reglas, exigiendo precaución ante daños irreversibles.',
+    autores: ['Hans Jonas', 'Holmes Rolston III', 'Tony Milligan'],
+    principiosCentrales: [
+      'Principio de precaución ante colisiones orbitales o contaminación planetaria.',
+      'Preservar órbitas seguras y cielos oscuros para el futuro.',
+    ],
+    preguntasHabituales: [
+      '¿Tenemos derecho a alterar irreversiblemente la órbita o la Luna?',
+    ],
+    ejemploEspacial:
+      'Exige límites a la basura espacial y protección de cráteres lunares con valor científico único.',
   },
 ]
 
 export const DILEMAS_CATALOGO = [
   {
-    id: 'ocupacion-orbita',
+    id: 'mision-marte',
     numero: '01',
-    titulo: '¿Quién tiene derecho a ocupar la órbita?',
+    titulo: '¿Explorar Marte mientras existen urgencias en la Tierra?',
     subtitulo:
-      'Expansión de megaconstelaciones satelitales frente a la protección de la investigación astronómica y el entorno orbital.',
-    tema: 'Desarrollo tecnológico y responsabilidad científica',
-    tipoIlustracion: 'orbita',
-    destacado: true,
-    resumenEscenario:
-      'Una corporación aeroespacial solicita autorización para desplegar una megaconstelación de 12.000 satélites en órbita terrestre baja (LEO) con el objetivo de ofrecer internet de alta velocidad a nivel global, incluyendo regiones rurales y aisladas. Sin embargo, observatorios astronómicos y agencias espaciales advierten que el incremento masivo de satélites alterará la observación del cielo nocturno, generará interferencias de radiofrecuencia y elevará drásticamente la congestión orbital.',
-    hechosCientificos: [
-      'En menos de una década, el número de satélites activos en órbita terrestre baja (entre 300 y 1.200 km de altitud) pasó de unos pocos miles a más de 10.000 unidades operativas.',
-      'Los paneles y superficies de los satélites reflejan la luz solar durante el crepúsculo y la noche, dejando trazas brillantes en las exposiciones fotográficas de telescopios ópticos terrestres.',
-      'Las emisiones de comunicación satelital pueden solaparse con bandas adyacentes utilizadas por radiotelescopios para estudiar señales cósmicas extremadamente débiles.',
-    ],
-    supuestosEscenario: [
-      'La empresa promete destinar un 15% de su capacidad a escuelas, postas médicas y comunidades aisladas, aunque el servicio comercial general tendrá una tarifa mensual de mercado.',
-      'Existe tecnología experimental de recubrimiento oscuro y viseras antirreflejo, pero reduce parcialmente la eficiencia térmica de los satélites y aumenta el costo del proyecto en un 18%.',
-      'Actualmente no existe un tribunal internacional con capacidad sancionadora directa que limite el número total de satélites por empresa.',
-    ],
-    actores: [
-      {
-        id: 'empresa',
-        nombre: 'Empresa espacial',
-        rol: 'Operación, inversión y conectividad',
-        intereses:
-          'Busca rentabilizar una inversión multimillonaria, liderar el mercado global de telecomunicaciones orbitales y demostrar que la infraestructura satelital puede cerrar la brecha digital en zonas sin fibra óptica.',
-        preocupacion:
-          'Teme que regulaciones estrictas o demoras burocráticas hagan inviable el modelo de negocio frente a competidores de otros países.',
-      },
-      {
-        id: 'astronomia',
-        nombre: 'Comunidad astronómica',
-        rol: 'Investigación científica y observación del cielo',
-        intereses:
-          'Necesita cielos oscuros y silenciosos en radiofrecuencia para detectar asteroides cercanos a la Tierra, estudiar galaxias lejanas y preservar el patrimonio científico y cultural del cielo nocturno.',
-        preocupacion:
-          'Advierte que hasta un 30% de las imágenes de gran campo en grandes observatorios (muchos ubicados en el norte de Chile) pueden verse degradadas por trazas satelitales.',
-      },
-      {
-        id: 'comunidades',
-        nombre: 'Comunidades aisladas',
-        rol: 'Acceso a servicios digitales y derechos básicos',
-        intereses:
-          'Requieren conexión estable para telemedicina, educación a distancia, alerta temprana ante desastres naturales y desarrollo económico local donde las redes terrestres no llegan.',
-        preocupacion:
-          'Les preocupa quedar nuevamente postergadas si el proyecto se cancela, pero también dudan de si las tarifas finales serán realmente asequibles sin subsidios o compromisos vinculantes.',
-      },
-      {
-        id: 'operadores',
-        nombre: 'Otros operadores orbitales',
-        rol: 'Seguridad espacial y gestión de tráfico',
-        intereses:
-          'Agencias públicas, satélites meteorológicos y operadores de otros países necesitan órbitas seguras y coordinadas para evitar colisiones y maniobras constantes de evasión.',
-        preocupacion:
-          'La saturación de ciertas altitudes obliga a realizar miles de maniobras evasivas al año, consumiendo combustible de misiones científicas y meteorológicas.',
-      },
-      {
-        id: 'futuras',
-        nombre: 'Generaciones futuras',
-        rol: 'Sostenibilidad orbital a largo plazo',
-        intereses:
-          'Dependen de que el entorno orbital terrestre se mantenga limpio, accesible y libre de reacciones en cadena de fragmentos espaciales.',
-        preocupacion:
-          'No tienen voz directa en el comité actual, pero heredarán las consecuencias de una órbita saturada o de un cielo nocturno permanentemente alterado.',
-      },
-    ],
-    capsulasCientificas: [
-      {
-        titulo: '¿Qué es la Órbita Terrestre Baja (LEO)?',
-        contenido:
-          'La órbita terrestre baja comprende altitudes entre los 160 km y los 2.000 km sobre la superficie de la Tierra. A diferencia de los satélites geoestacionarios (a 35.786 km), los satélites en LEO están mucho más cerca, lo que reduce la latencia de internet a pocos milisegundos, pero requiere miles de unidades en red porque cada satélite cubre solo una pequeña porción del planeta en cada instante.',
-      },
-      {
-        titulo: 'Interferencia óptica y radioastronómica',
-        contenido:
-          'Los telescopios modernos capturan luz extremadamente tenue durante exposiciones largas. Cuando un satélite iluminado por el Sol cruza el campo visual, satura los sensores dejando una línea brillante. Además, los transmisores orbitales pueden emitir ruido electrónico que oculta señales naturales provenientes del universo temprano.',
-      },
-      {
-        titulo: 'Congestión orbital y Síndrome de Kessler',
-        contenido:
-          'Propuesto por el científico Donald Kessler en 1978, describe un escenario en el que la densidad de objetos en órbita baja es tan alta que una colisión entre dos satélites genera una nube de fragmentos que impacta a otros satélites, produciendo una reacción en cadena capaz de inutilizar regiones orbitales por décadas.',
-      },
-    ],
-    preguntaComite:
-      'Eres parte de un comité internacional encargado de evaluar el proyecto de la megaconstelación satelital. ¿Qué decisión tomarías?',
-    alternativas: [
-      {
-        id: 'autorizar',
-        titulo: 'Autorizar el proyecto',
-        descripcion:
-          'Aprobar el despliegue completo de la constelación para acelerar la conectividad global y el desarrollo tecnológico sin imponer restricciones adicionales.',
-        requiereCondiciones: false,
-      },
-      {
-        id: 'condicionar',
-        titulo: 'Autorizar con condiciones',
-        descripcion:
-          'Permitir el despliegue únicamente si la empresa cumple medidas técnicas, científicas y sociales obligatorias y verificables.',
-        requiereCondiciones: true,
-      },
-      {
-        id: 'rechazar',
-        titulo: 'Rechazar el proyecto',
-        descripcion:
-          'Denegar la autorización mientras no existan garantías internacionales vinculantes que aseguren la protección astronómica y la seguridad orbital.',
-        requiereCondiciones: false,
-      },
-      {
-        id: 'propia',
-        titulo: 'Proponer una solución propia',
-        descripcion:
-          'Redactar una alternativa diferente o un modelo híbrido diseñado por ti para resolver el conflicto.',
-        requiereCondiciones: false,
-        esLibre: true,
-      },
-    ],
-    condicionesDisponibles: [
-      {
-        id: 'desorbitacion',
-        texto: 'Retiro y desorbitación activa garantizada en un máximo de 2 años tras finalizar su vida útil o ante fallas.',
-      },
-      {
-        id: 'brillo',
-        texto: 'Límite estricto de brillo óptico (magnitud superior a 7) y apagado de transmisores al pasar sobre observatorios astronómicos.',
-      },
-      {
-        id: 'supervision',
-        texto: 'Auditoría independiente y reducción del 40% en el número inicial de satélites hasta evaluar el impacto real de la primera fase.',
-      },
-      {
-        id: 'tarifa-social',
-        texto: 'Obligación legal de proveer conectividad gratuita o subsidiada a escuelas, centros de salud y comunidades aisladas.',
-      },
-    ],
-    analisisFilosofico: {
-      utilitarismo: {
-        explicacionBreve:
-          'Evalúa qué decisión produce el mayor balance neto de bienestar y los menores perjuicios agregados para todos los afectados.',
-        preguntaPrincipal: '¿Qué consecuencias genera la decisión y cómo se equilibra el balance global entre conectividad y ciencia?',
-        porDecision: {
-          autorizar:
-            'Respalda la rápida expansión del acceso a internet para millones de usuarios, pero cuestiona que se ignoren costos globales severos: pérdida de descubrimientos astronómicos, menor capacidad de alerta ante asteroides y riesgo de colisiones orbitales.',
-          condicionar:
-            'La autorización condicionada busca conservar los beneficios de conectividad mientras reduce los perjuicios científicos y orbitales. Sin embargo, exige verificar empíricamente si las medidas técnicas realmente logran un balance global positivo.',
-          rechazar:
-            'Evita de forma inmediata los daños a la astronomía y el riesgo de saturación orbital, pero implica renunciar o postergar beneficios tangibles de conectividad en salud, educación y emergencias para poblaciones aisladas.',
-          propia:
-            'Un enfoque utilitarista evaluará tu propuesta según su eficacia práctica: ¿logra maximizar simultáneamente el acceso social a las comunicaciones y la preservación de la investigación científica sin generar nuevos costos ocultos?',
-        },
-        preguntaDesafio:
-          '¿Qué ocurriría si, a pesar de las promesas de conectividad, los perjuicios acumulados para la ciencia astronómica y la seguridad orbital superaran los beneficios reales a mediano plazo?',
-      },
-      deontologia: {
-        explicacionBreve:
-          'Examina si la decisión respeta deberes morales, normas universales y la prohibición de dañar o instrumentalizar a otros actores.',
-        preguntaPrincipal: '¿Qué deberes y obligaciones fundamentales deben respetarse antes de ocupar el espacio orbital?',
-        porDecision: {
-          autorizar:
-            'Cuestiona severamente una autorización sin límites: si cada empresa o Estado desplegara decenas de miles de satélites sin restricciones, la regla sería insostenible y vulneraría el deber de no dañar un bien común.',
-          condicionar:
-            'La decisión puede justificarse si las condiciones garantizan el deber de prevenir daños, cumplir normas internacionales y respetar tanto a la comunidad científica como a las comunidades aisladas sin tratarlas como mera coartada comercial.',
-          rechazar:
-            'Defiende el principio de precaución y el deber de no alterar unilateralmente el entorno común antes de contar con reglas universales justas, aunque plantea la pregunta de qué deber tenemos hacia quienes hoy carecen de conectividad básica.',
-          propia:
-            'Para la deontología, tu propuesta será válida si establece reglas universales que cualquier operador espacial deba cumplir por igual, respetando los derechos de terceros sin excepciones oportunistas.',
-        },
-        preguntaDesafio:
-          '¿Autorizarías el proyecto si sus beneficios económicos y tecnológicos fueran enormes, pero vulnerara una obligación fundamental de preservación científica o seguridad común?',
-      },
-      'justicia-distributiva': {
-        explicacionBreve:
-          'Analiza si el reparto de beneficios, costos y riesgos entre corporaciones, comunidades y sociedad global es equitativo.',
-        preguntaPrincipal: '¿Quién recibe los beneficios directos de la megaconstelación y quién asume los costos y riesgos?',
-        porDecision: {
-          autorizar:
-            'Advierte una asimetría crítica: una empresa privada captura las ganancias comerciales y el control de las órbitas más valiosas, mientras externaliza los costos (contaminación lumínica y riesgo orbital) hacia la ciencia pública y el resto del mundo.',
-          condicionar:
-            'Intenta corregir la desigualdad exigiendo que los beneficios lleguen efectivamente a las comunidades aisladas y que la propia empresa asuma el costo económico de mitigar sus impactos técnicos y ambientales.',
-          rechazar:
-            'Frena la apropiación desigual del espacio orbital por parte de un actor privado, pero exige pensar mecanismos alternativos justos para que las regiones desconectadas no sigan excluidas del acceso digital.',
-          propia:
-            'Desde la justicia distributiva, el criterio clave para evaluar tu solución es si impide que unos pocos concentren los beneficios mientras la sociedad global y las regiones vulnerables cargan con los riesgos.',
-        },
-        preguntaDesafio:
-          '¿Es justo que una empresa privada obtenga beneficios comerciales directos ocupando una órbita común mientras astrónomos, operadores públicos y ciudadanos asumen parte de los riesgos y costos?',
-      },
-    },
-  },
-  {
-    id: 'basura-espacial',
-    numero: '02',
-    titulo: '¿Quién debe hacerse cargo de la basura espacial?',
-    subtitulo:
-      'Responsabilidad por los desechos que permanecen en órbita y distribución de los costos de retirarlos.',
-    tema: 'Responsabilidad ambiental y justicia intergeneracional',
-    tipoIlustracion: 'basura',
-    destacado: true,
-    resumenEscenario:
-      'Más de 36.000 objetos mayores a 10 cm y millones de fragmentos más pequeños orbitan la Tierra a velocidades superiores a 28.000 km/h. Una agencia internacional propone crear un Fondo Obligatorio de Limpieza Orbital para financiar misiones de remoción activa de desechos. El conflicto surge al definir quién debe pagar: las potencias espaciales históricas que generaron la mayoría de los residuos durante décadas, todos los países que hoy utilizan servicios satelitales o las nuevas empresas y naciones emergentes que recién comienzan a lanzar misiones.',
-    hechosCientificos: [
-      'A velocidades orbitales (7 a 8 km/s), un fragmento de pintura o aluminio de apenas 1 centímetro puede perforar el blindaje de un satélite activo o poner en riesgo una estación espacial tripulada.',
-      'Más del 80% de la masa de desechos en órbita proviene de lanzamientos históricos realizados por un grupo reducido de potencias espaciales y de etapas de cohetes abandonadas desde la década de 1960.',
-      'En altitudes superiores a 800 km, los objetos abandonados no caen por sí solos en pocos años: pueden permanecer en órbita durante siglos.',
-    ],
-    supuestosEscenario: [
-      'Retirar activamente los 50 objetos grandes más peligrosos al año tiene un costo estimado de miles de millones de dólares mediante naves remolcadoras y redes robóticas.',
-      'Los países en vías de desarrollo argumentan que imponer un impuesto elevado a cada lanzamiento nuevo frenaría sus primeros programas satelitales meteorológicos y agrícolas.',
-      'Las potencias espaciales tradicionales sostienen que cuando lanzaron sus primeras misiones no existían normas internacionales sobre desorbitación.',
-    ],
-    actores: [
-      {
-        id: 'potencias',
-        nombre: 'Potencias espaciales históricas',
-        rol: 'Estados con décadas de actividad orbital',
-        intereses:
-          'Prefieren un modelo enfocado hacia el futuro donde todos los operadores actuales aporten por igual según sus lanzamientos presentes, evitando pagos retroactivos por desechos antiguos.',
-        preocupacion:
-          'Consideran injusto asumir casi todo el costo financiero por misiones realizadas cuando la tecnología de reingreso controlado aún no existía.',
-      },
-      {
-        id: 'emergentes',
-        nombre: 'Países con programas espaciales emergentes',
-        rol: 'Nuevos actores científicos y satelitales',
-        intereses:
-          'Buscan acceder a órbitas seguras para lanzar satélites de observación climática, gestión hídrica y telecomunicaciones sin pagar por una contaminación orbital que no causaron.',
-        preocupacion:
-          'Temen que las tasas uniformes de limpieza funcionen como una barrera económica que consolide el monopolio de las grandes potencias.',
-      },
-      {
-        id: 'operadores-comerciales',
-        nombre: 'Operadores comerciales actuales',
-        rol: 'Empresas de lanzamientos y telecomunicaciones',
-        intereses:
-          'Necesitan que se retiren los grandes restos antiguos porque amenazan la integridad de sus flotas activas y encarecen los seguros espaciales.',
-        preocupacion:
-          'Rechazan impuestos excesivos que reduzcan la competitividad de la industria aeroespacial privada.',
-      },
-      {
-        id: 'agencias-seguridad',
-        nombre: 'Comunidad científica y tripulaciones',
-        rol: 'Seguridad de misiones tripuladas y telescopios espaciales',
-        intereses:
-          'Exigen acción urgente de remoción activa antes de que una colisión mayor entre etapas de cohetes abandonadas multiplique por miles los fragmentos incontrolables.',
-        preocupacion:
-          'La parálisis diplomática sobre quién paga retrasa cada año la limpieza efectiva de las órbitas más críticas.',
-      },
-      {
-        id: 'generaciones-futuras',
-        nombre: 'Generaciones futuras',
-        rol: 'Herederos del entorno orbital terrestre',
-        intereses:
-          'Requieren que la humanidad actual estabilice el entorno orbital para no quedar encerrada en un planeta rodeado de metralla hiperveloz.',
-        preocupacion:
-          'El costo de no actuar hoy se multiplicará exponencialmente para quienes vivan en las próximas décadas.',
-      },
-    ],
-    capsulasCientificas: [
-      {
-        titulo: 'Velocidad de impacto en órbita',
-        contenido:
-          'En la órbita terrestre baja, los objetos se desplazan a unos 28.000 km/h. Si dos objetos chocan en trayectorias cruzadas, la velocidad relativa de impacto puede rondar los 40.000 o 50.000 km/h, liberando una energía cinética equivalente a una explosión diez veces superior a su masa en TNT.',
-      },
-      {
-        titulo: 'Tecnologías de Remoción Activa de Desechos (ADR)',
-        contenido:
-          'Actualmente se prueban brazos robóticos, arpones, redes magnéticas y remolcadores orbitales capaces de capturar satélites muertos o etapas de cohetes y empujarlos hacia la atmósfera para que se desintegren de manera controlada.',
-      },
-      {
-        titulo: 'Responsabilidad común pero diferenciada',
-        contenido:
-          'Concepto originado en el derecho ambiental internacional según el cual todos los Estados comparten el deber de proteger un bien común global, pero la contribución financiera y técnica debe ser proporcional a la huella histórica y a la capacidad económica de cada actor.',
-      },
-    ],
-    preguntaComite:
-      'Debes votar el modelo de financiamiento y responsabilidad para el Tratado Internacional de Limpieza Orbital. ¿Qué decisión tomarías?',
-    alternativas: [
-      {
-        id: 'autorizar',
-        titulo: 'Financiamiento proporcional a la huella histórica',
-        descripcion:
-          'Exigir que los Estados y corporaciones financien la limpieza en proporción directa a la masa de desechos que han dejado en órbita desde 1957.',
-        requiereCondiciones: false,
-      },
-      {
-        id: 'condicionar',
-        titulo: 'Fondo mixto con responsabilidades diferenciadas',
-        descripcion:
-          'Combinar aportes históricos de las grandes potencias con tasas escalonadas para nuevos lanzamientos, seleccionando medidas específicas de equidad y control.',
-        requiereCondiciones: true,
-      },
-      {
-        id: 'rechazar',
-        titulo: 'Tasa uniforme solo para lanzamientos futuros',
-        descripcion:
-          'Establecer un cobro igualitario por cada nuevo satélite lanzado a partir de hoy, sin aplicar cobros retroactivos por la basura histórica.',
-        requiereCondiciones: false,
-      },
-      {
-        id: 'propia',
-        titulo: 'Proponer una solución propia',
-        descripcion:
-          'Diseñar otro mecanismo institucional, económico o tecnológico para resolver la limpieza orbital.',
-        requiereCondiciones: false,
-        esLibre: true,
-      },
-    ],
-    condicionesDisponibles: [
-      {
-        id: 'exencion-emergentes',
-        texto: 'Eximir de tasas a las primeras misiones científicas, educativas y climáticas de países en desarrollo.',
-      },
-      {
-        id: 'fianza-reingreso',
-        texto: 'Exigir una fianza económica reembolsable que solo se devuelve cuando el operador desorbita con éxito su satélite.',
-      },
-      {
-        id: 'prioridad-riesgo',
-        texto: 'Destinar el 70% del fondo a retirar primero las etapas de cohetes antiguas con mayor probabilidad estadística de colisión.',
-      },
-      {
-        id: 'transferencia-tecnologica',
-        texto: 'Compartir tecnología abierta de prevención de colisiones con todas las agencias espaciales del mundo.',
-      },
-    ],
-    analisisFilosofico: {
-      utilitarismo: {
-        explicacionBreve:
-          'Prioriza el acuerdo que logre limpiar efectivamente la órbita lo antes posible y reduzca al mínimo el riesgo de colisiones globales.',
-        preguntaPrincipal: '¿Qué esquema de responsabilidad logra retirar más desechos peligrosos en menos tiempo sin paralizar la cooperación?',
-        porDecision: {
-          autorizar:
-            'Apunta directamente a quienes tienen más recursos y mayor responsabilidad material, pero corre el riesgo de que las grandes potencias boicoteen el tratado y la limpieza nunca se ejecute.',
-          condicionar:
-            'Un fondo mixto con incentivos prácticos (como fianzas reembolsables y prioridad en los objetos más peligrosos) maximiza la viabilidad política del acuerdo y acelera la reducción real del riesgo orbital.',
-          rechazar:
-            'Facilita que las potencias históricas firmen el acuerdo rápidamente, pero puede recaudar fondos insuficientes y desincentivar proyectos satelitales de alto valor social en países emergentes.',
-          propia:
-            'El utilitarismo evaluará tu propuesta según su efectividad real para evitar el Síndrome de Kessler y proteger los servicios espaciales de los que depende la humanidad.',
-        },
-        preguntaDesafio:
-          'Si exigir justicia histórica estricta provocara que las grandes potencias abandonen el acuerdo y no se limpie la órbita, ¿seguirías defendiendo esa postura o priorizarías un acuerdo pragmático?',
-      },
-      deontologia: {
-        explicacionBreve:
-          'Sostiene el principio moral de que quien causa un daño o genera un riesgo tiene el deber directo de repararlo.',
-        preguntaPrincipal: '¿Qué obligaciones morales se derivan de haber contaminado un entorno común?',
-        porDecision: {
-          autorizar:
-            'Coincide fuertemente con el deber de reparación ("quien contamina, limpia"): haberse beneficiado durante décadas del uso orbital genera una obligación moral ineludible de retirar los propios desechos.',
-          condicionar:
-            'Articula el deber de reparación histórica con la obligación universal actual de que ningún nuevo lanzamiento abandone objetos sin plan de retiro verificado.',
-          rechazar:
-            'Resulta problemático desde el deber de responsabilidad causal, pues exime a quienes generaron más del 80% de los residuos actuales y traslada la carga moral hacia actores inocentes.',
-          propia:
-            'Desde la ética del deber, tu propuesta debe asegurar que ningún actor pueda desentenderse de las consecuencias previsibles de sus propios artefactos en órbita.',
-        },
-        preguntaDesafio:
-          '¿Puede considerarse moralmente responsable a un país por desechos generados hace cincuenta años cuando no existían normas ni tecnología para desorbitarlos?',
-      },
-      'justicia-distributiva': {
-        explicacionBreve:
-          'Examina cómo repartir las cargas de limpieza sin reproducir desigualdades entre países ricos y países en desarrollo.',
-        preguntaPrincipal: '¿Cómo distribuir justamente los costos de limpiar la órbita sin cerrar el acceso al espacio a las naciones emergentes?',
-        porDecision: {
-          autorizar:
-            'Defiende que quienes acumularon ventajas tecnológicas y económicas gracias al uso temprano del espacio asuman el costo de restaurar el bien común.',
-          condicionar:
-            'Aplica el principio de responsabilidades comunes pero diferenciadas: protege el derecho al desarrollo de países emergentes mientras exige mayor aporte a quienes tienen mayor huella y capacidad.',
-          rechazar:
-            'Una tasa plana por igual para todos es regresiva: penaliza proporcionalmente mucho más a una universidad o país emergente que a una superpotencia o megacorporación.',
-          propia:
-            'La justicia distributiva analizará si tu modelo garantiza igualdad de oportunidades en el acceso al espacio y evita que los costos recaigan sobre quienes menos se beneficiaron.',
-        },
-        preguntaDesafio:
-          '¿Cómo equilibrar el derecho de los países emergentes a lanzar sus propios satélites con el hecho físico de que la órbita ya está cerca de su límite de seguridad?',
-      },
-    },
-  },
-  {
-    id: 'recursos-luna',
-    numero: '03',
-    titulo: '¿Es ético explotar los recursos de la Luna?',
-    subtitulo:
-      'Beneficios científicos y económicos de la extracción de recursos frente a preguntas sobre acceso, preservación y regulación.',
-    tema: 'Explotación de recursos y justicia distributiva',
-    tipoIlustracion: 'luna',
-    destacado: false,
-    resumenEscenario:
-      'Un consorcio de agencias espaciales y empresas mineras proyecta instalar plantas de extracción en los cráteres del polo sur lunar, donde existen reservas limitadas de hielo de agua y tierras raras. El agua lunar permitiría producir oxígeno e hidrógeno como combustible para misiones más profundas, pero los sitios con hielo son escasos y coinciden con zonas de altísimo valor científico para estudiar el origen del Sistema Solar.',
-    hechosCientificos: [
-      'En las regiones permanentemente ensombrecidas del polo sur lunar existen depósitos de hielo de agua acumulados durante miles de millones de años que funcionan como un registro fósil del Sistema Solar.',
-      'Extraer agua en la Luna evita el enorme costo energético de lanzar cada litro de agua desde la gravedad terrestre.',
-      'El polvo lunar (regolito) levantado por excavaciones y aterrizajes puede desplazarse grandes distancias en ausencia de atmósfera y contaminar instrumentos científicos cercanos.',
-    ],
-    supuestosEscenario: [
-      'El Tratado del Espacio Ultraterrestre de 1967 prohíbe la apropiación nacional de la Luna por soberanía, pero existe un vacío legal sobre la propiedad privada de los recursos una vez extraídos.',
-      'Los picos de luz perpetua y cráteres con hielo en el polo sur lunar abarcan áreas reducidas de apenas unos pocos kilómetros cuadrados.',
-    ],
-    actores: [
-      {
-        id: 'consorcio-minero',
-        nombre: 'Consorcio aeroespacial y minero',
-        rol: 'Inversión e infraestructura lunar',
-        intereses:
-          'Busca seguridad jurídica sobre los recursos extraídos para financiar bases permanentes y estaciones de abastecimiento espacial.',
-        preocupacion:
-          'Sin derechos claros de explotación comercial, consideran imposible atraer la inversión necesaria para desarrollar tecnología lunar.',
-      },
-      {
-        id: 'cientificos-planetarios',
-        nombre: 'Comunidad de ciencia planetaria',
-        rol: 'Preservación de archivos geológicos y astronómicos',
-        intereses:
-          'Quiere proteger cráteres prístinos del polo sur y de la cara oculta de la Luna (único lugar libre de ruido de radio terrestre) antes de que la actividad industrial los altere irreversiblemente.',
-        preocupacion:
-          'La minería comercial puede destruir muestras irrepetibles sobre el origen del agua en la Tierra y laLuna.',
-      },
-      {
-        id: 'paises-no-espaciales',
-        nombre: 'Países sin capacidad de alunizaje actual',
-        rol: 'Defensores del patrimonio común de la humanidad',
-        intereses:
-          'Reclaman que la Luna sea tratada como patrimonio común y que sus sitios estratégicos no se repartan por orden de llegada ("el primero que llega se lo queda").',
-        preocupacion:
-          'Cuando el resto de las naciones desarrolle capacidad lunar en unas décadas, los pocos puntos con agua y energía solar continua ya estarán ocupados.',
-      },
-    ],
-    capsulasCientificas: [
-      {
-        titulo: 'Utilización de Recursos In Situ (ISRU)',
-        contenido:
-          'Se refiere a la recolección y procesamiento de materiales locales en otros cuerpos celestes (como hielo de agua lunar o regolito) para producir agua potable, oxígeno respirable, propelente de cohetes y materiales de construcción sin traerlos desde la Tierra.',
-      },
-      {
-        titulo: 'Tratado de 1967 vs. Acuerdos recientes',
-        contenido:
-          'El Tratado del Espacio Ultraterrestre de 1967 declara que la exploración espacial debe realizarse en beneficio de todos los países. Sin embargo, el debate jurídico contemporáneo gira en torno a si extraer y vender recursos equivale o no a apropiarse del territorio.',
-      },
-    ],
-    preguntaComite:
-      'Como integrante de una comisión de la ONU sobre gobernanza lunar, ¿qué régimen propondrías para las solicitudes de extracción en el polo sur de la Luna?',
-    alternativas: [
-      {
-        id: 'autorizar',
-        titulo: 'Autorizar la extracción comercial e industrial',
-        descripcion:
-          'Permitir que los operadores extraigan y utilicen libremente los recursos lunares para impulsar la presencia humana permanente en el espacio.',
-        requiereCondiciones: false,
-      },
-      {
-        id: 'condicionar',
-        titulo: 'Autorizar bajo régimen internacional y zonas protegidas',
-        descripcion:
-          'Permitir la extracción limitada sujetándola a reservas científicas intocables, cuotas de uso y reparto de beneficios científicos.',
-        requiereCondiciones: true,
-      },
-      {
-        id: 'rechazar',
-        titulo: 'Declarar moratoria comercial y reserva científica',
-        descripcion:
-          'Prohibir la minería con fines de lucro y permitir únicamente investigaciones científicas internacionales de mínimo impacto, similar al Tratado Antártico.',
-        requiereCondiciones: false,
-      },
-      {
-        id: 'propia',
-        titulo: 'Proponer una solución propia',
-        descripcion:
-          'Plantear un marco alternativo de gobernanza para los recursos lunares.',
-        requiereCondiciones: false,
-        esLibre: true,
-      },
-    ],
-    condicionesDisponibles: [
-      {
-        id: 'zonas-exclusion',
-        texto: 'Declarar al menos el 50% de los cráteres polares y la cara oculta como Parques Científicos Internacionales libres de minería.',
-      },
-      {
-        id: 'muestras-abiertas',
-        texto: 'Obligación de compartir datos geológicos y muestras extraídas con universidades y centros científicos de todo el mundo.',
-      },
-      {
-        id: 'limite-cuota',
-        texto: 'Fijar cuotas máximas de extracción de hielo por década para evitar el agotamiento temprano de depósitos escasos.',
-      },
-    ],
-    analisisFilosofico: {
-      utilitarismo: {
-        explicacionBreve:
-          'Compara el impulso que el combustible y el agua lunar darían a la ciencia y exploración humana frente a la pérdida irreversible de registros científicos.',
-        preguntaPrincipal: '¿Qué modelo de uso lunar genera mayor valor científico y social para la humanidad en su conjunto?',
-        porDecision: {
-          autorizar:
-            'Acelera la creación de bases lunares y misiones espaciales, pero corre el riesgo de agotar o contaminar desordenadamente sitios únicos de valor científico incalculable.',
-          condicionar:
-            'Busca compatibilizar el aprovechamiento práctico del agua para soporte vital y misiones científicas con la preservación de santuarios geológicos y astronómicos.',
-          rechazar:
-            'Garantiza la conservación intacta de los cráteres lunares, pero encarece y limita drásticamente el alcance de las misiones científicas tripuladas en el espacio profundo.',
-          propia:
-            'El análisis utilitarista evaluará si tu propuesta logra un equilibrio óptimo entre el avance del conocimiento humano y la conservación del entorno lunar.',
-        },
-        preguntaDesafio:
-          '¿Compensa abaratar futuros viajes espaciales si en el proceso destruimos registros geológicos únicos de hace 4.000 millones de años?',
-      },
-      deontologia: {
-        explicacionBreve:
-          'Examina el deber de respetar los tratados internacionales y el principio de no apropiación unilateral de un patrimonio común.',
-        preguntaPrincipal: '¿Qué obligaciones jurídicas y morales impiden tratar la Luna como tierra de nadie disponible por orden de llegada?',
-        porDecision: {
-          autorizar:
-            'Cuestiona que establecer "zonas operativas exclusivas" en los pocos cráteres con agua equivale en la práctica a una apropiación prohibida por el espíritu del derecho espacial.',
-          condicionar:
-            'Exige que cualquier actividad respete normas universales acordadas multilateralmente y el deber de preservar el patrimonio científico de la humanidad.',
-          rechazar:
-            'Sostiene el deber estricto de preservar la Luna como un espacio dedicado exclusivamente a la paz y la ciencia cooperativa, fuera de la lógica de explotación comercial.',
-          propia:
-            'Desde la deontología, tu propuesta debe basarse en reglas que todas las naciones puedan aceptar libremente sin vulnerar el estatuto de bien común.',
-        },
-        preguntaDesafio:
-          'Si un tratado prohíbe apropiarse del territorio lunar, ¿es éticamente coherente apropiarse y agotar los únicos recursos valiosos que hay en ese territorio?',
-      },
-      'justicia-distributiva': {
-        explicacionBreve:
-          'Cuestiona que la ventaja tecnológica actual de unos pocos países se traduzca en el monopolio permanente de los recursos lunares.',
-        preguntaPrincipal: '¿Cómo evitar que el acceso a los recursos espaciales profundice la brecha entre naciones?',
-        porDecision: {
-          autorizar:
-            'El criterio de "el primero que llega explota el recurso" reproduce una profunda inequidad, dejando fuera a la gran mayoría de los países que aún no poseen cohetes pesados.',
-          condicionar:
-            'Introduce mecanismos de equidad: reserva de sitios para el futuro, acceso compartido a datos y muestras, y regulación por una autoridad internacional representativa.',
-          rechazar:
-            'Impide la concentración privada de recursos escasos, asegurando que ningún actor monopolice el polo sur lunar.',
-          propia:
-            'La justicia distributiva evaluará si tu propuesta garantiza que los beneficios de la Luna alcancen a toda la humanidad y no solo a una élite tecnológica.',
-        },
-        preguntaDesafio:
-          '¿Es justo que quienes hoy tienen la tecnología para llegar primero a la Luna decidan por sí solos cómo usar recursos que son escasos e irreemplazables?',
-      },
-    },
-  },
-  {
-    id: 'limites-exploracion',
-    numero: '04',
-    titulo: '¿Hasta dónde deberíamos llegar en la exploración espacial?',
-    subtitulo:
-      'Decisiones sobre financiamiento público de grandes misiones espaciales frente a necesidades y prioridades terrestres.',
-    tema: 'Prioridades sociales y distribución de recursos',
+      'Un gobierno evalúa financiar una misión a Marte frente a necesidades urgentes en salud, educación y servicios básicos.',
+    tema: 'Financiamiento espacial y justicia social',
+    modo3D: 'marte',
     tipoIlustracion: 'exploracion',
-    destacado: false,
-    resumenEscenario:
-      'Un gobierno evalúa su presupuesto científico y tecnológico para la próxima década. Se propone destinar una inversión extraordinaria a un programa internacional de exploración tripulada a Marte. Sin embargo, diversos sectores sociales y científicos plantean que esos recursos públicos deberían priorizar urgencias terrestres inmediatas, como la mitigación del cambio climático, la salud pública y el desarrollo de satélites de monitoreo ambiental.',
-    hechosCientificos: [
-      'Aproximadamente la mitad de las variables climáticas esenciales definidas por la ONU (temperatura oceánica, deshielo polar, deforestación, gases de efecto invernadero) solo pueden medirse globalmente desde satélites en órbita.',
-      'La investigación espacial ha generado transferencias tecnológicas directas en telemedicina, purificación de agua, paneles solares, sensores ópticos y nuevos materiales.',
-      'Las misiones tripuladas al espacio profundo son significativamente más costosas y riesgosas que las sondas robóticas o los satélites de observación terrestre.',
-    ],
-    supuestosEscenario: [
-      'El presupuesto total de ciencia y tecnología es limitado: aumentar la partida para misiones interplanetarias tripuladas implica reducir o postergar otros fondos de investigación aplicada.',
-      'Abandonar por completo la cooperación espacial internacional dejaría al país fuera del desarrollo tecnológico de frontera durante décadas.',
-    ],
+    destacado: true,
+
+    contexto: {
+      escenario:
+        'Un Estado considera destinar 4.500 millones de dólares de fondos públicos a una misión a Marte. Sus defensores destacan el avance científico y tecnológico; sus críticos cuestionan gastar esa suma cuando persisten carencias urgentes en hospitales, escuelas y servicios básicos.',
+      conflictoEtico:
+        'Atender de inmediato las necesidades sociales urgentes frente a impulsar el conocimiento científico y el desarrollo futuro.',
+      evidenciaCientifica: [
+        'El gasto espacial suele representar entre el 0,05 % y el 0,5 % del presupuesto público.',
+        'Estudiar otros planetas ha sido clave para comprender el clima terrestre y desarrollar tecnologías médicas y de sensores.',
+      ],
+      supuestosEscenario: [
+        'El presupuesto de la misión equivale al costo de modernizar la red nacional de atención primaria de salud.',
+        'Los hallazgos científicos serán abiertos, pero los contratos industriales se concentrarán en el sector aeroespacial.',
+      ],
+    },
+
     actores: [
       {
-        id: 'agencia-espacial',
-        nombre: 'Agencia espacial e investigadores aeroespaciales',
-        rol: 'Ciencia de frontera e innovación tecnológica',
-        intereses:
-          'Defienden que la exploración del espacio profundo impulsa el conocimiento fundamental, inspira vocaciones científicas y desarrolla tecnologías críticas que luego se aplican en la Tierra.',
-        preocupacion:
-          'Recortar la ciencia básica y de exploración detiene capacidades científicas que tardan generaciones en construirse.',
+        id: 'comunidad-cientifica',
+        nombre: 'Comunidad científica',
+        rol: 'Promotores de la misión',
+        intereses: 'Investigar si hubo vida en Marte y desarrollar ciencia de frontera en el país.',
+        argumentoCentral:
+          '«Si esperáramos a resolver cada problema antes de investigar, jamás habríamos creado la ciencia que hoy nos permite solucionarlos.»',
       },
       {
         id: 'organizaciones-sociales',
-        nombre: 'Organizaciones sociales y de salud pública',
-        rol: 'Atención de necesidades básicas urgentes',
-        intereses:
-          'Priorizan la reducción de la pobreza, el fortalecimiento hospitalario, la educación básica y el acceso a agua potable antes que proyectos interplanetarios de largo plazo.',
-        preocupacion:
-          'Consideran éticamente cuestionable destinar miles de millones a misiones a Marte mientras persisten carencias severas en la Tierra.',
+        nombre: 'Salud y educación',
+        rol: 'Prioridad social inmediata',
+        intereses: 'Financiar hospitales, escuelas y servicios básicos urgentes.',
+        argumentoCentral:
+          '«Las carencias en salud y educación causan daño hoy; financiar Marte con impuestos generales posterga deberes urgentes.»',
       },
       {
-        id: 'cientificos-clima',
-        nombre: 'Científicos ambientales y climáticos',
-        rol: 'Monitoreo y protección de la biosfera terrestre',
-        intereses:
-          'Proponen que la inversión espacial se concentre prioritariamente en satélites de observación de la Tierra, prevención de incendios, sequías y transición energética.',
-        preocupacion:
-          'Temen que el entusiasmo por Marte desvíe recursos urgentes para proteger la habitabilidad de nuestro único planeta.',
+        id: 'ciudadania-contribuyente',
+        nombre: 'Ciudadanía',
+        rol: 'Contribuyentes',
+        intereses: 'Transparencia fiscal, servicios públicos dignos y participación en las prioridades.',
+        argumentoCentral:
+          '«Quienes pagamos impuestos debemos decidir qué prioridades se financian y quiénes reciben sus beneficios.»',
       },
     ],
-    capsulasCientificas: [
+
+    capsulas: [
       {
-        titulo: 'Ciencia básica vs. Ciencia orientada a misiones terrestres',
+        titulo: 'Costo espacial vs. presupuesto público',
         contenido:
-          'La historia de la ciencia muestra que muchos avances prácticos surgieron de investigaciones básicas sin aplicación inmediata aparente. Sin embargo, en contextos de crisis climática o social, la ética de la política científica debate cómo equilibrar el horizonte de largo plazo con las urgencias del presente.',
+          'Una misión a Marte cuesta unos 4.500 millones de dólares a lo largo de 10 años: una fracción pequeña del presupuesto total, pero equivalente a decenas de hospitales.',
       },
       {
-        titulo: 'Observación de la Tierra desde el espacio',
+        titulo: 'Ciencia básica y utilidad imprevista',
         contenido:
-          'No toda actividad espacial mira lejos de la Tierra: gran parte de la infraestructura orbital actual está dedicada a estudiar los océanos, la atmósfera, la agricultura y los desastres naturales en nuestro propio planeta.',
+          'Descubrimientos teóricos sin utilidad aparente al inicio —como la relatividad para el GPS— terminaron siendo indispensables décadas después.',
       },
     ],
-    preguntaComite:
-      'Formas parte del Consejo Nacional de Política Científica y Presupuesto Público. ¿Qué decisión tomarías respecto al financiamiento espacial?',
-    alternativas: [
+
+    nodoInicialId: 'nodo_inicial',
+    nodosDialogo: {
+      nodo_inicial: {
+        id: 'nodo_inicial',
+        etiquetaPaso: 'Pregunta 1 de 3',
+        tipo: 'alternativa',
+        pregunta:
+          '¿Consideras justificable que un Estado financie una misión a Marte mientras existen necesidades sociales importantes?',
+        perspectivaRelacionada: 'Punto de partida',
+        infoComplementaria: 'Elige una opción para abrir la siguiente pregunta del diálogo.',
+        alternativas: [
+          {
+            id: 'ruta_a_si',
+            etiquetaCorta: 'Sí',
+            texto: 'Es justificable financiar la misión a Marte aunque existan necesidades pendientes.',
+            principioSugerido: 'Valor del conocimiento científico e impulso al futuro',
+            siguienteNodoId: 'rama_a_profundizacion',
+          },
+          {
+            id: 'ruta_b_no',
+            etiquetaCorta: 'No',
+            texto: 'No es justificable mientras persistan necesidades urgentes en la Tierra.',
+            principioSugerido: 'Prioridad moral de las necesidades básicas urgentes',
+            siguienteNodoId: 'rama_b_profundizacion',
+          },
+          {
+            id: 'ruta_c_depende',
+            etiquetaCorta: 'Depende',
+            texto: 'Solo es justificable si se cumplen ciertas condiciones previas.',
+            principioSugerido: 'Equilibrio condicional entre derechos básicos y ciencia',
+            siguienteNodoId: 'rama_c_profundizacion',
+          },
+        ],
+      },
+
+      // --- RUTA A: SÍ ---
+      rama_a_profundizacion: {
+        id: 'rama_a_profundizacion',
+        etiquetaPaso: 'Pregunta 2 de 3 · Ruta Sí',
+        tipo: 'alternativa',
+        pregunta:
+          '¿Qué hace que la búsqueda de conocimiento científico sea razón suficiente para destinar recursos públicos?',
+        perspectivaRelacionada: 'Valor epistémico vs. Utilitarismo',
+        alternativas: [
+          {
+            id: 'a1_valor_intrinseco',
+            etiquetaCorta: 'El saber vale por sí mismo',
+            texto: 'Comprender el universo tiene valor propio, más allá de su utilidad inmediata.',
+            principioSugerido: 'Valor intrínseco del conocimiento científico',
+            siguienteNodoId: 'rama_a1_seguimiento',
+          },
+          {
+            id: 'a2_beneficios_futuros',
+            etiquetaCorta: 'Genera avances futuros',
+            texto: 'Impulsa innovaciones tecnológicas y médicas que beneficiarán a la humanidad.',
+            principioSugerido: 'Beneficio colectivo futuro mediante la innovación',
+            siguienteNodoId: 'rama_a2_seguimiento',
+          },
+          {
+            id: 'a3_coexistencia_presupuestaria',
+            etiquetaCorta: 'Ambos gastos son compatibles',
+            texto: 'Representa una fracción menor del presupuesto y no impide atender el gasto social.',
+            principioSugerido: 'Equilibrio entre deberes presentes e inversión futura',
+            siguienteNodoId: 'rama_a3_seguimiento',
+          },
+        ],
+      },
+
+      rama_a1_seguimiento: {
+        id: 'rama_a1_seguimiento',
+        etiquetaPaso: 'Pregunta 3 de 3 · Seguimiento',
+        tipo: 'alternativa',
+        pregunta:
+          'Si una investigación nunca produjera beneficios prácticos, ¿seguiría siendo valioso financiarla con fondos públicos?',
+        perspectivaRelacionada: 'Caso límite',
+        alternativas: [
+          {
+            id: 'a1_sigue_siendo_valioso',
+            etiquetaCorta: 'Sí, sigue siendo valioso',
+            texto: 'Igual que el arte o la filosofía, el saber humano no se reduce a utilidad material.',
+            siguienteNodoId: 'rama_a_abierta',
+          },
+          {
+            id: 'a1_requiere_algun_beneficio',
+            etiquetaCorta: 'Requiere retorno social',
+            texto: 'Si usa grandes fondos públicos, debe aportar también beneficios educativos o sociales.',
+            siguienteNodoId: 'rama_a_abierta',
+          },
+        ],
+      },
+
+      rama_a2_seguimiento: {
+        id: 'rama_a2_seguimiento',
+        etiquetaPaso: 'Pregunta 3 de 3 · Seguimiento',
+        tipo: 'alternativa',
+        pregunta:
+          'Si esos beneficios futuros son inciertos y tardan décadas, ¿por qué deberían pagarlos hoy personas con urgencias actuales?',
+        perspectivaRelacionada: 'Utilitarismo y Justicia distributiva',
+        alternativas: [
+          {
+            id: 'a2_inversion_intergeneracional',
+            etiquetaCorta: 'Deber con las próximas generaciones',
+            texto: 'Sin ciencia de frontera hoy, el futuro tendrá menos herramientas frente a grandes crisis.',
+            siguienteNodoId: 'rama_a_abierta',
+          },
+          {
+            id: 'a2_condicionar_transferencia',
+            etiquetaCorta: 'Exigir transferencia inmediata',
+            texto: 'La misión debe compartir desde el inicio sus desarrollos con hospitales y servicios públicos.',
+            siguienteNodoId: 'rama_a_abierta',
+          },
+        ],
+      },
+
+      rama_a3_seguimiento: {
+        id: 'rama_a3_seguimiento',
+        etiquetaPaso: 'Pregunta 3 de 3 · Seguimiento',
+        tipo: 'alternativa',
+        pregunta:
+          'Aunque sea un porcentaje menor, cada millón invertido en Marte deja de usarse hoy en un hospital. ¿Cómo justificas esa prioridad?',
+        perspectivaRelacionada: 'Costo de oportunidad',
+        alternativas: [
+          {
+            id: 'a3_desarrollo_integral',
+            etiquetaCorta: 'El país necesita ciencia propia',
+            texto: 'Cancelar la ciencia debilita el desarrollo técnico y económico que sostiene al propio Estado.',
+            siguienteNodoId: 'rama_a_abierta',
+          },
+          {
+            id: 'a3_reorte_otras_partidas',
+            etiquetaCorta: 'Recortar gastos superfluos',
+            texto: 'Los recursos para salud deben salir de gastos militares o superfluos, no de la ciencia.',
+            siguienteNodoId: 'rama_a_abierta',
+          },
+        ],
+      },
+
+      rama_a_abierta: {
+        id: 'rama_a_abierta',
+        etiquetaPaso: 'Síntesis de tu rama',
+        tipo: 'respuesta_abierta',
+        pregunta:
+          '¿Cómo defenderías el valor del conocimiento ante quienes exigen beneficios inmediatos?',
+        perspectivaRelacionada: 'Tu argumento',
+        placeholder: 'Escribe tu argumento en 2 o 3 líneas...',
+        siguienteNodoId: 'fin_dialogo',
+      },
+
+      // --- RUTA B: NO ---
+      rama_b_profundizacion: {
+        id: 'rama_b_profundizacion',
+        etiquetaPaso: 'Pregunta 2 de 3 · Ruta No',
+        tipo: 'alternativa',
+        pregunta:
+          '¿Deberíamos suspender toda investigación que no atienda necesidades inmediatas?',
+        perspectivaRelacionada: 'Alcance de la prioridad social',
+        alternativas: [
+          {
+            id: 'b1_esperar_toda_no_esencial',
+            etiquetaCorta: 'Sí, la ciencia no esencial debe esperar',
+            texto: 'Mientras haya carencias vitales, todo proyecto costoso no esencial debe postergarse.',
+            principioSugerido: 'Prioridad absoluta de las necesidades vitales urgentes',
+            siguienteNodoId: 'rama_b1_seguimiento',
+          },
+          {
+            id: 'b2_solo_ciencia_aplicada',
+            etiquetaCorta: 'Financiar solo ciencia útil a la Tierra',
+            texto: 'Priorizar investigación médica, climática y satelital con impacto directo.',
+            principioSugerido: 'Orientación social directa de la ciencia pública',
+            siguienteNodoId: 'rama_b2_seguimiento',
+          },
+          {
+            id: 'b3_solo_capital_privado',
+            etiquetaCorta: 'Dejar Marte a la inversión privada',
+            texto: 'No usar impuestos públicos; quien quiera explorar Marte debe hacerlo con capital privado.',
+            principioSugerido: 'Reserva exclusiva del presupuesto público para fines sociales',
+            siguienteNodoId: 'rama_b3_seguimiento',
+          },
+        ],
+      },
+
+      rama_b1_seguimiento: {
+        id: 'rama_b1_seguimiento',
+        etiquetaPaso: 'Pregunta 3 de 3 · Seguimiento',
+        tipo: 'alternativa',
+        pregunta:
+          'Si siempre existieran necesidades urgentes, ¿significaría eso que nunca deberíamos explorar el espacio?',
+        perspectivaRelacionada: 'Caso límite',
+        alternativas: [
+          {
+            id: 'b1_aceptar_consecuencia',
+            etiquetaCorta: 'Sí, primero está la vida digna',
+            texto: 'Es preferible no ir a Marte que desatender a personas con necesidades básicas.',
+            siguienteNodoId: 'rama_b_abierta',
+          },
+          {
+            id: 'b1_umbral_minimo',
+            etiquetaCorta: 'Explorar al lograr un piso digno',
+            texto: 'No exige resolver todo, sino asegurar antes un piso mínimo de salud y educación.',
+            siguienteNodoId: 'rama_b_abierta',
+          },
+        ],
+      },
+
+      rama_b2_seguimiento: {
+        id: 'rama_b2_seguimiento',
+        etiquetaPaso: 'Pregunta 3 de 3 · Seguimiento',
+        tipo: 'alternativa',
+        pregunta:
+          'Muchos avances médicos nacieron de investigaciones sin utilidad aparente al inicio. ¿Cómo saber de antemano qué ciencia será útil?',
+        perspectivaRelacionada: 'Filosofía de la ciencia',
+        alternativas: [
+          {
+            id: 'b2_priorizar_probabilidad',
+            etiquetaCorta: 'Invertir donde el impacto es directo',
+            texto: 'Ante recursos escasos, es más seguro financiar medicina que esperar hallazgos indirectos.',
+            siguienteNodoId: 'rama_b_abierta',
+          },
+          {
+            id: 'b2_permitir_fraccion_basica',
+            etiquetaCorta: 'Mantener ciencia básica de bajo costo',
+            texto: 'Apoyar ciencia básica accesible, pero evitar megamisiones de miles de millones.',
+            siguienteNodoId: 'rama_b_abierta',
+          },
+        ],
+      },
+
+      rama_b3_seguimiento: {
+        id: 'rama_b3_seguimiento',
+        etiquetaPaso: 'Pregunta 3 de 3 · Seguimiento',
+        tipo: 'alternativa',
+        pregunta:
+          'Si solo empresas privadas exploran el espacio, ¿es aceptable que el conocimiento y los recursos queden bajo control corporativo?',
+        perspectivaRelacionada: 'Bienes comunes',
+        alternativas: [
+          {
+            id: 'b3_regular_privados',
+            etiquetaCorta: 'Regular y cobrar impuestos',
+            texto: 'Permitir inversión privada pero bajo reglas públicas e impuestos para gasto social.',
+            siguienteNodoId: 'rama_b_abierta',
+          },
+          {
+            id: 'b3_riesgo_monopolio',
+            etiquetaCorta: 'Evitar monopolios privados',
+            texto: 'Reconozco el riesgo: privatizar el espacio puede aumentar la desigualdad global.',
+            siguienteNodoId: 'rama_b_abierta',
+          },
+        ],
+      },
+
+      rama_b_abierta: {
+        id: 'rama_b_abierta',
+        etiquetaPaso: 'Síntesis de tu rama',
+        tipo: 'respuesta_abierta',
+        pregunta:
+          '¿Es aceptable renunciar indefinidamente a nuevos conocimientos por atender necesidades presentes?',
+        perspectivaRelacionada: 'Tu argumento',
+        placeholder: 'Escribe tu argumento en 2 o 3 líneas...',
+        siguienteNodoId: 'fin_dialogo',
+      },
+
+      // --- RUTA C: DEPENDE ---
+      rama_c_profundizacion: {
+        id: 'rama_c_profundizacion',
+        etiquetaPaso: 'Pregunta 2 de 3 · Ruta Depende',
+        tipo: 'alternativa',
+        pregunta: '¿Qué condición deberían cumplirse antes de financiar la misión a Marte?',
+        perspectivaRelacionada: 'Condiciones de legitimidad',
+        alternativas: [
+          {
+            id: 'c1_garantizar_derechos_basicos',
+            etiquetaCorta: 'Garantizar servicios básicos primero',
+            texto: 'Alcanzar un umbral mínimo de salud, educación y vivienda en la población.',
+            principioSugerido: 'Umbral prioritario de derechos y servicios básicos',
+            siguienteNodoId: 'rama_c1_seguimiento',
+          },
+          {
+            id: 'c2_retorno_social_directo',
+            etiquetaCorta: 'Exigir retorno tecnológico público',
+            texto: 'Asegurar que las innovaciones de la misión se apliquen en hospitales y escuelas.',
+            principioSugerido: 'Reciprocidad y transferencia tecnológica al sector público',
+            siguienteNodoId: 'rama_c2_seguimiento',
+          },
+          {
+            id: 'c3_cooperacion_y_deliberacion',
+            etiquetaCorta: 'Cooperación y decisión ciudadana',
+            texto: 'Compartir costos entre países y aprobar el gasto de forma democrática.',
+            principioSugerido: 'Legitimidad democrática y cooperación internacional',
+            siguienteNodoId: 'rama_c3_seguimiento',
+          },
+        ],
+      },
+
+      rama_c1_seguimiento: {
+        id: 'rama_c1_seguimiento',
+        etiquetaPaso: 'Pregunta 3 de 3 · Seguimiento',
+        tipo: 'alternativa',
+        pregunta:
+          '¿Cómo determinar cuándo se han satisfecho suficientemente esas necesidades y qué umbral debería alcanzarse?',
+        perspectivaRelacionada: 'Problema del umbral',
+        alternativas: [
+          {
+            id: 'c1_indicadores_objetivos',
+            etiquetaCorta: 'Fijar metas medibles por ley',
+            texto: 'Exigir indicadores concretos como cero pobreza extrema y salud primaria universal.',
+            siguienteNodoId: 'rama_c_abierta',
+          },
+          {
+            id: 'c1_proporcionalidad_progresiva',
+            etiquetaCorta: 'Regla de inversión proporcional',
+            texto: 'Por cada dólar en exploración espacial, asegurar un monto mayor en gasto social.',
+            siguienteNodoId: 'rama_c_abierta',
+          },
+        ],
+      },
+
+      rama_c2_seguimiento: {
+        id: 'rama_c2_seguimiento',
+        etiquetaPaso: 'Pregunta 3 de 3 · Seguimiento',
+        tipo: 'alternativa',
+        pregunta:
+          'Si la misión tiene enorme valor científico pero no garantiza aplicaciones prácticas inmediatas, ¿debería descartarse?',
+        perspectivaRelacionada: 'Ciencia pura vs. utilidad',
+        alternativas: [
+          {
+            id: 'c2_mantener_exigencia_aplicada',
+            etiquetaCorta: 'Sí, exigir utilidad práctica',
+            texto: 'Con urgencias pendientes, el dinero público debe exigir retornos concretos.',
+            siguienteNodoId: 'rama_c_abierta',
+          },
+          {
+            id: 'c2_combinar_ciencia_y_retorno',
+            etiquetaCorta: 'Valorar también educación y talento',
+            texto: 'Formar científicos locales y abrir los datos ya cuenta como retorno social.',
+            siguienteNodoId: 'rama_c_abierta',
+          },
+        ],
+      },
+
+      rama_c3_seguimiento: {
+        id: 'rama_c3_seguimiento',
+        etiquetaPaso: 'Pregunta 3 de 3 · Seguimiento',
+        tipo: 'alternativa',
+        pregunta:
+          'Si en una votación ciudadana la mayoría decide eliminar toda la ciencia básica, ¿debería aceptarse?',
+        perspectivaRelacionada: 'Democracia y ciencia',
+        alternativas: [
+          {
+            id: 'c3_respetar_soberania',
+            etiquetaCorta: 'Sí, respetar la decisión ciudadana',
+            texto: 'La ciudadanía tiene derecho a decidir las prioridades del presupuesto público.',
+            siguienteNodoId: 'rama_c_abierta',
+          },
+          {
+            id: 'c3_piso_protegido_ciencia',
+            etiquetaCorta: 'Proteger un piso mínimo científico',
+            texto: 'Asegurar una base para la ciencia y consultar solo las megamisiones costosas.',
+            siguienteNodoId: 'rama_c_abierta',
+          },
+        ],
+      },
+
+      rama_c_abierta: {
+        id: 'rama_c_abierta',
+        etiquetaPaso: 'Síntesis de tu rama',
+        tipo: 'respuesta_abierta',
+        pregunta: '¿Quién definiría ese umbral y qué ocurriría si nunca se alcanza?',
+        perspectivaRelacionada: 'Tu argumento',
+        placeholder: 'Escribe tu argumento en 2 o 3 líneas...',
+        siguienteNodoId: 'fin_dialogo',
+      },
+    },
+
+    experimentosMentales: [
       {
-        id: 'autorizar',
-        titulo: 'Aprobar el presupuesto completo de exploración profunda',
-        descripcion:
-          'Financiar íntegramente el programa de exploración interplanetaria como motor estratégico de ciencia, innovación y cooperación internacional.',
-        requiereCondiciones: false,
+        id: 'exp_valor_cientifico_puro',
+        titulo: '1. Valor científico puro sin aplicación práctica',
+        escenarioHipotetico:
+          'La misión tiene un enorme valor científico (confirmar si hubo vida en Marte), pero ninguna aplicación práctica ni económica conocida.',
+        pregunta: '¿Mantienes tu postura bajo esta condición?',
+        tensionFilosofica: 'Valor intrínseco vs. utilidad práctica.',
       },
       {
-        id: 'condicionar',
-        titulo: 'Aprobar un presupuesto equilibrado con prioridades terrestres',
-        descripcion:
-          'Mantener el programa espacial pero reorientando su presupuesto bajo condiciones de impacto social, ambiental y transferencia tecnológica.',
-        requiereCondiciones: true,
+        id: 'exp_avances_medicos_baja_probabilidad',
+        titulo: '2. Avance médico con baja probabilidad',
+        escenarioHipotetico:
+          'La misión podría producir avances médicos importantes para la Tierra, aunque su probabilidad de éxito es baja (20 %).',
+        pregunta: '¿Justifica ese posible avance asumir el riesgo con fondos públicos?',
+        tensionFilosofica: 'Beneficio incierto vs. necesidad segura.',
       },
       {
-        id: 'rechazar',
-        titulo: 'Postergar la exploración profunda y priorizar urgencias terrestres',
-        descripcion:
-          'Redirigir la totalidad de esos fondos hacia salud, educación, mitigación climática y satélites de observación ambiental directa.',
-        requiereCondiciones: false,
+        id: 'exp_equivalencia_servicios_publicos',
+        titulo: '3. Equivalencia directa con servicios públicos',
+        escenarioHipotetico:
+          'El presupuesto de la misión equivale exactamente al costo de mejorar la red de salud primaria y agua potable rural del país.',
+        pregunta: '¿Cambia tu evaluación ante este costo de oportunidad directo?',
+        tensionFilosofica: 'Urgencias inmediatas vs. largo plazo.',
       },
       {
-        id: 'propia',
-        titulo: 'Proponer una solución propia',
-        descripcion:
-          'Definir tu propio criterio ético y presupuestario para distribuir los recursos.',
-        requiereCondiciones: false,
-        esLibre: true,
+        id: 'exp_empresa_privada_infraestructura_publica',
+        titulo: '4. Empresa privada con infraestructura pública',
+        escenarioHipotetico:
+          'La misión es financiada por una empresa privada, pero utiliza infraestructura pública y reclama las patentes obtenidas.',
+        pregunta: '¿Aceptarías este modelo para ahorrar gasto estatal?',
+        tensionFilosofica: 'Ahorro fiscal vs. privatización del saber.',
+      },
+      {
+        id: 'exp_concentracion_paises_avanzados',
+        titulo: '5. Beneficios en países avanzados',
+        escenarioHipotetico:
+          'Todos los países aportan al presupuesto, pero los beneficios tecnológicos se concentran en los países más avanzados.',
+        pregunta: '¿Debería participar un país con urgencias sociales bajo ese reparto?',
+        tensionFilosofica: 'Justicia distributiva internacional.',
       },
     ],
-    condicionesDisponibles: [
-      {
-        id: 'prioridad-clima',
-        texto: 'Destinar al menos el 60% del presupuesto espacial a satélites de monitoreo climático, hídrico y prevención de desastres.',
-      },
-      {
-        id: 'patentes-abiertas',
-        texto: 'Exigir que toda tecnología médica, energética o hídrica desarrollada en el programa se libere con licencia pública para uso social.',
-      },
-      {
-        id: 'sondas-roboticas',
-        texto: 'Priorizar misiones robóticas no tripuladas (mucho más económicas y seguras) en lugar de misiones tripuladas de altísimo costo.',
-      },
-    ],
-    analisisFilosofico: {
+
+    perspectivas: {
       utilitarismo: {
-        explicacionBreve:
-          'Evalúa dónde cada unidad de presupuesto público produce la mayor reducción del sufrimiento y el mayor bienestar sostenible.',
-        preguntaPrincipal: '¿Qué asignación de recursos genera mayores beneficios reales para la sociedad actual y futura?',
-        porDecision: {
-          autorizar:
-            'Apuesta por los beneficios tecnológicos y científicos de largo plazo, pero enfrenta la crítica utilitarista de que el mismo dinero invertido hoy en salud o clima salvaría y mejoraría muchas más vidas de forma directa.',
-          condicionar:
-            'Busca optimizar el impacto social del gasto espacial enfocándolo en observación climática, misiones robóticas eficientes y transferencia tecnológica directa hacia problemas terrestres.',
-          rechazar:
-            'Prioriza el alivio directo de necesidades urgentes en la Tierra, aunque podría perder innovaciones científicas y capacidades satelitales que también protegen el bienestar humano.',
-          propia:
-            'Desde el utilitarismo, tu criterio presupuestario se mide por su capacidad de maximizar el bienestar tangible sin descuidar las herramientas científicas que previenen crisis futuras.',
-        },
-        preguntaDesafio:
-          '¿Cómo comparar éticamente un beneficio inmediato y seguro en el presente frente a un descubrimiento científico incierto pero potencialmente transformador en el futuro?',
+        nombre: 'Utilitarismo',
+        subtitulo: 'Bienestar general y consecuencias',
+        autores: 'Bentham · Mill · Singer',
+        interpretacion:
+          'Compara el bienestar futuro que pueden generar los descubrimientos espaciales frente al alivio seguro e inmediato del sufrimiento actual en la Tierra.',
+        posturasPosibles: [
+          {
+            postura: 'A favor por impacto futuro',
+            razon: 'Las tecnologías espaciales pueden beneficiar a millones a largo plazo.',
+          },
+          {
+            postura: 'En contra por urgencia actual',
+            razon: 'Invertir hoy en salud reduce sufrimiento de manera inmediata y segura.',
+          },
+        ],
+        preguntasPropias: [
+          '¿Cómo comparar beneficios futuros e inciertos con necesidades actuales?',
+        ],
+        objecion:
+          '¿Puede una promesa lejana para la humanidad justificar que hoy no se atienda a quienes sufren carencias evitables?',
       },
       deontologia: {
-        explicacionBreve:
-          'Plantea si existen deberes prioritarios de asistencia hacia los ciudadanos que sufren carencias básicas antes de emprender proyectos suntuarios o lejanos.',
-        preguntaPrincipal: '¿Qué obligaciones morales tienen prioridad cuando los recursos públicos son finitos?',
-        porDecision: {
-          autorizar:
-            'Defiende el valor intrínseco del conocimiento humano, pero debe responder si se están cumpliendo primero los deberes básicos de protección social y ambiental en la Tierra.',
-          condicionar:
-            'Reconoce que el Estado tiene simultáneamente el deber de atender derechos básicos terrestres y la responsabilidad de fomentar la ciencia al servicio del bien común.',
-          rechazar:
-            'Sostiene una jerarquía estricta de deberes: mientras existan urgencias vitales desatendidas en la Tierra, es moralmente prioritario destinar allí los recursos públicos.',
-          propia:
-            'El análisis deontológico evaluará si tu propuesta respeta los derechos básicos de la población sin presentar la ciencia y la justicia social como enemigas irreconciliables.',
-        },
-        preguntaDesafio:
-          '¿Existe un deber moral de resolver primero todos los problemas de la Tierra antes de explorar otros mundos, o eso significaría no explorar jamás?',
+        nombre: 'Deontología',
+        subtitulo: 'Deberes y derechos fundamentales',
+        autores: 'Kant · Korsgaard · Ross',
+        interpretacion:
+          'Pregunta qué obligaciones morales deben respetarse con independencia de los resultados: asegurar derechos básicos y cultivar el conocimiento humano.',
+        posturasPosibles: [
+          {
+            postura: 'Prioridad de deberes básicos',
+            razon: 'El Estado no debe postergar los derechos fundamentales de sus ciudadanos.',
+          },
+          {
+            postura: 'Deber de cultivar el saber',
+            razon: 'Desarrollar la ciencia es parte de nuestra responsabilidad racional.',
+          },
+        ],
+        preguntasPropias: [
+          '¿Qué obligaciones deben respetarse con independencia de los resultados?',
+        ],
+        objecion:
+          '¿Se respeta la dignidad de las personas vulnerables si financian con impuestos misiones cuyos beneficios no recibirán?',
       },
-      'justicia-distributiva': {
-        explicacionBreve:
-          'Examina quién financia con sus impuestos las misiones espaciales y qué sectores de la sociedad reciben sus beneficios.',
-        preguntaPrincipal: '¿Cómo asegurar que la inversión pública en el espacio beneficie a toda la ciudadanía y especialmete a los sectores más vulnerables?',
-        porDecision: {
-          autorizar:
-            'Cuestiona si los grandes contratos aeroespaciales concentran recursos públicos en sectores de alta tecnología mientras las comunidades vulnerables reciben beneficios solo indirectos o tardíos.',
-          condicionar:
-            'Vincula el financiamiento espacial a retornos públicos concretos: datos climáticos abiertos para agricultores, prevención de catástrofes y patentes abiertas en salud y energía.',
-          rechazar:
-            'Busca una redistribución directa del presupuesto hacia servicios públicos esenciales para reducir desigualdades inmediatas.',
-          propia:
-            'Desde la justicia distributiva, tu solución será justa si la inversión científica financiada por todos devuelve beneficios reales para mejorar las condiciones de vida de quienes menos tienen.',
-        },
-        preguntaDesafio:
-          '¿Bajo qué condiciones es justo utilizar impuestos de toda la población para financiar misiones espaciales cuyos resultados tardarán décadas en verse?',
+      justiciaDistributiva: {
+        nombre: 'Justicia distributiva',
+        subtitulo: 'Reparto justo de costos y beneficios',
+        autores: 'Rawls · Sen · Nussbaum',
+        interpretacion:
+          'Examina quién asume los costos fiscales de la misión y quién captura sus beneficios tecnológicos, científicos y económicos.',
+        posturasPosibles: [
+          {
+            postura: 'Crítica a la desigualdad',
+            razon: 'Toda la población paga, pero las rentas tecnológicas quedan en pocos sectores.',
+          },
+          {
+            postura: 'Apoyo con retorno social',
+            razon: 'Es justa si se financia progresivamente y transfiere tecnología al sector público.',
+          },
+        ],
+        preguntasPropias: [
+          '¿Por qué toda la población debería asumir los costos si los beneficios se concentran en ciertos sectores?',
+        ],
+        objecion:
+          '¿Es suficiente que una misión beneficie a la humanidad en general si sus costos recaen sobre personas con necesidades mucho más urgentes?',
+      },
+    },
+
+    objecionesPorRuta: {
+      ruta_a_si: {
+        titulo: 'Objeción a tu postura (Ruta Sí)',
+        posturaDetectada:
+          'Defiendes financiar la misión por el valor de la ciencia o sus beneficios futuros.',
+        objecionPrincipal:
+          '«¿Es suficiente que una actividad pueda beneficiar a la humanidad en general si sus costos recaen hoy sobre personas con necesidades mucho más urgentes?»',
+        perspectivaObjecion: 'Justicia distributiva',
+      },
+      ruta_b_no: {
+        titulo: 'Objeción a tu postura (Ruta No)',
+        posturaDetectada:
+          'Sostienes que no debe financiarse Marte mientras existan urgencias en la Tierra.',
+        objecionPrincipal:
+          '«Como siempre existirán problemas urgentes por resolver, esperar a solucionarlos todos significaría renunciar para siempre a la ciencia básica y a explorar el universo.»',
+        perspectivaObjecion: 'Valor epistémico de la ciencia',
+      },
+      ruta_c_depende: {
+        titulo: 'Objeción a tu postura (Ruta Depende)',
+        posturaDetectada:
+          'Condicionas la misión a alcanzar primero un umbral social o retornos garantizados.',
+        objecionPrincipal:
+          '«Los estándares sociales cambian continuamente y la ciencia básica no puede garantizar de antemano qué aplicaciones producirá. ¿No se vuelve tu condición imposible de cumplir?»',
+        perspectivaObjecion: 'Filosofía de la ciencia',
+      },
+    },
+  },
+
+  // =========================================================================
+  // CASO 02: OCUPACIÓN DE LA ÓRBITA TERRESTRE
+  // =========================================================================
+  {
+    id: 'ocupacion-orbita',
+    numero: '02',
+    titulo: '¿Quién tiene derecho a ocupar la órbita terrestre?',
+    subtitulo:
+      'Megaconstelaciones satelitales para internet global frente a la pérdida del cielo astronómico y la saturación orbital.',
+    tema: 'Sostenibilidad orbital y astronomía',
+    modo3D: 'orbita',
+    tipoIlustracion: 'orbita',
+    destacado: false,
+
+    contexto: {
+      escenario:
+        'Una empresa solicita desplegar 15.000 satélites en órbita baja para ofrecer internet en zonas aisladas. Astrónomos y agencias espaciales advierten que sus estelas luminosas degradan la observación del universo y saturan órbitas comunes.',
+      conflictoEtico:
+        'Conectar hoy a comunidades aisladas frente a proteger el cielo nocturno y la seguridad de un espacio orbital común.',
+      evidenciaCientifica: [
+        'Los satélites activos en órbita baja superaron los 10.000 en pocos años.',
+        'Sus trazas luminosas afectan hasta el 30 % de las capturas astronómicas crepusculares.',
+      ],
+      supuestosEscenario: [
+        'La red conectaría a 2.500 escuelas rurales, pero reducir su brillo aumentaría un 25 % el costo.',
+        'No existe aún un tratado que fije cuotas máximas de órbita por empresa o país.',
+      ],
+    },
+
+    actores: [
+      {
+        id: 'comunidad-astronomica',
+        nombre: 'Comunidad astronómica',
+        rol: 'Observatorios científicos',
+        intereses: 'Conservar cielos oscuros para investigar el cosmos y detectar asteroides.',
+        argumentoCentral: '«Ninguna empresa privada tiene derecho a cegar la ventana científica de la humanidad.»',
+      },
+      {
+        id: 'operadores-satelitales',
+        nombre: 'Operadores satelitales',
+        rol: 'Telecomunicaciones',
+        intereses: 'Cobertura global rápida para educación, salud y servicios digitales.',
+        argumentoCentral: '«Conectar a millones de personas aisladas es más urgente que evitar trazas ópticas.»',
+      },
+      {
+        id: 'comunidades-rurales',
+        nombre: 'Comunidades rurales',
+        rol: 'Usuarios y guardianes del cielo',
+        intereses: 'Acceso a internet asequible sin perder el patrimonio cultural del cielo nocturno.',
+        argumentoCentral: '«Necesitamos conectividad a precios justos, pero cuidando el cielo como bien común.»',
+      },
+    ],
+
+    capsulas: [
+      {
+        titulo: 'Reflejo solar en órbita baja',
+        contenido:
+          'A 500 km de altura los satélites reflejan la luz del Sol horas después del atardecer, dejando líneas brillantes en los telescopios.',
+      },
+    ],
+
+    nodoInicialId: 'nodo_inicial',
+    nodosDialogo: {
+      nodo_inicial: {
+        id: 'nodo_inicial',
+        etiquetaPaso: 'Pregunta 1 de 2',
+        tipo: 'alternativa',
+        pregunta:
+          '¿Es justificable autorizar megaconstelaciones satelitales para dar internet global aunque alteren el cielo astronómico?',
+        perspectivaRelacionada: 'Punto de partida',
+        alternativas: [
+          {
+            id: 'ruta_a_si',
+            etiquetaCorta: 'Sí',
+            texto: 'Conectar a comunidades aisladas tiene prioridad sobre las restricciones orbitales.',
+            principioSugerido: 'Prioridad del beneficio social de conectividad',
+            siguienteNodoId: 'rama_a_profundizacion',
+          },
+          {
+            id: 'ruta_b_no',
+            etiquetaCorta: 'No',
+            texto: 'Ninguna empresa debe saturar la órbita ni degradar la observación científica.',
+            principioSugerido: 'Protección de la órbita y el cielo como bien común',
+            siguienteNodoId: 'rama_b_profundizacion',
+          },
+          {
+            id: 'ruta_c_depende',
+            etiquetaCorta: 'Depende',
+            texto: 'Solo con límites estrictos de brillo, cuotas orbitales y tarifas sociales.',
+            principioSugerido: 'Regulación vinculante y mitigación técnica',
+            siguienteNodoId: 'rama_c_profundizacion',
+          },
+        ],
+      },
+      rama_a_profundizacion: {
+        id: 'rama_a_profundizacion',
+        etiquetaPaso: 'Pregunta 2 de 2 · Ruta Sí',
+        tipo: 'alternativa',
+        pregunta:
+          'Si las primeras empresas ocupan las órbitas más seguras, ¿qué ocurre con los países que quieran lanzar satélites en el futuro?',
+        perspectivaRelacionada: 'Justicia distributiva',
+        alternativas: [
+          {
+            id: 'a1_innovacion_compensa',
+            etiquetaCorta: 'El servicio global lo compensa',
+            texto: 'Lo importante es que el servicio conecte a las personas hoy.',
+            siguienteNodoId: 'rama_a_abierta',
+          },
+          {
+            id: 'a2_reservar_cuotas',
+            etiquetaCorta: 'Reservar cuotas para otros países',
+            texto: 'Autorizar el despliegue pero reservando espacio orbital para países emergentes.',
+            siguienteNodoId: 'rama_a_abierta',
+          },
+        ],
+      },
+      rama_a_abierta: {
+        id: 'rama_a_abierta',
+        etiquetaPaso: 'Síntesis de tu rama',
+        tipo: 'respuesta_abierta',
+        pregunta: '¿Cómo justificarías ante las generaciones futuras la alteración del cielo oscuro?',
+        perspectivaRelacionada: 'Tu argumento',
+        placeholder: 'Escribe tu argumento en 2 o 3 líneas...',
+        siguienteNodoId: 'fin_dialogo',
+      },
+      rama_b_profundizacion: {
+        id: 'rama_b_profundizacion',
+        etiquetaPaso: 'Pregunta 2 de 2 · Ruta No',
+        tipo: 'alternativa',
+        pregunta:
+          'Si rechazas la megaconstelación, ¿qué alternativa ofreces a las zonas rurales sin internet?',
+        perspectivaRelacionada: 'Necesidades actuales',
+        alternativas: [
+          {
+            id: 'b1_alternativas_terrestres',
+            etiquetaCorta: 'Redes terrestres y menos satélites',
+            texto: 'Usar fibra óptica y constelaciones pequeñas sin inundar la órbita.',
+            siguienteNodoId: 'rama_b_abierta',
+          },
+          {
+            id: 'b2_moratoria_internacional',
+            etiquetaCorta: 'Esperar un tratado internacional',
+            texto: 'Pausar los lanzamientos masivos hasta acordar reglas globales justas.',
+            siguienteNodoId: 'rama_b_abierta',
+          },
+        ],
+      },
+      rama_b_abierta: {
+        id: 'rama_b_abierta',
+        etiquetaPaso: 'Síntesis de tu rama',
+        tipo: 'respuesta_abierta',
+        pregunta: '¿Por qué el cielo nocturno y la órbita no deben sacrificarse por telecomunicaciones?',
+        perspectivaRelacionada: 'Tu argumento',
+        placeholder: 'Escribe tu argumento en 2 o 3 líneas...',
+        siguienteNodoId: 'fin_dialogo',
+      },
+      rama_c_profundizacion: {
+        id: 'rama_c_profundizacion',
+        etiquetaPaso: 'Pregunta 2 de 2 · Ruta Depende',
+        tipo: 'alternativa',
+        pregunta:
+          'Si exigir satélites oscuros encarece el servicio para zonas rurales, ¿quién debe asumir ese costo?',
+        perspectivaRelacionada: 'Distribución de costos',
+        alternativas: [
+          {
+            id: 'c1_absorber_empresa',
+            etiquetaCorta: 'La empresa operadora',
+            texto: 'Quien usa un bien común debe asumir el costo de no dañarlo.',
+            siguienteNodoId: 'rama_c_abierta',
+          },
+          {
+            id: 'c2_cofinanciamiento_publico',
+            etiquetaCorta: 'Subsidio público con reglas',
+            texto: 'El Estado puede subsidiar zonas rurales exigiendo protección astronómica.',
+            siguienteNodoId: 'rama_c_abierta',
+          },
+        ],
+      },
+      rama_c_abierta: {
+        id: 'rama_c_abierta',
+        etiquetaPaso: 'Síntesis de tu rama',
+        tipo: 'respuesta_abierta',
+        pregunta: '¿Quién debería fijar el límite de satélites en órbita y bajo qué criterios?',
+        perspectivaRelacionada: 'Tu argumento',
+        placeholder: 'Escribe tu argumento en 2 o 3 líneas...',
+        siguienteNodoId: 'fin_dialogo',
+      },
+    },
+
+    experimentosMentales: [
+      {
+        id: 'exp_orb_1',
+        titulo: '1. Uso mayoritario para finanzas de alta velocidad',
+        escenarioHipotetico:
+          'El 85 % de la red se usará para transacciones bursátiles rápidas en países ricos y solo el 15 % para zonas rurales.',
+        pregunta: '¿Mantienes tu postura sobre autorizar el uso de la órbita?',
+        tensionFilosofica: 'Necesidad social vs. lucro privado.',
+      },
+      {
+        id: 'exp_orb_2',
+        titulo: '2. Dificultad para detectar asteroides peligrosos',
+        escenarioHipotetico:
+          'Las trazas luminosas reducen en un 40 % la capacidad de detectar a tiempo asteroides con riesgo de impacto.',
+        pregunta: '¿Cambia tu evaluación ante este riesgo planetario?',
+        tensionFilosofica: 'Conectividad vs. seguridad colectiva.',
+      },
+    ],
+
+    perspectivas: {
+      utilitarismo: {
+        nombre: 'Utilitarismo',
+        subtitulo: 'Conectividad frente a riesgo orbital',
+        autores: 'Mill · Singer',
+        interpretacion:
+          'Pondera el beneficio de conectar zonas aisladas frente al daño a la astronomía y el riesgo de colisiones.',
+        posturasPosibles: [
+          {
+            postura: 'Despliegue mínimo necesario',
+            razon: 'Permitir solo los satélites indispensables con bajo brillo.',
+          },
+        ],
+        preguntasPropias: [
+          '¿El beneficio del internet satelital compensa degradar la observación del universo?',
+        ],
+        objecion: 'Priorizar solo la comodidad actual puede arruinar la órbita para las próximas generaciones.',
+      },
+      deontologia: {
+        nombre: 'Deontología',
+        subtitulo: 'Respeto a los bienes comunes',
+        autores: 'Kant · Ostrom',
+        interpretacion:
+          'Ningún actor debe apropiarse unilateralmente de una órbita común bajo una regla que colapsaría el espacio si todos la imitaran.',
+        posturasPosibles: [
+          {
+            postura: 'Deber de no saturar la órbita',
+            razon: 'La órbita no pertenece a quien llega primero.',
+          },
+        ],
+        preguntasPropias: [
+          '¿Podrían todas las empresas lanzar 15.000 satélites sin destruir la seguridad orbital?',
+        ],
+        objecion: 'No es legítimo invocar a comunidades rurales sin garantizarles acceso real ni cuidar el cielo.',
+      },
+      justiciaDistributiva: {
+        nombre: 'Justicia distributiva',
+        subtitulo: 'Equidad en el acceso a la órbita',
+        autores: 'Rawls · Sen',
+        interpretacion:
+          'Cuestiona que empresas privadas capturen las mejores órbitas mientras socializan la pérdida del cielo oscuro.',
+        posturasPosibles: [
+          {
+            postura: 'Cuotas orbitales y tarifa social',
+            razon: 'Reservar capacidad orbital para países en desarrollo.',
+          },
+        ],
+        preguntasPropias: [
+          '¿Por qué toda la humanidad asume el costo ambiental si las ganancias son privadas?',
+        ],
+        objecion: 'El principio de «primero en llegar» excluye del espacio a los países en desarrollo.',
+      },
+    },
+
+    objecionesPorRuta: {
+      ruta_a_si: {
+        titulo: 'Objeción a tu postura (Ruta Sí)',
+        posturaDetectada: 'Priorizas el despliegue satelital por sus beneficios de conectividad.',
+        objecionPrincipal:
+          '«Si una sola corporación ocupa miles de posiciones orbitales, ¿no privatiza de hecho un bien común e impide el acceso futuro de otros países?»',
+        perspectivaObjecion: 'Justicia distributiva',
+      },
+      ruta_b_no: {
+        titulo: 'Objeción a tu postura (Ruta No)',
+        posturaDetectada: 'Defiendes bloquear la megaconstelación para proteger el cielo y la órbita.',
+        objecionPrincipal:
+          '«Para comunidades aisladas sin fibra óptica, el internet satelital significa educación y telemedicina hoy. ¿Es justo negarles ese acceso?»',
+        perspectivaObjecion: 'Utilitarismo',
+      },
+      ruta_c_depende: {
+        titulo: 'Objeción a tu postura (Ruta Depende)',
+        posturaDetectada: 'Autorizas la red bajo condiciones técnicas y sociales.',
+        objecionPrincipal:
+          '«Sin una autoridad espacial con poder de sanción, las empresas pueden registrar sus satélites en países con reglas laxas. ¿Cómo evitar que tus condiciones sean letra muerta?»',
+        perspectivaObjecion: 'Gobernanza global',
+      },
+    },
+  },
+
+  // =========================================================================
+  // CASO 03: BASURA ESPACIAL
+  // =========================================================================
+  {
+    id: 'basura-espacial',
+    numero: '03',
+    titulo: '¿Quién debe hacerse cargo de la basura espacial?',
+    subtitulo:
+      '¿Deben pagar la limpieza orbital quienes contaminaron históricamente o todos los países que hoy usan el espacio?',
+    tema: 'Responsabilidad histórica y riesgo orbital',
+    modo3D: 'basura',
+    tipoIlustracion: 'basura',
+    destacado: false,
+
+    contexto: {
+      escenario:
+        'Para evitar una cascada de colisiones (síndrome de Kessler), se propone un Fondo Mundial de Limpieza Orbital. Las potencias plantean que todos paguen una tasa igual por lanzamiento; los países emergentes exigen que paguen quienes generaron el 85 % de los desechos actuales.',
+      conflictoEtico:
+        'Urgencia de limpiar la órbita común frente a la justicia histórica («quien contaminó paga»).',
+      evidenciaCientifica: [
+        'Más de 36.000 fragmentos mayores a 10 cm orbitan a 28.000 km/h.',
+        'Una colisión en cadena inutilizaría órbitas vitales para satélites climáticos y de comunicación.',
+      ],
+      supuestosEscenario: [
+        'Retirar los 50 restos más peligrosos cuesta 3.000 millones de dólares anuales.',
+        'Una tasa uniforme encarecería un 35 % el primer satélite climático de países emergentes.',
+      ],
+    },
+
+    actores: [
+      {
+        id: 'potencias-espaciales',
+        nombre: 'Potencias espaciales',
+        rol: 'Actores históricos',
+        intereses: 'Repartir el costo de limpieza entre todos los operadores actuales.',
+        argumentoCentral: '«La seguridad orbital actual nos beneficia y exige aportes de todos por igual.»',
+      },
+      {
+        id: 'paises-emergentes',
+        nombre: 'Países emergentes',
+        rol: 'Nuevos usuarios orbitales',
+        intereses: 'Lanzar satélites de monitoreo climático y social sin pagar deuda ajena.',
+        argumentoCentral: '«No es justo cobrar igual a quien lanza su primer satélite que a quien dejó miles de desechos.»',
+      },
+    ],
+
+    capsulas: [
+      {
+        titulo: 'Síndrome de Kessler',
+        contenido:
+          'Escenario en que los choques entre objetos en órbita generan una reacción en cadena de fragmentos que vuelve intransitable el espacio cercano.',
+      },
+    ],
+
+    nodoInicialId: 'nodo_inicial',
+    nodosDialogo: {
+      nodo_inicial: {
+        id: 'nodo_inicial',
+        etiquetaPaso: 'Pregunta 1 de 2',
+        tipo: 'alternativa',
+        pregunta:
+          '¿Deben pagar la limpieza espacial únicamente las potencias y empresas que generaron históricamente los desechos?',
+        perspectivaRelacionada: 'Punto de partida',
+        alternativas: [
+          {
+            id: 'ruta_a_si',
+            etiquetaCorta: 'Sí',
+            texto: 'Quien generó la basura espacial y se benefició de ella debe pagar su retiro.',
+            principioSugerido: 'Responsabilidad histórica («quien contamina paga»)',
+            siguienteNodoId: 'rama_a_profundizacion',
+          },
+          {
+            id: 'ruta_b_no',
+            etiquetaCorta: 'No',
+            texto: 'Todos los usuarios actuales deben aportar para evitar una catástrofe orbital.',
+            principioSugerido: 'Corresponsabilidad pragmática ante una emergencia común',
+            siguienteNodoId: 'rama_b_profundizacion',
+          },
+          {
+            id: 'ruta_c_depende',
+            etiquetaCorta: 'Depende',
+            texto: 'Aportes diferenciados según el historial de desechos y la capacidad económica.',
+            principioSugerido: 'Responsabilidades comunes pero diferenciadas',
+            siguienteNodoId: 'rama_c_profundizacion',
+          },
+        ],
+      },
+      rama_a_profundizacion: {
+        id: 'rama_a_profundizacion',
+        etiquetaPaso: 'Pregunta 2 de 2 · Ruta Sí',
+        tipo: 'alternativa',
+        pregunta:
+          'Si las potencias se niegan a pagar el 100 % y el riesgo de choque aumenta, ¿debemos esperar aunque colapse la órbita?',
+        perspectivaRelacionada: 'Justicia vs. urgencia',
+        alternativas: [
+          {
+            id: 'a1_sanciones_y_obligacion',
+            etiquetaCorta: 'Bloquear nuevos lanzamientos',
+            texto: 'Condicionar las licencias de las potencias a que retiren antes su basura.',
+            siguienteNodoId: 'rama_a_abierta',
+          },
+          {
+            id: 'a2_fondo_emergencia',
+            etiquetaCorta: 'Limpiar ahora con deuda exigible',
+            texto: 'Actuar de urgencia, pero cobrando legalmente la deuda a los responsables.',
+            siguienteNodoId: 'rama_a_abierta',
+          },
+        ],
+      },
+      rama_a_abierta: {
+        id: 'rama_a_abierta',
+        etiquetaPaso: 'Síntesis de tu rama',
+        tipo: 'respuesta_abierta',
+        pregunta: '¿Por qué no debe diluirse la responsabilidad histórica aunque el riesgo afecte a todos?',
+        perspectivaRelacionada: 'Tu argumento',
+        placeholder: 'Escribe tu argumento en 2 o 3 líneas...',
+        siguienteNodoId: 'fin_dialogo',
+      },
+      rama_b_profundizacion: {
+        id: 'rama_b_profundizacion',
+        etiquetaPaso: 'Pregunta 2 de 2 · Ruta No',
+        tipo: 'alternativa',
+        pregunta:
+          'Si todos pagan igual al lanzar hoy, ¿no se penaliza injustamente a países pobres que no causaron el problema?',
+        perspectivaRelacionada: 'Equidad internacional',
+        alternativas: [
+          {
+            id: 'b1_prioridad_seguridad',
+            etiquetaCorta: 'Todo nuevo satélite añade riesgo',
+            texto: 'Quien use la órbita hoy debe cumplir el mismo estándar de seguridad.',
+            siguienteNodoId: 'rama_b_abierta',
+          },
+          {
+            id: 'b2_eximir_primeros_satelites',
+            etiquetaCorta: 'Eximir satélites públicos básicos',
+            texto: 'Cobrar a operadores comerciales y eximir los primeros satélites de países emergentes.',
+            siguienteNodoId: 'rama_b_abierta',
+          },
+        ],
+      },
+      rama_b_abierta: {
+        id: 'rama_b_abierta',
+        etiquetaPaso: 'Síntesis de tu rama',
+        tipo: 'respuesta_abierta',
+        pregunta: '¿Por qué priorizas la eficacia inmediata de la limpieza sobre la culpa histórica?',
+        perspectivaRelacionada: 'Tu argumento',
+        placeholder: 'Escribe tu argumento en 2 o 3 líneas...',
+        siguienteNodoId: 'fin_dialogo',
+      },
+      rama_c_profundizacion: {
+        id: 'rama_c_profundizacion',
+        etiquetaPaso: 'Pregunta 2 de 2 · Ruta Depende',
+        tipo: 'alternativa',
+        pregunta: '¿Qué criterio debe pesar más para calcular el aporte de cada país o empresa?',
+        perspectivaRelacionada: 'Criterio distributivo',
+        alternativas: [
+          {
+            id: 'c1_masa_en_orbita',
+            etiquetaCorta: 'Cantidad de objetos en órbita',
+            texto: 'Pagar en proporción directa a la masa y restos que cada actor mantiene en órbita.',
+            siguienteNodoId: 'rama_c_abierta',
+          },
+          {
+            id: 'c2_transferencia_tecnologica',
+            etiquetaCorta: 'Financiamiento + tecnología abierta',
+            texto: 'Que las potencias limpien restos antiguos y cedan tecnología a países emergentes.',
+            siguienteNodoId: 'rama_c_abierta',
+          },
+        ],
+      },
+      rama_c_abierta: {
+        id: 'rama_c_abierta',
+        etiquetaPaso: 'Síntesis de tu rama',
+        tipo: 'respuesta_abierta',
+        pregunta: '¿Cómo lograrías que tanto las potencias como los países emergentes acepten tu regla?',
+        perspectivaRelacionada: 'Tu argumento',
+        placeholder: 'Escribe tu argumento en 2 o 3 líneas...',
+        siguienteNodoId: 'fin_dialogo',
+      },
+    },
+
+    experimentosMentales: [
+      {
+        id: 'exp_bas_1',
+        titulo: '1. Tecnología limpiadora de doble uso militar',
+        escenarioHipotetico:
+          'Las naves con brazos robóticos para retirar basura también pueden usarse para capturar satélites de otros países.',
+        pregunta: '¿Quién debería controlar esas naves limpiadoras?',
+        tensionFilosofica: 'Limpieza orbital vs. seguridad geopolítica.',
+      },
+      {
+        id: 'exp_bas_2',
+        titulo: '2. Fragmento de origen desconocido',
+        escenarioHipotetico:
+          'Un resto antiguo no identificado amenaza con destruir mañana un satélite que alerta sobre huracanes.',
+        pregunta: 'Cuando no se conoce al culpable, ¿quién debe pagar el rescate?',
+        tensionFilosofica: 'Culpa histórica vs. protección inmediata de vidas.',
+      },
+    ],
+
+    perspectivas: {
+      utilitarismo: {
+        nombre: 'Utilitarismo',
+        subtitulo: 'Evitar el colapso orbital',
+        autores: 'Bentham · Singer',
+        interpretacion:
+          'Busca reducir cuanto antes el riesgo de colisiones que destruirían satélites climáticos y de comunicación.',
+        posturasPosibles: [
+          {
+            postura: 'Limpieza inmediata financiada por quienes pueden pagar',
+            razon: 'Prioriza salvar la órbita sin demoras diplomáticas.',
+          },
+        ],
+        preguntasPropias: ['¿Qué mecanismo logra retirar más basura peligrosa en menos tiempo?'],
+        objecion: 'Ignorar la responsabilidad histórica premia a quienes contaminaron sin cuidado.',
+      },
+      deontologia: {
+        nombre: 'Deontología',
+        subtitulo: 'Deber de reparar el daño causado',
+        autores: 'Kant · Jonas',
+        interpretacion:
+          'Quien genera un daño o riesgo en un espacio común tiene el deber moral directo de repararlo.',
+        posturasPosibles: [
+          {
+            postura: 'Obligación estricta del contaminador',
+            razon: 'No es moralmente legítimo transferir la propia culpa a terceros.',
+          },
+        ],
+        preguntasPropias: ['¿Es justo cobrar a países inocentes por desechos que no lanzaron?'],
+        objecion: '¿Qué hacer con los restos de hace 50 años cuyos responsables ya no existen?',
+      },
+      justiciaDistributiva: {
+        nombre: 'Justicia distributiva',
+        subtitulo: 'Cargas proporcionales y derecho al desarrollo',
+        autores: 'Rawls · Shue',
+        interpretacion:
+          'Reparte el costo según la contribución histórica al problema y protege el acceso espacial de los países emergentes.',
+        posturasPosibles: [
+          {
+            postura: 'Fondo progresivo con exención básica',
+            razon: 'Aporta más quien más objetos lanzó y se protege el desarrollo emergente.',
+          },
+        ],
+        preguntasPropias: ['¿Cómo limpiar la órbita sin bloquear el acceso de los países en desarrollo?'],
+        objecion: 'Las disputas sobre porcentajes pueden retrasar una limpieza urgente.',
+      },
+    },
+
+    objecionesPorRuta: {
+      ruta_a_si: {
+        titulo: 'Objeción a tu postura (Ruta Sí)',
+        posturaDetectada: 'Exiges que paguen únicamente quienes generaron la basura histórica.',
+        objecionPrincipal:
+          '«Muchos restos peligrosos son huérfanos o de hace medio siglo. Si nadie asume su retiro, ¿dejaremos que colapse la órbita por mantener un principio rígido?»',
+        perspectivaObjecion: 'Utilitarismo',
+      },
+      ruta_b_no: {
+        titulo: 'Objeción a tu postura (Ruta No)',
+        posturaDetectada: 'Propones que todos los usuarios actuales paguen para limpiar la órbita.',
+        objecionPrincipal:
+          '«Hacer que un país con necesidades urgentes pague sobrecostos por los cohetes que abandonaron las superpotencias obliga a los más vulnerables a subsidiar a los más ricos.»',
+        perspectivaObjecion: 'Justicia distributiva',
+      },
+      ruta_c_depende: {
+        titulo: 'Objeción a tu postura (Ruta Depende)',
+        posturaDetectada: 'Planteas cuotas diferenciadas según historial y capacidad.',
+        objecionPrincipal:
+          '«En la crisis climática terrestre, discutir cuánto debe pagar cada país ha bloqueado acuerdos durante décadas. ¿Cómo evitar esa parálisis en la órbita?»',
+        perspectivaObjecion: 'Pragmatismo ético',
+      },
+    },
+  },
+
+  // =========================================================================
+  // CASO 04: RECURSOS DE LA LUNA
+  // =========================================================================
+  {
+    id: 'recursos-luna',
+    numero: '04',
+    titulo: '¿Es ético explotar los recursos de la Luna?',
+    subtitulo:
+      'Extracción de hielo en el Polo Sur Lunar frente a la preservación científica y el patrimonio común.',
+    tema: 'Minería lunar y bienes comunes',
+    modo3D: 'luna',
+    tipoIlustracion: 'luna',
+    destacado: false,
+
+    contexto: {
+      escenario:
+        'Agencias y empresas planean extraer hielo de agua en el Polo Sur Lunar para fabricar combustible espacial. Científicos advierten que esos cráteres guardan un registro único de 4.000 millones de años y que los primeros en instalarse acapararán los pocos sitios con agua y luz.',
+      conflictoEtico:
+        'Aprovechar recursos lunares para impulsar misiones frente a preservar un archivo científico irreemplazable y el acceso equitativo.',
+      evidenciaCientifica: [
+        'El hielo lunar se concentra en unos pocos cráteres oscuros a menos de -160 °C.',
+        'Los picos con luz solar continua junto a esos cráteres abarcan apenas unos kilómetros cuadrados.',
+      ],
+      supuestosEscenario: [
+        'La minería alteraría de forma irreversible el hielo cercano antes de su estudio científico.',
+        'Las primeras bases establecerían zonas de exclusión sobre los cráteres más ricos.',
+      ],
+    },
+
+    actores: [
+      {
+        id: 'consorcio-minero',
+        nombre: 'Consorcios mineros',
+        rol: 'Extracción de recursos',
+        intereses: 'Producir agua y combustible en la Luna para abaratar los viajes espaciales.',
+        argumentoCentral: '«Usar recursos del espacio es indispensable para no agotar los de la Tierra.»',
+      },
+      {
+        id: 'cientificos-planetarios',
+        nombre: 'Comunidad científica',
+        rol: 'Ciencia planetaria',
+        intereses: 'Estudiar el hielo primordial antes de que la actividad industrial lo contamine.',
+        argumentoCentral: '«Esos cráteres son una biblioteca única del sistema solar; quemar su hielo es irreparable.»',
+      },
+      {
+        id: 'naciones-sur-global',
+        nombre: 'Países sin alunizaje',
+        rol: 'Defensa del bien común',
+        intereses: 'Evitar que los pocos sitios con agua sean acaparados por quienes lleguen primero.',
+        argumentoCentral: '«Ocupar los únicos cráteres con agua y luz equivale a una apropiación de hecho.»',
+      },
+    ],
+
+    capsulas: [
+      {
+        titulo: 'Tratado del Espacio Exterior (1967)',
+        contenido:
+          'Prohíbe reclamar soberanía nacional sobre la Luna, pero mantiene un vacío legal sobre la extracción comercial de sus recursos.',
+      },
+    ],
+
+    nodoInicialId: 'nodo_inicial',
+    nodosDialogo: {
+      nodo_inicial: {
+        id: 'nodo_inicial',
+        etiquetaPaso: 'Pregunta 1 de 2',
+        tipo: 'alternativa',
+        pregunta:
+          '¿Es justificable extraer hielo del Polo Sur Lunar aunque altere sitios científicos únicos y favorezca a quienes lleguen primero?',
+        perspectivaRelacionada: 'Punto de partida',
+        alternativas: [
+          {
+            id: 'ruta_a_si',
+            etiquetaCorta: 'Sí',
+            texto: 'Aprovechar los recursos lunares es necesario para el avance espacial.',
+            principioSugerido: 'Uso de recursos extraterrestres para el progreso humano',
+            siguienteNodoId: 'rama_a_profundizacion',
+          },
+          {
+            id: 'ruta_b_no',
+            etiquetaCorta: 'No',
+            texto: 'La Luna debe preservarse como santuario científico y patrimonio común.',
+            principioSugerido: 'Preservación científica e inalienabilidad de bienes comunes',
+            siguienteNodoId: 'rama_b_profundizacion',
+          },
+          {
+            id: 'ruta_c_depende',
+            etiquetaCorta: 'Depende',
+            texto: 'Solo bajo reglas internacionales que protejan zonas científicas y acceso justo.',
+            principioSugerido: 'Gobernanza internacional y reservas científicas',
+            siguienteNodoId: 'rama_c_profundizacion',
+          },
+        ],
+      },
+      rama_a_profundizacion: {
+        id: 'rama_a_profundizacion',
+        etiquetaPaso: 'Pregunta 2 de 2 · Ruta Sí',
+        tipo: 'alternativa',
+        pregunta:
+          'Como los sitios con agua en la Luna son muy escasos, ¿qué ocurre con los países que aún no tienen tecnología para llegar?',
+        perspectivaRelacionada: 'Justicia global',
+        alternativas: [
+          {
+            id: 'a1_incentivo_inversion',
+            etiquetaCorta: 'Premiar a quien asume el costo',
+            texto: 'Quien invierte y arriesga para llegar primero merece prioridad de uso.',
+            siguienteNodoId: 'rama_a_abierta',
+          },
+          {
+            id: 'a2_compartir_infraestructura',
+            etiquetaCorta: 'Obligación de compartir recursos',
+            texto: 'Permitir la extracción, pero compartiendo agua y datos con misiones de otros países.',
+            siguienteNodoId: 'rama_a_abierta',
+          },
+        ],
+      },
+      rama_a_abierta: {
+        id: 'rama_a_abierta',
+        etiquetaPaso: 'Síntesis de tu rama',
+        tipo: 'respuesta_abierta',
+        pregunta: '¿Por qué consideras legítimo transformar un entorno celeste intacto en fuente de recursos?',
+        perspectivaRelacionada: 'Tu argumento',
+        placeholder: 'Escribe tu argumento en 2 o 3 líneas...',
+        siguienteNodoId: 'fin_dialogo',
+      },
+      rama_b_profundizacion: {
+        id: 'rama_b_profundizacion',
+        etiquetaPaso: 'Pregunta 2 de 2 · Ruta No',
+        tipo: 'alternativa',
+        pregunta:
+          '¿Debería prohibirse incluso extraer agua en pequeña escala para sostener una base científica internacional?',
+        perspectivaRelacionada: 'Límites de preservación',
+        alternativas: [
+          {
+            id: 'b1_modelo_antartico',
+            etiquetaCorta: 'Permitir solo uso científico mínimo',
+            texto: 'Como en la Antártida: prohibir la minería comercial y permitir solo investigación.',
+            siguienteNodoId: 'rama_b_abierta',
+          },
+          {
+            id: 'b2_preservacion_total',
+            etiquetaCorta: 'No tocar los cráteres con hielo',
+            texto: 'Mantener intactos los cráteres polares hasta estudiarlos sin contaminación.',
+            siguienteNodoId: 'rama_b_abierta',
+          },
+        ],
+      },
+      rama_b_abierta: {
+        id: 'rama_b_abierta',
+        etiquetaPaso: 'Síntesis de tu rama',
+        tipo: 'respuesta_abierta',
+        pregunta: '¿Qué valor ético o científico se perdería si tratamos a la Luna como una mina?',
+        perspectivaRelacionada: 'Tu argumento',
+        placeholder: 'Escribe tu argumento en 2 o 3 líneas...',
+        siguienteNodoId: 'fin_dialogo',
+      },
+      rama_c_profundizacion: {
+        id: 'rama_c_profundizacion',
+        etiquetaPaso: 'Pregunta 2 de 2 · Ruta Depende',
+        tipo: 'alternativa',
+        pregunta:
+          'Varias potencias planean alunizar antes de que exista un tratado global. ¿Qué debería hacerse mientras tanto?',
+        perspectivaRelacionada: 'Gobernanza',
+        alternativas: [
+          {
+            id: 'c1_moratoria_previa',
+            etiquetaCorta: 'Moratoria hasta lograr el tratado',
+            texto: 'Suspender toda extracción hasta acordar reglas multilaterales.',
+            siguienteNodoId: 'rama_c_abierta',
+          },
+          {
+            id: 'c2_cuotas_provisionales',
+            etiquetaCorta: 'Proteger ya los cráteres principales',
+            texto: 'Declarar reservas científicas intangibles y permitir pruebas en una sola zona.',
+            siguienteNodoId: 'rama_c_abierta',
+          },
+        ],
+      },
+      rama_c_abierta: {
+        id: 'rama_c_abierta',
+        etiquetaPaso: 'Síntesis de tu rama',
+        tipo: 'respuesta_abierta',
+        pregunta: '¿Qué regla concreta equilibraría la ciencia, la equidad entre países y el uso de recursos?',
+        perspectivaRelacionada: 'Tu argumento',
+        placeholder: 'Escribe tu argumento en 2 o 3 líneas...',
+        siguienteNodoId: 'fin_dialogo',
+      },
+    },
+
+    experimentosMentales: [
+      {
+        id: 'exp_lun_1',
+        titulo: '1. Recurso lunar para energía limpia en la Tierra',
+        escenarioHipotetico:
+          'El recurso extraído no se usa para cohetes, sino para generar energía limpia y barata para países con crisis energética.',
+        pregunta: '¿Cambiaría tu evaluación si resuelve una urgencia terrestre?',
+        tensionFilosofica: 'Preservación lunar vs. bienestar ambiental en la Tierra.',
+      },
+      {
+        id: 'exp_lun_2',
+        titulo: '2. Hallazgo de compuestos del origen de la vida',
+        escenarioHipotetico:
+          'El cráter elegido para la planta minera contiene moléculas orgánicas intactas clave para entender cómo surgió la vida en la Tierra.',
+        pregunta: '¿Mantendrías la extracción en ese cráter?',
+        tensionFilosofica: 'Utilidad técnica vs. conocimiento irreemplazable.',
+      },
+    ],
+
+    perspectivas: {
+      utilitarismo: {
+        nombre: 'Utilitarismo',
+        subtitulo: 'Utilidad técnica frente a valor científico',
+        autores: 'Mill · Singer',
+        interpretacion:
+          'Pondera si usar el hielo como combustible genera mayor beneficio futuro que conservar intacto ese registro científico.',
+        posturasPosibles: [
+          {
+            postura: 'Zonificación equilibrada',
+            razon: 'Proteger los cráteres de mayor valor científico y usar zonas secundarias.',
+          },
+        ],
+        preguntasPropias: ['¿Qué uso del hielo lunar aporta un beneficio más duradero a la humanidad?'],
+        objecion: 'Quemar un archivo de 4.000 millones de años destruye un saber único por ahorro técnico.',
+      },
+      deontologia: {
+        nombre: 'Deontología',
+        subtitulo: 'Prohibición de apropiación encubierta',
+        autores: 'Kant · Jonas',
+        interpretacion:
+          'Exige respetar de buena fe el principio de no apropiación del espacio y no destruir patrimonio irreemplazable.',
+        posturasPosibles: [
+          {
+            postura: 'Rechazo a las zonas de exclusión',
+            razon: 'Acaparar los únicos cráteres con agua vulnera el derecho común.',
+          },
+        ],
+        preguntasPropias: ['¿Puede una empresa apropiarse de recursos de un patrimonio común?'],
+        objecion: 'Llamar «zona de seguridad» al control exclusivo de un cráter viola la equidad internacional.',
+      },
+      justiciaDistributiva: {
+        nombre: 'Justicia distributiva',
+        subtitulo: 'Patrimonio común de la humanidad',
+        autores: 'Rawls · Ostrom',
+        interpretacion:
+          'Critica que la ventaja tecnológica permita a pocos países capturar recursos escasos antes de que otros puedan acceder.',
+        posturasPosibles: [
+          {
+            postura: 'Régimen internacional compartido',
+            razon: 'Compartir muestras, datos y beneficios con países en desarrollo.',
+          },
+        ],
+        preguntasPropias: ['¿Cómo evitar que la explotación lunar cree una nueva desigualdad colonial?'],
+        objecion: 'La regla de «quien llega primero se lo queda» consolida la desigualdad global.',
+      },
+    },
+
+    objecionesPorRuta: {
+      ruta_a_si: {
+        titulo: 'Objeción a tu postura (Ruta Sí)',
+        posturaDetectada: 'Defiendes extraer los recursos del Polo Sur Lunar.',
+        objecionPrincipal:
+          '«Los cráteres con hielo son escasos e irrepetibles. Si los primeros en llegar los consumen, destruirán un registro científico único y excluirán al resto de los países.»',
+        perspectivaObjecion: 'Justicia distributiva',
+      },
+      ruta_b_no: {
+        titulo: 'Objeción a tu postura (Ruta No)',
+        posturaDetectada: 'Propones preservar la Luna sin extracción de recursos.',
+        objecionPrincipal:
+          '«Sin usar agua lunar para soporte vital y combustible, incluso mantener una base científica pública requerirá decenas de lanzamientos contaminantes desde la Tierra.»',
+        perspectivaObjecion: 'Utilitarismo',
+      },
+      ruta_c_depende: {
+        titulo: 'Objeción a tu postura (Ruta Depende)',
+        posturaDetectada: 'Condicionas la extracción a un acuerdo internacional previo.',
+        objecionPrincipal:
+          '«Las grandes potencias ya rechazaron en 1979 el Acuerdo de la Luna para compartir recursos. ¿Qué harías si se niegan a aceptar una autoridad internacional?»',
+        perspectivaObjecion: 'Realismo político',
       },
     },
   },
