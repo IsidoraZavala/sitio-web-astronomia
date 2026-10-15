@@ -1,0 +1,93 @@
+{
+  "titulo": "Test de afinidad filosófica preliminar",
+  "descripcion": "Compara tus valoraciones éticas con las posiciones de tres tradiciones de pensamiento contemporáneas. Responde cada afirmación según tu grado de acuerdo.",
+  "escala": [
+    { "valor": 1, "etiqueta": "Totalmente en desacuerdo" },
+    { "valor": 2, "etiqueta": "En desacuerdo" },
+    { "valor": 3, "etiqueta": "Ni de acuerdo ni en desacuerdo" },
+    { "valor": 4, "etiqueta": "De acuerdo" },
+    { "valor": 5, "etiqueta": "Totalmente de acuerdo" }
+  ],
+  "afirmaciones": [
+    {
+      "id": 1,
+      "numero": 1,
+      "texto": "Deberíamos evitar tecnologías cuyos riesgos futuros puedan ser graves, incluso si ofrecen beneficios importantes en el presente.",
+      "eje": "Precaución y riesgo futuro",
+      "autorRelevante": "Hans Jonas"
+    },
+    {
+      "id": 2,
+      "numero": 2,
+      "texto": "Las decisiones tecnológicas deben considerar especialmente sus efectos sobre las futuras generaciones.",
+      "eje": "Responsabilidad intergeneracional",
+      "autorRelevante": "Hans Jonas"
+    },
+    {
+      "id": 3,
+      "numero": 3,
+      "texto": "Una actividad tecnológica es más justificable cuando sus beneficios se distribuyen equitativamente.",
+      "eje": "Justicia distributiva",
+      "autorRelevante": "John Rawls"
+    },
+    {
+      "id": 4,
+      "numero": 4,
+      "texto": "Las desigualdades en el acceso a los beneficios tecnológicos requieren una justificación especial.",
+      "eje": "Equidad y diferencias admisibles",
+      "autorRelevante": "John Rawls"
+    },
+    {
+      "id": 5,
+      "numero": 5,
+      "texto": "Para evaluar una decisión, es fundamental considerar sus consecuencias sobre el bienestar de todos los afectados.",
+      "eje": "Consideración imparcial de intereses",
+      "autorRelevante": "Peter Singer"
+    },
+    {
+      "id": 6,
+      "numero": 6,
+      "texto": "Un perjuicio limitado podría justificarse si evita un daño considerablemente mayor.",
+      "eje": "Cálculo consecuencialista proporcional",
+      "autorRelevante": "Peter Singer"
+    },
+    {
+      "id": 7,
+      "numero": 7,
+      "texto": "La protección de la investigación científica debería formar parte de las responsabilidades de quienes desarrollan tecnologías espaciales.",
+      "eje": "Deber de cuidado y ciencia",
+      "autorRelevante": "Compartido (Jonas / Rawls)"
+    },
+    {
+      "id": 8,
+      "numero": 8,
+      "texto": "Las decisiones sobre el uso del espacio deberían considerar tanto los intereses presentes como los de quienes vivirán en el futuro.",
+      "eje": "Ética intertemporal",
+      "autorRelevante": "Compartido (Jonas / Singer)"
+    }
+  ],
+  "perfilesReferencia": {
+    "jonas": {
+      "autorId": "jonas",
+      "nombre": "Hans Jonas",
+      "respuestasIdeales": [5, 5, 3, 3, 4, 2, 5, 5],
+      "pesos": [1.5, 1.5, 0.8, 0.8, 1.0, 1.2, 1.2, 1.3],
+      "descripcionAfinidad": "Tu enfoque sintoniza con la ética de la responsabilidad: consideras vital imponer límites de precaución ante tecnologías que puedan comprometer el patrimonio natural, orbital o científico de futuras generaciones."
+    },
+    "rawls": {
+      "autorId": "rawls",
+      "nombre": "John Rawls",
+      "respuestasIdeales": [3, 4, 5, 5, 4, 3, 4, 4],
+      "pesos": [0.8, 1.0, 1.5, 1.5, 1.0, 0.9, 1.0, 1.0],
+      "descripcionAfinidad": "Tu enfoque sintoniza con la justicia como equidad: priorizas una distribución justa de los costos y beneficios de la actividad tecnológica, evitando que los intereses comerciales perjudiquen a observatorios o comunidades con menor poder de negociación."
+    },
+    "singer": {
+      "autorId": "singer",
+      "nombre": "Peter Singer",
+      "respuestasIdeales": [2, 4, 4, 4, 5, 5, 4, 4],
+      "pesos": [1.1, 1.0, 1.0, 1.0, 1.5, 1.5, 0.9, 1.0],
+      "descripcionAfinidad": "Tu enfoque sintoniza con el utilitarismo y el análisis de consecuencias: evalúas las decisiones buscando maximizar el bienestar global y reducir el daño tangible para todos los involucrados, con pragmatismo y flexibilidad ante alternativas."
+    }
+  },
+  "notaValidacion": "Aviso metodológico: Estas afirmaciones y ponderaciones son preliminares y de carácter educativo para este prototipo. No constituyen un test psicométrico validado y están sujetas a revisión por el equipo de filosofía."
+}

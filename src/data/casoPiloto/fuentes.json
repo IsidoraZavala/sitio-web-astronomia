@@ -1,0 +1,34 @@
+[
+  {
+    "id": "rubin-leo-faq",
+    "titulo": "Observatorio Vera C. Rubin — Preguntas frecuentes sobre satélites LEO",
+    "institucion": "Vera C. Rubin Observatory / NSF / NOIRLab",
+    "url": "https://rubinobservatory.org/for-scientists/frequently-asked-questions/leo-sats",
+    "descripcion": "Análisis del impacto de las megaconstelaciones de satélites de órbita baja en el sondeo Legacy Survey of Space and Time (LSST), trazos en sensores CCD y estrategias de mitigación por software y oscurecimiento de satélites.",
+    "temaRelacionado": "Astronomía óptica y trazas lumínicas"
+  },
+  {
+    "id": "astron-radio",
+    "titulo": "ASTRON — Radiación electromagnética no intencionada de constelaciones satelitales",
+    "institucion": "Netherlands Institute for Radio Astronomy",
+    "url": "https://www.astron.nl/starlink-satellites/",
+    "descripcion": "Estudio que documenta emisiones radioeléctricas no deseadas producidas por la electrónica de satélites en órbita baja, detectadas por el telescopio LOFAR e interfiriendo con investigaciones astronómicas.",
+    "temaRelacionado": "Radioastronomía e interferencia electromagnética"
+  },
+  {
+    "id": "iau-cps",
+    "titulo": "Centro de la Unión Astronómica Internacional para la Protección del Cielo Oscuro y Silencioso (CPS)",
+    "institucion": "International Astronomical Union (IAU)",
+    "url": "https://cps.iau.org/",
+    "descripcion": "Iniciativa internacional para coordinar la protección del cielo contra la interferencia de megaconstelaciones, impulsando diálogo con operadores espaciales y políticas ante la Comisión sobre la Utilización del Espacio Ultraterrestre con Fines Pacíficos de la ONU (COPUOS).",
+    "temaRelacionado": "Gobernanza orbital y cielo oscuro"
+  },
+  {
+    "id": "unoosa-treaty-1967",
+    "titulo": "Tratado del Espacio Ultraterrestre de 1967",
+    "institucion": "Naciones Unidas (UNOOSA)",
+    "url": "https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties/outerspacetreaty.html",
+    "descripcion": "Marco jurídico fundamental que establece que la exploración y utilización del espacio ultraterrestre debe hacerse en provecho e interés de todos los países y evitar la contaminación nociva.",
+    "temaRelacionado": "Marco legal internacional"
+  }
+]

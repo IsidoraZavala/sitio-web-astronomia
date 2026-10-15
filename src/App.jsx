@@ -4,6 +4,7 @@ import './design.css'
 import { AboutView } from './components/AboutView'
 import { CatalogView } from './components/CatalogView'
 import { DilemmaExperience } from './components/DilemmaExperience'
+import { PilotDilemmaExperience } from './components/PilotDilemmaExperience'
 import { HomeView } from './components/HomeView'
 import {
   IconBook,
@@ -153,15 +154,23 @@ function App() {
         )}
 
         {seccionActiva === 'experiencia-dilema' && dilemaSeleccionado && (
-          <DilemmaExperience
-            key={dilemaSeleccionado.id}
-            dilema={dilemaSeleccionado}
-            progresoInicial={progresoGuardado[dilemaSeleccionado.id]}
-            perspectivasBiblioteca={PERSPECTIVAS_BIBLIOTECA}
-            onSaveProgress={guardarProgresoDilema}
-            onBackToCatalog={() => navegarSeccion('catalogo')}
-            onGoToJourney={() => navegarSeccion('recorrido')}
-          />
+          dilemaSeleccionado.esPilotoNuevo || dilemaSeleccionado.id === 'megaconstelaciones-astronomia' ? (
+            <PilotDilemmaExperience
+              key={dilemaSeleccionado.id}
+              onVolverAlCatalogo={() => navegarSeccion('catalogo')}
+              onGuardarGlobal={guardarProgresoDilema}
+            />
+          ) : (
+            <DilemmaExperience
+              key={dilemaSeleccionado.id}
+              dilema={dilemaSeleccionado}
+              progresoInicial={progresoGuardado[dilemaSeleccionado.id]}
+              perspectivasBiblioteca={PERSPECTIVAS_BIBLIOTECA}
+              onSaveProgress={guardarProgresoDilema}
+              onBackToCatalog={() => navegarSeccion('catalogo')}
+              onGoToJourney={() => navegarSeccion('recorrido')}
+            />
+          )
         )}
 
         {seccionActiva === 'biblioteca' && (

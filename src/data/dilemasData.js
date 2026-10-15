@@ -1519,4 +1519,17 @@ export const DILEMAS_CATALOGO = [
       },
     },
   },
+  {
+    id: 'megaconstelaciones-astronomia',
+    numero: '05',
+    titulo:
+      '¿Deberíamos limitar las megaconstelaciones satelitales para proteger la investigación astronómica?',
+    subtitulo:
+      'El crecimiento acelerado de constelaciones de satélites frente a la protección de las observaciones científicas y el cielo nocturno.',
+    tema: 'Megaconstelaciones, astronomía y tecnología',
+    modo3D: 'orbita',
+    tipoIlustracion: 'orbita',
+    esPilotoNuevo: true,
+    destacado: true,
+  },
 ]

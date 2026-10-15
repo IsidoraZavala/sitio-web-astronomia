@@ -1,0 +1,110 @@
+[
+  {
+    "id": "jonas",
+    "nombre": "Hans Jonas",
+    "obraReferencia": "El principio de responsabilidad: Ensayo de una ética para la civilización tecnológica (1979 / ed. Herder)",
+    "enfoque": "Ética de la responsabilidad y principio de precaución",
+    "resumenArgumento": "Jonas sostiene que el poder tecnológico moderno tiene una escala y un alcance temporal sin precedentes que pueden amenazar las condiciones de vida futura. Frente a la incertidumbre sobre impactos a largo plazo, formula el principio de precaución y una 'heurística del temor': ante la posibilidad de daños irreversibles al entorno o a la herencia común de la humanidad, el deber de preservar el futuro debe prevalecer sobre las ventajas o lucros inmediatos.",
+    "aplicacionCaso": "Frente a las megaconstelaciones, la perspectiva jonasiana exige priorizar la prevención: no desplegar tecnología a escala masiva si arriesga saturar permanentemente el espacio orbital o impedir el estudio científico del cosmos para las próximas generaciones.",
+    "criterioCoincidencia": "Priorización de la prevención, preocupación por impactos acumulativos o irreversibles y defensa de las generaciones futuras.",
+    "criterioDiferencia": "Disposición a asumir riesgos ambientales u orbitales inciertos para obtener ventajas tecnológicas inmediatas.",
+    "citasClave": [
+      {
+        "cita": "Obra de tal modo que los efectos de tu acción sean compatibles con la permanencia de una vida auténticamente humana en la Tierra.",
+        "contexto": "El imperativo de la responsabilidad ante el poder tecnológico desmesurado.",
+        "referencia": "Capítulo I, §VI: El nuevo imperativo."
+      },
+      {
+        "cita": "La profecía de la desgracia es más importante que la profecía de la bienaventuranza; tenemos que prestar más oídos al peligro que a la promesa del progreso técnico sin límites.",
+        "contexto": "La heurística del temor: ante la incertidumbre de daños irreversibles, la cautela tiene prioridad moral.",
+        "referencia": "Capítulo II: Fines y valores en la era tecnológica."
+      }
+    ],
+    "fuentesAccesoAbierto": [
+      {
+        "titulo": "Stanford Encyclopedia of Philosophy — Environmental and Technological Ethics",
+        "url": "https://plato.stanford.edu/entries/ethics-environmental/",
+        "tipo": "Acceso abierto académico (SEP)",
+        "idioma": "Inglés (Revisión por pares)"
+      },
+      {
+        "titulo": "Dialnet — El principio de responsabilidad de Hans Jonas (Estudio abierto)",
+        "url": "https://dialnet.unirioja.es/servlet/articulo?codigo=2062590",
+        "tipo": "Artículo académico abierto en PDF",
+        "idioma": "Español"
+      }
+    ]
+  },
+  {
+    "id": "rawls",
+    "nombre": "John Rawls",
+    "obraReferencia": "Teoría de la justicia (1971 / Fondo de Cultura Económica)",
+    "enfoque": "Justicia distributiva, equidad y principio de la diferencia",
+    "resumenArgumento": "Rawls propone que una sociedad justa debe evaluarse desde una posición original de imparcialidad (bajo el 'velo de la ignorancia'). Cualquier desigualdad o política distributiva solo es éticamente admisible si mejora la situación de los miembros menos favorecidos de la comunidad y si todos tienen una igualdad equitativa de oportunidades.",
+    "aplicacionCaso": "En el caso de las megaconstelaciones, la perspectiva rawlsiana examina si el acceso a internet satelital beneficia efectivamente a quienes carecen de conectividad básica o si reproduce asimetrías: donde empresas de potencias tecnológicas obtienen ganancias privadas mientras los observatorios de todo el mundo —muchos en países en desarrollo como Chile— sufren los costos de contaminación visual y electromagnética.",
+    "criterioCoincidencia": "Énfasis en la equidad distributiva, compensación a partes afectadas y prioridad en beneficiar a sectores vulnerables.",
+    "criterioDiferencia": "Aceptación de que el beneficio de una mayoría o potencia económica justifique imponer costos no compensados a otros.",
+    "citasClave": [
+      {
+        "cita": "Las desigualdades sociales y económicas habrán de disponerse de tal modo que sean para el mayor beneficio de los miembros menos aventajados de la sociedad.",
+        "contexto": "El principio de la diferencia: la justificación moral de cualquier asimetría tecnológica o económica.",
+        "referencia": "Capítulo II, §13: La igualdad democrática y el principio de la diferencia."
+      },
+      {
+        "cita": "La justicia es la primera virtud de las instituciones sociales, como la verdad lo es de los sistemas de pensamiento; una ley o una política, por eficiente que sea, debe ser rechazada si es injusta.",
+        "contexto": "Prioridad irreductible de la justicia sobre la mera eficiencia comercial o técnica.",
+        "referencia": "Capítulo I, §1: El papel de la justicia."
+      }
+    ],
+    "fuentesAccesoAbierto": [
+      {
+        "titulo": "Stanford Encyclopedia of Philosophy — John Rawls",
+        "url": "https://plato.stanford.edu/entries/rawls/",
+        "tipo": "Acceso abierto académico (SEP)",
+        "idioma": "Inglés (Revisión por pares)"
+      },
+      {
+        "titulo": "Stanford Encyclopedia of Philosophy — Distributive Justice",
+        "url": "https://plato.stanford.edu/entries/justice-distributive/",
+        "tipo": "Acceso abierto académico (SEP)",
+        "idioma": "Inglés (Revisión por pares)"
+      }
+    ]
+  },
+  {
+    "id": "singer",
+    "nombre": "Peter Singer",
+    "obraReferencia": "Ética práctica (1979 / 2011, Cambridge University Press / Akal)",
+    "enfoque": "Utilitarismo de preferencias y consideración imparcial de intereses",
+    "resumenArgumento": "Singer defiende una postura consecuencialista en la que el criterio moral supremo es la satisfacción del mayor número de intereses y la minimización del sufrimiento, sin privilegiar intereses propios por nacionalidad, especie o distancia. Cada interés afectado debe ponderarse con igual valor.",
+    "aplicacionCaso": "Desde el enfoque consecuencialista de Singer, se debe sopesar objetivamente la balanza neta: conectar a millones de personas a servicios médicos, educativos y de emergencia frente a los costos de reprogramar observaciones astronómicas o perder ciertos descubrimientos. Sin embargo, si los impactos interfieren con la detección de asteroides peligrosos (un riesgo existencial global), la lógica utilitaria exige proteger la supervivencia colectiva.",
+    "criterioCoincidencia": "Evaluación pragmática basada en el bienestar neto de todos los afectados, balance de consecuencias y mitigación activa.",
+    "criterioDiferencia": "Oposición categórica e innegociable a tecnologías que producen un bienestar palpable y urgente para millones de personas.",
+    "citasClave": [
+      {
+        "cita": "El principio de la igual consideración de intereses nos obliga a dar el mismo peso en nuestras deliberaciones morales a los intereses de todos aquellos afectados por nuestras decisiones.",
+        "contexto": "Imparcialidad global: los intereses de una comunidad aislada y los de la comunidad científica deben sopesarse con la misma vara.",
+        "referencia": "Capítulo 2: Igualdad y sus implicaciones."
+      },
+      {
+        "cita": "Si está en nuestro poder evitar que algo muy malo ocurra, sin sacrificar con ello nada de comparable importancia moral, debemos, moralmente, hacerlo.",
+        "contexto": "El imperativo de mitigar daños graves y proteger la supervivencia colectiva.",
+        "referencia": "Famine, Affluence, and Morality / Ética práctica (Cap. 8)."
+      }
+    ],
+    "fuentesAccesoAbierto": [
+      {
+        "titulo": "Utilitarianism.net — Introducción completa al utilitarismo contemporáneo",
+        "url": "https://utilitarianism.net/",
+        "tipo": "Manual académico de acceso libre y gratuito",
+        "idioma": "Inglés / Traducción abierta"
+      },
+      {
+        "titulo": "Stanford Encyclopedia of Philosophy — Consequentialism",
+        "url": "https://plato.stanford.edu/entries/consequentialism/",
+        "tipo": "Acceso abierto académico (SEP)",
+        "idioma": "Inglés (Revisión por pares)"
+      }
+    ]
+  }
+]

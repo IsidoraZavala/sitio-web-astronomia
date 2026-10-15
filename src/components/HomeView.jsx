@@ -180,6 +180,28 @@ export function HomeView({
               </button>
             </div>
           </article>
+
+          <article className="dilemma-catalog-card" style={{ borderColor: 'var(--accent-amber)' }}>
+            <div className="dilemma-card-visual" style={{ background: '#05060A', padding: '12px' }}>
+              <Space3DViewer initialMode="orbita" compact={true} />
+            </div>
+            <div className="dilemma-card-body">
+              <span className="pilot-badge-tag" style={{ marginBottom: '10px' }}>
+                Caso Piloto · Nueva Ruta
+              </span>
+              <h2>05. ¿Deberíamos limitar las megaconstelaciones satelitales para proteger la investigación astronómica?</h2>
+              <p>El crecimiento de constelaciones de satélites frente a la protección de las observaciones científicas y el cielo nocturno.</p>
+              <button
+                className="btn-primary icon-btn"
+                style={{ background: '#F59E0B', color: '#05060A', borderColor: '#F59E0B' }}
+                onClick={() =>
+                  onSelectSpecificDilemma?.('megaconstelaciones-astronomia') || onExploreDilemmas()
+                }
+              >
+                <IconChatBranch size={16} /> Iniciar caso piloto →
+              </button>
+            </div>
+          </article>
         </div>
       </section>
 

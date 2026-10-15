@@ -35,6 +35,11 @@ export function CatalogView({ dilemas, progresoGuardado, onSelectDilema }) {
               </div>
 
               <div className="dilemma-card-body">
+                {dilema.esPilotoNuevo && (
+                  <span className="pilot-badge-tag" style={{ marginBottom: '10px' }}>
+                    Caso Piloto · Nueva Ruta
+                  </span>
+                )}
                 <h2>
                   {dilema.numero}. {dilema.titulo}
                 </h2>

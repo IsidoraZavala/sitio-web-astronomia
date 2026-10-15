@@ -1,0 +1,133 @@
+[
+  {
+    "id": "p1_beneficios_consecuencias",
+    "numero": 1,
+    "dimension": "Beneficios y consecuencias",
+    "pregunta": "¿Debería permitirse el despliegue de una megaconstelación si mejora la conectividad de millones de personas, aunque perjudique ciertas observaciones astronómicas?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "Sí, porque los beneficios sociales justifican asumir algunos impactos científicos.",
+        "cuestionamiento": "¿Cómo determinarías cuánto daño científico es aceptable a cambio de un beneficio social?"
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "No, porque el desarrollo tecnológico no debería perjudicar la investigación astronómica.",
+        "cuestionamiento": "¿Mantendrías tu decisión si esa constelación fuera la única forma viable de conectar comunidades aisladas?"
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "Solo si se implementan medidas que reduzcan suficientemente los impactos.",
+        "cuestionamiento": "¿Quién debería determinar cuándo las medidas de mitigación son suficientes?"
+      }
+    ]
+  },
+  {
+    "id": "p2_justicia_distribucion",
+    "numero": 2,
+    "dimension": "Justicia y distribución de beneficios",
+    "pregunta": "Si una constelación beneficia principalmente a determinados países, pero sus efectos sobre el cielo nocturno alcanzan a observatorios de todo el mundo, ¿consideras justa esa distribución?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "Sí, siempre que los beneficios globales sean suficientemente importantes.",
+        "cuestionamiento": "¿Justifica un beneficio agregado global que ciertas comunidades o países soporten costos que no decidieron asumir?"
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "No, quienes reciben los beneficios deberían asumir también los costos.",
+        "cuestionamiento": "¿Es justo que un país deba adaptar sus observatorios para reducir los efectos de una actividad comercial desarrollada principalmente en otro?"
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "Depende de si existen compensaciones o acuerdos entre los actores afectados.",
+        "cuestionamiento": "¿Qué tipo de compensación económica o tecnológica podría reparar la pérdida o degradación de la observación del cielo nocturno?"
+      }
+    ]
+  },
+  {
+    "id": "p3_responsabilidad",
+    "numero": 3,
+    "dimension": "Responsabilidad",
+    "pregunta": "¿Quién debería asumir la responsabilidad de reducir las interferencias que los satélites producen en la investigación astronómica?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "Las empresas que operan los satélites.",
+        "cuestionamiento": "Si una empresa cumple todas las normas existentes, pero sus satélites siguen perjudicando observaciones, ¿consideras que ya cumplió con su responsabilidad ética?"
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "Los gobiernos y organismos internacionales, mediante regulación.",
+        "cuestionamiento": "¿Qué medidas deberían adoptarse cuando el ritmo de innovación privada supera por años la capacidad regulatoria de los organismos multilaterales?"
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "Una responsabilidad compartida entre empresas, Estados y comunidad científica.",
+        "cuestionamiento": "¿Cómo evitar que la idea de «responsabilidad compartida» diluya las obligaciones concretas y nadie asuma los costos reales de mitigación?"
+      }
+    ]
+  },
+  {
+    "id": "p4_progreso_limites",
+    "numero": 4,
+    "dimension": "Progreso y límites",
+    "pregunta": "¿Debería limitarse una tecnología que produce beneficios importantes si sus consecuencias a largo plazo todavía no se conocen completamente?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "Sí, debería priorizarse la prevención de posibles daños.",
+        "cuestionamiento": "¿Quién debería demostrar que una tecnología es suficientemente segura: quienes quieren implementarla o quienes advierten sus riesgos?"
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "No necesariamente, porque la incertidumbre no debería detener el progreso tecnológico.",
+        "cuestionamiento": "¿Qué ocurriría si los efectos imprevistos en la órbita (como una cascada de colisiones o interferencias permanentes) resultan irreversibles?"
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "Depende de la gravedad y posibilidad de los daños.",
+        "cuestionamiento": "¿En qué umbral de riesgo consideras que la precaución debe transformarse en una moratoria o prohibición estricta?"
+      }
+    ]
+  },
+  {
+    "id": "p5_experimento_mental",
+    "numero": 5,
+    "dimension": "Experimento mental hipotético",
+    "esExperimentoMental": true,
+    "pregunta": "Imagina que una nueva constelación permitiría conectar a comunidades que actualmente no tienen acceso a internet. Sin embargo, su funcionamiento impediría realizar una parte importante de las observaciones de un telescopio utilizado para detectar asteroides potencialmente peligrosos para la Tierra. ¿Qué decisión considerarías más justificable?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "Autorizarla por sus beneficios sociales.",
+        "cuestionamiento": "¿Cambió tu criterio respecto de la primera pregunta? ¿Qué elemento del nuevo escenario hizo que reconsideraras —o mantuvieras— tu decisión?"
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "Rechazarla para proteger la investigación astronómica.",
+        "cuestionamiento": "¿Cambió tu criterio respecto de la primera pregunta? ¿Qué elemento del nuevo escenario hizo que reconsideraras —o mantuvieras— tu decisión?"
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "Autorizarla únicamente si se modifica el proyecto para reducir suficientemente el impacto.",
+        "cuestionamiento": "¿Cambió tu criterio respecto de la primera pregunta? ¿Qué elemento del nuevo escenario hizo que reconsideraras —o mantuvieras— tu decisión?"
+      }
+    ]
+  }
+]

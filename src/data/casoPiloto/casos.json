@@ -1,0 +1,12 @@
+{
+  "id": "megaconstelaciones-astronomia",
+  "numero": "05",
+  "titulo": "¿Deberíamos limitar las megaconstelaciones satelitales para proteger la investigación astronómica?",
+  "subtitulo": "El crecimiento de constelaciones de satélites frente a la protección de las observaciones científicas y el cielo nocturno.",
+  "tema": "Megaconstelaciones, astronomía y tecnología",
+  "modo3D": "orbita",
+  "esPilotoNuevo": true,
+  "resumen": "El despliegue acelerado de decenas de miles de satélites en órbita terrestre baja promete conectar a millones de personas sin acceso a redes terrestres. Sin embargo, su reflejo solar crea trazos brillantes que alteran imágenes ópticas de gran campo y sus transmisores producen interferencias radioeléctricas perjudiciales para la radioastronomía. El dilema enfrenta dos bienes legítimos: expandir la conectividad global y el desarrollo tecnológico frente a preservar la investigación astronómica y el cielo nocturno como patrimonio común.",
+  "queEstaOcurriendo": "En los últimos años, operadores comerciales y gubernamentales han desplegado miles de satélites en órbita baja (LEO), con proyecciones que superan los 100.000 satélites para los próximos años. Grandes instalaciones científicas, como el Observatorio Vera C. Rubin en Chile o los radiotelescopios de ASTRON en Europa, han documentado que los satélites reflejan luz crepuscular visible en cámaras de alta sensibilidad y emiten radiación electromagnética no intencionada en bandas contiguas a la observación astronómica.",
+  "porQueEsDilemaEtico": "No se trata únicamente de un desafío técnico de ingeniería, sino de un conflicto distributivo de valores. Por un lado, la conectividad satelital atiende el derecho humano a la educación, la salud digital y la comunicación en zonas rurales vulnerables. Por otro lado, la astronomía aporta conocimiento fundamental sobre el cosmos y vigila amenazas como asteroides potencialmente peligrosos. Además, surge una pregunta de justicia intergeneracional: ¿tiene la generación actual el derecho de alterar irreversiblemente el cielo nocturno antes de que existan regulaciones multilaterales concertadas?"
+}
