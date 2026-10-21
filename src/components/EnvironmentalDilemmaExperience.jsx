@@ -19,6 +19,14 @@ import { calcularAfinidadFilosofica } from '../utils/calcularAfinidad'
 
 const AMBIENTAL_STORAGE_KEY = 'orbita_etica_directriz_ambiental_v1'
 
+const resolverRutaImagen = (ruta) => {
+  if (!ruta) return ''
+  if (ruta.startsWith('http://') || ruta.startsWith('https://')) return ruta
+  const limpia = ruta.replace(/^\.?\//, '')
+  const base = import.meta.env.BASE_URL || './'
+  return `${base}${limpia}`
+}
+
 export function EnvironmentalDilemmaExperience({ onVolverAlCatalogo, onGuardarGlobal }) {
   // fases: 'caso' | 'preguntas' | 'reflexion' | 'test' | 'resultados'
   const [faseActual, setFaseActual] = useState('caso')
@@ -397,7 +405,7 @@ export function EnvironmentalDilemmaExperience({ onVolverAlCatalogo, onGuardarGl
               <div className="env-auto-carousel-card">
                 <div className="env-auto-img-frame">
                   <img
-                    src={fotoActual.archivoImagen}
+                    src={resolverRutaImagen(fotoActual.archivoImagen)}
                     alt={fotoActual.titulo}
                     className="env-auto-img"
                     onError={(e) => {
@@ -571,7 +579,7 @@ export function EnvironmentalDilemmaExperience({ onVolverAlCatalogo, onGuardarGl
                 <div className="env-auto-carousel-card">
                   <div className="env-auto-img-frame" style={{ minHeight: '260px', maxHeight: '330px' }}>
                     <img
-                      src={fotoDePregunta.archivoImagen}
+                      src={resolverRutaImagen(fotoDePregunta.archivoImagen)}
                       alt={fotoDePregunta.titulo}
                       className="env-auto-img"
                       onError={(e) => {

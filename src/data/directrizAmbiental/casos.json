@@ -17,7 +17,7 @@
       "titulo": "Bolsa de residuos de Apolo 11 (Luna, 1969)",
       "descripcion": "Bolsa de desechos arrojada deliberadamente al pie del módulo lunar para reducir masa antes del despegue.",
       "eje": "Necesidad operativa y reducción de masa",
-      "archivoImagen": "/images/ambiental/foto1_apolo11_residuos.jpg",
+      "archivoImagen": "./images/ambiental/foto1_apolo11_residuos.jpg",
       "credito": "NASA / Neil Armstrong"
     },
     {
@@ -26,7 +26,7 @@
       "titulo": "Sitios de descenso Apolo (Luna, 1969–1972)",
       "descripcion": "Etapas de descenso y huellas de astronautas que permanecen inalteradas en el regolito lunar.",
       "eje": "Permanencia de infraestructura y patrimonio",
-      "archivoImagen": "/images/ambiental/foto2_sitios_apolo.jpg",
+      "archivoImagen": "./images/ambiental/foto2_sitios_apolo.jpg",
       "credito": "NASA / GSFC / Arizona State University (LROC)"
     },
     {
@@ -35,7 +35,7 @@
       "titulo": "Impacto de HAKUTO-R (Luna, 2023)",
       "descripcion": "Escombros producidos tras el estrellamiento del aterrizador lunar comercial japonés en el cráter Atlas.",
       "eje": "Restos imprevistos de misiones comerciales",
-      "archivoImagen": "/images/ambiental/foto3_hakuto_r.png",
+      "archivoImagen": "./images/ambiental/foto3_hakuto_r.png",
       "credito": "NASA / GSFC / LROC"
     },
     {
@@ -44,7 +44,7 @@
       "titulo": "Paracaídas de Perseverance (Marte, 2022)",
       "descripcion": "Cubierta protectora y paracaídas de 21 metros esparcidos tras el descenso supersónico en el cráter Jezero.",
       "eje": "Sistemas indispensables de entrada y aterrizaje",
-      "archivoImagen": "/images/ambiental/foto4_perseverance_paracaidas.jpg",
+      "archivoImagen": "./images/ambiental/foto4_perseverance_paracaidas.jpg",
       "credito": "NASA / JPL-Caltech / Ingenuity"
     },
     {
@@ -53,7 +53,7 @@
       "titulo": "Aislamiento térmico dispersado (Marte, 2022)",
       "descripcion": "Manta térmica encajada en una roca a 2 km del aterrizaje, transportada por el viento marciano.",
       "eje": "Dispersión eólica y persistencia material",
-      "archivoImagen": "/images/ambiental/foto5_perseverance_aislamiento.jpg",
+      "archivoImagen": "./images/ambiental/foto5_perseverance_aislamiento.jpg",
       "credito": "NASA / JPL-Caltech"
     }
   ]
