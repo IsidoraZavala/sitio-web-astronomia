@@ -101,6 +101,18 @@ export const PERSPECTIVAS_BIBLIOTECA = [
 
 export const DILEMAS_CATALOGO = [
   {
+    id: 'huellas-exploracion-espacial',
+    titulo:
+      '¿Bajo qué criterios y límites resulta éticamente aceptable alterar o dejar huellas en otros cuerpos celestes, y qué responsabilidades asume la humanidad ante el impacto de su presencia en el espacio?',
+    subtitulo:
+      'Materiales y residuos en la Luna y Marte: necesidad técnica, valor del entorno y responsabilidad futura.',
+    tema: 'Ética ambiental espacial, residuos y objetos abandonados',
+    modo3D: 'luna',
+    tipoIlustracion: 'luna',
+    esDirectrizAmbiental: true,
+    destacado: true,
+  },
+  {
     id: 'mision-marte',
     numero: '01',
     titulo: '¿Explorar Marte mientras existen urgencias en la Tierra?',

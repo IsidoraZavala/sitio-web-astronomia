@@ -116,20 +116,16 @@ export function PilotDilemmaExperience({ onVolverAlCatalogo, onGuardarGlobal }) 
   const handleSiguientePregunta = () => {
     if (indicePregunta < preguntasData.length - 1) {
       setIndicePregunta((prev) => prev + 1)
-      window.scrollTo({ top: 120, behavior: 'smooth' })
     } else {
       setFaseActual('reflexion')
-      window.scrollTo({ top: 0, behavior: 'smooth' })
     }
   }
 
   const handleAnteriorPregunta = () => {
     if (indicePregunta > 0) {
       setIndicePregunta((prev) => prev - 1)
-      window.scrollTo({ top: 120, behavior: 'smooth' })
     } else {
       setFaseActual('caso')
-      window.scrollTo({ top: 0, behavior: 'smooth' })
     }
   }
 
@@ -143,20 +139,16 @@ export function PilotDilemmaExperience({ onVolverAlCatalogo, onGuardarGlobal }) 
   const handleSiguienteAfirmacion = () => {
     if (indiceAfirmacion < testData.afirmaciones.length - 1) {
       setIndiceAfirmacion((prev) => prev + 1)
-      window.scrollTo({ top: 120, behavior: 'smooth' })
     } else {
       setFaseActual('resultados')
-      window.scrollTo({ top: 0, behavior: 'smooth' })
     }
   }
 
   const handleAnteriorAfirmacion = () => {
     if (indiceAfirmacion > 0) {
       setIndiceAfirmacion((prev) => prev - 1)
-      window.scrollTo({ top: 120, behavior: 'smooth' })
     } else {
       setFaseActual('reflexion')
-      window.scrollTo({ top: 0, behavior: 'smooth' })
     }
   }
 
@@ -265,7 +257,6 @@ export function PilotDilemmaExperience({ onVolverAlCatalogo, onGuardarGlobal }) 
                   className="btn-primary btn-lg icon-btn"
                   onClick={() => {
                     setFaseActual('preguntas')
-                    window.scrollTo({ top: 120, behavior: 'smooth' })
                   }}
                 >
                   <IconChatBranch size={18} /> Comenzar la reflexión →
@@ -487,7 +478,6 @@ export function PilotDilemmaExperience({ onVolverAlCatalogo, onGuardarGlobal }) 
                 onClick={() => {
                   setFaseActual('test')
                   setIndiceAfirmacion(0)
-                  window.scrollTo({ top: 120, behavior: 'smooth' })
                 }}
               >
                 <IconSpark size={18} /> Realizar el test filosófico (opcional) →

@@ -35,13 +35,25 @@ export function CatalogView({ dilemas, progresoGuardado, onSelectDilema }) {
               </div>
 
               <div className="dilemma-card-body">
+                {dilema.esDirectrizAmbiental && (
+                  <span
+                    className="pilot-badge-tag"
+                    style={{
+                      marginBottom: '10px',
+                      borderColor: 'var(--accent-green)',
+                      color: 'var(--accent-green)',
+                    }}
+                  >
+                    Directriz Ambiental · Caso Especial
+                  </span>
+                )}
                 {dilema.esPilotoNuevo && (
                   <span className="pilot-badge-tag" style={{ marginBottom: '10px' }}>
                     Caso Piloto · Nueva Ruta
                   </span>
                 )}
                 <h2>
-                  {dilema.numero}. {dilema.titulo}
+                  {dilema.titulo}
                 </h2>
                 <p>{dilema.subtitulo}</p>
 

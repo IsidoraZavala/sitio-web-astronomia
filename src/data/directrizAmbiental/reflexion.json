@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ref_1_biosferas_lin",
+    "numero": 1,
+    "titulo": "No devastar otra biósfera (Patrick Lin)",
+    "autor": "Patrick Lin",
+    "citaDocumento": "“What are we doing to ensure that we do not make the same mistakes and lay waste to another biosphere?” (p. 9)",
+    "enunciado": "A partir de la advertencia de Patrick Lin: «¿Qué estamos haciendo para asegurarnos de no cometer los mismos errores y devastar otra biósfera?» (p. 9), ¿de qué manera el hábito de abandonar residuos y chatarra en la Luna y Marte reproduce la misma mentalidad extractiva que causó las crisis ambientales en la Tierra? ¿Qué deberíamos cambiar urgentemente en nuestras misiones?"
+  },
+  {
+    "id": "ref_2_sanciones_newman",
+    "numero": 2,
+    "titulo": "Justicia penal y sanciones en el espacio (Christopher Newman)",
+    "autor": "Christopher Newman",
+    "citaDocumento": "“Is the harm caused [in the space environment] serious enough to justify a criminal sanction, with the attendant difficulties relating to the administration of justice in outer space that such an approach begets?” (p. 234)",
+    "enunciado": "Frente al dilema planteado por Christopher Newman: «¿Es el daño provocado en el entorno espacial lo bastante grave como para justificar una sanción penal, con las dificultades de administrar justicia en el espacio exterior que ello implica?» (p. 234), ¿consideras que los Estados y corporaciones privadas deberían enfrentar castigos legales y penas estrictas por abandonar basura o accidentar sondas en otros mundos, o crees que solo debe confiarse en códigos voluntarios?"
+  },
+  {
+    "id": "ref_3_mundos_sin_vida_cockell",
+    "numero": 3,
+    "titulo": "Límites éticos ante mundos sin vida (Charles Cockell)",
+    "autor": "Charles Cockell",
+    "citaDocumento": "“What of the case of lifeless Earth-like planets...? Would all this activity be an ethically acceptable intention toward this world?” (pp. 309, 313)",
+    "enunciado": "Ante la reflexión de Charles Cockell sobre los planetas que no albergan vida: «¿Qué ocurre en el caso de mundos rocosos sin vida?... ¿Sería toda esta actividad una intención éticamente aceptable hacia ese mundo?» (pp. 309, 313), ¿tienen los paisajes desiertos de la Luna y Marte un valor moral propio que merezca ser respetado, o la ausencia de células vivas nos otorga el derecho a utilizarlos y modificarlos según nuestras conveniencias?"
+  }
+]

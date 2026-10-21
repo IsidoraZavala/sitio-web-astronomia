@@ -1,0 +1,65 @@
+[
+  {
+    "id": "apolo11-jettison-bag",
+    "titulo": "Apollo 11 Jettison Bag (AS11-40-5850) — Registro fotográfico y técnico de residuos",
+    "institucion": "NASA / Apollo Lunar Surface Journal (ALSJ)",
+    "url": "https://www.nasa.gov/wp-content/uploads/static/history/alsj/WOTM/WOTM-JettisonBag.html",
+    "descripcion": "Documentación técnica de la NASA sobre las bolsas de desecho arrojadas antes del despegue del módulo lunar Eagle. Explica cómo la reducción de masa era un requisito de seguridad para el retorno de los astronautas.",
+    "eje": "Residuos deliberados y necesidad operativa",
+    "tipo": "Fuente primaria técnica (NASA)"
+  },
+  {
+    "id": "lroc-apollo-sites",
+    "titulo": "Sitios de alunizaje Apolo observados por LROC (1969–1972)",
+    "institucion": "NASA / GSFC / Arizona State University (LROC)",
+    "url": "https://lroc.im-ldi.com/",
+    "descripcion": "Fotografías orbitales de alta resolución que documentan el estado de las seis etapas de descenso Apolo, sus instrumentos científicos y las huellas sobre el regolito lunar décadas después.",
+    "eje": "Permanencia de infraestructura y valor patrimonial",
+    "tipo": "Observación científica satelital (LROC)"
+  },
+  {
+    "id": "hakuto-r-impact-lro",
+    "titulo": "NASA's LRO Views Impact Site of HAKUTO-R Mission 1 Moon Lander",
+    "institucion": "NASA Goddard Space Flight Center / LROC",
+    "url": "https://www.nasa.gov/centers-and-facilities/goddard/nasas-lro-views-impact-site-of-hakuto-r-mission-1-moon-lander/",
+    "descripcion": "Análisis multitemporal del orbitador LRO que localizó el cráter de impacto y los restos del módulo comercial japonés tras estrellarse en el cráter Atlas en abril de 2023.",
+    "eje": "Restos por accidente y gestión de impactos",
+    "tipo": "Reporte de misión y detección de cambios (NASA/LRO)"
+  },
+  {
+    "id": "spacex-rocket-moon-impact",
+    "titulo": "Scientists confirm wayward rocket slammed into the Moon creating double crater",
+    "institucion": "Associated Press / NASA LRO Science Team",
+    "url": "https://apnews.com/",
+    "descripcion": "Registro del impacto de un propulsor de cohete en la cara oculta de la Luna en marzo de 2022, formando un cráter doble inusual y abriendo el debate sobre el monitoreo de chatarra espacial que colisiona con otros mundos.",
+    "eje": "Basura espacial interplanetaria y colisiones no controladas",
+    "tipo": "Investigación astrodinámica y periodismo científico"
+  },
+  {
+    "id": "perseverance-edl-pia25218",
+    "titulo": "Debris Field for Perseverance Landing Gear (PIA25218)",
+    "institucion": "NASA / JPL-Caltech",
+    "url": "https://science.nasa.gov/photojournal/debris-field-for-perseverance-landing-gear-seen-from-mars-helicopter/",
+    "descripcion": "Fotografía aérea capturada por el helicóptero Ingenuity que muestra el paracaídas supersónico de 21 metros y la cubierta protectora posterior esparcidos en el cráter Jezero tras el aterrizaje seguro del rover.",
+    "eje": "Materiales indispensables para la viabilidad de la misión",
+    "tipo": "Fotografía documental de misión (NASA JPL)"
+  },
+  {
+    "id": "perseverance-edl-thermal-debris",
+    "titulo": "Images of EDL Debris — Fragmentos térmicos de Perseverance en Marte (PIA25324)",
+    "institucion": "NASA Science / JPL-Caltech",
+    "url": "https://science.nasa.gov/blog/images-of-edl-debris/",
+    "descripcion": "Documentación de fragmentos de aislamiento térmico de Dacron y poliéster transportados por el viento marciano a kilómetros del punto de impacto, evidenciando la dispersión eólica de materiales terrestres.",
+    "eje": "Dispersión eólica y consecuencias acumulativas en Marte",
+    "tipo": "Monitoreo in situ y reporte de misión (NASA)"
+  },
+  {
+    "id": "desechos-espaciales-estudio",
+    "titulo": "Los desechos espaciales y el régimen de responsabilidad ambiental internacional",
+    "institucion": "Estudios jurídicos y ambientales espaciales",
+    "url": "https://dialnet.unirioja.es/",
+    "descripcion": "Análisis comparativo de la evolución de la basura espacial en la órbita baja y su proyección hacia los cuerpos celestes bajo el principio de responsabilidad compartida.",
+    "eje": "Gobernanza y prevención de la tragedia de los comunes",
+    "tipo": "Artículo académico revisado por pares"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "lin",
+    "nombre": "Patrick Lin",
+    "obraReferencia": "Viewpoint: Look Before Taking Another Leap for Mankind — Ethical and Social Considerations in Rebuilding Society in Space (2006)",
+    "enfoque": "Ética del riesgo, analogías históricas del colonialismo y responsabilidades morales espaciales",
+    "resumenArgumento": "Patrick Lin advierte que el entusiasmo por la exploración espacial suele ocultar una peligrosa inercia: repetir en otros mundos la misma mentalidad extractiva y descuidada que deterioró la Tierra. Sostiene que antes de acelerar la presencia humana en la Luna o Marte, debemos evaluar deliberadamente las consecuencias no deseadas y responder qué estamos haciendo hoy para no devastar nuevos entornos cósmicos.",
+    "aplicacionCaso": "Frente al descarte de equipos en la Luna y Marte, Lin enfatiza que la conveniencia técnica o el ahorro de combustible inmediato no anulan la responsabilidad moral. Tratar los cuerpos celestes como vertederos abiertos desde las primeras misiones sienta un precedente destructivo para las futuras generaciones.",
+    "citasClave": [
+      {
+        "cita": "¿Qué estamos haciendo para asegurarnos de no cometer los mismos errores y arrasar con otra biósfera? [“What are we doing to ensure that we do not make the same mistakes and lay waste to another biosphere?”]",
+        "contexto": "Pregunta ética central formulada en el texto sobre el deber de no reproducir la devastación ambiental terrestre.",
+        "referencia": "Patrick Lin, 'Look Before Taking Another Leap for Mankind', 2006, p. 9."
+      },
+      {
+        "cita": "Ya hemos llenado de basura el entorno orbital con desechos flotantes que debemos rastrear... por no hablar del equipo abandonado en la Luna y en Marte.",
+        "contexto": "Constatación directa sobre cómo la acumulación de desechos comenzó desde las primeras misiones espaciales.",
+        "referencia": "Patrick Lin, 'Look Before Taking Another Leap for Mankind', 2006, p. 5."
+      }
+    ],
+    "fuentesAccesoAbierto": [
+      {
+        "titulo": "Look Before Taking Another Leap for Mankind (Patrick Lin, PhilPapers / CalPoly)",
+        "url": "https://ethics.calpoly.edu/space.html",
+        "tipo": "Ensayo académico de acceso libre",
+        "idioma": "Inglés"
+      }
+    ]
+  },
+  {
+    "id": "newman",
+    "nombre": "Christopher Newman",
+    "obraReferencia": "The Way to Eden: Environmental Legal and Ethical Values in Interplanetary Space Flight (en The Ethics of Space Exploration, 2016)",
+    "enfoque": "Gobernanza internacional, regulación jurídica vinculante y sanciones penales",
+    "resumenArgumento": "Christopher Newman cuestiona la debilidad de las leyes espaciales vigentes, donde predominan acuerdos voluntarios sin dientes regulatorios. Plantea la necesidad urgente de examinar si el daño ambiental en el cosmos debe tipificarse con sanciones penales estrictas, y defiende un deber primordial de salvaguarda que rija toda misión interplanetaria.",
+    "aplicacionCaso": "Ante restos de misiones como Perseverance o impactos de sondas privadas como Hakuto-R, Newman recalca que cuando un entorno extraterrestre se contamina o altera, el daño es irrevocable. La impunidad o la falta de consecuencias legales solo acelerará la tragedia de los bienes comunes en el sistema solar.",
+    "citasClave": [
+      {
+        "cita": "¿Es el daño provocado en el entorno espacial lo suficientemente grave como para justificar una sanción penal, con las consiguientes dificultades relativas a la administración de justicia en el espacio ultraterrestre que tal enfoque engendra? [“Is the harm caused in the space environment serious enough to justify a criminal sanction, with the attendant difficulties relating to the administration of justice in outer space that such an approach begets?”]",
+        "contexto": "Dilema de fondo sobre si el derecho espacial debe pasar de acuerdos éticos blandos a un código penal vinculante.",
+        "referencia": "Christopher Newman, 'The Way to Eden', 2016, p. 234."
+      },
+      {
+        "cita": "Una vez que un entorno extraterrestre ha sido contaminado, el entorno se ha corrompido irrevocablemente. Esto limitará el estudio científico al dar lecturas de falso positivo de vida y tendrá profundas implicancias éticas.",
+        "contexto": "Impacto irreversible de contaminar superficies extraterrestres con restos biológicos o industriales.",
+        "referencia": "Christopher Newman, 'The Way to Eden', 2016, p. 233."
+      }
+    ],
+    "fuentesAccesoAbierto": [
+      {
+        "titulo": "Space Governance and Environmental Values (Northumbria Research Link)",
+        "url": "https://nrl.northumbria.ac.uk/",
+        "tipo": "Repositorio académico institucional",
+        "idioma": "Inglés"
+      }
+    ]
+  },
+  {
+    "id": "cockell",
+    "nombre": "Charles Cockell",
+    "obraReferencia": "The Ethical Relevance of Earth-like Extrasolar Planets / The Ethical Status of Microbial Life (2006 / 2016)",
+    "enfoque": "Ética ambiental extraterrestre, valor de mundos sin vida y Parques Planetarios",
+    "resumenArgumento": "Charles Cockell expande la ética ambiental más allá de la presencia de vida: los planetas rocosos sin biósfera también poseen una integridad cósmica que debe ser respetada. Cuestiona la mentalidad colonizadora de someter y transformar cualquier mundo inerte, y defiende que la forma en que tratamos la superficie lunar y marciana revela nuestras verdaderas intenciones morales hacia el universo.",
+    "aplicacionCaso": "Frente al descarte de paracaídas, protectores y restos de colisiones en la Luna y Marte, Cockell rechaza que los paisajes cósmicos puedan ser considerados 'terrenos baldíos' sin valor moral. Propone la creación de figuras como los Parques Planetarios para proteger regiones vírgenes de la alteración humana.",
+    "citasClave": [
+      {
+        "cita": "¿Qué ocurre en el caso de planetas similares a la Tierra que no tienen vida o que al menos no muestran signos espectroscópicos evidentes de vida? El descubrimiento de planetas sin vida debería considerarse igualmente dentro de una ética ambiental. [“What of the case of lifeless Earth-like planets or at least those that display no obvious spectroscopic signature of life? The discovery of many lifeless Earth-like planets should equally be considered within an environmental ethic.”]",
+        "contexto": "Fundamentación de la ética ambiental aplicada a cuerpos celestes estériles o abióticos.",
+        "referencia": "Charles S. Cockell, 'The Ethical Relevance of Earth-like Extrasolar Planets', 2006, p. 309."
+      },
+      {
+        "cita": "Con telescopios podremos determinar las condiciones de la superficie y los problemas ambientales a los que se enfrentarían los humanos al aterrizar. ¿Sería toda esta actividad una intención éticamente aceptable hacia este mundo? [“Would all this activity be an ethically acceptable intention toward this world?”]",
+        "contexto": "Pregunta sobre el propósito moral último de la exploración y la intervención en nuevos mundos.",
+        "referencia": "Charles S. Cockell, 'The Ethical Relevance of Earth-like Extrasolar Planets', 2006, p. 313."
+      }
+    ],
+    "fuentesAccesoAbierto": [
+      {
+        "titulo": "Extraterrestrial Environmental Ethics (Environmental Ethics Journal)",
+        "url": "https://www.cep.unt.edu/enviroeth.html",
+        "tipo": "Publicación especializada en ética ambiental",
+        "idioma": "Inglés"
+      }
+    ]
+  }
+]

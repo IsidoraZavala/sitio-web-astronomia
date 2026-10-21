@@ -1,7 +1,7 @@
 
 /* Observatory theme: generous spacing, calm surfaces, and readable text. */
 .top-navbar { background: #05060A; color: #F8FAFC; border-bottom: 1px solid #1E293B; }
-.navbar-inner { max-width: 1400px; padding: 20px 40px; display: grid; grid-template-columns: auto 1fr auto; gap: 32px; }
+.navbar-inner { max-width: 1400px; padding: 18px 20px; display: grid; grid-template-columns: auto 1fr auto; gap: 24px; }
 .brand-btn { color: #F8FAFC; gap: 12px; }
 .brand-mark { border: 1px solid #F8FAFC; color: #F8FAFC; background: transparent; width: 42px; height: 42px; border-radius: 50%; position: relative; font-size: 12px; }
 .brand-mark::after { content: ''; position: absolute; inset: 8px -6px; border: 1px solid #F8FAFC; border-radius: 50%; transform: rotate(-35deg); }
@@ -14,7 +14,7 @@
 .nav-count-pill { background: #F59E0B; color: #05060A; }
 .skip-link { position: fixed; top: -100px; left: 16px; z-index: 200; padding: 12px 20px; background: var(--bg-surface); color: var(--text-primary); }
 .skip-link:focus { top: 12px; }
-.main-content-wrapper { max-width: 1360px; padding: 38px 40px 72px; }
+.main-content-wrapper { max-width: 1360px; padding: 28px 20px 72px; }
 .main-content-wrapper:focus { outline: none; }
 .btn-primary, .btn-secondary { border-radius: 8px; padding: 13px 20px; font-size: 13px; line-height: 1.5; min-height: 44px; transition: background .18s, border-color .18s; }
 .btn-lg { padding: 15px 25px; font-size: 14px; }
@@ -33,17 +33,23 @@
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  margin-top: -38px;
-  padding: 64px 40px 56px;
+  margin-top: -28px;
+  min-height: calc(100vh - 78px);
+  min-height: calc(100dvh - 78px);
+  padding: 60px 40px;
   background: #05060A;
   color: #F8FAFC;
   border: 0;
   border-bottom: 1px solid #1E293B;
   border-radius: 0;
   margin-bottom: 0;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 .hero-edge-inner {
+  width: 100%;
   max-width: 1320px;
   margin: 0 auto;
   display: grid;
@@ -100,6 +106,95 @@
 .step-overview-card { background: var(--bg-surface); border-color: var(--border-color); padding: 24px; border-radius: 10px; }
 .step-number-box { border-radius: 50%; background: var(--accent-blue-bg); color: var(--primary-solid); margin-bottom: 16px; }
 .step-overview-card h3 { margin-bottom: 10px; }
+
+/* Ruta de deliberación en 5 pasos - Íconos flotantes */
+.steps-floating-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 34px auto 18px;
+  padding: 0 10px;
+}
+.step-floating-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+  position: relative;
+  transition: transform 0.25s ease;
+}
+.step-floating-item:hover {
+  transform: translateY(-5px);
+}
+.step-floating-icon-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.step-floating-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  box-shadow: 0 10px 28px -4px rgba(0, 0, 0, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s ease;
+}
+.step-floating-item:hover .step-floating-icon {
+  border-color: var(--accent-amber);
+  color: var(--accent-amber);
+  box-shadow: 0 16px 32px -4px rgba(245, 158, 11, 0.25), 0 6px 14px -2px rgba(0, 0, 0, 0.08);
+}
+.step-floating-badge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #F59E0B;
+  color: #05060A;
+  font-size: 11px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+  border: 2px solid var(--bg-surface);
+}
+.step-floating-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+@media (max-width: 900px) {
+  .steps-floating-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .steps-floating-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .step-floating-icon {
+    width: 60px;
+    height: 60px;
+  }
+  .step-floating-title {
+    font-size: 13.5px;
+  }
+}
 .home-bottom-strip { background: var(--bg-subtle); border: 0; border-radius: 12px; padding: 28px 32px; flex-wrap: nowrap; gap: 28px; }
 .home-bottom-strip strong { font: 600 21px/1.4 var(--font-serif); }
 .home-bottom-strip p { max-width: 65ch; font-size: 13px; margin-top: 7px; }
@@ -599,7 +694,8 @@
   font-weight: 600;
   line-height: 1.35;
   margin-bottom: 12px;
-  max-width: 48ch;
+  max-width: 100%;
+  width: 100%;
 }
 
 .pilot-question-instruction {
@@ -1015,4 +1111,493 @@
   border-radius: 6px;
   margin: 0;
 }
+
+/* ========================================================================= */
+/* DIRECTRIZ AMBIENTAL: CARRUSEL AUTOMÁTICO, TEXTO Y REFLEXIÓN               */
+/* ========================================================================= */
+
+.environmental-experience {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.environmental-experience .workspace-header-box {
+  padding: 6px 0 18px;
+}
+
+.environmental-experience .workspace-header-box h1 {
+  font-size: clamp(16.5px, 1.42vw, 20.5px);
+  line-height: 1.36;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+  max-width: 100%;
+}
+
+.environmental-experience .stage-card {
+  padding: 24px 20px;
+}
+
+@media (max-width: 640px) {
+  .environmental-experience .stage-card {
+    padding: 18px 14px;
+  }
+}
+
+/* Grilla en dos columnas de la Etapa 1 */
+.env-stage1-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 28px;
+  align-items: start;
+}
+
+@media (max-width: 960px) {
+  .env-stage1-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+/* Columna izquierda: Texto fluido de contexto con deslizador interno */
+.env-stage1-text-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+
+.env-context-title {
+  font-size: clamp(19px, 2.2vw, 24px);
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.3;
+  margin-bottom: 2px;
+}
+
+.env-context-scrollbox {
+  max-height: 470px;
+  overflow-y: auto;
+  padding-right: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
+}
+
+.env-context-scrollbox::-webkit-scrollbar {
+  width: 6px;
+}
+
+.env-context-scrollbox::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.env-context-scrollbox::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 4px;
+}
+
+.env-context-scrollbox::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-solid);
+}
+
+.env-context-scrollbox p {
+  font-size: 13.5px;
+  line-height: 1.76;
+  color: var(--text-secondary);
+  margin: 0;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Columna derecha: Carrusel automático */
+.env-stage1-carousel-col {
+  position: sticky;
+  top: 20px;
+  align-self: start;
+}
+
+.env-auto-carousel-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.env-auto-img-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.1 / 1;
+  min-height: 340px;
+  max-height: 440px;
+  background: #05060A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.env-auto-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.env-img-fallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #94A3B8;
+  font-size: 13px;
+  text-align: center;
+  padding: 30px;
+}
+
+.env-auto-caption {
+  padding: 10px 16px 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: var(--bg-surface);
+}
+
+.env-caption-title {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.3;
+  margin: 0;
+}
+
+.env-caption-desc {
+  font-size: 11.5px;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.env-caption-credit {
+  font-size: 10.5px;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-color);
+  padding-top: 4px;
+  margin-top: 2px;
+}
+
+/* Indicadores de avance sutiles (dots) */
+.env-carousel-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px 10px;
+  background: var(--bg-surface);
+}
+
+.env-dot-btn {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--border-strong);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.25s ease;
+}
+
+.env-dot-btn:hover {
+  background: var(--accent-green);
+  transform: scale(1.25);
+}
+
+.env-dot-btn.active {
+  background: var(--accent-green);
+  width: 18px;
+  border-radius: 4px;
+}
+
+/* Barra inferior con el botón siguiente a la derecha */
+.env-stage1-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 36px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border-color);
+}
+
+.env-btn-next-right {
+  margin-left: auto;
+}
+
+/* Etapa 2: Layout de caso contextual (texto a la izquierda, imagen a la derecha) */
+.env-stage2-case-grid {
+  margin-bottom: 24px;
+}
+
+.env-stage2-desc-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.env-stage2-desc-p {
+  font-size: 13.5px;
+  line-height: 1.76;
+  color: var(--text-secondary);
+  margin: 0;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.env-stage2-qa-section {
+  border-top: 1px solid var(--border-color);
+  margin-top: 24px;
+  padding-top: 22px;
+  width: 100%;
+}
+
+.env-stage2-qa-section .pilot-question-title {
+  max-width: 100% !important;
+  width: 100%;
+}
+
+.env-stage2-qa-section .pilot-question-instruction {
+  max-width: 100% !important;
+  width: 100%;
+}
+
+.env-stage2-transversal-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 22px 26px;
+}
+
+.env-stage2-transversal-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary-solid);
+  background: var(--primary-subtle);
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+.env-auto-caption-title {
+  margin: 0 0 3px 0;
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--text-primary);
+}
+
+/* Interludio de cuestionamiento inmersivo en pantalla completa de la tarjeta */
+.env-interlude-card {
+  background: #05060A !important;
+  border: 1px solid rgba(245, 158, 11, 0.35) !important;
+  color: #FFFFFF !important;
+  min-height: 480px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 36px !important;
+  text-align: center;
+  animation: envInterludeFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  will-change: opacity, transform;
+}
+
+.env-interlude-card.env-interlude-exiting {
+  animation: envInterludeFadeOut 0.32s cubic-bezier(0.4, 0, 0.2, 1) forwards !important;
+  pointer-events: none;
+}
+
+@keyframes envInterludeFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.985) translateY(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes envInterludeFadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.985) translateY(-4px);
+  }
+}
+
+/* Transición suave de entrada para la nueva pregunta */
+.env-stage2-card-enter {
+  animation: envQuestionFadeIn 0.36s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: opacity, transform;
+}
+
+@keyframes envQuestionFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.env-interlude-content {
+  max-width: 840px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+
+.env-interlude-title-plain {
+  color: var(--accent-amber);
+  font-size: 13.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.env-interlude-quote {
+  font-size: clamp(21px, 2.3vw, 29px);
+  line-height: 1.48;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin: 10px 0;
+  font-style: italic;
+  text-wrap: balance;
+}
+
+.env-interlude-progress-track {
+  width: 100%;
+  max-width: 340px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.env-interlude-progress-bar {
+  height: 100%;
+  width: 0%;
+  background: var(--accent-amber);
+  border-radius: 4px;
+  animation-name: interludeCountdown;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes interludeCountdown {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.env-interlude-skip-btn {
+  margin-top: 12px;
+  color: #CBD5E1 !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+  background: transparent !important;
+  font-size: 13px !important;
+  padding: 8px 18px !important;
+  transition: all 0.2s ease;
+}
+
+.env-interlude-skip-btn:hover {
+  color: #FFFFFF !important;
+  border-color: var(--accent-amber) !important;
+  background: rgba(245, 158, 11, 0.12) !important;
+}
+
+/* Pestañas de las 3 preguntas de reflexión abierta */
+.env-reflection-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .env-reflection-tabs {
+    grid-template-columns: 1fr;
+  }
+}
+
+.env-ref-tab-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 16px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.env-ref-tab-btn span {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.env-ref-tab-btn strong {
+  font-size: 13.5px;
+  color: var(--text-primary);
+}
+
+.env-ref-tab-btn:hover {
+  background: var(--bg-subtle);
+  border-color: var(--border-strong);
+}
+
+.env-ref-tab-btn.active {
+  border-color: var(--accent-green);
+  background: var(--accent-green-bg);
+}
+
+.env-ref-tab-btn.active strong {
+  color: var(--accent-green);
+}
+
+.env-reflection-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 12px;
+}
+
 

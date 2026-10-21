@@ -1,10 +1,11 @@
-import { useState } from 'react'
+import { useState, useCallback } from 'react'
 import './App.css'
 import './design.css'
 import { AboutView } from './components/AboutView'
 import { CatalogView } from './components/CatalogView'
 import { DilemmaExperience } from './components/DilemmaExperience'
 import { PilotDilemmaExperience } from './components/PilotDilemmaExperience'
+import { EnvironmentalDilemmaExperience } from './components/EnvironmentalDilemmaExperience'
 import { HomeView } from './components/HomeView'
 import {
   IconBook,
@@ -34,8 +35,17 @@ function App() {
     }
   })
 
-  const guardarProgresoDilema = (datosDilema) => {
+  const guardarProgresoDilema = useCallback((datosDilema) => {
     setProgresoGuardado((prev) => {
+      const actual = prev[datosDilema.dilemaId]
+      if (
+        actual &&
+        actual.completado === datosDilema.completado &&
+        actual.momentoActual === datosDilema.momentoActual &&
+        actual.faseActual === datosDilema.faseActual
+      ) {
+        return prev
+      }
       const actualizado = {
         ...prev,
         [datosDilema.dilemaId]: datosDilema,
@@ -47,7 +57,7 @@ function App() {
       }
       return actualizado
     })
-  }
+  }, [])
 
   const limpiarTodoElRecorrido = () => {
     setProgresoGuardado({})
@@ -154,7 +164,13 @@ function App() {
         )}
 
         {seccionActiva === 'experiencia-dilema' && dilemaSeleccionado && (
-          dilemaSeleccionado.esPilotoNuevo || dilemaSeleccionado.id === 'megaconstelaciones-astronomia' ? (
+          dilemaSeleccionado.esDirectrizAmbiental || dilemaSeleccionado.id === 'huellas-exploracion-espacial' ? (
+            <EnvironmentalDilemmaExperience
+              key={dilemaSeleccionado.id}
+              onVolverAlCatalogo={() => navegarSeccion('catalogo')}
+              onGuardarGlobal={guardarProgresoDilema}
+            />
+          ) : dilemaSeleccionado.esPilotoNuevo || dilemaSeleccionado.id === 'megaconstelaciones-astronomia' ? (
             <PilotDilemmaExperience
               key={dilemaSeleccionado.id}
               onVolverAlCatalogo={() => navegarSeccion('catalogo')}

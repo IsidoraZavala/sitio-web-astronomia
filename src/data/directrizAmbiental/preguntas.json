@@ -1,0 +1,346 @@
+[
+  {
+    "id": "p1_residuos_operativos",
+    "numero": 1,
+    "fotoVinculadaId": "foto_apolo11_residuos",
+    "tituloCaso": "Bolsa de residuos arrojada por la tripulación del Apolo 11",
+    "descripcionDetallada": [
+      "Durante la histórica misión del Apolo 11 en julio de 1969, Neil Armstrong y Buzz Aldrin arrojaron sobre la superficie lunar una bolsa blanca de residuos (conocida técnicamente como jettison bag). Esta bolsa contenía restos de comida, envases vacíos, herramientas en desuso y bolsas con desechos biológicos de los astronautas.",
+      "La decisión respondió a una estricta necesidad técnica: para despegar desde la Luna y acoplarse con éxito a la nave de regreso, el módulo de ascenso requería reducir su peso al mínimo absoluto y ahorrar combustible. Dejar estos residuos garantizó la seguridad de la tripulación, pero al mismo tiempo dio inicio a la acumulación de desechos humanos en un cuerpo celeste virgen."
+    ],
+    "pregunta": "¿Hasta qué punto es éticamente aceptable abandonar desechos en otro cuerpo celeste cuando esto se hace para reducir peso y asegurar la vida de los astronautas?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "La vida de los astronautas es el único valor supremo: si para garantizar el regreso seguro de la tripulación es necesario arrojar basura biológica o herramientas a la superficie lunar, debe hacerse sin ninguna culpa moral.",
+        "cuestionamiento": "Si la seguridad operativa inmediata justifica dejar basura sin restricciones, ¿qué límite impedirá que futuras bases espaciales conviertan la Luna en un vertedero permanente en nombre de la protección de sus ocupantes?"
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "Ninguna misión tiene derecho a transformar un mundo virgen en su basurero: las agencias espaciales deben asumir el costo y riesgo de naves capaces de traer de vuelta cada gramo de desecho a la Tierra.",
+        "cuestionamiento": "Exigir naves más pesadas para traer de vuelta la basura encarecería drásticamente las misiones y podría aumentar el riesgo de accidentes fatales durante el despegue. ¿Estarías de acuerdo con asumir ese costo humano?"
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "Abandonar residuos es una falta ambiental inaceptable a menos que exista una catástrofe imprevista; la simple conveniencia técnica o el ahorro de combustible nunca justifican ensuciar la superficie lunar.",
+        "cuestionamiento": "En una misión pionera donde cada segundo y cada gramo de combustible definen la supervivencia, ¿cómo trazar la frontera exacta entre una emergencia real y una necesidad operativa razonable?"
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "Arrojar desechos en misiones iniciales solo es admisible si se asume una deuda ecológica vinculante: la obligación legal de recoger o encapsular esa basura en las misiones inmediatamente posteriores.",
+        "cuestionamiento": "Las prioridades políticas y presupuestarias de las naciones cambian con las décadas. ¿Cómo asegurar que los gobiernos del futuro realmente invertirán recursos en limpiar residuos de misiones pasadas?"
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "Debe delimitarse una zona de sacrificio exclusiva alrededor del módulo para confinar allí todos los desechos, asumiendo ese impacto localizado para salvar y mantener prístino el resto del satélite.",
+        "cuestionamiento": "Establecer una 'zona de sacrificio' asume que ese sector del paisaje no tiene valor propio. ¿Quién tendría la autoridad moral para decidir qué cráteres se sacrifican y cuáles se conservan vírgenes?"
+      }
+    ]
+  },
+  {
+    "id": "p2_patrimonio_infraestructura",
+    "numero": 2,
+    "fotoVinculadaId": "foto_sitios_apolo",
+    "tituloCaso": "Las etapas de descenso y huellas del programa Apolo",
+    "descripcionDetallada": [
+      "Entre 1969 y 1972, seis misiones tripuladas del programa Apolo lograron posarse en la Luna. Al emprender el regreso a la Tierra, la parte inferior de los módulos lunares (las etapas de descenso) quedó sobre la superficie junto con instrumental científico, reflectores láser, banderas y las huellas dejadas por los astronautas en el regolito.",
+      "Al no existir atmósfera, viento ni humedad en la Luna, estos artefactos y pisadas pueden permanecer prácticamente inalterados durante millones de años. Para muchas personas representan monumentos históricos invaluables del ingenio humano; sin embargo, también constituyen toneladas de componentes artificiales que modificaron de forma permanente el paisaje natural original."
+    ],
+    "pregunta": "¿Cómo deberían gestionarse las estructuras abandonadas de las primeras misiones espaciales: como patrimonio histórico de la humanidad o como restos que deberían ser retirados?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "Las estructuras Apolo son monumentos sagrados de la historia humana: deben ser declaradas santuarios intocables, prohibiendo legalmente que nadie altere ni una sola huella en el regolito.",
+        "cuestionamiento": "Declarar estos sitios como áreas protegidas exclusivas de ciertos países podría consolidar reclamos territoriales o de soberanía encubierta en la Luna, algo que los tratados internacionales prohíben explícitamente."
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "No son monumentos sino chatarra industrial abandonada: con el tiempo deben ser retiradas de la Luna para devolver el paisaje natural a su estado geológico virgen original.",
+        "cuestionamiento": "Si removemos todas las estructuras pioneras para dejar el paisaje completamente limpio, borraríamos testimonios físicos irremplazables de la historia y la memoria colectiva de la humanidad."
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "El romanticismo histórico no debe frenar el futuro: las próximas bases lunares tienen pleno derecho moral a desmantelar y reciclar esos metales para asegurar su propia supervivencia sin depender de la Tierra.",
+        "cuestionamiento": "Tratar estos sitios históricos pioneros únicamente como chatarra para reciclar podría reflejar un descuido cultural destructivo hacia los mayores hitos de la exploración humana."
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "Debe crearse un Parque Planetario internacional que proteja tanto los módulos históricos como una porción representativa del paisaje geológico circundante bajo administración compartida de la humanidad.",
+        "cuestionamiento": "¿Quién tiene la legitimidad para fijar los límites de esas reservas sin dejar fuera los intereses de países que aún no han podido llegar a la Luna?"
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "Solo tienen derecho a permanecer allí mientras sigan aportando datos científicos a los laboratorios; terminada su utilidad experimental, pierden toda justificación para ocupar el terreno.",
+        "cuestionamiento": "Si reducimos el valor de estos objetos únicamente a su utilidad experimental presente, cuando las mediciones concluyan perderían toda razón de ser y tendrían que ser desechados."
+      }
+    ]
+  },
+  {
+    "id": "p3_responsabilidad_accidentes",
+    "numero": 3,
+    "fotoVinculadaId": "foto_hakuto_r",
+    "tituloCaso": "El impacto del aterrizador comercial HAKUTO-R en la Luna",
+    "descripcionDetallada": [
+      "En abril de 2023, la compañía japonesa ispace intentó realizar el primer alunizaje privado de la historia con su nave HAKUTO-R. Un fallo en el software de medición de altitud provocó que el módulo se quedara sin combustible mientras descendía, cayendo a gran velocidad y estrellándose contra el cráter Atlas.",
+      "Imágenes capturadas posteriormente por la sonda LRO de la NASA mostraron que la nave quedó completamente destruida, dejando un campo de escombros y marcas visibles de impacto en la superficie lunar. A medida que más empresas privadas envían misiones comerciales de bajo costo, los accidentes imprevistos y los restos metálicos sobre la Luna se vuelven cada vez más frecuentes."
+    ],
+    "pregunta": "¿Qué responsabilidad ética y legal deberían asumir las empresas privadas cuando una misión comercial falla y deja restos esparcidos en un cuerpo celeste?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "El progreso espacial exige asumir accidentes: imponer sanciones o multas ambientales a las empresas privadas asfixiaría la inversión y retrasaría la llegada del ser humano al espacio.",
+        "cuestionamiento": "Si las empresas no asumen ningún costo por sus accidentes, el impacto ambiental y los escombros de sus fallas comerciales terminarán siendo una carga transferida a toda la humanidad."
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "Quien contamina o estrella una nave debe pagar: las corporaciones deben responder penal y financieramente por los escombros que esparcen en el suelo lunar, como en cualquier delito ambiental en la Tierra.",
+        "cuestionamiento": "¿Es realista aplicar castigos penales y exigir la recolección de miles de fragmentos pequeños esparcidos por un choque a alta velocidad con la tecnología actual?"
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "Debe prohibirse el lanzamiento de misiones comerciales privadas hasta que no demuestren estándares de seguridad pública tan rigurosos como los de las agencias espaciales de los Estados.",
+        "cuestionamiento": "Exigir requisitos regulatorios tan severos podría frenar la innovación tecnológica y concentrar el acceso al cosmos únicamente en unas pocas superpotencias tradicionales."
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "Las empresas no pueden desentenderse de sus restos: toda compañía que alunice debe pagar previamente una póliza o fianza de remediación para financiar la limpieza de sus fallas.",
+        "cuestionamiento": "¿Cobrar una póliza de limpieza no funcionaría en la práctica como comprar un 'permiso legal para estrellar naves', naturalizando el daño en lugar de evitarlo?"
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "El Estado que autoriza el despegue comercial es el verdadero responsable moral: si una empresa privada estrella chatarra en la Luna, su país de origen debe compensar a la comunidad internacional.",
+        "cuestionamiento": "¿Cómo se calcula financieramente el 'daño ambiental' a un cráter lunar desierto donde no existe vida ni propiedad privada particular?"
+      }
+    ]
+  },
+  {
+    "id": "p4_hardware_seguridad",
+    "numero": 4,
+    "fotoVinculadaId": "foto_perseverance_paracaidas",
+    "tituloCaso": "El paracaídas y la cubierta protectora de Perseverance en Marte",
+    "descripcionDetallada": [
+      "En febrero de 2021, la NASA logró posar el rover Perseverance en el cráter Jezero de Marte. Para frenar en la tenue atmósfera marciana, la misión requirió desplegar un enorme paracaídas de 21 metros de diámetro y utilizar una cubierta protectora térmica, componentes que se desprendieron en pleno vuelo y se estrellaron a varios kilómetros del vehículo.",
+      "Meses después, el helicóptero Ingenuity sobrevoló la zona y capturó imágenes detalladas: la carcasa protectora yacía destrozada contra el suelo y el paracaídas extendido intacto sobre la arena marciana. Aunque estos equipos fueron indispensables para que el rover llegara a salvo e investigara la historia del planeta, ahora permanecerán allí por tiempo indefinido."
+    ],
+    "pregunta": "¿Es éticamente justificable utilizar métodos de aterrizaje que abandonan restos de gran tamaño en Marte para garantizar la llegada segura de vehículos científicos?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "El avance del conocimiento científico y la búsqueda de vida pasada son un bien tan extraordinario que justifican plenamente sembrar de restos metálicos el cráter de aterrizaje.",
+        "cuestionamiento": "¿No resulta una contradicción buscar pistas de vida prístina utilizando tecnologías que dejan residuos industriales permanentes en el mismo terreno que se quiere estudiar?"
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "Resulta inaceptable colonizar el paisaje marciano con chatarra: las agencias deben desarrollar obligatoriamente sistemas de aterrizaje biodegradables o naves capaces de recoger sus restos.",
+        "cuestionamiento": "Diseñar materiales que desaparezcan o destinar tiempo de la misión a recoger desechos restaría recursos, energía y años valiosos a la investigación científica de fondo."
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "Las misiones a Marte deberían posponerse de inmediato hasta que desarrollemos tecnologías de aterrizaje limpio que no abandonen paracaídas ni carcasas en la superficie.",
+        "cuestionamiento": "Detener o postergar estas misiones por décadas frenaría descubrimientos científicos irrepetibles sobre la habitabilidad y el pasado de nuestro sistema solar."
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "Es justificable descartar estos componentes solo si se garantiza que caigan en áreas estériles, lejos de cualquier zona con potencial de albergar agua o microorganismos marcianos.",
+        "cuestionamiento": "Las tormentas de polvo marcianas pueden transportar arena y partículas a escala planetaria. ¿Podemos asegurar que los restos no terminarán afectando áreas sensibles con el paso del tiempo?"
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "Toda misión que deje restos estructurales debe integrar un vehículo robotizado secundario con la tarea obligatoria de recolectar o enterrar sus propios desechos de aterrizaje.",
+        "cuestionamiento": "Multiplicar la cantidad de robots enviados para limpiar fragmentos de aterrizaje podría terminar aumentando la cantidad neta de maquinaria y huella humana sobre el planeta."
+      }
+    ]
+  },
+  {
+    "id": "p5_microdesechos_eolica",
+    "numero": 5,
+    "fotoVinculadaId": "foto_perseverance_aislamiento",
+    "tituloCaso": "Fragmento de aislamiento térmico dispersado por el viento en Marte",
+    "descripcionDetallada": [
+      "En junio de 2022, las cámaras del rover Perseverance divisaron un objeto brillante entre las rocas marcianas a más de dos kilómetros de distancia del lugar de aterrizaje. Al examinarlo de cerca, el equipo de la NASA confirmó que se trataba de un fragmento de manta térmica (Dacron aluminizado) encajado en una grieta.",
+      "El fragmento provenía de la etapa de descenso del rover y había sido transportado por las fuertes rachas de viento marciano. Este hecho demostró que los materiales abandonados no permanecen estáticos: la atmósfera y el clima de otros mundos pueden fragmentar, degradar y dispersar restos sintéticos a grandes distancias, dificultando enormemente su control o recolección posterior."
+    ],
+    "pregunta": "¿Qué obligaciones tenemos ante el riesgo de que los materiales espaciales se desintegren y dispersen de forma descontrolada debido a los vientos y el clima de otros planetas?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "La inmensidad planetaria de Marte hace que unos pocos fragmentos plásticos arrastrados por el viento sean un costo ínfimo e insignificante frente al éxito de la exploración espacial.",
+        "cuestionamiento": "En la Tierra también se pensó inicialmente que los microplásticos eran insignificantes frente a la inmensidad de los océanos, hasta que se transformaron en un grave problema global irreversible."
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "Ignorar la dispersión de microplásticos y fibras sintéticas en el viento marciano repite exactamente la misma negligencia que hoy deteriora los ecosistemas de la Tierra.",
+        "cuestionamiento": "Si tratamos cualquier desprendimiento accidental de material como una falta grave, ¿cómo podríamos justificar misiones robóticas que inevitablemente se desgastan en entornos extremos?"
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "Debe prohibirse taxativamente el uso de películas térmicas, plásticos ligeros o fibras volátiles que el viento extraterrestre pueda arrancar y esparcir sin control.",
+        "cuestionamiento": "Reemplazar estos materiales ultraligeros aumentaría considerablemente el peso de las naves, haciendo mucho más costosos y difíciles los viajes interplanetarios."
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "El impacto ético real no es la dispersión física, sino el riesgo de que estos restos sintéticos terrestres contaminen las muestras y generen falsos positivos en la búsqueda de vida marciana.",
+        "cuestionamiento": "Limitar el cuidado del entorno únicamente a proteger la pureza de las muestras de laboratorio reduce la ética a una simple conveniencia científica para los investigadores."
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "Debemos aceptar con madurez que la presencia de la humanidad en otros mundos siempre dejará huellas físicas inevitables; pretender una exploración espacial de impacto cero es una fantasía irrealizable.",
+        "cuestionamiento": "Asumir la alteración ambiental como un destino inevitable elimina cualquier sentido de responsabilidad y abre la puerta al descuido sistemático de los mundos que exploramos."
+      }
+    ]
+  },
+  {
+    "id": "p6_valor_intrinseco_abiotico",
+    "numero": 6,
+    "fotoVinculadaId": null,
+    "tituloCaso": "El valor de los entornos sin vida en el cosmos",
+    "descripcionDetallada": [
+      "A diferencia de la Tierra, la Luna y Marte son mundos aparentemente estériles, formados por rocas, cráteres y desiertos que han permanecido casi inalterados durante miles de millones de años. En la ética ambiental terrestre, el cuidado de la naturaleza se fundamenta principalmente en la protección de los seres vivos o en el bienestar humano.",
+      "Sin embargo, la exploración espacial nos enfrenta a una pregunta inédita: ¿tienen los paisajes naturales del cosmos un valor por sí mismos que merezca respeto, o su importancia depende exclusivamente de lo que la humanidad pueda extraer, construir o aprender de ellos?"
+    ],
+    "pregunta": "¿Tienen los paisajes geológicos vírgenes de la Luna y Marte un valor propio que imponga restricciones a la acción humana, incluso si no albergan ninguna forma de vida?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "Los paisajes cósmicos sin vida no tienen ningún derecho moral: son simplemente roca y polvo estéril a nuestra entera disposición para la ciencia, la economía o la colonización.",
+        "cuestionamiento": "¿Considerar que la naturaleza solo tiene valor cuando nos es útil no reproduce la misma mentalidad que causó las crisis ambientales en la Tierra?"
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "Las formaciones geológicas talladas durante miles de millones de años poseen un valor intrínseco y una dignidad cósmica propia que el ser humano tiene el deber moral de respetar.",
+        "cuestionamiento": "¿Cómo resolvemos el conflicto cuando una necesidad humana vital de agua, minerales o energía choca de frente con la preservación de un cráter virgen pero desierto?"
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "El único valor de los paisajes celestes es su capacidad de inspirar y asombrar a la mente humana: si alterarlos o explotarlos beneficia a una mayoría de personas, no existe objeción ética válida.",
+        "cuestionamiento": "Si el motivo de protegerlos sigue siendo la experiencia humana, ¿qué impediría destruirlos si una mayoría decide que prefiere construir complejos turísticos o mineros?"
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "Solo los seres capaces de sentir o vivir merecen protección moral: alterar un cráter lunar inerte no causa sufrimiento a nadie y por tanto no constituye una falta ética real.",
+        "cuestionamiento": "¿Es éticamente admisible alterar de forma irreversible formaciones geológicas de cuatro mil millones de años simplemente porque carecen de células vivas?"
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "Ante nuestra profunda ignorancia sobre la historia y evolución del cosmos, debemos aplicar un principio de precaución estricto y abstenernos de transformar irreversiblemente entornos que no comprendemos.",
+        "cuestionamiento": "¿No impone esta cautela extrema una parálisis injustificada sobre el avance de la exploración científica y los viajes espaciales?"
+      }
+    ]
+  },
+  {
+    "id": "p7_gobernanza_comunes",
+    "numero": 7,
+    "fotoVinculadaId": null,
+    "tituloCaso": "La gobernanza de los bienes comunes en el espacio",
+    "descripcionDetallada": [
+      "El Tratado del Espacio Ultraterrestre de 1967 declara que el espacio pertenece a toda la humanidad y prohíbe la apropiación nacional. Sin embargo, en la práctica son unas pocas potencias y corporaciones privadas con gran poder financiero las que cuentan con los medios para llegar e instalarse en otros mundos.",
+      "Esto genera el peligro de que los escasos puntos estratégicos —como los cráteres con reservas de hielo en los polos lunares o las zonas estables para aterrizaje— sean ocupados y controlados por los primeros en llegar, profundizando las desigualdades globales en la Tierra."
+    ],
+    "pregunta": "¿Cómo debería organizarse el control de las actividades espaciales para evitar que los recursos y paisajes celestes sean acaparados por unas pocas naciones y corporaciones?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "Quienes asumen el riesgo económico y la innovación técnica deben tener libertad absoluta para aprovechar los recursos y establecer sus bases sin trabas burocráticas impuestas desde la Tierra.",
+        "cuestionamiento": "¿No marginaría este criterio a los países en desarrollo y consolidaría un monopolio de las naciones ricas sobre los recursos del cosmos?"
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "La comunidad internacional debe crear una autoridad judicial con poder penal vinculante para castigar con multas y sanciones a quienes contaminen o privaticen el espacio común.",
+        "cuestionamiento": "¿La lentitud de los acuerdos multilaterales no terminaría bloqueando o desanimando las inversiones y avances científicos necesarios para explorar el espacio?"
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "Todos los pueblos de la Tierra, incluso aquellos sin tecnología espacial hoy, deben tener exactamente la misma voz y voto vinculante sobre el destino de los cuerpos celestes.",
+        "cuestionamiento": "¿Cómo convencer a las superpotencias que ya invirtieron billones de dólares de ceder poder de decisión a países que no participan en las misiones?"
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "Las leyes penales en el espacio son una quimera inaplicable: lo único realista es promover acuerdos voluntarios y códigos de buenas prácticas entre las agencias y corporaciones.",
+        "cuestionamiento": "¿Tienen los acuerdos voluntarios la fuerza necesaria para frenar la codicia económica cuando comience una carrera por extraer minerales valiosos en la Luna o asteroides?"
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "Las futuras colonias asentadas en la Luna o Marte deben tener soberanía plena para decidir sus propias leyes ambientales, sin interferencias de los gobiernos de la Tierra.",
+        "cuestionamiento": "¿Qué impediría a esas primeras colonias, operando en condiciones extremas y de supervivencia, destruir su entorno inmediato para sostenerse?"
+      }
+    ]
+  },
+  {
+    "id": "p8_prioridades_tierra_espacio",
+    "numero": 8,
+    "fotoVinculadaId": null,
+    "tituloCaso": "Prioridades globales: Exploración espacial frente a urgencias terrestres",
+    "descripcionDetallada": [
+      "Las misiones de exploración interplanetaria y el desarrollo de tecnologías para alcanzar la Luna y Marte demandan presupuestos de miles de millones de dólares, además del esfuerzo de los científicos más destacados del mundo y un alto consumo energético.",
+      "Mientras tanto, en nuestro planeta persisten crisis humanitarias urgentes, pobreza, escasez de servicios básicos y una grave degradación climática. Esta realidad abre una discusión ética de fondo sobre cómo una civilización debe priorizar sus esfuerzos y recursos."
+    ],
+    "pregunta": "¿Es éticamente justificable destinar enormes recursos económicos y humanos a explorar otros mundos mientras persisten crisis humanitarias y ambientales graves en la Tierra?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "Gastar miles de millones en explorar desiertos extraterrestres mientras millones sufren hambre y colapso ambiental en la Tierra es una injusticia ética que no podemos tolerar.",
+        "cuestionamiento": "Limitar a la humanidad exclusivamente a la Tierra nos vuelve vulnerables a catástrofes globales súbitas o guerras que podrían poner en riesgo la supervivencia de nuestra especie."
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "La exploración espacial es la mejor vía para salvar la Tierra: solo trasladando la minería contaminante y la energía fuera del planeta podremos sanar nuestro mundo natal.",
+        "cuestionamiento": "¿No fomenta esta promesa la ilusión irresponsable de un 'planeta de repuesto', postergando la urgencia de cambiar nuestros hábitos destructivos de consumo aquí y ahora?"
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "La búsqueda de conocimiento y la expansión hacia las estrellas responden a la vocación fundamental de la humanidad; frenar esa frontera significaría la decadencia cultural de nuestra civilización.",
+        "cuestionamiento": "¿Apelar al 'destino de la especie' no ha servido históricamente para justificar grandes gastos y desatender injusticias sociales apremiantes?"
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "Solo debe financiarse la ciencia espacial que tenga un impacto ecológico directo en la Tierra, como los satélites climáticos, cancelando las misiones tripuladas que no aportan soluciones urgentes.",
+        "cuestionamiento": "Si solo valoramos el programa espacial por sus beneficios prácticos en la Tierra, ¿cómo justificaríamos misiones a Marte que no aportan soluciones climáticas inmediatas?"
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "La exploración espacial debe continuar pero con una tasa solidaria obligatoria: por cada dólar invertido en el cosmos debe destinarse otro a restaurar ecosistemas dañados en nuestro planeta.",
+        "cuestionamiento": "¿Es ético tratar la inversión espacial como un lujo culpable que deba pagar una penitencia para ser aceptado por la sociedad?"
+      }
+    ]
+  }
+]

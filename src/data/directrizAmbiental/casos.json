@@ -1,0 +1,60 @@
+{
+  "id": "huellas-exploracion-espacial",
+  "titulo": "¿Bajo qué criterios y límites resulta éticamente aceptable alterar o dejar huellas en otros cuerpos celestes, y qué responsabilidades asume la humanidad ante el impacto de su presencia en el espacio?",
+  "preguntaCentral": "¿Bajo qué criterios y límites resulta éticamente aceptable alterar o dejar huellas en otros cuerpos celestes, y qué responsabilidades asume la humanidad ante el impacto de su presencia en el espacio?",
+  "tituloSeccion": "Exploración espacial y objetos abandonados",
+  "parrafos": [
+    "La exploración espacial ha permitido importantes avances en el conocimiento de la Luna y Marte. Gracias a las misiones enviadas a estos cuerpos celestes, hoy conocemos con mayor detalle sus superficies, su composición y parte de su historia geológica. Sin embargo, explorar estos lugares también significa intervenir en ellos. Cada misión requiere transportar instrumentos, utilizar sistemas de aterrizaje y realizar operaciones que pueden modificar el terreno o dejar materiales de origen terrestre. Así, junto con los descubrimientos científicos, la actividad espacial ha generado una presencia humana que permanece incluso después de que las misiones terminan.",
+    "Esta huella material se manifiesta en distintas situaciones que reflejan la complejidad del problema. En la Luna, las etapas de descenso del programa Apolo permanecen en los sitios de alunizaje como testimonio de la llegada humana, junto con bolsas de residuos operativos descartadas deliberadamente para reducir la masa antes del regreso. Por su parte, misiones más recientes, como HAKUTO-R, muestran cómo los accidentes durante el aterrizaje pueden dejar restos imprevistos sobre la superficie. En Marte, los sistemas utilizados para aterrizar vehículos como Perseverance requieren desprenderse de paracaídas y cubiertas protectoras, mientras que algunos fragmentos de aislamiento térmico pueden desplazarse posteriormente por acción del viento marciano. Estos ejemplos muestran que los objetos presentes en otros mundos no constituyen una categoría uniforme de «basura», sino que incluyen componentes necesarios para las misiones, artefactos de valor histórico y restos derivados de accidentes.",
+    "Comprender este panorama requiere considerar distintas dimensiones éticas y distinguir entre hechos documentados, riesgos potenciales e incertidumbres científicas. Por una parte, algunos de estos objetos poseen un valor histórico y cultural para la humanidad, lo que dificulta clasificarlos simplemente como residuos. Por otra, aunque la Luna y Marte presentan condiciones ambientales muy diferentes a las terrestres, la presencia de materiales artificiales plantea interrogantes sobre la protección planetaria, los riesgos de contaminación y la posible alteración de registros geológicos o indicios de vida antes de que puedan ser estudiados en sus condiciones originales.",
+    "Frente a este escenario, el desafío no consiste simplemente en decidir si la exploración espacial es beneficiosa o perjudicial, sino en reflexionar sobre las responsabilidades que surgen al intervenir en otros mundos. ¿Hasta qué punto se justifican las alteraciones necesarias para desarrollar una misión? ¿Deberíamos exigir la recuperación de los materiales abandonados, incluso cuando hacerlo implique mayores dificultades técnicas o riesgos? ¿Qué ocurre cuando un objeto considerado residuo también posee un valor histórico o científico? ¿Y cómo deberíamos actuar cuando todavía desconocemos las consecuencias que nuestras intervenciones podrían tener a largo plazo?",
+    "Estas interrogantes nos invitan a cuestionar no solo las huellas que la humanidad ya ha dejado fuera de la Tierra, sino también aquellas que estamos dispuestos a dejar en el futuro."
+  ],
+  "carruselFotos": [
+    {
+      "id": "foto_apolo11_residuos",
+      "numero": 1,
+      "titulo": "Bolsa de residuos de Apolo 11 (Luna, 1969)",
+      "descripcion": "Bolsa de desechos arrojada deliberadamente al pie del módulo lunar para reducir masa antes del despegue.",
+      "eje": "Necesidad operativa y reducción de masa",
+      "archivoImagen": "/images/ambiental/foto1_apolo11_residuos.jpg",
+      "credito": "NASA / Neil Armstrong"
+    },
+    {
+      "id": "foto_sitios_apolo",
+      "numero": 2,
+      "titulo": "Sitios de descenso Apolo (Luna, 1969–1972)",
+      "descripcion": "Etapas de descenso y huellas de astronautas que permanecen inalteradas en el regolito lunar.",
+      "eje": "Permanencia de infraestructura y patrimonio",
+      "archivoImagen": "/images/ambiental/foto2_sitios_apolo.jpg",
+      "credito": "NASA / GSFC / Arizona State University (LROC)"
+    },
+    {
+      "id": "foto_hakuto_r",
+      "numero": 3,
+      "titulo": "Impacto de HAKUTO-R (Luna, 2023)",
+      "descripcion": "Escombros producidos tras el estrellamiento del aterrizador lunar comercial japonés en el cráter Atlas.",
+      "eje": "Restos imprevistos de misiones comerciales",
+      "archivoImagen": "/images/ambiental/foto3_hakuto_r.png",
+      "credito": "NASA / GSFC / LROC"
+    },
+    {
+      "id": "foto_perseverance_paracaidas",
+      "numero": 4,
+      "titulo": "Paracaídas de Perseverance (Marte, 2022)",
+      "descripcion": "Cubierta protectora y paracaídas de 21 metros esparcidos tras el descenso supersónico en el cráter Jezero.",
+      "eje": "Sistemas indispensables de entrada y aterrizaje",
+      "archivoImagen": "/images/ambiental/foto4_perseverance_paracaidas.jpg",
+      "credito": "NASA / JPL-Caltech / Ingenuity"
+    },
+    {
+      "id": "foto_perseverance_aislamiento",
+      "numero": 5,
+      "titulo": "Aislamiento térmico dispersado (Marte, 2022)",
+      "descripcion": "Manta térmica encajada en una roca a 2 km del aterrizaje, transportada por el viento marciano.",
+      "eje": "Dispersión eólica y persistencia material",
+      "archivoImagen": "/images/ambiental/foto5_perseverance_aislamiento.jpg",
+      "credito": "NASA / JPL-Caltech"
+    }
+  ]
+}

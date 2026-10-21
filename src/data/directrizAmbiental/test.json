@@ -1,0 +1,139 @@
+{
+  "titulo": "Test de afinidad con la ética ambiental espacial",
+  "descripcion": "Indica tu grado de acuerdo con las siguientes 8 afirmaciones (1 = Totalmente en desacuerdo, 5 = Totalmente de acuerdo) para identificar tu afinidad con las corrientes filosóficas representadas por Patrick Lin, Christopher Newman y Charles Cockell.",
+  "afirmaciones": [
+    {
+      "id": 1,
+      "numero": 1,
+      "texto": "Los paisajes rocosos y cráteres estériles de la Luna y Marte poseen un valor propio que la humanidad debe respetar, más allá de cualquier utilidad científica o económica que podamos extraer de ellos.",
+      "eje": "Valor intrínseco abiótico y respeto a la naturaleza proyectiva",
+      "autorRelevante": "Charles Cockell"
+    },
+    {
+      "id": 2,
+      "numero": 2,
+      "texto": "Antes de expandir la minería o los asentamientos comerciales a otros planetas, la humanidad tiene la obligación ética de pausar y resolver sus problemas de justicia, consumo y gobernanza en la Tierra.",
+      "eje": "Precaución, prioridades humanas y crítica del solucionismo espacial",
+      "autorRelevante": "Patrick Lin"
+    },
+    {
+      "id": 3,
+      "numero": 3,
+      "texto": "El Tratado del Espacio Ultraterrestre de 1967 es insuficiente para el siglo XXI; se requiere urgentemente un código ambiental vinculante que sancione el abandono de residuos en cuerpos celestes.",
+      "eje": "Gobernanza vinculante y régimen legal internacional",
+      "autorRelevante": "Christopher Newman"
+    },
+    {
+      "id": 4,
+      "numero": 4,
+      "texto": "Si una empresa privada estrella un aterrizador en la Luna, debe ser legal y financieramente responsable de mitigar o retirar los escombros que dispersó sobre el regolito.",
+      "eje": "Responsabilidad jurídica por accidentes e impactos comerciales",
+      "autorRelevante": "Christopher Newman"
+    },
+    {
+      "id": 5,
+      "numero": 5,
+      "texto": "Si se descubren microbios autóctonos en Marte, su derecho a continuar su propia evolución debe prevalecer sobre cualquier plan humano de terraformación o explotación de recursos.",
+      "eje": "Biocentrismo extraterrestre y no interferencia",
+      "autorRelevante": "Charles Cockell"
+    },
+    {
+      "id": 6,
+      "numero": 6,
+      "texto": "El descarte deliberado de bolsas de desechos o escudos térmicos está plenamente justificado si reduce los riesgos de la misión y garantiza la vida de los exploradores.",
+      "eje": "Prioridad de seguridad técnica y utilitarismo operativo",
+      "autorRelevante": "Patrick Lin"
+    },
+    {
+      "id": 7,
+      "numero": 7,
+      "texto": "Deben crearse 'Parques Planetarios' internacionales con estatus de reserva absoluta, donde quede prohibida toda intervención humana destructiva para preservar la belleza de mundos alienígenas.",
+      "eje": "Preservación estética y zonificación de protección planetaria",
+      "autorRelevante": "Charles Cockell"
+    },
+    {
+      "id": 8,
+      "numero": 8,
+      "texto": "El acceso a los recursos lunares y asteroides no debe regirse por la ley del más rápido, sino planificarse bajo un esquema de justicia distributiva acordado multilateralmente.",
+      "eje": "Justicia distributiva y equidad intergeneracional en el espacio",
+      "autorRelevante": "Patrick Lin"
+    }
+  ],
+  "perfilesReferencia": {
+    "lin": {
+      "autorId": "lin",
+      "nombre": "Patrick Lin",
+      "respuestasIdeales": [
+        4,
+        5,
+        4,
+        4,
+        4,
+        3,
+        4,
+        5
+      ],
+      "pesos": [
+        1.1,
+        1.5,
+        1.2,
+        1.2,
+        1.1,
+        1,
+        1.1,
+        1.4
+      ],
+      "descripcionAfinidad": "Tu perspectiva se alinea con la ética crítica y cautelosa de Patrick Lin. Desconfías del solucionismo tecnológico precipitado y de las fantasías coloniales de escape, exigiendo que la humanidad clarifique sus deberes morales, evite exportar injusticias terrestres y regule la apropiación de recursos mediante principios equitativos antes de dar saltos irreparables al vacío cósmico."
+    },
+    "newman": {
+      "autorId": "newman",
+      "nombre": "Christopher Newman",
+      "respuestasIdeales": [
+        3,
+        4,
+        5,
+        5,
+        4,
+        3,
+        4,
+        5
+      ],
+      "pesos": [
+        1,
+        1.1,
+        1.5,
+        1.5,
+        1.1,
+        1,
+        1.2,
+        1.3
+      ],
+      "descripcionAfinidad": "Tu enfoque coincide con la visión institucional y de gobernanza de Christopher Newman. Enfatizas la necesidad de normas transparentes, responsabilidad legal por accidentes y sostenibilidad jurídica para evitar la 'tragedia de los comunes' en la Luna y Marte. Consideras que los exploradores deben actuar como verdaderos enviados de toda la humanidad, guiados por un estricto deber de cuidado ambiental."
+    },
+    "cockell": {
+      "autorId": "cockell",
+      "nombre": "Charles Cockell",
+      "respuestasIdeales": [
+        5,
+        4,
+        4,
+        4,
+        5,
+        2,
+        5,
+        4
+      ],
+      "pesos": [
+        1.5,
+        1.1,
+        1.1,
+        1.1,
+        1.5,
+        1.2,
+        1.5,
+        1.2
+      ],
+      "descripcionAfinidad": "Tu postura resuena con la ética ambiental biocéntrica de Charles Cockell. Reconoces un valor intrínseco profundo en la vida microbiana y en la integridad estética de los paisajes celestes prístinos. Abogas por una reverencia cósmica hacia la naturaleza extraterrestre y por la protección proactiva de reservas geológicas y astrobiológicas frente al extractivismo depredador."
+    }
+  }
+}
