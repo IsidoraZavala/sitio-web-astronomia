@@ -9,6 +9,7 @@ import {
 } from './Icons'
 import { NasaTracesCardVisual } from './NasaTracesCardVisual'
 import { NasaAsteroidMonitorVisual } from './NasaAsteroidMonitorVisual'
+import { NasaAnimalResearchCardVisual } from './NasaAnimalResearchCardVisual'
 import { TypewriterTitle } from './TypewriterTitle'
 import { APOD_CURADAS } from '../data/nasaApodData'
 
@@ -338,7 +339,7 @@ export function HomeView({
             </div>
           </article>
 
-          {/* DILEMA 3: CIELO Y SATÉLITES (LAVANDA PASTEL) */}
+          {/* DILEMA 3: BIOÉTICA ANIMAL (LAVANDA PASTEL) */}
           <article
             className="dilemma-catalog-card"
             style={{
@@ -347,70 +348,7 @@ export function HomeView({
             }}
           >
             <div className="dilemma-card-visual" style={{ background: '#05060A', padding: '10px' }}>
-              <div
-                style={{
-                  position: 'relative',
-                  width: '100%',
-                  height: '155px',
-                  overflow: 'hidden',
-                  borderRadius: '8px',
-                  background: '#060814',
-                }}
-              >
-                <img
-                  src="https://images-assets.nasa.gov/image/GSFC_20171208_archive_e000401/GSFC_20171208_archive_e000401~medium.jpg"
-                  alt="Telescopios espaciales y cielo nocturno"
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover',
-                    objectPosition: 'center',
-                    filter: 'brightness(0.9) contrast(1.05)',
-                  }}
-                />
-                <div
-                  style={{
-                    position: 'absolute',
-                    inset: 0,
-                    background:
-                      'linear-gradient(180deg, rgba(6, 8, 20, 0.05) 0%, rgba(6, 8, 20, 0.45) 55%, rgba(6, 8, 20, 0.96) 100%)',
-                    pointerEvents: 'none',
-                  }}
-                />
-                <div
-                  style={{
-                    position: 'absolute',
-                    bottom: '10px',
-                    left: '12px',
-                    right: '12px',
-                    zIndex: 2,
-                  }}
-                >
-                  <p
-                    style={{
-                      margin: '0 0 3px',
-                      fontSize: '12px',
-                      fontWeight: 600,
-                      color: '#FFFFFF',
-                      lineHeight: '1.3',
-                      textShadow: '0 2px 4px rgba(0,0,0,0.85)',
-                    }}
-                  >
-                    Observación astronómica y cielo nocturno
-                  </p>
-                  <p
-                    style={{
-                      margin: 0,
-                      fontSize: '10.5px',
-                      color: '#94A3B8',
-                      lineHeight: '1.35',
-                      fontStyle: 'italic',
-                    }}
-                  >
-                    Impacto de megaconstelaciones satelitales en la ciencia y el cielo oscuro.
-                  </p>
-                </div>
-              </div>
+              <NasaAnimalResearchCardVisual />
             </div>
             <div className="dilemma-card-body">
               <span
@@ -427,10 +365,10 @@ export function HomeView({
                   color: '#DDD6FE',
                 }}
               >
-                Cielo y Satélites
+                Bioética Animal
               </span>
-              <h2>¿Deberíamos limitar las megaconstelaciones satelitales para proteger la investigación astronómica?</h2>
-              <p>El crecimiento masivo de satélites en órbita baja frente a la protección de las observaciones científicas y el cielo nocturno.</p>
+              <h2>¿Cómo debe conciliarse el valor moral de los animales con las necesidades científicas y de seguridad de la exploración espacial humana?</h2>
+              <p>Vuelos pioneros, adiestramiento aversivo, eutanasia post-misión y el principio de reemplazo: Bentham, Singer, Regan y Nussbaum.</p>
               
               <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: 'auto' }}>
                 <button
@@ -447,7 +385,7 @@ export function HomeView({
                     transition: 'all 0.2s ease',
                   }}
                   onClick={() =>
-                    onSelectSpecificDilemma?.('megaconstelaciones-astronomia')
+                    onSelectSpecificDilemma?.('uso-animales-investigacion-espacial')
                   }
                   onMouseEnter={(e) => {
                     e.currentTarget.style.background = '#DDD6FE'

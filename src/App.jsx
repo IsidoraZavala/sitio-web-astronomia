@@ -7,6 +7,7 @@ import { DilemmaExperience } from './components/DilemmaExperience'
 import { PilotDilemmaExperience } from './components/PilotDilemmaExperience'
 import { EnvironmentalDilemmaExperience } from './components/EnvironmentalDilemmaExperience'
 import { SpaceUseDilemmaExperience } from './components/SpaceUseDilemmaExperience'
+import { AnimalResearchDilemmaExperience } from './components/AnimalResearchDilemmaExperience'
 import { HomeView } from './components/HomeView'
 import {
   IconBook,
@@ -173,6 +174,12 @@ function App() {
             />
           ) : dilemaSeleccionado.esDirectrizUsoEspacio || dilemaSeleccionado.id === 'uso-bienes-materiales-propiedad' ? (
             <SpaceUseDilemmaExperience
+              key={dilemaSeleccionado.id}
+              onVolverAlCatalogo={() => navegarSeccion('catalogo')}
+              onGuardarGlobal={guardarProgresoDilema}
+            />
+          ) : dilemaSeleccionado.esDirectrizAnimales || dilemaSeleccionado.id === 'uso-animales-investigacion-espacial' ? (
+            <AnimalResearchDilemmaExperience
               key={dilemaSeleccionado.id}
               onVolverAlCatalogo={() => navegarSeccion('catalogo')}
               onGuardarGlobal={guardarProgresoDilema}

@@ -1037,9 +1037,9 @@ export function SpaceUseDilemmaExperience({ onVolverAlCatalogo, onGuardarGlobal 
                       flexShrink: 0,
                     }}
                   >
-                    {autorDetalle.foto ? (
+                    {autorDetalle.fotoUrl || autorDetalle.foto ? (
                       <img
-                        src={resolverRutaImagen(autorDetalle.foto)}
+                        src={resolverRutaImagen(autorDetalle.fotoUrl || autorDetalle.foto)}
                         alt={autorDetalle.nombre}
                         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                         onError={(e) => {

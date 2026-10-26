@@ -1,0 +1,80 @@
+{
+  "id": "uso-animales-investigacion-espacial",
+  "titulo": "¿Cómo debe conciliarse el valor moral de los animales con las necesidades científicas y de seguridad de la exploración espacial humana?",
+  "preguntaCentral": "¿Cómo debe conciliarse el valor moral de los animales con las necesidades científicas y de seguridad de la exploración espacial humana?",
+  "tituloSeccion": "Uso de animales en la investigación y experimentación espacial",
+  "parrafos": [
+    "Desde los albores de la carrera espacial, la humanidad recurrió a seres sintientes no humanos para comprobar si la vida mamífera y los procesos biológicos complejos podían subsistir en el entorno hostil del cosmos. Perros, primates, roedores, felinos e invertebrados fueron lanzados a la atmósfera superior y a la órbita terrestre para medir el impacto de la aceleración gravitacional, la radiación ionizante, la ingravidez y el confinamiento antes de arriesgar vidas de astronautas.",
+    "Estas misiones, frecuentemente celebradas como hitos tecnológicos de la Guerra Fría, encierran una profunda contradicción ética: mientras que los seres humanos participaron de la exploración espacial de manera voluntaria, con pleno conocimiento de los riesgos y la posibilidad de alcanzar gloria o beneficios colectivos, los animales fueron reclutados de manera coactiva, sometidos a adiestramientos aversivos y, en muchos casos, enviados a muertes seguras o a sacrificios posteriores para la extracción de órganos.",
+    "El debate bioético actual no solo evalúa el sufrimiento histórico infligido en cápsulas rudimentarias, sino que interpela directamente el futuro de la exploración: ante la llegada de organoides, simulaciones computacionales avanzadas y órganos en chip, ¿en qué medida sigue siendo éticamente justificable utilizar modelos animales vivos para probar la seguridad de viajes a la Luna o Marte? Asimismo, la emergencia de misiones comerciales privadas en ausencia de tratados internacionales vinculantes sobre bienestar animal abre un peligroso vacío regulatorio.",
+    "Para analizar esta problemática, confrontamos las visiones de cuatro de los mayores referentes del pensamiento ético sobre los animales: el utilitarismo clásico de Jeremy Bentham que establece el sufrimiento como árbitro moral definitivo; el utilitarismo de preferencias de Peter Singer que denuncia el sesgo especista y exige igualdad de consideración de intereses; la deontología de Tom Regan que defiende a los animales como sujetos de una vida con derechos morales inviolables; y el enfoque de las capacidades de Martha C. Nussbaum que reclama justicia multispecies, florecimiento biológico y deber de retiro digno.",
+    "Te invitamos a examinar estos hechos históricos documentados, asumir los dilemas inherentes a cada decisión y definir los principios éticos que deben guiar la relación de la humanidad con otras especies en la frontera cósmica."
+  ],
+  "casosDocumentados": [
+    {
+      "id": "caso_laika",
+      "numero": 1,
+      "titulo": "Laika en el Sputnik 2 (1957)",
+      "subtitulo": "El vuelo orbital sin retorno programado y la muerte anunciada",
+      "fecha": "1957",
+      "resumen": "Laika fue el primer ser vivo en orbitar la Tierra a bordo del Sputnik 2 soviético. Dado que la tecnología de reentrada atmosférica segura no existía para esa cápsula, la misión fue planificada conscientemente sin retorno posible. La perra falleció a las pocas horas por estrés térmico y pánico.",
+      "hechosReales": "El 3 de noviembre de 1957, la Unión Soviética lanzó a la perra mestiza moscovita Laika. Los sensores biomédicos registraron un ritmo cardíaco que se triplicó durante el despegue y tardó horas en descender, reflejando un pánico extremo. Un fallo en el aislamiento térmico elevó la temperatura interna de la cabina por encima de los 40 °C. Oficialmente se afirmó durante décadas que Laika sobrevivió varios días y fue eutanasiada con comida envenenada, pero en 2002 los científicos del proyecto revelaron que murió a las 5–7 horas del lanzamiento por sobrecalentamiento y asfixia. Fue el detonante de las primeras protestas de bienestar animal a escala global.",
+      "proyectosPropuestas": "Establecimiento de normas internacionales que prohíban taxativamente el lanzamiento de animales en misiones sin tecnología probada de recuperación con vida y sistemas redundantes de soporte vital.",
+      "actores": "Programa espacial soviético, gobierno de la URSS, comunidad científica internacional, organizaciones protectoras de animales y opinión pública mundial.",
+      "tensionEtica": "El conflicto ético entre acelerar el avance tecnológico y la supremacía geopolítica de un Estado frente al deber moral categórico de no planificar la muerte segura de un ser sintiente que no puede consentir.",
+      "fotoId": "foto_laika"
+    },
+    {
+      "id": "caso_ham",
+      "numero": 2,
+      "titulo": "El chimpancé Ham en Mercury-Redstone 2 (1961)",
+      "subtitulo": "Adiestramiento por descargas eléctricas y secuelas psicológicas",
+      "fecha": "1961",
+      "resumen": "Ham realizó un vuelo suborbital de 16 minutos para probar si un organismo complejo podía mantener habilidades psicomotoras y operar controles en ingravidez. Su entrenamiento y vuelo incluyeron descargas eléctricas en los pies ante errores o retrasos en accionar palancas.",
+      "hechosReales": "La Fuerza Aérea de EE. UU. y la NASA condicionaron a Ham mediante un sistema de 'evitación de choques': si no accionaba una palanca ante una luz azul en menos de 5 segundos, recibía una descarga eléctrica en las plantas de los pies. Durante su vuelo del 31 de enero de 1961, una sobreaceleración del cohete llevó a la cápsula a 253 km de altitud y 14,7 g de fuerza. A pesar del dolor, el estrés y la posterior deshidratación por un amerizaje accidentado donde la cápsula hizo agua, Ham cumplió sus tareas con un retraso de fracciones de segundo. Sobrevivió físicamente, pero pasó el resto de su vida en zoológicos mostrando comportamientos estereotipados y signos de trauma.",
+      "proyectosPropuestas": "Prohibición del uso de condicionamiento operante aversivo y estímulos dolorosos en la preparación de sujetos animales, junto a la obligación de fondos de pensión y santuario para primates veteranos.",
+      "actores": "NASA, Fuerza Aérea de EE. UU. (Holloman AFB), primatólogos, organizaciones de defensa animal y cuidadores de zoológicos.",
+      "tensionEtica": "El empleo deliberado de estímulos físicos dolorosos y la generación de estrés psicológico severo en especies de alta complejidad cognitiva para verificar reflejos operativos que beneficiarán exclusivamente a tripulaciones humanas.",
+      "fotoId": "foto_ham"
+    },
+    {
+      "id": "caso_felicette",
+      "numero": 3,
+      "titulo": "La gata Félicette en Véronique AGI 47 (1963)",
+      "subtitulo": "Supervivencia exitosa al vuelo y eutanasia metodológica post-misión",
+      "fecha": "1963",
+      "resumen": "Francia lanzó a la gata Félicette a un vuelo suborbital con electrodos implantados en el cráneo para registrar actividad cerebral. Sobrevivió con éxito al lanzamiento, microgravedad y paracaídas, pero dos meses después fue eutanasiada deliberadamente para analizar su cerebro.",
+      "hechosReales": "El 18 de octubre de 1963, el Centro Nacional de Estudios Espaciales (CNES) de Francia lanzó a Félicette a 157 km de altitud desde Argelia. A la gata se le habían insertado electrodos craneales permanentes para medir impulsos neuronales durante 5 minutos de ingravidez. El vuelo fue un éxito técnico total y Félicette aterrizó sana y salva en su cápsula. No obstante, dos meses después de su regreso a París, los investigadores decidieron sacrificarla con el único propósito de extraer su tejido cerebral para evaluar si la microgravedad había producido lesiones microvasculares indetectables externamente.",
+      "proyectosPropuestas": "Consagración jurídica del estatus de 'retiro obligatorio con protección vital': prohibir la eutanasia programada de animales que sobrevivan en buen estado de salud a misiones espaciales, exigiendo métodos no destructivos de diagnóstico.",
+      "actores": "Centro de Enseñanza e Investigación en Medicina Aeronáutica (CERMA), CNES (Francia), comunidad neurocientífica y movimientos contemporáneos de memoria bioética.",
+      "tensionEtica": "La disyuntiva entre el valor epistémico de recolectar datos anatomopatológicos mediante autopsia frente al derecho a la vida que un animal adquiere tras haber servido y sobrevivido a los peligros del vuelo.",
+      "fotoId": "foto_felicette"
+    },
+    {
+      "id": "caso_multik",
+      "numero": 4,
+      "titulo": "El macaco Multik en Bion 11 (1996)",
+      "subtitulo": "Muerte por biopsia post-retorno y el cambio de política de la NASA",
+      "fecha": "1996–1997",
+      "resumen": "Tras un vuelo orbital de 14 días en la cápsula rusa Bion 11, el macaco rhesus Multik murió en la mesa quirúrgica durante una biopsia muscular post-vuelo bajo anestesia general. La indignación pública llevó a la NASA a retirarse del programa Bion y redactar sus principios éticos.",
+      "hechosReales": "En diciembre de 1996, Rusia y la NASA colaboraron en la misión Bion 11 con dos macacos para investigar la atrofia muscular y ósea. Los animales retornaron con éxito. Al día siguiente del aterrizaje, los científicos sometieron a Multik a anestesia general para tomar una biopsia de tejido muscular antes de que los músculos se readaptaran a la gravedad terrestre; el macaco sufrió un paro cardiorrespiratorio y falleció. La tormenta política e indignación ciudadana llevaron a la NASA a cancelar su participación en Bion 12 y a promulgar en 1997 los 'NASA Principles for the Ethical Care and Use of Animals', marcando el fin de los ensayos estadounidenses con primates en el espacio.",
+      "proyectosPropuestas": "Directrices bioéticas que prohíban intervenciones quirúrgicas de alto riesgo en periodos agudos de readaptación gravitacional y promuevan la sustitución de primates por modelos celulares o de roedores.",
+      "actores": "NASA, Instituto de Problemas Biomédicos de Moscú (IBMP), comités institucionales de ética (IACUC), organizaciones animalistas (PETA) y Congreso de EE. UU.",
+      "tensionEtica": "La tensión entre la prisa metodológica por registrar estados fisiológicos transitorios y el riesgo mortal que supone la invasividad quirúrgica en organismos severamente debilitados por la microgravedad prolongada.",
+      "fotoId": "foto_multik"
+    },
+    {
+      "id": "caso_bion_m1",
+      "numero": 5,
+      "titulo": "La misión Bion-M1 (2013)",
+      "subtitulo": "Fallas mecánicas de soporte vital y riesgo en satélites autónomos",
+      "fecha": "2013",
+      "resumen": "Rusia lanzó el biosatélite no tripulado Bion-M1 con 45 ratones y otros organismos durante 30 días en órbita. Un fallo en el dispensador automático de comida y problemas de hábitat causaron la muerte de más del 70% de los roedores durante la misión.",
+      "hechosReales": "El 19 de abril de 2013 se lanzó la misión Bion-M1 con una carga biológica que incluía 45 ratones machos divididos en grupos para estudiar adaptaciones genéticas y cardiovasculares prolongadas. Durante el vuelo autónomo, una falla técnica en la línea de suministro de alimento en pasta mató por inanición a un grupo completo de 15 ratones. Adicionalmente, el estrés del confinamiento y fallas en los separadores provocaron peleas letales, dejando vivos solo a 16 de los 45 ratones al aterrizar. Pese a la elevada mortandad, los científicos consideraron los datos de los supervivientes un éxito histórico de la biomedicina espacial.",
+      "proyectosPropuestas": "Protocolos estrictos de redundancia en sistemas de soporte de vida en naves no tripuladas y fijación de un umbral máximo de riesgo admisible previo a la aprobación de misiones biológicas autónomas.",
+      "actores": "Agencia Espacial Rusa (Roscosmos), IBMP, investigadores internacionales de EE. UU. y Europa, comités de bioética experimental.",
+      "tensionEtica": "La disparidad entre la rigurosa supervisión y rescate exigidos en bioterios terrestres frente a la tolerancia de altas tasas de mortalidad por contingencias mecánicas en misiones espaciales automáticas desprovistas de cuidado humano directo.",
+      "fotoId": "foto_bion_m1"
+    }
+  ]
+}

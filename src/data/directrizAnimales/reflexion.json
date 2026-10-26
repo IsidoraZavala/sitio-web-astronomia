@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ref_1_bentham_sintiencia",
+    "numero": 1,
+    "titulo": "El umbral de la sintiencia y el cálculo del sufrimiento (Jeremy Bentham)",
+    "autor": "Jeremy Bentham",
+    "contextualizacionPrevia": "Para Jeremy Bentham, padre del utilitarismo clásico, la línea divisoria de la moral no depende de que un ser razone o hable, sino de que pueda sentir placer y dolor. Al diseñar misiones espaciales, el terror del animal ante el estruendo del lanzamiento, la claustrofobia en cápsulas estrechas y el dolor físico de la aceleración son males morales reales. Bentham sostiene que causar sufrimiento a un animal es condenable salvo que exista una certeza matemática y proporcional de que ese dolor evitará un mal infinitamente mayor en el mundo.",
+    "citaDocumento": "«La pregunta no es: ¿pueden razonar? ni ¿pueden hablar?, sino: ¿pueden sufrir? Puede llegar el día en que el resto de la creación animal adquiera esos derechos que nunca podrían haber sido privados, excepto a manos de la tiranía.» (An Introduction to the Principles of Morals and Legislation, 1789, Cap. XVII, § 1, nota 122)",
+    "enunciado": "A partir del principio de Jeremy Bentham de que la capacidad de sufrir es la única medida moral legítima: ¿es justificable someter a animales a misiones espaciales con riesgo de asfixia, quemaduras o pánico si con ello se previene la muerte de astronautas humanos? ¿O el sufrimiento concreto del animal en una cápsula sellada es un mal inaceptable en sí mismo que ninguna meta científica puede redimir?"
+  },
+  {
+    "id": "ref_2_singer_antiespecismo",
+    "numero": 2,
+    "titulo": "Igual consideración de intereses y el test antiespecista (Peter Singer)",
+    "autor": "Peter Singer",
+    "contextualizacionPrevia": "El filósofo Peter Singer denuncia que los programas espaciales han operado históricamente bajo un sesgo 'especista': la creencia injustificada de que el dolor o la vida de los miembros de nuestra propia especie vale infinitamente más que el sufrimiento equivalente de otras criaturas sintientes. Singer plantea un test ético ineludible: si los científicos no estuvieran dispuestos a enviar en una misión orbital mortal o someter a descargas eléctricas a un ser humano con daño cerebral severo o a un infante huérfano (con capacidades cognitivas similares a las de un simio), es moralmente incoherente y discriminatorio hacérselo a un animal.",
+    "citaDocumento": "«Si un ser sufre, no puede haber justificación moral alguna para negarse a tener en cuenta este sufrimiento... Puesto que los prejuicios especistas son injustificables, un experimento no puede estar justificado a menos que su importancia justifique también el uso de un ser humano con lesión cerebral.» (Liberación Animal, ed. Taurus, 2008, Caps. 1 y 2)",
+    "enunciado": "Aplicando el test de consistencia antiespecista de Peter Singer: ¿consideras que las agencias espaciales han incurrido en discriminación especista al utilizar chimpancés o perros como 'escudos biológicos' para proteger a astronautas humanos? ¿Debería la ley espacial internacional exigir que no se realice a un animal ningún experimento invasivo que la sociedad consideraría inmoral realizar en un ser humano vulnerable?"
+  },
+  {
+    "id": "ref_3_regan_sujetos_vida",
+    "numero": 3,
+    "titulo": "Sujetos de una vida e inviolabilidad de derechos morales (Tom Regan)",
+    "autor": "Tom Regan",
+    "contextualizacionPrevia": "Para el filósofo Tom Regan, los animales no son recipientes intercambiables de bienestar ni recursos para la gloria o seguridad humana: son 'sujetos de una vida'. Tienen memoria, deseos, vida afectiva y un bienestar experiencial propio. Regan sostiene que cada animal posee un valor inherente idéntico e inviolable que prohíbe tratarlos como simples herramientas. Por eso, el error fundamental de la investigación espacial no fue la falta de mejor comida o anestesia en las cápsulas, sino la pretensión humana de considerar a los animales como material de laboratorio disponible para facilitar la expansión humana en el cosmos.",
+    "citaDocumento": "«El error fundamental es el sistema que nos permite ver a los animales como nuestros recursos, aquí para nosotros: para ser manipulados quirúrgicamente o explotados... Dañar a los animales por la posibilidad de que pueda descubrirse algo benéfico para otros es tratar a estos animales como si su valor fuera reducible a su utilidad posible.» (The Case for Animal Rights, 1986 / En defensa de los derechos de los animales, 2016, Cap. 9, § IV)",
+    "enunciado": "Frente a la postura abolicionista radical de Tom Regan: ¿crees que los animales poseen un derecho moral categórico a no ser utilizados como instrumentos en el espacio, haciendo ilegítima cualquier experimentación biológica fuera de la Tierra? ¿O consideras que la supervivencia de la humanidad y la conquista cósmica constituyen un fin superior que autoriza excepciones a los derechos de los animales?"
+  },
+  {
+    "id": "ref_4_nussbaum_capacidades",
+    "numero": 4,
+    "titulo": "Justicia multispecies, florecimiento y retiro digno (Martha C. Nussbaum)",
+    "autor": "Martha C. Nussbaum",
+    "contextualizacionPrevia": "Martha Nussbaum enseña que la justicia exige posibilitar que cada especie florezca de acuerdo con su propia naturaleza. En el espacio, el confinamiento extremo, la inmovilización forzada y la ingravidez bloquean violentamente el conato (el impulso vital de juego, locomoción y sociabilidad). Nussbaum califica la experimentación biomédica como un 'dilema trágico' transitorio que la humanidad debe esforzarse activamente por superar mediante alternativas tecnológicas. Asimismo, establece un deber de compensación moral: si una institución utiliza a un animal en una misión, adquiere la obligación jurídica irrenunciable de brindarle una jubilación digna, cuidados veterinarios y representación legal.",
+    "citaDocumento": "«Según el Enfoque de las Capacidades, cada criatura sintiente debe tener la oportunidad de florecer en la forma de vida característica de esa criatura... La injusticia implica centralmente un esfuerzo significativo (conato) bloqueado no solo por un daño, sino por una frustración indebida, ya sea por negligencia o de forma deliberada.» (Justicia para los animales: Una responsabilidad colectiva, Paidós, 2023, Introducción y Cap. 1)",
+    "enunciado": "A la luz del Enfoque de las Capacidades de Martha Nussbaum: ¿deben las agencias y empresas espaciales estar obligadas por ley internacional a financiar santuarios vitalicios para todo animal que participe en investigaciones, prohibiendo terminantemente la eutanasia post-misión por conveniencia científica? ¿Qué peso debe tener el derecho al florecimiento propio de cada especie frente a las exigencias operativas del vuelo espacial?"
+  }
+]

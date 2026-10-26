@@ -1,0 +1,96 @@
+{
+  "titulo": "Test de afinidad sobre bioética y uso de animales en el espacio",
+  "descripcion": "Indica tu grado de acuerdo con las siguientes 8 afirmaciones (1 = Totalmente en desacuerdo, 5 = Totalmente de acuerdo) para identificar tu afinidad con las corrientes éticas de Jeremy Bentham, Peter Singer, Tom Regan y Martha C. Nussbaum.",
+  "afirmaciones": [
+    {
+      "id": 1,
+      "numero": 1,
+      "texto": "Al planificar cualquier misión espacial, el dolor físico, el pánico y el estrés que pueda experimentar un animal deben calcularse como males morales de primer orden, inadmisibles salvo que se demuestre con certeza que evitan una catástrofe humana mucho mayor.",
+      "eje": "Cálculo de sufrimiento y primacía de la sintiencia como umbral moral",
+      "autorRelevante": "Jeremy Bentham"
+    },
+    {
+      "id": 2,
+      "numero": 2,
+      "texto": "Un experimento en un animal no humano en el espacio solo es éticamente aceptable si los científicos estarían dispuestos a realizar exactamente el mismo procedimiento en un ser humano con lesión cerebral irreversible o en un infante de facultades cognitivas similares.",
+      "eje": "Test de consistencia ética antiespecista e igual consideración de intereses",
+      "autorRelevante": "Peter Singer"
+    },
+    {
+      "id": 3,
+      "numero": 3,
+      "texto": "Los animales son sujetos de una vida dotados de un valor intrínseco e inviolable; tratarlos como meros instrumentos de medición o escudos de seguridad para astronautas es un error moral fundamental que debe ser abolido totalmente.",
+      "eje": "Deontología de derechos morales inviolables y abolicionismo institucional",
+      "autorRelevante": "Tom Regan"
+    },
+    {
+      "id": 4,
+      "numero": 4,
+      "texto": "Toda agencia o empresa que utilice a un animal en una misión espacial adquiere una deuda jurídica y moral irrenunciable: proveerle de por vida cuidados veterinarios, un santuario digno y prohibir su sacrificio por conveniencia metodológica.",
+      "eje": "Enfoque de las Capacidades, deber de compensación moral y retiro digno",
+      "autorRelevante": "Martha C. Nussbaum"
+    },
+    {
+      "id": 5,
+      "numero": 5,
+      "texto": "La muerte rápida e indolora de un animal tras una misión espacial para examinar sus tejidos no constituye un daño moral grave si el animal vivió sin agonía previa y los datos salvan vidas humanas futuras.",
+      "eje": "Distinción utilitarista cuantitativa entre causar dolor y privar de vida sin angustia anticipatoria",
+      "autorRelevante": "Jeremy Bentham"
+    },
+    {
+      "id": 6,
+      "numero": 6,
+      "texto": "El uso del espacio exterior no otorga a los Estados ni a las corporaciones privadas una excepción moral: la discriminación por motivos de especie es tan injustificable éticamente como el racismo o el sexismo.",
+      "eje": "Crítica radical al especismo y universalidad de la consideración moral",
+      "autorRelevante": "Peter Singer"
+    },
+    {
+      "id": 7,
+      "numero": 7,
+      "texto": "La exploración cósmica no es un 'bote salvavidas de emergencia', sino una empresa elegida libremente por los seres humanos; por tanto, arrastrar por la fuerza a otras especies al vacío espacial viola el principio básico de respeto.",
+      "eje": "Rechazo categórico a la instrumentalización coactiva de sujetos sintientes",
+      "autorRelevante": "Tom Regan"
+    },
+    {
+      "id": 8,
+      "numero": 8,
+      "texto": "La justicia entre especies exige que el Derecho Espacial Internacional reconozca la personalidad jurídica de los animales y obligue a sustituir progresivamente los modelos vivos por organoides y simulaciones computacionales.",
+      "eje": "Justicia multispecies, superación del dilema trágico y tutela legal activa",
+      "autorRelevante": "Martha C. Nussbaum"
+    }
+  ],
+  "perfilesReferencia": {
+    "bentham": {
+      "autorId": "bentham",
+      "nombre": "Jeremy Bentham",
+      "corriente": "Utilitarismo Clásico y Criterio de Sintiencia",
+      "respuestasIdeales": [5, 3, 2, 4, 4, 3, 2, 4],
+      "pesos": [1.5, 1.0, 1.0, 1.2, 1.5, 1.0, 1.0, 1.2],
+      "descripcionAfinidad": "Tu perspectiva se alinea con el utilitarismo clásico de Jeremy Bentham. Para ti, el sufrimiento físico y la capacidad de sentir dolor son el criterio moral supremo. Consideras que el daño infligido a un animal en una cápsula espacial es un mal real que no puede desestimarse, y exiges un cálculo cuantitativo riguroso donde el bienestar de todos los seres afectados sea ponderado sin dogmas metafísicos."
+    },
+    "singer": {
+      "autorId": "singer",
+      "nombre": "Peter Singer",
+      "corriente": "Utilitarismo de Preferencias y Antiespecismo",
+      "respuestasIdeales": [4, 5, 4, 4, 2, 5, 3, 5],
+      "pesos": [1.2, 1.5, 1.2, 1.2, 1.3, 1.5, 1.1, 1.4],
+      "descripcionAfinidad": "Tu enfoque coincide con el utilitarismo de preferencias y el antiespecismo de Peter Singer. Rechazas categóricamente que la pertenencia biológica a la especie humana justifique imponer a los animales pruebas lesivas que nunca toleraríamos en humanos con similar capacidad cognitiva. Exiges una aplicación estricta del principio de igual consideración de intereses y la sustitución inmediata de modelos animales."
+    },
+    "regan": {
+      "autorId": "regan",
+      "nombre": "Tom Regan",
+      "corriente": "Deontología de Derechos Morales y Valor Inherente",
+      "respuestasIdeales": [2, 4, 5, 4, 1, 4, 5, 5],
+      "pesos": [1.0, 1.2, 1.5, 1.1, 1.5, 1.2, 1.5, 1.4],
+      "descripcionAfinidad": "Tu postura se fundamenta en la deontología de derechos morales de Tom Regan. Sostienes que los animales son sujetos de una vida dotados de un valor inherente e inviolable. Rechazas que la ciencia o la conquista del cosmos puedan utilizarlos como meros medios o herramientas de calibración, defendiendo la abolición total del uso de seres sintientes en la exploración espacial."
+    },
+    "nussbaum": {
+      "autorId": "nussbaum",
+      "nombre": "Martha C. Nussbaum",
+      "corriente": "Enfoque de las Capacidades y Justicia Interespecífica",
+      "respuestasIdeales": [4, 4, 4, 5, 1, 4, 4, 5],
+      "pesos": [1.2, 1.2, 1.2, 1.5, 1.4, 1.2, 1.2, 1.5],
+      "descripcionAfinidad": "Tu visión se enmarca en el Enfoque de las Capacidades de Martha C. Nussbaum. Concibes la justicia como el deber humano de posibilitar que cada especie florezca de acuerdo con su propia naturaleza biológica y social. Consideras que la investigación biomédica debe tratarse como un dilema trágico a superar con alternativas tecnológicas, y defiendes con firmeza el deber jurídico innegociable de proveer santuario y retiro digno a todo animal de servicio."
+    }
+  }
+}

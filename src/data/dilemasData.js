@@ -125,6 +125,18 @@ export const DILEMAS_CATALOGO = [
     destacado: true,
   },
   {
+    id: 'uso-animales-investigacion-espacial',
+    titulo:
+      '¿Cómo debe conciliarse el valor moral de los animales con las necesidades científicas y de seguridad de la exploración espacial humana?',
+    subtitulo:
+      'Vuelos pioneros, adiestramiento aversivo, eutanasia post-misión y el principio de reemplazo: Bentham, Singer, Regan y Nussbaum.',
+    tema: 'Bioética animal, experimentación espacial y derechos sintientes',
+    modo3D: 'orbita',
+    tipoIlustracion: 'animales',
+    esDirectrizAnimales: true,
+    destacado: true,
+  },
+  {
     id: 'mision-marte',
     numero: '01',
     titulo: '¿Explorar Marte mientras existen urgencias en la Tierra?',

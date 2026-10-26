@@ -1,0 +1,142 @@
+[
+  {
+    "id": "bentham",
+    "nombre": "Jeremy Bentham",
+    "fotoUrl": "images/filosofos/Jeremy_Bentham.jpg",
+    "obraReferencia": "An Introduction to the Principles of Morals and Legislation (1789; ed. esp. Editora Nacional, 1981)",
+    "enfoque": "Utilitarismo clásico hedonista, sintiencia como umbral moral decisivo y cálculo cuantitativo de placer y dolor",
+    "resumenArgumento": "Jeremy Bentham rompe de manera radical con la tradición antropocéntrica occidental al postular que la frontera de la consideración moral no está delimitada por la racionalidad ni por el lenguaje, sino por la capacidad de experimentar sufrimiento y placer (sintiencia). Para Bentham, el dolor es un mal en sí mismo con independencia de la especie de quien lo padezca. Su principio de utilidad exige evaluar los actos ponderando la intensidad, duración y certidumbre del sufrimiento provocado en la comunidad de todos los seres afectados. Sostiene que ningún interés humano puede justificar torturar o infligir agonía a un animal si ello no produce una reducción neta y comprobable de un mal mayor en el mundo.",
+    "aplicacionCaso": "Frente a las misiones espaciales con animales, Bentham exigiría computar rigurosamente el terror, la asfixia y el dolor físico como factores negativos de primer orden. Rechazaría de forma terminante misiones como la de Laika en el Sputnik 2 o las fallas de Bion-M1, donde se impuso una agonía atroz sin certeza de beneficio proporcional directo. Sin embargo, su distinción entre causar dolor y causar la muerte lo llevaría a tolerar experimentos estrictamente indoloros bajo anestesia profunda si salvan vidas humanas, al considerar que los animales no sufren por anticipación psicológica de su mortalidad futura.",
+    "citasClave": [
+      {
+        "cita": "Puede llegar el día en que el resto de la creación animal adquiera esos derechos que nunca podrían haber sido privados, excepto a manos de la tiranía... La pregunta no es: ¿pueden razonar? ni ¿pueden hablar?, sino: ¿pueden sufrir?",
+        "contexto": "Formulación fundacional de la bioética moderna: la sintiencia como única condición necesaria y suficiente para la consideración moral.",
+        "referencia": "Jeremy Bentham, An Introduction to the Principles of Morals and Legislation, 1789, Cap. XVII, § 1, nota 122."
+      },
+      {
+        "cita": "La naturaleza ha colocado a la humanidad bajo el gobierno de dos amos soberanos, el dolor y el placer. Solo a ellos corresponde señalar lo que debemos hacer, así como determinar lo que haremos.",
+        "contexto": "Definición del principio de utilidad que obliga a sopesar el balance neto de bienestar frente al daño físico en cualquier diseño experimental.",
+        "referencia": "Jeremy Bentham, An Introduction to the Principles of Morals and Legislation, 1789, Cap. I, § 1."
+      }
+    ],
+    "fuentesAccesoAbierto": [
+      {
+        "titulo": "Stanford Encyclopedia of Philosophy: Jeremy Bentham",
+        "url": "https://plato.stanford.edu/entries/bentham/",
+        "tipo": "Enciclopedia académica de filosofía",
+        "idioma": "Inglés"
+      },
+      {
+        "titulo": "UCL Bentham Project: Selected Writings",
+        "url": "https://www.ucl.ac.uk/bentham-project/",
+        "tipo": "Archivo crítico y textos digitalizados",
+        "idioma": "Inglés"
+      }
+    ]
+  },
+  {
+    "id": "singer",
+    "nombre": "Peter Singer",
+    "fotoUrl": "images/filosofos/peter singer.avif",
+    "obraReferencia": "Liberación Animal (1975; ed. rev. Taurus, 2008) y Ética Práctica (1979; ed. Akal, 2009)",
+    "enfoque": "Utilitarismo de preferencias, principio de igual consideración de intereses y crítica radical al especismo",
+    "resumenArgumento": "Peter Singer populariza el concepto de 'especismo' como una discriminación arbitraria contra seres sintientes basada únicamente en su especie biológica, moralmente equiparable al racismo o al sexismo. Singer sostiene el Principio de Igual Consideración de Intereses: el interés de un chimpancé o un roedor en no sentir dolor ni asfixia debe pesar exactamente lo mismo que el dolor equivalente de un ser humano. Propone un test ético de consistencia: un científico solo puede justificar un experimento en un animal si estuviese genuinamente dispuesto a realizar ese mismo procedimiento en un ser humano huérfano con lesión cerebral irreversible de similares facultades cognitivas.",
+    "aplicacionCaso": "Singer condena con dureza el adiestramiento por electroshocks del chimpancé Ham y la irradiación masiva de ratones en Apolo 17, denunciando que las agencias espaciales tratan a los animales no humanos como meros instrumentos prescindibles debido a un sesgo puramente especista. Para Singer, el principio de las 3R (Reemplazo, Reducción, Refinamiento) debe ser una obligación legal estricta y vinculante: la inmensa mayoría de la investigación espacial animal debe sustituirse por modelos celulares, simulaciones computacionales y estudios con astronautas voluntarios informados.",
+    "citasClave": [
+      {
+        "cita": "Si un ser sufre, no puede haber justificación moral alguna para negarse a tener en cuenta este sufrimiento. Al margen de la naturaleza del ser, el principio de igualdad exige que su sufrimiento cuente tanto como el mismo sufrimiento de cualquier otro ser.",
+        "contexto": "El Principio de Igual Consideración de Intereses aplicado a la crítica de la experimentación científica en seres sintientes.",
+        "referencia": "Peter Singer, Liberación Animal, ed. Taurus, 2008, Cap. 1, p. 44."
+      },
+      {
+        "cita": "Puesto que los prejuicios especistas, como los racistas, son injustificables, un experimento no puede estar justificado a menos que su importancia justifique también el uso de un ser humano con lesión cerebral irreversible.",
+        "contexto": "Test de consistencia ética para evaluar la legitimidad moral de cualquier investigación biomédica.",
+        "referencia": "Peter Singer, Liberación Animal, ed. Taurus, 2008, Cap. 2, p. 112."
+      }
+    ],
+    "fuentesAccesoAbierto": [
+      {
+        "titulo": "Peter Singer: Practical Ethics (Princeton University)",
+        "url": "https://petersinger.info/",
+        "tipo": "Repositorio académico oficial del autor",
+        "idioma": "Inglés / Traducciones"
+      },
+      {
+        "titulo": "Stanford Encyclopedia of Philosophy: The Moral Status of Animals",
+        "url": "https://plato.stanford.edu/entries/moral-animal/",
+        "tipo": "Enciclopedia académica de filosofía",
+        "idioma": "Inglés"
+      }
+    ]
+  },
+  {
+    "id": "regan",
+    "nombre": "Tom Regan",
+    "fotoUrl": "images/filosofos/TomRegan.jpg",
+    "obraReferencia": "The Case for Animal Rights (1983; ed. esp. En defensa de los derechos de los animales, FCE / UNAM, 2016)",
+    "enfoque": "Deontología de derechos morales, valor inherente de los 'sujetos de una vida' y abolicionismo institucional",
+    "resumenArgumento": "Tom Regan elabora la defensa deontológica más sólida de los derechos de los animales. Rechaza frontalmente el utilitarismo por considerar a los individuos como meros 'recipientes de valor' descartables en favor del bien colectivo. Afirma que todos los mamíferos y criaturas con vida mental compleja son 'sujetos de una vida' (subjects-of-a-life): poseen deseos, memoria, sentido del futuro, vida emocional y un bienestar experiencial propio. Como tales, tienen un valor inherente idéntico e inviolable que prohíbe utilizarlos como medios para fines ajenos. El 'error fundamental' no es la falta de anestesia, sino el sistema que reduce a los animales a recursos disponibles para la ciencia.",
+    "aplicacionCaso": "Regan defiende un abolicionismo absoluto del uso de animales en la exploración espacial. Misiones como las de Laika, Félicette o Bion 11 representan una violación categórica del principio de respeto: tratar a sujetos de una vida como instrumentos de calibración biomédica. Regan desestima el argumento de que el espacio es una 'emergencia de supervivencia': la expansión cósmica es una empresa elegida por los humanos en la que no se puede arrastrar coercitivamente a otras especies. Exige la prohibición total e inmediata de todo experimento biológico lesivo fuera de la Tierra.",
+    "citasClave": [
+      {
+        "cita": "Lo que está mal —fundamentalmente mal— en la forma en que se trata a los animales no son los detalles que varían de un caso a otro. Es el sistema completo. El error fundamental es el sistema que nos permite ver a los animales como nuestros recursos, aquí para nosotros: para ser manipulados quirúrgicamente o explotados.",
+        "contexto": "Tesis central del abolicionismo de derechos: la condena estructural a la instrumentalización de los animales en el laboratorio.",
+        "referencia": "Tom Regan, The Case for Animal Rights, 1986, p. 179."
+      },
+      {
+        "cita": "Los individuos son sujetos de una vida si son capaces de percibir y recordar; si tienen deseos, creencias y preferencias; si son sintientes y tienen una vida emocional... y si tienen un bienestar experiencial individual independiente de su utilidad para otros.",
+        "contexto": "Criterio deontológico que otorga estatus de valor inherente e inviolabilidad moral a mamíferos y vertebrados superiores.",
+        "referencia": "Tom Regan, En defensa de los derechos de los animales, FCE / UNAM, 2016, Cap. 8, § V, p. 243."
+      }
+    ],
+    "fuentesAccesoAbierto": [
+      {
+        "titulo": "Tom Regan Animal Rights Archive (NC State University)",
+        "url": "https://www.lib.ncsu.edu/special-collections/animal-rights",
+        "tipo": "Archivo histórico y fondos documentales",
+        "idioma": "Inglés"
+      },
+      {
+        "titulo": "Internet Encyclopedia of Philosophy: Animals and Ethics (Tom Regan)",
+        "url": "https://iep.utm.edu/anim-eth/",
+        "tipo": "Enciclopedia académica de filosofía",
+        "idioma": "Inglés"
+      }
+    ]
+  },
+  {
+    "id": "nussbaum",
+    "nombre": "Martha C. Nussbaum",
+    "fotoUrl": "images/filosofos/Martha_Nussbaum.jpg",
+    "obraReferencia": "Justicia para los animales: Una responsabilidad colectiva (Justice for Animals, 2023; ed. Paidós, 2023)",
+    "enfoque": "Enfoque de las Capacidades, justicia multispecies, florecimiento específico y deber de compensación moral",
+    "resumenArgumento": "Martha Nussbaum propone que la justicia no se limita a evitar el dolor o respetar la autonomía humana, sino que exige garantizar que cada criatura sintiente tenga las oportunidades reales (capacidades centrales) para florecer de acuerdo con la forma de vida propia de su especie. La injusticia se produce cuando la acción humana bloquea o frustra indebidamente el 'conato' (impulso vital hacia una vida plena). Rechaza la jerarquización de la scala naturae: un roedor o un felino merecen desarrollarse plenamente en sus propios términos biológicos y sociales. Plantea que la investigación biomédica constituye un dilema trágico temporal que la ciencia debe superar mediante alternativas tecnológicas.",
+    "aplicacionCaso": "Nussbaum condena el confinamiento en cápsulas espaciales y el aislamiento sensorial por truncar capacidades básicas como la movilidad libre, la interacción social de especie y la integridad corporal. Sin embargo, su aporte más innovador a la bioética espacial es el 'deber de retiro y compensación moral': si una agencia espacial utiliza a un animal como Ham o Félicette, contrae una deuda de justicia ineludible que exige proveerle santuario, cuidados médicos vitalicios y representación legal. Además, exige que el Derecho Espacial Internacional reconozca la personalidad jurídica y tutela activa para proteger a los animales ante empresas privadas.",
+    "citasClave": [
+      {
+        "cita": "Según el Enfoque de las Capacidades, cada criatura sintiente debe tener la oportunidad de florecer en la forma de vida característica de esa criatura.",
+        "contexto": "Principio rector de la justicia entre especies: el respeto al florecimiento biológico propio de cada animal.",
+        "referencia": "Martha C. Nussbaum, Justicia para los animales, ed. Paidós, 2023, Introducción, p. 12."
+      },
+      {
+        "cita": "La injusticia implica centralmente un esfuerzo significativo (conato) bloqueado no solo por un daño, sino por una frustración indebida, ya sea por negligencia o de forma deliberada.",
+        "contexto": "Fundamentación de cómo el confinamiento y las pruebas de laboratorio espacial truncan las aspiraciones vitales de los seres sintientes.",
+        "referencia": "Martha C. Nussbaum, Justicia para los animales, ed. Paidós, 2023, Cap. 1, p. 27."
+      }
+    ],
+    "fuentesAccesoAbierto": [
+      {
+        "titulo": "Harvard University Press: Frontiers of Justice (Capabilities Approach)",
+        "url": "https://www.hup.harvard.edu/books/9780674024106",
+        "tipo": "Monografía académica sobre justicia multispecies",
+        "idioma": "Inglés"
+      },
+      {
+        "titulo": "Stanford Encyclopedia of Philosophy: The Capability Approach",
+        "url": "https://plato.stanford.edu/entries/capability-approach/",
+        "tipo": "Enciclopedia académica de filosofía",
+        "idioma": "Inglés"
+      }
+    ]
+  }
+]

@@ -1,6 +1,7 @@
 import { IconChatBranch } from './Icons'
 import { NasaTracesCardVisual } from './NasaTracesCardVisual'
 import { NasaAsteroidMonitorVisual } from './NasaAsteroidMonitorVisual'
+import { NasaAnimalResearchCardVisual } from './NasaAnimalResearchCardVisual'
 import { TypewriterTitle } from './TypewriterTitle'
 
 export function CatalogView({ dilemas, progresoGuardado, onSelectDilema }) {
@@ -28,6 +29,8 @@ export function CatalogView({ dilemas, progresoGuardado, onSelectDilema }) {
                   <NasaTracesCardVisual />
                 ) : dilema.esDirectrizUsoEspacio ? (
                   <NasaAsteroidMonitorVisual />
+                ) : dilema.esDirectrizAnimales ? (
+                  <NasaAnimalResearchCardVisual />
                 ) : null}
                 {estaCompletado && (
                   <span className="dilemma-status-badge status-done">✓ Completado</span>
@@ -62,6 +65,18 @@ export function CatalogView({ dilemas, progresoGuardado, onSelectDilema }) {
                     }}
                   >
                     Uso del Espacio y Propiedad · Nueva Dimensión
+                  </span>
+                )}
+                {dilema.esDirectrizAnimales && (
+                  <span
+                    className="pilot-badge-tag"
+                    style={{
+                      marginBottom: '10px',
+                      borderColor: '#DDD6FE',
+                      color: '#DDD6FE',
+                    }}
+                  >
+                    Bioética Animal · Tercera Directriz
                   </span>
                 )}
                 {dilema.esPilotoNuevo && (

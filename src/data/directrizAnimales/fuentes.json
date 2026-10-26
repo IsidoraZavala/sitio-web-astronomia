@@ -1,0 +1,102 @@
+[
+  {
+    "id": "fuente_nasa_history_animals",
+    "titulo": "A Brief History of Animals in Space",
+    "autor": "National Aeronautics and Space Administration (NASA History Division)",
+    "año": 2004,
+    "tipo": "Monografía histórica oficial",
+    "publicacion": "NASA History Program Office, Washington, D.C.",
+    "descripcion": "Documentación histórica oficial de los primeros vuelos biológicos desde las pruebas suborbitales con moscas de la fruta y monos rhesus en cohetes V-2 en 1948, pasando por las misiones de los perros soviéticos (Dezik, Tsygan, Laika), los primates estadounidenses (Able, Baker, Ham, Enos) hasta los programas Spacelab y Bion.",
+    "citasRelevantes": "Detalla las condiciones biomédicas de los vuelos de Laika en el Sputnik 2 y de Ham en el Mercury-Redstone 2, documentando aceleraciones, telemetría cardíaca y los desafíos del retorno."
+  },
+  {
+    "id": "fuente_natgeo_timeline_animals",
+    "titulo": "A visual timeline of every animal ever sent into space",
+    "autor": "National Geographic Science",
+    "año": 2022,
+    "tipo": "Investigación periodística y cronología visual",
+    "publicacion": "National Geographic Partners",
+    "descripcion": "Cronología exhaustiva que registra las especies y misiones enviadas al espacio exterior en siete décadas: chimpancés, monos ardilla, gatas (Félicette), tortugas lunares (Zond 5), ratones, medusas, ranas, peces y tardígrados.",
+    "citasRelevantes": "Recopila las misiones con mayor índice de letalidad y documenta el destino posterior de los animales supervivientes en centros de investigación y zoológicos."
+  },
+  {
+    "id": "fuente_we_have_been_sending_animals",
+    "titulo": "We’ve been sending animals into space for 7 decades – yet there are still no rules to protect them from harm",
+    "autor": "The Conversation / Análisis Académico Bioético",
+    "año": 2023,
+    "tipo": "Ensayo académico y análisis legal",
+    "publicacion": "The Conversation Media Group / Science & Society",
+    "descripcion": "Análisis crítico sobre el vacío normativo del Tratado del Espacio Ultraterrestre de 1967 respecto a los derechos y el bienestar animal. Examina los riesgos de la privatización de los lanzamientos espaciales y misiones no estatales sin supervisión bioética (como los tardígrados en Beresheet y la rata Kavira en Troposphere 5).",
+    "citasRelevantes": "Denuncia que, mientras en los laboratorios terrestres rigen directrices estrictas de bienestar, el espacio continúa siendo una 'tierra de nadie' jurídica para la protección animal."
+  },
+  {
+    "id": "fuente_nasa_principles_1997",
+    "titulo": "NASA Principles for the Ethical Care and Use of Animals",
+    "autor": "National Aeronautics and Space Administration (NASA)",
+    "año": 1997,
+    "tipo": "Directriz regulatoria institucional",
+    "publicacion": "NASA Policy Directive (NPD 8910.1) / NASA Office of the Chief Health and Medical Officer",
+    "descripcion": "Directiva ética oficial promulgada por la NASA tras la muerte del macaco Multik en la misión Bion 11. Establece la adhesión formal al principio de las 3R (Reemplazo, Reducción y Refinamiento), la justificación médica estricta y el alivio obligatorio del dolor en investigaciones espaciales.",
+    "citasRelevantes": "Exige que el uso de animales en misiones de microgravedad sea evaluado por comités institucionales de cuidado y uso de animales (IACUC) con estándares equivalentes o superiores a la investigación terrestre."
+  },
+  {
+    "id": "fuente_bion_m1_mice_study",
+    "titulo": "Mice in Bion-M1 Space Mission: Training and Selection",
+    "autor": "Institute of Biomedical Problems (IBMP) & Russian Academy of Sciences",
+    "año": 2014,
+    "tipo": "Artículo científico de investigación biomédica",
+    "publicacion": "Journal of Applied Physiology / Russian Academy of Sciences",
+    "descripcion": "Reporte técnico sobre la preparación, selección y rendimiento de los 45 ratones machos lanzados en el biosatélite Bion-M1 durante 30 días autónomos. Analiza los fallos mecánicos de alimentación y hábitat que causaron la pérdida de más del 70% de los sujetos.",
+    "citasRelevantes": "Documenta la tasa de mortalidad en vuelo autónomo no tripulado y contrasta los resultados biomédicos obtenidos de los 16 supervivientes con los incidentes de soporte vital."
+  },
+  {
+    "id": "fuente_cioms_guiding_principles",
+    "titulo": "International Guiding Principles for Biomedical Research Involving Animals",
+    "autor": "Council for International Organizations of Medical Sciences (CIOMS) & ICLAS",
+    "año": 2012,
+    "tipo": "Estándar bioético internacional",
+    "publicacion": "CIOMS / OMS, Ginebra, Suiza",
+    "descripcion": "Guía internacional de consenso para la experimentación animal biomédica. Establece que los animales tienen un valor moral intrínseco que impone a los científicos la responsabilidad ética de asegurar su bienestar, evitar el dolor innecesario y perseguir activamente la sustitución tecnológica.",
+    "citasRelevantes": "Consagra que el uso de animales en investigación es un privilegio ético condicionado a la estricta aplicación del principio de las 3R (Reemplazo, Reducción, Refinamiento)."
+  },
+  {
+    "id": "fuente_bentham_morals",
+    "titulo": "An Introduction to the Principles of Morals and Legislation",
+    "autor": "Jeremy Bentham",
+    "año": 1789,
+    "tipo": "Tratado filosófico fundacional",
+    "publicacion": "T. Payne and Son, Londres (ed. esp. Editora Nacional, Madrid, 1981)",
+    "descripcion": "Obra magna del utilitarismo clásico donde Bentham introduce la capacidad de sentir dolor y placer como el criterio moral supremo para la consideración jurídica y ética de los seres vivos.",
+    "citasRelevantes": "Capítulo XVII, nota 122: 'La pregunta no es: ¿pueden razonar? ni ¿pueden hablar?, sino: ¿pueden sufrir?'."
+  },
+  {
+    "id": "fuente_singer_liberacion_animal",
+    "titulo": "Liberación animal: El clásico definitivo del movimiento animalista",
+    "autor": "Peter Singer",
+    "año": 1975,
+    "tipo": "Tratado bioético contemporáneo",
+    "publicacion": "Random House (ed. rev. Taurus, Madrid, 2008)",
+    "descripcion": "Texto fundacional de la ética animal contemporánea. Desarrolla la crítica al especismo, formula el principio de igual consideración de intereses y analiza detalladamente la experimentación científica y la industria del laboratorio.",
+    "citasRelevantes": "Capítulo 2: 'Las herramientas de la investigación': desarrolla el test de consistencia ética frente al uso de sujetos humanos con déficit cognitivo equivalente."
+  },
+  {
+    "id": "fuente_regan_case_rights",
+    "titulo": "The Case for Animal Rights (En defensa de los derechos de los animales)",
+    "autor": "Tom Regan",
+    "año": 1983,
+    "tipo": "Tratado filosófico deontológico",
+    "publicacion": "University of California Press (ed. esp. FCE / UNAM, México, 2016)",
+    "descripcion": "La fundamentación deontológica más rigurosa sobre los derechos intrínsecos de los animales. Desarrolla el concepto de 'sujeto de una vida' y formula el imperativo categórico de abolición del uso instrumental de seres sintientes.",
+    "citasRelevantes": "Capítulo 9: condena estructural del sistema de experimentación científica por violar el principio de respeto y tratar a los animales como meros recursos disponibles."
+  },
+  {
+    "id": "fuente_nussbaum_justice_animals",
+    "titulo": "Justicia para los animales: Una responsabilidad colectiva",
+    "autor": "Martha C. Nussbaum",
+    "año": 2023,
+    "tipo": "Tratado de filosofía política y derecho animal",
+    "publicacion": "Simon & Schuster, Nueva York (ed. esp. Paidós, Barcelona, 2023)",
+    "descripcion": "Aplicación del Enfoque de las Capacidades a la justicia entre especies. Rechaza la scala naturae y fundamenta el deber humano de asegurar el florecimiento específico de cada criatura, estableciendo la obligación de jubilación digna y representación procesal.",
+    "citasRelevantes": "Capítulo 1: 'La injusticia como conato bloqueado' y Capítulo 7: 'Hacia un derecho constitucional multispecies'."
+  }
+]

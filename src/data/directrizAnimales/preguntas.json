@@ -1,0 +1,389 @@
+[
+  {
+    "id": "p1_laika_sputnik2",
+    "numero": 1,
+    "fotoVinculadaId": "foto_laika",
+    "tituloCaso": "Laika en el Sputnik 2 (1957)",
+    "descripcionDetallada": [
+      "El 3 de noviembre de 1957, la Unión Soviética lanzó el Sputnik 2 llevando a bordo a la perra callejera Laika. El objetivo era recopilar datos telemétricos inmediatos sobre la supervivencia de un mamífero en órbita para allanar el camino de los primeros cosmonautas humanos.",
+      "Sin embargo, los ingenieros soviéticos sabían que no contaban con la tecnología necesaria para frenar la cápsula ni protegerla durante la reentrada atmosférica. Fue una misión deliberadamente concebida como un viaje sin retorno, donde la muerte de Laika por asfixia o choque térmico estaba programada desde el primer minuto del diseño técnico."
+    ],
+    "pregunta": "¿Es moralmente admisible que una agencia espacial autorice el lanzamiento de un ser sintiente a una misión orbital sabiendo con absoluta certeza técnica que morirá debido a la inexistencia de sistemas de reentrada, justificándolo en el ahorro de vidas de futuros astronautas y la aceleración del conocimiento biomédico?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "Es éticamente aceptable si los científicos demuestran que los datos obtenidos son indispensables para garantizar la supervivencia de futuros astronautas humanos, pues la vida humana posee una jerarquía moral superior frente a la cual la pérdida de un animal se justifica como mal menor.",
+        "cuestionamiento": "Al justificar el sacrificio seguro de un ser sintiente únicamente por la utilidad para nuestra especie, ¿no se valida la lógica especista de considerar a los animales como simple material descartable de ingeniería?"
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "Debe regir una prohibición ética absoluta: ninguna misión con seres vivos sintientes debe autorizarse jamás si la tecnología de reentrada y recuperación con vida no ha sido completamente probada y garantizada con antelación.",
+        "cuestionamiento": "Una prohibición absoluta en los inicios de la astronáutica habría obligado a enviar a seres humanos directamente a lo desconocido, multiplicando el riesgo de muertes humanas en los primeros vuelos tripulados."
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "El lanzamiento sin retorno solo podría tolerarse éticamente si la nave incorporara mecanismos indoloros y redundantes de eutanasia farmacológica automatizada que actúen antes de que el animal padezca dolor, asfixia o hipertermia extrema.",
+        "cuestionamiento": "¿Atenuar la agonía mediante veneno químico borra la injusticia fundamental de arrebatar deliberadamente la vida a un ser que no eligió participar en la misión?"
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "La misión con Laika fue inaceptable porque la prisa por lanzar antes de tener el sistema de retorno respondió a la propaganda geopolítica de la Guerra Fría y no a una necesidad científica ineludible.",
+        "cuestionamiento": "Si la motivación hubiera sido puramente médica y desprovista de propaganda política, ¿habría sido moralmente legítimo planificar la muerte segura de Laika en el espacio?"
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "Antes de autorizar misiones animales terminales, la ciencia debe agotar modelos no biológicos (maniquíes con sensores biométricos o telemetría pasiva), asumiendo que los vuelos animales irreversibles deben ser declarados crímenes contra el bienestar sintiente.",
+        "cuestionamiento": "¿Podían los maniquíes y sensores rudimentarios de 1957 registrar de forma fidedigna el comportamiento de la circulación sanguínea y el cerebro mamífero bajo ingravidez real prolongada?"
+      }
+    ]
+  },
+  {
+    "id": "p2_ham_mercury",
+    "numero": 2,
+    "fotoVinculadaId": "foto_ham",
+    "tituloCaso": "El chimpancé Ham en Mercury-Redstone 2 (1961)",
+    "descripcionDetallada": [
+      "En enero de 1961, la NASA lanzó al chimpancé Ham en un vuelo suborbital para verificar si un organismo con funciones cognitivas complejas era capaz de operar palancas y mantener reflejos psicomotores durante la aceleración extrema y la ingravidez.",
+      "Para lograr que cumpliera las instrucciones a bordo, Ham fue entrenado en la Tierra y durante el vuelo mediante condicionamiento aversivo: descargas eléctricas en las plantas de los pies cada vez que tardaba más de cinco segundos en responder a una señal lumínica. Ham cumplió la prueba con éxito, pero sufrió deshidratación severa y un estrés crónico que le dejó secuelas psicológicas permanentes."
+    ],
+    "pregunta": "¿Hasta qué punto es éticamente admisible someter a primates con alta complejidad emocional y cognitiva a condicionamientos aversivos dolorosos (descargas eléctricas) para forzarlos a operar controles espaciales, y qué responsabilidad jurídica asumen las instituciones respecto al trauma psicológico permanente de los animales que sobreviven?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "El uso de estímulos dolorosos leves está plenamente justificado en primates si es el único método capaz de asegurar que ejecuten tareas operativas de precisión crítica necesarias para diseñar los controles de una nave tripulada por humanos.",
+        "cuestionamiento": "Imponer descargas eléctricas a un primate dotado de conciencia emocional y sentido del sufrimiento reduce a un ser inteligente a una máquina biológica manipulada por terror al castigo físico."
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "Debe prohibirse categóricamente cualquier adiestramiento basado en dolor físico o condicionamiento aversivo; la preparación de animales en la ciencia espacial solo debe emplear técnicas de refuerzo positivo y cooperación voluntaria.",
+        "cuestionamiento": "¿Qué ocurre si el refuerzo positivo resulta insuficiente para garantizar que el animal opere los controles bajo la desorientación y el pánico de un despegue real con 14 g de fuerza gravitatoria?"
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "Las agencias que empleen primates deben contraer la obligación legal incondicional de crear fondos fiduciarios vitalicios para financiar su retiro en santuarios especializados, asumiendo su tratamiento psicológico hasta el fin natural de sus vidas.",
+        "cuestionamiento": "¿Una pensión de retiro o santuario posterior compensa o repara legítimamente los meses de descargas eléctricas y la privación de libertad que sufrió el animal durante el experimento?"
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "Debió emplearse un animal con menor desarrollo cognitivo y afectivo en lugar de un primate homínido tan próximo evolutivamente a los seres humanos, mitigando la intensidad del trauma psicológico.",
+        "cuestionamiento": "¿Someter a un perro o una rata a descargas continuas es éticamente más aceptable solo porque su sistema nervioso no se asemeja tanto al del ser humano?"
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "La verificación de los mandos de vuelo debió realizarse mediante sistemas automáticos de control e ingenieros humanos voluntarios, vetando la sustitución de pilotos por simios forzados.",
+        "cuestionamiento": "Arriesgar a un piloto humano en la primera prueba suborbital con cohetes de alta tasa de explosión como los Redstone de 1961 habría significado un costo humano potencialmente letal que los ingenieros buscaban evitar."
+      }
+    ]
+  },
+  {
+    "id": "p3_felicette_eutanasia",
+    "numero": 3,
+    "fotoVinculadaId": "foto_felicette",
+    "tituloCaso": "La gata Félicette en Véronique AGI 47 (1963)",
+    "descripcionDetallada": [
+      "El 18 de octubre de 1963, Francia lanzó a la gata Félicette en un vuelo suborbital con electrodos implantados en el cráneo para monitorizar sus impulsos neuronales. Félicette superó el lanzamiento con 9,5 g, experimentó cinco minutos de microgravedad y aterrizó ilesa en su cápsula con paracaídas.",
+      "A pesar de encontrarse en óptimas condiciones físicas en París, dos meses después del aterrizaje los neurocientíficos decidieron eutanasiarla deliberadamente para extraer su encéfalo y analizar si la ingravidez había provocado alteraciones histológicas a nivel microscópico."
+    ],
+    "pregunta": "Cuando un animal supera con éxito todos los riesgos del vuelo espacial y retorna ileso, ¿es éticamente admisible sacrificarlo semanas después únicamente para extraer sus tejidos cerebrales con fines analíticos, o prevalece el deber de preservar su vida y concederle un retiro digno?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "El sacrificio post-misión es científicamente indispensable y legítimo: el objetivo de enviar a Félicette era comprender los efectos neurovasculares del espacio, y dichos datos microscópicos no podían obtenerse en 1963 sin una autopsia cerebral.",
+        "cuestionamiento": "Al sacrificar a un animal sano que superó el peligro del vuelo, se demuestra que fue concebido desde el inicio como un reactivo químico biológico descartable y no como un ser con valor moral propio."
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "Todo animal que sobreviva a una misión espacial debe adquirir el estatus legal de 'sujeto veterano con inmunidad vitalicia', prohibiendo terminantemente su eutanasia con fines investigativos de conveniencia.",
+        "cuestionamiento": "Prohibir la extracción de tejidos tisulares tras vuelos biológicos muy costosos podría frustrar el objetivo por el cual se invirtieron recursos públicos en la misión, dejando hipótesis neurológicas sin resolver."
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "El sacrificio solo es admisible si un comité bioético independiente verifica que la información anatómica buscada es de trascendencia vital para evitar accidentes en futuras tripulaciones humanas.",
+        "cuestionamiento": "¿No es previsible que cualquier comité dominado por intereses institucionales califique siempre de 'trascendentales' los datos biomédicos con tal de autorizar el sacrificio?"
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "Debieron desarrollarse y esperarse técnicas no invasivas de diagnóstico por imagen (como electroencefalogramas externos o resonancias) antes de autorizar misiones donde la única vía de análisis fuera la destrucción del cerebro del sujeto.",
+        "cuestionamiento": "Esperar décadas hasta que madurara la resonancia magnética moderna en los años ochenta habría paralizado la investigación aeroespacial en una etapa histórica donde se preparaban misiones lunares."
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "Félicette debió ser adoptada públicamente como símbolo de la ciencia espacial francesa, permitiendo que la sociedad visualizara a los animales espaciales como individuos dotados de biografía y dignidad.",
+        "cuestionamiento": "¿Convertir al animal en mascota o heroína simbólica no corre el riesgo de edulcorar mediáticamente la explotación biológica que sufrió durante el experimento?"
+      }
+    ]
+  },
+  {
+    "id": "p4_multik_bion11",
+    "numero": 4,
+    "fotoVinculadaId": "foto_multik",
+    "tituloCaso": "El macaco Multik en Bion 11 (1996)",
+    "descripcionDetallada": [
+      "En diciembre de 1996, el macaco rhesus Multik completó 14 días en órbita en la cápsula ruso-estadounidense Bion 11 para estudiar los mecanismos de atrofia muscular en ingravidez prolongada. El aterrizaje fue exitoso.",
+      "Sin embargo, a la mañana siguiente los científicos anestesiaron a Multik para realizarle una biopsia muscular urgente antes de que la gravedad terrestre reestimulara el tejido. El animal sufrió una reacción fatal a la anestesia en un cuerpo debilitado por el espacio y falleció. El escándalo público consiguiente motivó a la NASA a retirarse del programa Bion y redactar sus principios éticos para animales de 1997."
+    ],
+    "pregunta": "¿Deben prohibirse de forma categórica las cirugías invasivas en animales inmediatamente tras su regreso de la microgravedad prolongada, aun si postergar el procedimiento implica perder datos transitorios cruciales sobre la atrofia muscular antes de la readaptación fisiológica a la Tierra?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "Deben prohibirse de forma absoluta las biopsias o anestesias generales en las primeras semanas post-vuelo; el deber primario del equipo médico es estabilizar y recuperar la salud del animal antes de cualquier intervención lesiva.",
+        "cuestionamiento": "Posponer las biopsias varias semanas hace que el músculo empiece a recuperar tono en la gravedad terrestre, arruinando la ventana temporal única para medir el estado molecular exacto provocado por la ingravidez."
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "La muerte de Multik fue un accidente anestésico desafortunado pero admisible: en la investigación médica de vanguardia se asumen riesgos calculados para obtener datos de atrofia que protejan la masa muscular de los astronautas.",
+        "cuestionamiento": "Describir como 'riesgo calculado' la muerte en quirófano de un animal que ya había cumplido 14 días de misión espacial evidencia una negligencia bioética que subordinó la vida del macaco a la prisa por tomar muestras."
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "La reacción pública y la presión de organizaciones civiles son factores totalmente legítimos y saludables para obligar a agencias como la NASA a cancelar programas invasivos con primates y elevar sus estándares éticos.",
+        "cuestionamiento": "¿Deben las políticas de investigación biomédica regirse por el impacto emocional de la opinión pública o por criterios técnico-científicos rigurosos de necesidad biomédica?"
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "Los estudios de atrofia muscular debieron realizarse exclusivamente en astronautas humanos voluntarios que consientan en aportar pequeñas muestras musculares, eliminando la necesidad de primates en microgravedad.",
+        "cuestionamiento": "El número de astronautas en órbita es sumamente reducido y someterlos a biopsias profundas durante o inmediatamente tras el vuelo podría comprometer su rendimiento y seguridad en misiones críticas."
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "Debe autorizarse el uso de biopsias inmediatas solo si se utilizan anestésicos de baja toxicidad y protocolos monitorizados por especialistas veterinarios independientes sin vínculo directo con los resultados del proyecto.",
+        "cuestionamiento": "¿La presencia de veedores veterinarios independientes elimina la vulnerabilidad estructural que sufre un organismo que acaba de readaptarse a la gravedad terrestre tras dos semanas de ingravidez?"
+      }
+    ]
+  },
+  {
+    "id": "p5_bion_m1_hardware",
+    "numero": 5,
+    "fotoVinculadaId": "foto_bion_m1",
+    "tituloCaso": "La misión Bion-M1 (2013)",
+    "descripcionDetallada": [
+      "En abril de 2013, Rusia lanzó el biosatélite Bion-M1 con 45 ratones machos en una misión autónoma de 30 días para evaluar adaptaciones genéticas y vasculares. Durante el vuelo en solitario, un fallo en el dispensador automático de comida provocó la muerte por inanición de 15 roedores.",
+      "Asimismo, el estrés del hacinamiento y defectos en los compartimentos desataron peleas y canibalismo, sobreviviendo solo 16 de los 45 ratones. A pesar de perder más del 70% de la carga viva por averías de hardware, los científicos valoraron los datos de los supervivientes como un éxito que justificaba la misión."
+    ],
+    "pregunta": "¿Qué margen de riesgo de mortalidad y sufrimiento masivo por averías mecánicas o fallas en sistemas automáticos de soporte vital es éticamente admisible al autorizar biosatélites no tripulados, en comparación con los rigurosos estándares de bienestar exigidos en laboratorios terrestres?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "En la exploración espacial no tripulada deben tolerarse márgenes de pérdida sensiblemente superiores a los terrestres, pues el espacio es un entorno de hostilidad extrema donde las contingencias de ingeniería forman parte inevitable del avance científico.",
+        "cuestionamiento": "Tolerar que decenas de ratones mueran de hambre por un alimentador roto en órbita institucionaliza un doble estándar ético: lo que en la Tierra se sancionaría como maltrato animal grave, en el espacio se disculpa como 'contingencia técnica'."
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "Ningún biosatélite debe despegar si sus sistemas de soporte vital no demuestran redundancia triple y márgenes de fallo técnico idénticos a los exigidos para cápsulas tripuladas por seres humanos.",
+        "cuestionamiento": "Exigir redundancia de grado humano para cargas de roedores encarecería tanto los biosatélites que prácticamente ningún laboratorio universitario o agencia espacial podría financiar la investigación biológica espacial."
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "La investigación biomédica de larga duración debe limitarse estrictamente a estaciones espaciales habitadas como la ISS, donde tripulaciones humanas puedan intervenir de inmediato ante fallas en comederos o peleas de hábitat.",
+        "cuestionamiento": "Llevar colonias animales masivas a estaciones como la ISS plantea problemas severos de olor, esterilidad, bio-seguridad y sobrecarga de trabajo para los astronautas, restando tiempo a otras investigaciones físicas y astronómicas."
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "Debe aplicarse con rigor el principio de Reducción (3R): en lugar de enviar 45 ratones en condiciones de hacinamiento riesgoso, debió enviarse una muestra estadísticamente mínima en habitáculos individuales con monitoreo telemétrico continuo.",
+        "cuestionamiento": "Un número demasiado reducido de sujetos corre el riesgo de invalidar estadísticamente todo el experimento si unos pocos animales sufren anomalías individuales, desperdiciando el lanzamiento completo."
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "Cuando una misión biológica pierda más del 50% de sus sujetos por fallas de diseño, los datos científicos resultantes deben ser declarados bioéticamente no publicables en revistas científicas para no incentivar el descuido en la ingeniería.",
+        "cuestionamiento": "¿Censurar datos científicos válidos de los ratones supervivientes no vuelve aún más inútil y trágica la muerte de los animales que perecieron en el experimento?"
+      }
+    ]
+  },
+  {
+    "id": "p6_asimetria_beneficio",
+    "numero": 6,
+    "fotoVinculadaId": "foto_apolo17_ratones",
+    "tituloCaso": "El traslado del riesgo cósmico a especies no voluntarias",
+    "descripcionDetallada": [
+      "Durante la misión Apolo 17 en diciembre de 1972, la NASA embarcó a cinco ratones de bolsillo (Perognathus longimembris) en un experimento biológico llamado BIOCORE. Los animales viajaron en el módulo de mando orbitando la Luna durante 13 días con detectores de radiación cósmica implantados bajo el cuero cabelludo.",
+      "El propósito era verificar si los iones pesados de la radiación cósmica en el espacio profundo provocaban lesiones microscópicas letales en células cerebrales y de la retina de cara a futuros vuelos humanos prolongados. Cuatro de los ratones sobrevivieron a la órbita lunar, pero fueron sacrificados inmediatamente tras el amarizaje para analizar sus cerebros mediante microscopía electrónica."
+    ],
+    "pregunta": "¿Qué legitimidad moral tiene la especie humana para trasladar los peligros letales del entorno extraterrestre (radiación cósmica pesada, atrofia extrema) a animales que no participan voluntariamente ni tienen interés alguno en la expansión de la civilización humana hacia otros mundos?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "La humanidad tiene el derecho legítimo de utilizar especies animales como vanguardia de exploración para salvaguardar la vida de sus astronautas, siempre que el número de sujetos sea el mínimo indispensable y el protocolo esté aprobado por comités científicos.",
+        "cuestionamiento": "Esta postura presupone que el bienestar de otras especies solo tiene valor subordinado a los intereses humanos, justificando el uso coactivo de seres inocentes para metas en las que ellos no tienen participación."
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "Es éticamente inadmisible imponer riesgos mortales cósmicos a especies que carecen de interés en la conquista espacial; los peligros del espacio exterior deben ser asumidos de forma consciente y exclusiva por astronautas humanos que elijan voluntariamente correr ese riesgo.",
+        "cuestionamiento": "¿Es moralmente defendible enviar a astronautas humanos a recibir radiación cerebral desconocida en el espacio profundo sin haber verificado previamente el grado de lesión neuronal en un mamífero de laboratorio?"
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "El uso de roedores para medir radiación solo es aceptable si se demuestra de forma concluyente que no existe ninguna tecnología física de dosímetros pasivos o simuladores de tejido biológico sintético capaz de registrar el daño.",
+        "cuestionamiento": "Los dosímetros físicos miden partículas por centímetro cuadrado, pero no pueden predecir con exactitud cómo reaccionará la inflamación neuronal, la sinapsis o el ADN de un tejido mamífero vivo ante esa lluvia de partículas."
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "El sacrificio post-misión de los ratones lunares del Apolo 17 deshonró el objetivo científico del viaje al tratar a los supervivientes de una travesía histórica como material desechable de laboratorio.",
+        "cuestionamiento": "Si no se hubieran examinado microscópicamente los cerebros de los ratones de inmediato, ¿cuál habría sido el sentido científico de haberlos transportado hasta la órbita lunar?"
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "La exploración del espacio profundo debe condicionarse a un principio de coexistencia respetuosa que prohíba de forma taxativa la exportación de prácticas de explotación biológica terrestre hacia otros cuerpos celestes como la Luna.",
+        "cuestionamiento": "Frenar la experimentación biológica en el espacio limitaría severamente la capacidad de la medicina para desarrollar tratamientos contra el cáncer o la degeneración celular inducida por radiación."
+      }
+    ]
+  },
+  {
+    "id": "p7_principio_reemplazo_3r",
+    "numero": 7,
+    "fotoVinculadaId": "foto_organoides_esa",
+    "tituloCaso": "El principio de Reemplazo (3R) frente a la complejidad sistémica de la microgravedad",
+    "descripcionDetallada": [
+      "En el año 2010, la Agencia Espacial Europea (ESA) tomó la decisión formal de rechazar y vetar cualquier participación en experimentos espaciales con primates no humanos, estableciendo que la investigación biomédica en microgravedad debe apoyarse exclusivamente en astronautas humanos, cultivos celulares, organoides e invertebrados.",
+      "Sin embargo, diversos investigadores biomédicos han argumentado que la ingravidez prolongada afecta de forma simultánea e interconectada al sistema cardiovascular, el sistema inmunitario, el aparato locomotor y la neurofisiología, complejidad biológica que los cultivos de tejido en placas de Petri o los modelos matemáticos en computadora aún no pueden reproducir en su totalidad."
+    ],
+    "pregunta": "¿En qué punto exacto una tecnología de simulación o cultivo in vitro debe considerarse éticamente «suficiente» para exigir la prohibición definitiva del uso de animales vivos en el espacio, aun cuando los científicos afirmen que los modelos sintéticos no capturan toda la complejidad sistémica de un organismo?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "La sustitución debe ser obligatoria desde el instante en que un modelo celular o computacional ofrece datos biológicos razonablemente aproximados, pues la incertidumbre teórica residual no justifica continuar sometiendo a mamíferos vivos a la hostilidad de la microgravedad.",
+        "cuestionamiento": "Conformarse con 'datos aproximados' para proteger a los animales podría generar puntos ciegos médicos que deriven en patologías graves o paros cardíacos imprevistos en astronautas humanos durante misiones a Marte."
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "El uso de modelos mamíferos vivos debe mantenerse legalmente abierto hasta que la comunidad médica internacional certifique de forma unánime que las simulaciones replican con total exactitud cada interacción fisiológica de un organismo completo.",
+        "cuestionamiento": "Exigir replicación absoluta e idéntica sirve a menudo como excusa burocrática para postergar indefinidamente la sustitución y perpetuar la inercia de usar animales en laboratorios espaciales."
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "Debe adoptarse una prohibición escalonada basada en la escala de complejidad: vetar totalmente el uso de primates y mamíferos superiores como resolvió la ESA, pero autorizar transitoriamente modelos de roedores, peces e invertebrados.",
+        "cuestionamiento": "¿Esta distinción no asume una jerarquía especista arbitraria donde el sufrimiento de un roedor o un pez se considera éticamente irrelevante en comparación con el de un mono?"
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "Los fondos públicos de agencias espaciales deben reorientarse de manera prioritaria al desarrollo acelerado de 'órganos en chip' (organ-on-a-chip) y bioimpresión 3D de tejidos en la Estación Espacial Internacional.",
+        "cuestionamiento": "Concentrar los presupuestos en tecnologías alternativas emergentes podría restar fondos a la investigación médica inmediata que atiende la pérdida ósea que ya sufren las tripulaciones actuales."
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "La verdadera alternativa ética consiste en convertir a las tripulaciones humanas voluntarias en los únicos modelos experimentales de la astronáutica, remunerando o asegurando con generosidad su aporte a la biomedicina.",
+        "cuestionamiento": "Muchos experimentos conllevan niveles de toxicidad farmacológica o exposición radiológica que ningún comité de ética médica autorizaría jamás realizar en un ser humano voluntario."
+      }
+    ]
+  },
+  {
+    "id": "p8_eutanasia_vs_retiro",
+    "numero": 8,
+    "fotoVinculadaId": "foto_santuario_ham",
+    "tituloCaso": "Eutanasia metodológica frente al deber ético de retiro y vida digna",
+    "descripcionDetallada": [
+      "Históricamente, los protocolos de biología espacial se han dividido ante el destino final de los animales que regresan con vida de una misión. En el programa francés de 1963, la gata Félicette fue sacrificada premeditadamente para extraer su cerebro intacto antes de que la readaptación a la Tierra alterara los tejidos nerviosos.",
+      "En contraste, en Estados Unidos los chimpancés Ham y Enos no fueron sacrificados, sino que fueron trasladados a zoológicos o reservas de primates para vivir sus últimos años. Sin embargo, defensores del bienestar animal señalan que el confinamiento en zoológicos sin rehabilitación psicológica especializada tampoco constituyó un retiro digno para sujetos que prestaron un servicio forzado."
+    ],
+    "pregunta": "¿Es éticamente justificable que la necesidad metodológica de recolectar tejidos frescos invalide el derecho a la vida de un animal que sobrevivió a una misión cósmica, o debería la legislación internacional consagrar un deber irrenunciable de retiro, rehabilitación y cuidados vitalicios?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "El sacrificio metodológico post-misión es éticamente legítimo siempre que la eutanasia sea rápida e indolora, pues los animales no poseen una expectativa consciente sobre su vejez y la recolección de tejidos maximiza el valor de la misión para la ciencia humana.",
+        "cuestionamiento": "Afirmar que los animales 'no tienen expectativa de vejez' ignora su interés fundamental en continuar viviendo y disfrutar de bienestar libre de daño o dolor."
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "Debe existir un tratado internacional vinculante que consagre el 'derecho incondicional al retiro digno' para todo animal utilizado en la exploración espacial, prohibiendo la eutanasia programada de animales supervivientes.",
+        "cuestionamiento": "Financiar santuarios médicos vitalicios para cientos de animales de experimentación generaría cargas presupuestarias complejas que muchas agencias o universidades no estarían dispuestas a costear."
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "La eutanasia post-vuelo solo debería permitirse de forma humanitaria cuando el animal haya sufrido lesiones físicas o traumas tan graves en el espacio que su vida posterior represente un padecimiento crónico incurable.",
+        "cuestionamiento": "¿Quién y bajo qué criterios objetivos determinaría si el animal sufre 'lo suficiente' como para ordenar su muerte, evitando que la eutanasia compasiva se use como disfraz del interés científico por sus órganos?"
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "El retiro en zoológicos tradicionales como el que vivió Ham no constituyó una verdadera compensación moral, sino una condena a exhibición comercial que profundizó el aislamiento social del primate.",
+        "cuestionamiento": "Para la década de 1960 no existían santuarios especializados para primates; los zoológicos fueron la mejor alternativa institucional disponible para evitar que los chimpancés fueran sacrificados en laboratorios militares."
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "Si los datos requeridos exigen inexorablemente la muerte del animal tras el aterrizaje, el experimento debe cancelarse de antemano por constituir un diseño éticamente defectuoso que no respeta la dignidad del sujeto de investigación.",
+        "cuestionamiento": "Vincular la viabilidad ética a la no-destrucción del sujeto paralizaría ramas esenciales de la histología, la farmacología y la inmunología espacial que dependen del análisis microscópico de tejidos."
+      }
+    ]
+  },
+  {
+    "id": "p9_vacio_legal_sector_privado",
+    "numero": 9,
+    "fotoVinculadaId": "foto_beresheet_tardigrados",
+    "tituloCaso": "Vacíos normativos en el Derecho Espacial y la irrupción del sector privado",
+    "descripcionDetallada": [
+      "El Tratado del Espacio Ultraterrestre de 1967 consagra la protección de los astronautas como 'enviados de la humanidad' y exige evitar la contaminación dañina de la Tierra y los astros, pero no contiene una sola mención o cláusula vinculante sobre el bienestar o uso ético de animales.",
+      "Con la llegada del NewSpace y misiones comerciales privadas, este vacío normativo se ha hecho crítico: en 2019, la sonda privada israelí Beresheet se estrelló en la Luna con miles de tardígrados deshidratados a bordo sin supervisión bioética internacional; y en 2022, la compañía congoleña KEKA Aerospace enfrentó denuncias tras la muerte de la rata Kavira en el lanzamiento de su cohete Troposphere 5."
+    ],
+    "pregunta": "Ante la ausencia total de normas sobre bienestar animal en los tratados espaciales vigentes, ¿cómo debe regular la comunidad internacional la creciente experimentación con seres vivos impulsada por empresas comerciales y agencias de nuevas naciones fuera de la órbita terrestre?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "Debe adoptarse con urgencia un protocolo adicional vinculante al Tratado del Espacio que prohíba a cualquier empresa privada lanzar animales o seres vivos sin la aprobación explícita de un comité bioético internacional adscrito a la ONU.",
+        "cuestionamiento": "Crear un mecanismo de fiscalización obligatoria de la ONU enfrentaría la resistencia frontal de grandes potencias y corporaciones aeroespaciales que defienden la soberanía de sus licencias comerciales nacionales."
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "La regulación debe delegarse exclusivamente en las legislaciones de cada Estado de lanzamiento, permitiendo que la competencia de mercado y la autorregulación industrial determinen los estándares bioéticos de las misiones privadas.",
+        "cuestionamiento": "Delegar en los Estados nacionales crea 'paraísos regulatorios bioéticos': empresas espaciales trasladarán sus lanzamientos con animales a países con normativas débiles o nulo control sobre maltrato animal."
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "Debe prohibirse taxativamente el envío de cualquier organismo vivo (incluidos invertebrados extremófilos como tardígrados) a otros cuerpos celestes para proteger el principio de protección planetaria y evitar contaminaciones biológicas descontroladas.",
+        "cuestionamiento": "Equiparar a microorganismos e invertebrados microscópicos con mamíferos complejos paralizaría la astrobiología experimental y la búsqueda de vida en condiciones extremas."
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "Las empresas privadas que causen la muerte de animales en pruebas espaciales deben enfrentar sanciones financieras severas y la inhabilitación inmediata de sus licencias de lanzamiento de telecomunicaciones o carga comercial.",
+        "cuestionamiento": "Sancionar económicamente a las empresas no resuelve el problema ético de fondo si las compañías simplemente incluyen las multas como un costo financiero menor en sus presupuestos de desarrollo tecnológico."
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "La sociedad civil y las redes académicas deben liderar boicots públicos y auditorías éticas abiertas contra cualquier compañía comercial que utilice animales para atraer capital de riesgo o publicidad mediática.",
+        "cuestionamiento": "El activismo social y las campañas mediáticas carecen de fuerza jurídica vinculante para frenar proyectos privados financiados por consorcios militares o inversores anónimos."
+      }
+    ]
+  }
+]
