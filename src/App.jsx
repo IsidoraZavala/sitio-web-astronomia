@@ -207,6 +207,7 @@ function App() {
           <LibraryView
             perspectivas={PERSPECTIVAS_BIBLIOTECA}
             onExploreDilemmas={() => navegarSeccion('catalogo')}
+            onSelectSpecificDilemma={abrirDilema}
           />
         )}
 
