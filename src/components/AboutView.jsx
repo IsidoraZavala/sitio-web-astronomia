@@ -1,5 +1,5 @@
 import {
-  IconChatBranch,
+  IconBook,
   IconCompass,
   IconLayers,
   IconScale,
@@ -11,70 +11,78 @@ export function AboutView({ onExploreDilemmas }) {
     <div className="about-view">
       <div className="page-title-block">
         <TypewriterTitle as="h1" text="Sobre Órbita Ética" speed={28} />
-        <p>Ruta interactiva de deliberación filosófica sobre dilemas de la actividad espacial.</p>
+        <p>Plataforma educativa e interactiva de deliberación ética sobre la exploración espacial.</p>
       </div>
 
-      <div className="two-col-grid">
-        <section className="about-card">
+      <div className="about-grid-layout">
+        {/* BLOQUE 1 — ¿QUÉ ES ÓRBITA ÉTICA? (BLOQUE PRINCIPAL Y PROTAGONISTA) */}
+        <section className="about-card about-card-main">
           <h2 className="icon-heading">
-            <IconChatBranch size={22} /> Diálogo filosófico vivo
+            <IconCompass size={24} /> ¿Qué es Órbita Ética?
           </h2>
           <p>
-            No es un cuestionario con respuestas correctas, sino una conversación guiada donde las
-            preguntas evolucionan según tus elecciones para examinar principios, experimentos
-            mentales y objeciones.
+            Órbita Ética es una plataforma web educativa e interactiva dirigida principalmente a
+            estudiantes universitarios, concebida para fomentar el pensamiento crítico sobre los dilemas
+            morales asociados a la exploración y utilización del espacio exterior. A través del análisis
+            de problemáticas reales de la actividad espacial, la plataforma no busca imponer respuestas
+            correctas ni consagrar una postura ética superior, sino ofrecer un entorno riguroso para
+            cuestionar convicciones, argumentar con fundamentos sólidos y comprender la pluralidad de
+            perspectivas que convergen en el ámbito cósmico.
           </p>
         </section>
 
-        <section className="about-card">
-          <h2 className="icon-heading">
-            <IconScale size={22} /> Construcción progresiva
-          </h2>
-          <p>
-            A lo largo de 5 pasos registras tu posición inicial, el valor que defiendes, una
-            objeción exigente, tu respuesta y tu postura actual sin que cambiar de opinión sea
-            obligatorio.
-          </p>
-        </section>
-      </div>
+        {/* SUBGRID CON LOS 3 BLOQUES COMPLEMENTARIOS */}
+        <div className="about-subgrid">
+          {/* BLOQUE 2 — DECISIONES QUE DESAFÍAN */}
+          <section className="about-card about-card-decisions">
+            <h2 className="icon-heading">
+              <IconScale size={22} /> Decisiones que desafían
+            </h2>
+            <p>
+              Los estudiantes enfrentan situaciones concretas respaldadas por fuentes y datos de archivo,
+              resolviendo preguntas interactivas de toma de decisiones. Algunas interrogantes se adaptan a
+              sus elecciones anteriores, invitándolos a evaluar alternativas, ponderar costos y asumir las
+              consecuencias éticas de cada determinación.
+            </p>
+          </section>
 
-      <section className="about-card" style={{ marginTop: '20px' }}>
-        <h2 className="icon-heading">
-          <IconCompass size={22} /> Ejes del diseño filosófico
-        </h2>
-        <div className="two-col-grid" style={{ marginTop: '10px', marginBottom: 0 }}>
-          <ul className="clean-list">
-            <li>
-              <strong>Perspectivas en acción:</strong> Interpretan el caso, formulan preguntas y
-              plantean objeciones.
-            </li>
-            <li>
-              <strong>Experimentos mentales:</strong> Modifican condiciones hipotéticas para probar
-              la coherencia del argumento.
-            </li>
-          </ul>
-          <ul className="clean-list">
-            <li>
-              <strong>Hechos vs. supuestos:</strong> Distingue evidencia científica real de
-              escenarios hipotéticos.
-            </li>
-            <li>
-              <strong>Cierre deliberativo:</strong> Síntesis descargable y preguntas abiertas para
-              discutir en clases.
-            </li>
-          </ul>
+          {/* BLOQUE 3 — REFLEXIÓN FILOSÓFICA */}
+          <section className="about-card about-card-reflection">
+            <h2 className="icon-heading">
+              <IconBook size={22} /> Reflexión filosófica
+            </h2>
+            <p>
+              Cada escenario incorpora preguntas abiertas inspiradas en perspectivas filosóficas clásicas
+              y contemporáneas. Esta aproximación permite identificar tensiones valorativas profundas,
+              cuestionar supuestos tácitos y enriquecer los argumentos frente a desafíos que carecen de
+              soluciones técnicas prefabricadas.
+            </p>
+          </section>
+
+          {/* BLOQUE 4 — UNA EXPERIENCIA DE APRENDIZAJE */}
+          <section className="about-card about-card-journey">
+            <h2 className="icon-heading">
+              <IconLayers size={22} /> Una experiencia de aprendizaje
+            </h2>
+            <p>
+              El itinerario articula un recorrido formativo en cuatro momentos: aproximarse a la evidencia
+              del caso real, tomar decisiones difíciles, reflexionar a partir de interrogantes filosóficas
+              y realizar un test final que revela la afinidad del estudiante con distintos autores y referentes éticos.
+            </p>
+          </section>
         </div>
-      </section>
+      </div>
 
-      <div className="home-bottom-strip" style={{ marginTop: '2rem' }}>
+      {/* BANNER INFERIOR DE ACCIÓN */}
+      <div className="home-bottom-strip" style={{ marginTop: '2.5rem' }}>
         <div>
           <strong className="icon-heading">
             <IconLayers size={18} /> Pon a prueba tus argumentos
           </strong>
-          <p>Comienza con el Caso 01 sobre el financiamiento de una misión a Marte.</p>
+          <p>Explora los dilemas éticos disponibles en el catálogo y experimenta el proceso deliberativo.</p>
         </div>
         <button className="btn-primary" onClick={onExploreDilemmas}>
-          Explorar dilemas →
+          Explorar catálogo de dilemas →
         </button>
       </div>
     </div>

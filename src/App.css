@@ -1578,14 +1578,116 @@
   margin: 0;
 }
 
-/* MI RECORRIDO & SOBRE EL PROYECTO */
+/* MI RECORRIDO */
 .empty-journey-box,
-.about-card,
 .journey-card {
   background-color: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 1.75rem;
+}
+
+/* ============================================================ */
+/* SECCIÓN SOBRE ÓRBITA ÉTICA (CARDS CÁLIDAS CON BORDE ACENTUADO)*/
+/* ============================================================ */
+.about-view {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.about-grid-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 1.75rem;
+}
+
+.about-card {
+  background-color: #EDE5D8;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 26px 28px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-strong);
+  box-shadow: 0 14px 30px rgba(70, 40, 15, 0.12), 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.about-card h2 {
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-card p {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  text-align: justify;
+  margin: 0;
+}
+
+/* BLOQUE 1: PROTAGONISTA PRINCIPAL */
+.about-card-main {
+  padding: 34px 36px;
+  border-left: 6px solid var(--accent-amber);
+}
+
+.about-card-main h2 {
+  font-size: 1.45rem;
+  color: var(--primary-solid);
+  margin-bottom: 14px;
+}
+
+.about-card-main p {
+  font-size: 0.98rem;
+  line-height: 1.75;
+  color: var(--text-primary);
+}
+
+/* SUBGRID DE 3 BLOQUES COMPLEMENTARIOS */
+.about-subgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* VARIACIÓN DE LÍNEAS OSCURAS POR BLOQUE */
+.about-card-decisions {
+  border-top: 5px solid var(--accent-amber);
+}
+
+.about-card-reflection {
+  border-left: 5px solid var(--accent-amber);
+}
+
+.about-card-journey {
+  border-top: 5px solid var(--accent-amber);
+}
+
+@media (max-width: 960px) {
+  .about-subgrid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .about-card-main {
+    padding: 26px 22px;
+  }
+
+  .about-card-main h2 {
+    font-size: 1.3rem;
+  }
 }
 
 .journey-list {
@@ -1633,24 +1735,7 @@
   text-align: right;
 }
 
-.about-card h2 {
-  font-family: var(--font-serif);
-  font-size: 1.35rem;
-  margin-bottom: 0.65rem;
-}
 
-.methodology-flow {
-  margin-top: 1rem;
-  background-color: var(--bg-subtle);
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  padding: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  font-weight: 600;
-  font-size: 0.9rem;
-}
 
 .small-muted {
   font-size: 0.84rem;
