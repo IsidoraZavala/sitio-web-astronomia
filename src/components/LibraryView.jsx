@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { TypewriterTitle } from './TypewriterTitle'
 import { AUTORES_BIBLIOTECA } from '../data/autoresBibliotecaData'
-import { IconBook, IconCompass, IconGlobe } from './Icons'
 
 const resolverRutaImagen = (ruta) => {
   if (!ruta) return ''
@@ -26,7 +25,7 @@ export function LibraryView({ perspectivas = [], onExploreDilemmas, onSelectSpec
       ? perspectivas
       : perspectivas.filter((p) => p.categoria === filtroCategoria)
 
-  const rutaMarcoDorado = resolverRutaImagen('images/filosofos/marco_dorado_ovalado.png')
+  const rutaMarcoDorado = resolverRutaImagen('images/filosofos/marco_2_ovalado.png')
 
   return (
     <div className="library-view">
@@ -163,55 +162,10 @@ export function LibraryView({ perspectivas = [], onExploreDilemmas, onSelectSpec
                   />
                 </div>
 
-                {/* CONTENIDO Y POSTURA ÉTICA DEL AUTOR */}
+                {/* CONTENIDO: NOMBRE Y PÁRRAFO ÚNICO */}
                 <div className="author-card-content">
-                  <span
-                    className="author-badge-tag"
-                    style={{
-                      background: `${autor.temaColor}18`,
-                      color: autor.temaColor,
-                      borderColor: `${autor.temaColor}44`,
-                    }}
-                  >
-                    {autor.directrizNombre}
-                  </span>
-
                   <h2 className="author-card-title">{autor.nombre}</h2>
-                  <p className="author-card-enfoque">{autor.enfoque}</p>
-                  <p className="author-card-work">
-                    Obra clave: <em>{autor.obraReferencia}</em>
-                  </p>
-
-                  <p className="author-card-posture">{autor.resumenArgumento}</p>
-
-                  <div
-                    className="author-card-app-box"
-                    style={{ borderLeft: `3px solid ${autor.temaColor}` }}
-                  >
-                    <span className="author-card-app-title" style={{ color: autor.temaColor }}>
-                      Aplicación al debate espacial:
-                    </span>
-                    <p className="author-card-app-text">{autor.aplicacionCaso}</p>
-                  </div>
-
-                  {autor.citaClave && (
-                    <blockquote className="author-card-quote">
-                      «{autor.citaClave.cita}»
-                      <span className="author-card-quote-ref">
-                        — {autor.citaClave.referencia}
-                      </span>
-                    </blockquote>
-                  )}
-
-                  {onSelectSpecificDilemma && autor.dilemaId && (
-                    <button
-                      className="author-card-action-btn"
-                      onClick={() => onSelectSpecificDilemma(autor.dilemaId)}
-                      title={`Ir a deliberar en el dilema de ${autor.directrizNombre}`}
-                    >
-                      Deliberar en este dilema →
-                    </button>
-                  )}
+                  <p className="author-card-posture">{autor.posturaResumida}</p>
                 </div>
               </article>
             )
