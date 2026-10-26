@@ -1,0 +1,127 @@
+{
+  "id": "uso-bienes-materiales-propiedad",
+  "titulo": "¿Qué principios éticos deberían regular el uso de bienes materiales extraterrestres y a qué objetivos deben subordinarse tales bienes?",
+  "preguntaCentral": "¿Qué principios éticos deberían regular el uso de bienes materiales extraterrestres y a qué objetivos deben subordinarse tales bienes?",
+  "tituloSeccion": "Uso de bienes materiales extraterrestres y derecho de propiedad",
+  "parrafos": [
+    "La expansión humana hacia el espacio ha dejado de ser un horizonte de exploración exclusivamente científica o geopolítica para convertirse en un nuevo territorio de actividad económica, comercial y extractiva. Empresas privadas pioneras y consorcios internacionales proyectan hoy la extracción de agua helada en los polos lunares, la minería de metales preciosos en asteroides cercanos, la instalación de memoriales funerarios comerciales en la Luna y el despliegue de decenas de miles de satélites en la órbita terrestre baja. Sin embargo, estas iniciativas se enfrentan a un vacío ético y normativo fundamental: las leyes y tratados espaciales vigentes fueron redactados en plena Guerra Fría pensando en Estados soberanos, sin prever la llegada masiva del capital privado y la explotación comercial de recursos no renovables fuera de la Tierra.",
+    "El Tratado del Espacio Ultraterrestre de 1967 estableció con claridad que el espacio no puede ser objeto de apropiación nacional mediante reivindicaciones de soberanía, uso u ocupación, consagrándolo como provincia de toda la humanidad. No obstante, dicho tratado guardó silencio sobre si una empresa o individuo particular puede apropiarse de los minerales o materiales que extrae con su propia tecnología. Por su parte, el Acuerdo de la Luna de 1979 proclamó a la Luna y sus recursos naturales como «Patrimonio Común de la Humanidad», exigiendo un régimen internacional para distribuir equitativamente sus beneficios; sin embargo, este acuerdo no fue ratificado por ninguna de las grandes potencias espaciales, abriendo la puerta a interpretaciones unilaterales y a la ley del «primer llegado, primer servido».",
+    "Esta tensión se manifiesta hoy en cinco escenarios concretos y documentados: el uso de la superficie lunar como depósito de cenizas humanas de pago frente al rechazo de pueblos indígenas que consideran sagrado al satélite; la subasta privada de fragmentos de rocas lunares del programa Apolo; el reclamo histórico de los países ecuatoriales sobre la órbita geoestacionaria frente al acaparamiento de frecuencias por potencias tecnológicas; la proliferación de marcos bilaterales como los Acuerdos de Artemisa que avalan la propiedad privada de minerales extraídos; y la saturación acelerada de la órbita baja con decenas de miles de fragmentos de basura espacial que amenazan con desencadenar el síndrome de Kessler.",
+    "Para examinar estos desafíos no basta con aplicar fórmulas comerciales inmediatas ni prohibiciones abstractas. Es indispensable confrontar visiones filosóficas contrapuestas: ¿debe prevalecer el derecho libertario a la propiedad adquirido por el trabajo y el riesgo del innovador (Robert Nozick), la justicia distributiva imparcial que exige que toda riqueza cósmica beneficie prioritariamente a los más desaventajados de la Tierra (John Rawls), o la doctrina clásica de la ley natural que subordina todo bien material a la contemplación de la verdad y al bien común de la humanidad (Santo Tomás de Aquino)?",
+    "Las decisiones que tomemos en esta década sentarán las bases de la convivencia humana más allá de nuestro planeta. Te invitamos a deliberar sobre estos dilemas, asumir sus costos éticos y clarificar cuál es el destino moral que deseamos para los recursos del cosmos."
+  ],
+  "casosDocumentados": [
+    {
+      "id": "caso_peregrine",
+      "numero": 1,
+      "titulo": "Servicios funerarios lunares y la misión Peregrine 1",
+      "subtitulo": "La Luna como memorial comercial frente al patrimonio cultural sagrado",
+      "fecha": "2023–2024",
+      "resumen": "En enero de 2024, la misión privada Peregrine 1 transportó cenizas humanas para depositarlas permanentemente en la Luna, desatando una enérgica protesta del Pueblo Navajo, que considera a la Luna un santuario sagrado. Aunque un fallo técnico destruyó la nave al reingresar a la Tierra, el caso abrió un debate urgente sobre la comercialización y desacralización de los cuerpos celestes.",
+      "hechosReales": "Astrobotic Technology lanzó el módulo Peregrine 1 dentro del programa CLPS de la NASA, llevando consigo cápsulas con restos incinerados y muestras de ADN contratadas por Celestis y Elysium Space por sumas a partir de 13.000 dólares. El presidente de la Nación Navajo, Buu Nygren, exigió pausar la misión denunciando que convertir la Luna en cementerio profana creencias ancestrales. Una fuga de propelente impidió el alunizaje, pero las compañías confirmaron que mantendrán sus contratos de entierros lunares en próximas misiones.",
+      "proyectosPropuestas": "Creación de un catálogo de protección del patrimonio cultural e inmaterial de la Luna bajo tutela de la UNESCO frente a la consolidación de un mercado privado de memoriales y turismo fúnebre espacial.",
+      "actores": "Empresas comerciales privadas (Astrobotic, Celestis), agencias espaciales estatales (NASA), Nación Navajo y pueblos originarios de todo el mundo.",
+      "tensionEtica": "El choque frontal entre la libre iniciativa económica privada y el deber universal de respetar el patrimonio espiritual, cosmovisiones y memoria cultural colectiva de la humanidad.",
+      "fotoId": "foto_peregrine"
+    },
+    {
+      "id": "caso_apolo_muestras",
+      "numero": 2,
+      "titulo": "Recolección y comercialización de muestras lunares Apolo",
+      "subtitulo": "La transformación de recursos naturales en mercancías privadas",
+      "fecha": "1969–presente",
+      "resumen": "Las misiones Apolo trajeron a la Tierra 382 kg de rocas lunares. Aunque la gran masa permanece bajo custodia científica y cerca de 270 kg se donaron como símbolos diplomáticos a naciones del mundo, pequeñas porciones han terminado en el mercado negro y en subastas privadas internacionales por millones de dólares.",
+      "hechosReales": "Bajo el derecho internacional, los cuerpos celestes son considerados 'res extra commercium' (cosas fuera del comercio humano). Sin embargo, una vez que el material es extraído, envasado y trasladado a la superficie terrestre, ciertos juristas y coleccionistas sostienen que se convierte en una 'res nova' (cosa nueva mueble) sobre la cual puede ejercerse propiedad privada y libre compraventa.",
+      "proyectosPropuestas": "Establecimiento de un régimen de fideicomiso científico perpetuo de las Naciones Unidas que declare nula de pleno derecho cualquier transacción comercial privada de material extraterrestre, frente a leyes nacionales que legalizan la posesión de muestras.",
+      "actores": "Gobierno y agencias de EE. UU., comunidad científica planetaria, casas de subastas internacionales y coleccionistas privados de alto patrimonio.",
+      "tensionEtica": "La frontera entre el derecho del extractor a disponer libremente de lo recolectado con su esfuerzo e inversión, y la obligación de conservar las muestras extraterrestres como patrimonio público inalienable de la ciencia humana.",
+      "fotoId": "foto_apolo_muestras"
+    },
+    {
+      "id": "caso_orbita_bogota",
+      "numero": 3,
+      "titulo": "La Declaración de Bogotá y la Órbita Geoestacionaria",
+      "subtitulo": "La lucha contra el monopolio orbital de las potencias industriales",
+      "fecha": "1976",
+      "resumen": "Ocho países ecuatoriales reclamaron soberanía sobre los segmentos de la órbita geoestacionaria situados sobre sus territorios, denunciando que las naciones ricas estaban copando las mejores posiciones y frecuencias electromagnéticas antes de que el Sur Global desarrollara su propia industria.",
+      "hechosReales": "En 1976, Colombia, Ecuador, Congo, Zaire, Uganda, Kenia, Indonesia y Brasil firmaron la Declaración de Bogotá argumentando que la órbita geoestacionaria es un recurso natural escaso y finito. Aunque su reclamo de soberanía directa no prosperó frente al Tratado del Espacio de 1967, forzó a la Unión Internacional de Telecomunicaciones (UIT) a reconocer la escasez del espectro y consagrar principios de acceso equitativo.",
+      "proyectosPropuestas": "Reserva obligatoria y perpetua de ventanas y frecuencias orbitales para países en desarrollo frente a mecanismos de subasta abierta o libre asignación por orden de solicitud técnica ('primer llegado, primer servido').",
+      "actores": "Países ecuatoriales y en desarrollo, potencias espaciales tradicionales, UIT y consorcios comerciales de telecomunicaciones satelitales.",
+      "tensionEtica": "La supuesta 'libertad de exploración y uso' que en la práctica privilegia a los países con capacidad tecnológica inmediata, frente a la justicia distributiva que exige salvaguardar recursos escasos para quienes aún no tienen la capacidad técnica de utilizarlos.",
+      "fotoId": "foto_orbita_bogota"
+    },
+    {
+      "id": "caso_mineria_artemisa",
+      "numero": 4,
+      "titulo": "Minería de asteroides y los Acuerdos de Artemisa",
+      "subtitulo": "Zonas de seguridad y explotación privada de recursos celestes",
+      "fecha": "2015–2020",
+      "resumen": "Con la meta de extraer hielo polar en la Luna y metales estratégicos en asteroides, EE. UU. promovió los Acuerdos de Artemisa, reconociendo el derecho a extraer recursos y delimitar 'zonas de seguridad' bilaterales, desatando acusaciones de unilateralismo y fractura del régimen multilateral de la ONU.",
+      "hechosReales": "Empresas pioneras como Moon Express y Planetary Resources sentaron las bases comerciales para la minería espacial. La Ley Comercial del Espacio de EE. UU. (2015) y los Acuerdos de Artemisa (2020) garantizan a empresas privadas el derecho a poseer, vender y comerciar con recursos extraídos. Críticos internacionales señalan que este modelo bilateral esquiva el principio de 'patrimonio común de la humanidad' del Acuerdo de la Luna de 1979.",
+      "proyectosPropuestas": "Creación de una Autoridad Internacional de Recursos Espaciales inspirada en la Convención del Mar (CONVEMAR) que administre las licencias mineras y redistribuya regalías, frente a un sistema de clubes de países que operan por acuerdos bilaterales de facto.",
+      "actores": "Empresas mineras espaciales privadas, Estados firmantes de Artemisa, coaliciones de países no firmantes y la Comisión sobre la Utilización del Espacio Ultraterrestre con Fines Pacíficos (COPUOS) de la ONU.",
+      "tensionEtica": "El legítimo incentivo económico a innovar y arriesgar capital privado en condiciones extremas, frente al riesgo de crear monopolios corporativos sobre recursos críticos indispensables para la supervivencia de toda la especie humana.",
+      "fotoId": "foto_mineria_artemisa"
+    },
+    {
+      "id": "caso_basura_orbital",
+      "numero": 5,
+      "titulo": "Saturación orbital, fragmentaciones y la tragedia de los comunes",
+      "subtitulo": "La degradación del entorno cercano a la Tierra por el auge comercial",
+      "fecha": "2009–presente",
+      "resumen": "Colisiones masivas como la de Cosmos e Iridium en 2009 y la explosión de etapas de cohetes han dejado más de 35.000 fragmentos catalogados de metralla en órbita baja. El despliegue vertiginoso de megaconstelaciones satelitales eleva exponencialmente el riesgo del síndrome de Kessler.",
+      "hechosReales": "Operadores comerciales privados despliegan flotas de miles de satélites para ofrecer internet de banda ancha global, previéndose hasta 100.000 artefactos en órbita baja para fines de esta década. Cada operador maximiza sus ingresos lanzando más unidades, pero la chatarra residual y las partículas microscópicas amenazan con volver intransitable el espacio orbital para cualquier país durante siglos.",
+      "proyectosPropuestas": "Regulación internacional que reduzca el plazo obligatorio de desorbitado de 25 a 5 años, fijación de un impuesto ambiental global por masa lanzada para financiar misiones activas de remoción de basura espacial, y cuotas rígidas de saturación orbital por corporación.",
+      "actores": "Operadores de megaconstelaciones comerciales, agencias espaciales gubernamentales (ESA, NASA), astrónomos profesionales y las futuras generaciones de la humanidad.",
+      "tensionEtica": "El conflicto entre maximizar la conectividad digital y el progreso tecnológico presente, y la responsabilidad moral de evitar una degradación irreversible que convierta el entorno espacial cercano en una trampa inservible.",
+      "fotoId": "foto_basura_orbital"
+    }
+  ],
+  "carruselFotos": [
+    {
+      "id": "foto_peregrine",
+      "numero": 1,
+      "titulo": "Misión Peregrine 1 y memoriales fúnebres comerciales (2024)",
+      "descripcion": "El módulo lunar comercial Peregrine 1 transportaba cenizas y ADN humano con destino a la superficie de la Luna.",
+      "eje": "Memoriales privados frente a santuarios culturales sagrados",
+      "archivoImagen": "./images/usoEspacio/foto1_peregrine.jpg",
+      "credito": "Astrobotic / Celestis / NASA"
+    },
+    {
+      "id": "foto_apolo_muestras",
+      "numero": 2,
+      "titulo": "Muestras lunares Apolo y coleccionismo privado (1969–1972)",
+      "descripcion": "Fragmentos de rocas lunares traídas por astronautas, objeto de disputas jurídicas sobre propiedad y subastas.",
+      "eje": "Res extra commercium frente a privatización y venta de muestras",
+      "archivoImagen": "./images/usoEspacio/foto2_apolo_muestras.jpg",
+      "credito": "NASA / Johnson Space Center"
+    },
+    {
+      "id": "foto_orbita_bogota",
+      "numero": 3,
+      "titulo": "Órbita geoestacionaria y la Declaración de Bogotá (1976)",
+      "descripcion": "Ocho países ecuatoriales reclamaron soberanía sobre el segmento orbital sobre sus territorios ante el monopolio tecnológico.",
+      "eje": "Distribución equitativa de recursos escasos y el Sur Global",
+      "archivoImagen": "./images/usoEspacio/foto3_orbita_bogota.jpg",
+      "credito": "ITU / ESA / Archivo Histórico"
+    },
+    {
+      "id": "foto_mineria_artemisa",
+      "numero": 4,
+      "titulo": "Minería lunar y Acuerdos de Artemisa (2020)",
+      "descripcion": "Proyectos de extracción de hielo polar y minerales espaciales bajo marcos bilaterales y zonas de seguridad.",
+      "eje": "Incentivo a la inversión privada frente a patrimonio común multilateral",
+      "archivoImagen": "./images/usoEspacio/foto4_mineria_artemisa.jpg",
+      "credito": "NASA / Artemis Program / Moon Express"
+    },
+    {
+      "id": "foto_basura_orbital",
+      "numero": 5,
+      "titulo": "Basura espacial y megaconstelaciones en órbita baja (2009–2026)",
+      "descripcion": "Densidad creciente de fragmentos de colisiones y enjambres de satélites en el entorno orbital terrestre.",
+      "eje": "Tragedia de los bienes comunes y sostenibilidad orbital",
+      "archivoImagen": "./images/usoEspacio/foto5_basura_orbital.jpg",
+      "credito": "ESA Space Debris Office / NASA ODPO"
+    }
+  ]
+}

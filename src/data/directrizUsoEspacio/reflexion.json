@@ -1,0 +1,29 @@
+[
+  {
+    "id": "ref_1_nozick_propiedad",
+    "numero": 1,
+    "titulo": "Propiedad por trabajo e impuestos como coacción (Robert Nozick)",
+    "autor": "Robert Nozick",
+    "contextualizacionPrevia": "El filósofo Robert Nozick defiende la corriente del libertarismo. Para él, cada ser humano es dueño absoluto de sí mismo, de su talento y del esfuerzo que invierte. Cuando alguien arriesga su vida y su dinero para extraer un mineral que no pertenecía a nadie en el espacio, ese recurso se convierte legítimamente en su propiedad privada. Desde su perspectiva, obligar a esa persona o empresa a entregar parte de sus ganancias mediante impuestos o tributos internacionales equivale éticamente a obligarla a trabajar gratis para otros.",
+    "citaDocumento": "«El impuesto a los productos del trabajo va a la par con el trabajo forzado. Apoderarse de los resultados del trabajo de alguien es equivalente a apoderarse de sus horas de trabajo...» (Anarquía, Estado y Utopía, 1988, p. 170)",
+    "enunciado": "A partir del principio de Robert Nozick de que cada persona es dueña de los frutos de su trabajo e inversión: ¿consideras legítimo que una empresa privada conserve el 100% de los minerales que extraiga en la Luna o asteroides sin pagar regalías a la humanidad? ¿O crees que, al ser el espacio un bien cósmico compartido, quienes no pueden viajar tienen derecho moral a exigir una parte de esa riqueza?"
+  },
+  {
+    "id": "ref_2_rawls_velo_ignorancia",
+    "numero": 2,
+    "titulo": "Justicia distributiva y el velo de la ignorancia (John Rawls)",
+    "autor": "John Rawls",
+    "contextualizacionPrevia": "El filósofo John Rawls propone pensar la justicia desde un experimento mental llamado «el velo de la ignorancia»: imagina que debemos acordar las reglas de la sociedad sin saber en qué lugar naceremos (si en una superpotencia tecnológica multimillonaria o en un país con escasos recursos). Rawls sostiene que, bajo esa incertidumbre imparcial, nadie aceptaría que los más fuertes se queden con todo. Por eso, las desigualdades de riqueza o tecnología solo son justas si benefician prioritariamente a los sectores más vulnerables de la humanidad.",
+    "citaDocumento": "«La justicia es la primera virtud de las instituciones sociales, como la verdad lo es de los sistemas de pensamiento... Los principios de la justicia se escogen tras un velo de la ignorancia.» (Teoría de la Justicia, 2006, p. 27)",
+    "enunciado": "Si tuvieras que diseñar las leyes de la minería y el comercio espacial tras el «velo de la ignorancia», sin saber si nacerás como accionista de una corporación espacial o como habitante de un país del Sur Global sin programa espacial: ¿qué reglas establecerías para el reparto de los recursos cósmicos? ¿Qué mecanismos exigirías para que la riqueza del espacio beneficie prioritariamente a los países más necesitados?"
+  },
+  {
+    "id": "ref_3_tomas_aquino_bien_comun",
+    "numero": 3,
+    "titulo": "Subordinación de los bienes materiales y primacía de la verdad (Santo Tomás de Aquino)",
+    "autor": "Santo Tomás de Aquino",
+    "contextualizacionPrevia": "Para Santo Tomás de Aquino, teólogo y filósofo clásico de la ley natural, todos los bienes materiales del universo fueron creados para el sostenimiento de la vida humana y para orientar a las personas hacia su fin supremo: la contemplación de la verdad y el bien común. Tomás enseña que la propiedad privada es solo un método práctico de organización humana, pero nunca un derecho absoluto que pueda anteponerse al bien de todos ni a la búsqueda del conocimiento verdadero.",
+    "citaDocumento": "«Las cosas exteriores están sometidas al hombre en cuanto a su uso... pero la posesión de las cosas materiales no debe ser tenida como propia del individuo de forma absoluta, sino común, de modo que fácilmente las comunique con los demás en su necesidad.» (Suma Teológica, II-II, q. 66, a. 1-2)",
+    "enunciado": "Siguiendo la premisa de Santo Tomás de que los bienes materiales deben subordinarse a la verdad y al bien común de la comunidad humana: ¿deben los cuerpos celestes (la Luna, los asteroides) tratarse principalmente como canteras para el lucro comercial de combustibles, o su valor supremo radica en la investigación científica desinteresada y en el asombro filosófico de toda la humanidad? ¿Por qué?"
+  }
+]

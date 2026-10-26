@@ -113,6 +113,18 @@ export const DILEMAS_CATALOGO = [
     destacado: true,
   },
   {
+    id: 'uso-bienes-materiales-propiedad',
+    titulo:
+      '¿Qué principios éticos deberían regular el uso de bienes materiales extraterrestres y a qué objetivos deben subordinarse tales bienes?',
+    subtitulo:
+      'Minería lunar, memoriales privados y soberanía extraterrestre: libertarismo, justicia distributiva y bien común.',
+    tema: 'Uso de bienes materiales extraterrestres y derecho de propiedad',
+    modo3D: 'orbita',
+    tipoIlustracion: 'recursos',
+    esDirectrizUsoEspacio: true,
+    destacado: true,
+  },
+  {
     id: 'mision-marte',
     numero: '01',
     titulo: '¿Explorar Marte mientras existen urgencias en la Tierra?',

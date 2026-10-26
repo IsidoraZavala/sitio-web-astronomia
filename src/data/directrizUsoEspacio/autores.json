@@ -1,0 +1,86 @@
+[
+  {
+    "id": "nozick",
+    "nombre": "Robert Nozick",
+    "obraReferencia": "Anarquía, Estado y Utopía (1974; ed. esp. Fondo de Cultura Económica, 1988)",
+    "enfoque": "Libertarismo, justicia en las pertenencias, adquisición por trabajo y derechos individuales inviolables",
+    "resumenArgumento": "Robert Nozick sostiene que los individuos tienen derechos morales naturales que ninguna institución ni mayoría puede vulnerar legítimamente. Su teoría histórica de la justicia postula que una distribución de bienes es justa si surge de adquisiciones iniciales legítimas (mediante trabajo e inversión sobre cosas que no pertenecían a nadie) o de transferencias voluntarias en el libre mercado. Rechaza de forma categórica las teorías pautadas o redistributivas de la justicia, afirmando que cobrar impuestos para redistribuir la riqueza equivale moralmente al trabajo forzado.",
+    "aplicacionCaso": "Frente a la minería en la Luna y asteroides, Nozick defendería que las empresas privadas como Moon Express o Planetary Resources adquieren derechos de propiedad legítimos y plenos sobre los minerales que extraen con su tecnología, trabajo y capital de riesgo. Obligar a estas empresas a ceder parte de sus ganancias a un fondo internacional de la ONU violaría su libertad y castigaría a los innovadores para subsidiar a quienes no arriesgaron nada.",
+    "citasClave": [
+      {
+        "cita": "El impuesto a los productos del trabajo va a la par con el trabajo forzado. Algunas personas encuentran obvia esta afirmación: tomar el producto de tantas horas de trabajo de alguien es como quitarle tantas horas de su vida; es forzar a la persona a trabajar tantas horas para los propósitos de otra.",
+        "contexto": "Fundamentación ética de por qué la redistribución forzosa de la riqueza atenta contra la autopropiedad y la libertad individual.",
+        "referencia": "Robert Nozick, Anarquía, Estado y Utopía, 1988, p. 170."
+      },
+      {
+        "cita": "Una distribución es justa si surge de otra distribución justa a través de medios legítimos... Los resultados que surgen de la libre transferencia no empeoran la situación de nadie.",
+        "contexto": "Defensa de la legitimidad de los intercambios voluntarios y la adquisición de recursos no poseídos.",
+        "referencia": "Robert Nozick, Anarquía, Estado y Utopía, 1988, p. 153."
+      }
+    ],
+    "fuentesAccesoAbierto": [
+      {
+        "titulo": "Stanford Encyclopedia of Philosophy: Robert Nozick's Political Philosophy",
+        "url": "https://plato.stanford.edu/entries/nozick-political/",
+        "tipo": "Enciclopedia académica de filosofía",
+        "idioma": "Inglés"
+      }
+    ]
+  },
+  {
+    "id": "rawls",
+    "nombre": "John Rawls",
+    "obraReferencia": "Teoría de la Justicia (1971; ed. esp. Fondo de Cultura Económica, 2006)",
+    "enfoque": "Liberalismo igualitarista, justicia como equidad, velo de la ignorancia y principio de diferencia (maximin)",
+    "resumenArgumento": "John Rawls propone que las normas de una sociedad justa deben acordarse desde una situación hipotética de imparcialidad llamada la 'posición original', cubierta por el 'velo de la ignorancia'. Dado que nadie sabe si nacerá en una nación tecnológicamente poderosa o en una comunidad empobrecida, las partes acordarían dos principios fundamentales: igual libertad básica para todos y el principio de la diferencia, según el cual las desigualdades socioeconómicas solo son tolerables si producen el mayor beneficio posible para los miembros menos aventajados de la sociedad.",
+    "aplicacionCaso": "Frente a la apropiación de recursos espaciales, Rawls rechazaría el principio de 'primer llegado, primer servido'. Permitir que corporaciones de unas pocas potencias monopolicen el agua lunar o las órbitas satelitales profundiza las desigualdades históricas arbitrarias. Siguiendo la filosofía del Acuerdo de la Luna de 1979, toda explotación comercial del cosmos debe supeditarse a un régimen distributivo que financie el desarrollo humano y la igualdad de oportunidades en el Sur Global.",
+    "citasClave": [
+      {
+        "cita": "La justicia es la primera virtud de las instituciones sociales, como la verdad lo es de los sistemas de pensamiento... Los principios de la justicia se escogen tras un velo de la ignorancia.",
+        "contexto": "Definición fundacional de la justicia como valor rector imparcial de la cooperación social.",
+        "referencia": "John Rawls, Teoría de la Justicia, 2006, p. 27."
+      },
+      {
+        "cita": "Las desigualdades sociales y económicas habrán de ser conformadas de modo tal que se espere razonablemente que sean para ventaja de los menos aventajados.",
+        "contexto": "Formulación del principio de la diferencia (maximin) para regular la distribución de recursos escasos.",
+        "referencia": "John Rawls, Teoría de la Justicia, 2006, p. 68."
+      }
+    ],
+    "fuentesAccesoAbierto": [
+      {
+        "titulo": "Stanford Encyclopedia of Philosophy: John Rawls",
+        "url": "https://plato.stanford.edu/entries/rawls/",
+        "tipo": "Enciclopedia académica de filosofía",
+        "idioma": "Inglés"
+      }
+    ]
+  },
+  {
+    "id": "tomas",
+    "nombre": "Santo Tomás de Aquino",
+    "obraReferencia": "Suma Teológica (c. 1265–1274; Secunda Secundae, Quaestio 66; Prima Secundae, Quaestio 5)",
+    "enfoque": "Ley natural clásica, teleología del orden cósmico, primacía de la verdad y subordinación de los bienes al bien común",
+    "resumenArgumento": "Santo Tomás de Aquino integra la filosofía aristotélica con la teología cristiana. Enseña que todos los bienes materiales del universo han sido ordenados para sustentar la vida de la comunidad humana y permitir su perfeccionamiento moral y racional hacia la contemplación de la verdad. Para Tomás, la propiedad privada no es un derecho natural absoluto, sino una institución de derecho de gentes útil para la administración ordenada, la cual queda subordinada a la exigencia del bien común y al destino universal de los bienes.",
+    "aplicacionCaso": "Ante la disyuntiva entre investigación científica pura y refinerías comerciales de combustible en la Luna, Santo Tomás otorgaría una clara primacía al valor epistémico y contemplativo del conocimiento cósmico sobre el lucro económico. Explotar y alterar irreversiblemente cuerpos celestes para alimentar el consumo material es éticamente deficiente si destruye la posibilidad de contemplar y desentrañar los misterios de la creación.",
+    "citasClave": [
+      {
+        "cita": "Las cosas exteriores están sometidas al hombre en cuanto a su uso... pero la posesión de las cosas materiales no debe ser tenida como propia del individuo de forma absoluta, sino común, de modo que fácilmente las comunique con los demás en su necesidad.",
+        "contexto": "Doctrina clásica sobre el destino común de los bienes materiales y el límite ético de la propiedad privada.",
+        "referencia": "Santo Tomás de Aquino, Suma Teológica, II-II, q. 66, a. 1-2."
+      },
+      {
+        "cita": "La perfección última del hombre y su felicidad no puede consistir en bienes materiales ni riquezas exteriores, sino en la contemplación de la verdad suprema.",
+        "contexto": "Subordinación jerárquica de la riqueza material frente a la búsqueda del conocimiento y la sabiduría.",
+        "referencia": "Santo Tomás de Aquino, Suma Teológica, I-II, q. 5, a. 1."
+      }
+    ],
+    "fuentesAccesoAbierto": [
+      {
+        "titulo": "Corpus Thomisticum: Summa Theologiae",
+        "url": "https://www.corpusthomisticum.org/",
+        "tipo": "Edición crítica y repositorio de obras de Santo Tomás de Aquino",
+        "idioma": "Latín / Español"
+      }
+    ]
+  }
+]

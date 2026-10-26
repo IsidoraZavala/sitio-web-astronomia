@@ -1,0 +1,62 @@
+[
+  {
+    "id": "fuente_becerra_rodriguez",
+    "titulo": "El rol de la propiedad privada en el espacio exterior",
+    "autor": "Jairo Becerra & Julián Rodríguez",
+    "año": 2016,
+    "tipo": "Artículo de investigación jurídica",
+    "publicacion": "Revista Prolegómenos - Derechos y Valores, Universidad Católica de Colombia",
+    "descripcion": "Estudio dogmático sobre los tres casos paradigmáticos del derecho espacial: la recolección y donación de muestras lunares de Apolo, la Declaración de Bogotá sobre la órbita geoestacionaria y la minería comercial de asteroides. Analiza la distinción entre res extra commercium, res nullius y res nova.",
+    "citasRelevantes": "Aborda el paso de muestras cósmicas in situ a cosas muebles susceptibles de posesión civil (res nova) y analiza el reclamo de los países ecuatoriales sobre el recurso natural escaso de la órbita geoestacionaria."
+  },
+  {
+    "id": "fuente_onu_tratados",
+    "titulo": "Tratados y Principios de las Naciones Unidas sobre el Espacio Ultraterrestre",
+    "autor": "Oficina de Asuntos del Espacio Ultraterrestre de las Naciones Unidas (UNOOSA)",
+    "año": 1967,
+    "tipo": "Tratado Internacional Multilateral",
+    "publicacion": "Naciones Unidas, Nueva York / Viena",
+    "descripcion": "Compendio oficial de los instrumentos jurídicos fundamentales del derecho espacial: el Tratado del Espacio Ultraterrestre de 1967 (artículos I, II y VI sobre no apropiación soberana y responsabilidad de los Estados) y el Acuerdo que rige las actividades en la Luna de 1979 (artículo 11 sobre el Patrimonio Común de la Humanidad).",
+    "citasRelevantes": "Artículo II del Tratado de 1967: 'El espacio ultraterrestre... no podrá ser objeto de apropiación nacional por reivindicación de soberanía, mediante el uso ni la ocupación, ni de ninguna otra manera'."
+  },
+  {
+    "id": "fuente_memoriales_peregrine",
+    "titulo": "Dilemas éticos de los servicios conmemorativos espaciales y la misión Peregrine 1",
+    "autor": "Comité de Ética y Exploración Espacial / Análisis Académico",
+    "año": 2024,
+    "tipo": "Ensayo y reporte de caso",
+    "publicacion": "Journal of Space Law & Ethics Review",
+    "descripcion": "Análisis exhaustivo del conflicto entre la empresa privada Astrobotic, la compañía de servicios funerarios Celestis y las protestas formales de la Nación Navajo, que denunció la profanación cultural del satélite sagrado en vísperas del lanzamiento del módulo Peregrine 1.",
+    "citasRelevantes": "Examina la colisión de derechos entre la libre contratación comercial privada bajo la legislación estadounidense y el reconocimiento de los derechos de pueblos indígenas sobre bienes inmateriales y celestes."
+  },
+  {
+    "id": "fuente_esa_space_debris",
+    "titulo": "ESA Space Environment Report (I10R1)",
+    "autor": "European Space Agency (ESA) Space Debris Office",
+    "año": 2024,
+    "tipo": "Informe técnico internacional",
+    "publicacion": "ESA Publications, Darmstadt, Alemania",
+    "descripcion": "Informe técnico anual sobre el estado del entorno orbital terrestre. Documenta la evolución de la masa en órbita, el catálogo de más de 35.000 fragmentos de metralla mayores a 10 cm, colisiones históricas (Cosmos-Iridium), eventos de fragmentación de etapas Long March y el impacto de megaconstelaciones de comunicaciones.",
+    "citasRelevantes": "Modela el riesgo de colisión en cascada (síndrome de Kessler) y analiza la eficacia de las directrices de mitigación internacional que reducen el plazo de desorbitado seguro a 5 años."
+  },
+  {
+    "id": "fuente_bbc_propiedad_espacio",
+    "titulo": "¿Quién es dueño del espacio exterior?",
+    "autor": "BBC News Mundo",
+    "año": 2021,
+    "tipo": "Reportaje de divulgación periodística especializada",
+    "publicacion": "BBC News Internacional",
+    "descripcion": "Cobertura sobre las empresas pioneras de minería espacial (Moon Express, Planetary Resources), la aprobación de leyes nacionales en EE. UU. y Luxemburgo, y la polémica en torno a los Acuerdos de Artemisa frente al multilateralismo de la ONU.",
+    "citasRelevantes": "Discute la laguna legal sobre la propiedad privada de minerales extraídos frente a la prohibición estatal de reclamar soberanía territorial."
+  },
+  {
+    "id": "fuente_filosofos_texto_base",
+    "titulo": "Caso sobre uso de recursos en el espacio y derecho de propiedad: marcos filosóficos",
+    "autor": "Cátedra de Ética de la Ciencia y Filosofía Política",
+    "año": 2024,
+    "tipo": "Documento curricular de cátedra",
+    "publicacion": "Universidad / Órbita Ética",
+    "descripcion": "Documento pedagógico que articula el dilema central de la minería cósmica y la apropiación privada con las doctrinas filosóficas de Robert Nozick (Anarquía, Estado y Utopía), John Rawls (Teoría de la Justicia) y Santo Tomás de Aquino (Suma Teológica).",
+    "citasRelevantes": "Establece las tres dimensiones del debate: la legitimidad del derecho libertario de adquisición por trabajo frente a la exigencia de justicia distributiva tras el velo de la ignorancia y la primacía tomista de la contemplación de la verdad sobre el lucro material."
+  }
+]

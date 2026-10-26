@@ -1,5 +1,6 @@
 import { IconChatBranch } from './Icons'
-import { Space3DViewer } from './Space3DViewer'
+import { NasaTracesCardVisual } from './NasaTracesCardVisual'
+import { NasaAsteroidMonitorVisual } from './NasaAsteroidMonitorVisual'
 import { TypewriterTitle } from './TypewriterTitle'
 
 export function CatalogView({ dilemas, progresoGuardado, onSelectDilema }) {
@@ -23,7 +24,11 @@ export function CatalogView({ dilemas, progresoGuardado, onSelectDilema }) {
                 className="dilemma-card-visual"
                 style={{ background: '#05060A', padding: '12px' }}
               >
-                <Space3DViewer initialMode={dilema.modo3D || 'marte'} compact={true} />
+                {dilema.esDirectrizAmbiental ? (
+                  <NasaTracesCardVisual />
+                ) : dilema.esDirectrizUsoEspacio ? (
+                  <NasaAsteroidMonitorVisual />
+                ) : null}
                 {estaCompletado && (
                   <span className="dilemma-status-badge status-done">✓ Completado</span>
                 )}
@@ -45,6 +50,18 @@ export function CatalogView({ dilemas, progresoGuardado, onSelectDilema }) {
                     }}
                   >
                     Directriz Ambiental · Caso Especial
+                  </span>
+                )}
+                {dilema.esDirectrizUsoEspacio && (
+                  <span
+                    className="pilot-badge-tag"
+                    style={{
+                      marginBottom: '10px',
+                      borderColor: '#D97706',
+                      color: '#D97706',
+                    }}
+                  >
+                    Uso del Espacio y Propiedad · Nueva Dimensión
                   </span>
                 )}
                 {dilema.esPilotoNuevo && (

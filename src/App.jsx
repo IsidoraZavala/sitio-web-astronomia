@@ -6,6 +6,7 @@ import { CatalogView } from './components/CatalogView'
 import { DilemmaExperience } from './components/DilemmaExperience'
 import { PilotDilemmaExperience } from './components/PilotDilemmaExperience'
 import { EnvironmentalDilemmaExperience } from './components/EnvironmentalDilemmaExperience'
+import { SpaceUseDilemmaExperience } from './components/SpaceUseDilemmaExperience'
 import { HomeView } from './components/HomeView'
 import {
   IconBook,
@@ -166,6 +167,12 @@ function App() {
         {seccionActiva === 'experiencia-dilema' && dilemaSeleccionado && (
           dilemaSeleccionado.esDirectrizAmbiental || dilemaSeleccionado.id === 'huellas-exploracion-espacial' ? (
             <EnvironmentalDilemmaExperience
+              key={dilemaSeleccionado.id}
+              onVolverAlCatalogo={() => navegarSeccion('catalogo')}
+              onGuardarGlobal={guardarProgresoDilema}
+            />
+          ) : dilemaSeleccionado.esDirectrizUsoEspacio || dilemaSeleccionado.id === 'uso-bienes-materiales-propiedad' ? (
+            <SpaceUseDilemmaExperience
               key={dilemaSeleccionado.id}
               onVolverAlCatalogo={() => navegarSeccion('catalogo')}
               onGuardarGlobal={guardarProgresoDilema}

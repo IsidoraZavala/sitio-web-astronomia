@@ -1,0 +1,88 @@
+{
+  "titulo": "Test de afinidad sobre el uso de recursos espaciales y derecho de propiedad",
+  "descripcion": "Indica tu grado de acuerdo con las siguientes 8 afirmaciones (1 = Totalmente en desacuerdo, 5 = Totalmente de acuerdo) para identificar tu afinidad con las corrientes filosóficas de Robert Nozick, John Rawls y Santo Tomás de Aquino.",
+  "afirmaciones": [
+    {
+      "id": 1,
+      "numero": 1,
+      "texto": "Una empresa o individuo que arriesga su propio capital y tecnología para extraer minerales en el espacio debe ser dueño absoluto del 100% de lo que obtenga, sin que ningún organismo internacional le imponga tributos o regalías obligatorias.",
+      "eje": "Apropiación legítima por trabajo y derechos inviolables de propiedad",
+      "autorRelevante": "Robert Nozick"
+    },
+    {
+      "id": 2,
+      "numero": 2,
+      "texto": "Los recursos de la Luna y los asteroides pertenecen por igual a toda la especie humana; si se explotan comercialmente, es una obligación moral prioritaria destinar parte de sus ganancias a erradicar la pobreza y financiar el desarrollo en los países con menos recursos de la Tierra.",
+      "eje": "Justicia distributiva y principio maximin en bienes comunes",
+      "autorRelevante": "John Rawls"
+    },
+    {
+      "id": 3,
+      "numero": 3,
+      "texto": "La investigación científica desinteresada y la búsqueda de la verdad sobre los orígenes del cosmos tienen un valor ético superior al lucro comercial y a la minería de combustible en otros mundos.",
+      "eje": "Primacía de la contemplación de la verdad sobre la utilidad económica",
+      "autorRelevante": "Santo Tomás de Aquino"
+    },
+    {
+      "id": 4,
+      "numero": 4,
+      "texto": "Las mejores posiciones orbitales y frecuencias de telecomunicaciones deben asignarse por orden de capacidad técnica y rapidez de inversión, sin congelar espacios vacíos para países que aún no pueden utilizarlos.",
+      "eje": "Libertad de mercado y eficiencia operativa de ocupación inmediata",
+      "autorRelevante": "Robert Nozick"
+    },
+    {
+      "id": 5,
+      "numero": 5,
+      "texto": "La propiedad privada sobre recursos cósmicos es solo una herramienta práctica provisional de administración, pero nunca un derecho absoluto que pueda pasar por encima de las necesidades básicas de la comunidad humana o del bien común.",
+      "eje": "Destino universal de los bienes y función social de la propiedad",
+      "autorRelevante": "Santo Tomás de Aquino"
+    },
+    {
+      "id": 6,
+      "numero": 6,
+      "texto": "Antes de autorizar contratos comerciales o mineros en la Luna, los Estados deben consultar de forma vinculante a comunidades y pueblos originarios para garantizar que no se profanen sus cosmovisiones ni su patrimonio espiritual.",
+      "eje": "Pluralismo cultural y respeto a identidades espirituales de la humanidad",
+      "autorRelevante": "John Rawls"
+    },
+    {
+      "id": 7,
+      "numero": 7,
+      "texto": "Exigir impuestos o repartos forzados de las ganancias obtenidas por empresas mineras en el espacio equivale éticamente a obligar a sus ingenieros e inversores a trabajar gratuitamente para otros.",
+      "eje": "Crítica libertaria a la redistribución como coacción forzosa",
+      "autorRelevante": "Robert Nozick"
+    },
+    {
+      "id": 8,
+      "numero": 8,
+      "texto": "Las reglas para explotar el espacio deben diseñarse imaginando que no sabemos si perteneceremos a una superpotencia tecnológica rica o a una nación empobrecida, protegiendo siempre a los más desaventajados.",
+      "eje": "Imparcialidad contractual tras el velo de la ignorancia",
+      "autorRelevante": "John Rawls"
+    }
+  ],
+  "perfilesReferencia": {
+    "nozick": {
+      "autorId": "nozick",
+      "nombre": "Robert Nozick",
+      "corriente": "Libertarismo y Teoría de la Justicia en las Pertenencias",
+      "respuestasIdeales": [5, 1, 2, 5, 1, 2, 5, 2],
+      "pesos": [1.4, 1.3, 1.0, 1.2, 1.3, 1.0, 1.5, 1.2],
+      "descripcionAfinidad": "Tu perspectiva se alinea fuertemente con el libertarismo de Robert Nozick. Consideras que los derechos de propiedad nacen de la autopropiedad, el esfuerzo personal y la inversión legítima sobre bienes no poseídos. Desconfías de la coacción estatal o internacional y defiendes que gravar o expropiar la riqueza de exploradores y empresas mineras atenta contra su libertad individual."
+    },
+    "rawls": {
+      "autorId": "rawls",
+      "nombre": "John Rawls",
+      "corriente": "Liberalismo Igualitarista y Justicia como Equidad",
+      "respuestasIdeales": [1, 5, 3, 1, 4, 4, 1, 5],
+      "pesos": [1.3, 1.5, 1.0, 1.2, 1.2, 1.1, 1.4, 1.5],
+      "descripcionAfinidad": "Tu enfoque coincide con la teoría de la justicia distributiva de John Rawls. Consideras que el azar histórico y tecnológico no justifica que unas pocas corporaciones o naciones monopolicen los recursos del cosmos. Exiges que las reglas espaciales se decidan con imparcialidad y que las ganancias de la economía extraterrestre se redistribuyan para mejorar prioritariamente la vida de los más desaventajados de la Tierra."
+    },
+    "tomas": {
+      "autorId": "tomas",
+      "nombre": "Santo Tomás de Aquino",
+      "corriente": "Ley Natural Clásica y Primacía del Bien Común",
+      "respuestasIdeales": [2, 4, 5, 2, 5, 4, 2, 4],
+      "pesos": [1.1, 1.2, 1.5, 1.1, 1.5, 1.2, 1.1, 1.2],
+      "descripcionAfinidad": "Tu visión se fundamenta en la tradición clásica de la ley natural y el bien común formulada por Santo Tomás de Aquino. Sostienes que los bienes materiales del cosmos están subordinados al perfeccionamiento humano y a la contemplación de la verdad. Para ti, la investigación científica y el asombro filosófico desinteresado están éticamente por encima de la acumulación económica privada."
+    }
+  }
+}

@@ -1,0 +1,346 @@
+[
+  {
+    "id": "p1_memoriales_lunares",
+    "numero": 1,
+    "fotoVinculadaId": "foto_peregrine",
+    "tituloCaso": "Servicios funerarios lunares y la misión Peregrine 1",
+    "descripcionDetallada": [
+      "En enero de 2024, el módulo comercial Peregrine 1 intentó realizar el primer alunizaje privado de la historia. A bordo transportaba instrumentos científicos de la NASA, pero también cápsulas fúnebres de las empresas Celestis y Elysium Space que contenían cenizas humanas y muestras de ADN de clientes que pagaron miles de dólares para ser depositados permanentemente en la superficie lunar.",
+      "El presidente de la Nación Navajo, Buu Nygren, exigió cancelar el lanzamiento denunciando que depositar restos humanos profana a la Luna, considerada un santuario sagrado fundamental para su cosmovisión y espiritualidad. La nave sufrió una falla propulsora que provocó su reingreso y desintegración en la Tierra, pero las empresas funerarias espaciales ratificaron que continuarán vendiendo parcelas y memoriales póstumos en futuras misiones."
+    ],
+    "pregunta": "¿Hasta qué punto es éticamente aceptable que empresas comerciales vendan la superficie lunar como depósito fúnebre privado frente a las objeciones culturales y religiosas de comunidades de la Tierra?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "La Luna es un cuerpo celeste inerte y neutral sobre el cual ninguna creencia particular tiene derecho de veto; cualquier ciudadano o empresa que pague el transporte debe tener la libertad moral de depositar allí los restos de sus seres queridos.",
+        "cuestionamiento": "Al tratar a la Luna exclusivamente como un objeto físico desprovisto de significado simbólico, ¿no se impone una visión secular y mercantil sobre culturas milenarias que consideran el cielo nocturno parte viva de su identidad sagrada?"
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "El carácter sagrado de la Luna para diversos pueblos originarios exige una prohibición internacional inmediata y absoluta de cualquier actividad conmemorativa o fúnebre comercial en su superficie.",
+        "cuestionamiento": "Otorgar poder de veto vinculante a tradiciones religiosas o culturales específicas sobre el espacio exterior podría paralizar proyectos científicos o civiles legítimos si cualquier grupo declara un cuerpo celeste como territorio sagrado intocable."
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "Las empresas privadas pueden ofrecer sepulturas lunares únicamente si la comunidad internacional delimita zonas geográficas específicas y restringidas, alejadas de sitios históricos o visibles desde la Tierra, garantizando que el resto del satélite permanezca intacto.",
+        "cuestionamiento": "Confinar los depósitos de cenizas a un rincón del satélite reconoce implícitamente que la Luna puede parcelarse y comercializarse privadamente; ¿quién tendría la legitimidad ética para trazar las fronteras de ese cementerio cósmico?"
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "Toda misión comercial que pretenda depositar restos en el espacio debe someterse a un proceso obligatorio de consulta previa y consentimiento informado con representantes de pueblos indígenas y de la sociedad civil global antes de recibir autorización de lanzamiento.",
+        "cuestionamiento": "Establecer procesos de consulta previa internacional para cada carga comercial podría crear burocracias interminables donde intereses políticos terrestres utilicen objeciones culturales como herramientas de bloqueo geopolítico."
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "El uso conmemorativo de la Luna solo debería autorizarse de forma excepcional y honorífica para figuras universales que hayan dedicado su vida a la ciencia o la paz humana, vetando tajantemente el lucro privado y la compra de parcelas póstumas al mejor postor.",
+        "cuestionamiento": "¿Qué criterio imparcial determinaría quién es digno de descansar en la Luna y quién no, sin caer en sesgos elitistas donde comités políticos decidan qué vidas merecen trascendencia cósmica?"
+      }
+    ]
+  },
+  {
+    "id": "p2_comercio_muestras_apolo",
+    "numero": 2,
+    "fotoVinculadaId": "foto_apolo_muestras",
+    "tituloCaso": "Recolección y comercialización de muestras lunares Apolo",
+    "descripcionDetallada": [
+      "Entre 1969 y 1972, las misiones Apolo trajeron a la Tierra 382 kg de rocas y regolito lunar. La inmensa mayoría se resguarda para la investigación en laboratorios de alta seguridad y cerca de 270 kg fueron obsequiados a gobiernos del mundo como gestos diplomáticos de paz. Sin embargo, con el paso de las décadas, pequeños fragmentos han terminado en manos de casas de subastas internacionales, alcanzando cotizaciones millonarias entre coleccionistas privados.",
+      "El derecho espacial tradicional considera a los cuerpos celestes 'res extra commercium' (fuera del comercio humano). Sin embargo, sectores jurídicos sostienen que una vez que una roca es extraída, envasada y transportada a la Tierra, se convierte en una 'res nova' (cosa nueva mueble) sujeta al dominio privado pleno de quien financió su recuperación."
+    ],
+    "pregunta": "Cuando una expedición financiada con fondos públicos o privados extrae minerales de otro mundo, ¿adquiere el derecho de comercializarlos libremente como bienes privados o deben permanecer como patrimonio inalienable de la humanidad?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "Quien asume el gigantesco riesgo financiero y técnico de viajar al espacio y traer muestras a la Tierra adquiere la propiedad plena sobre ese material, con derecho moral a conservarlo, regalarlo o subastarlo libremente en el mercado.",
+        "cuestionamiento": "Si el esfuerzo técnico legitima la privatización total de lo extraído, las corporaciones más ricas del planeta terminarán monopolizando los materiales cósmicos más escasos, excluyendo a la inmensa mayoría de la humanidad de su estudio y disfrute."
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "Todo fragmento de origen extraterrestre constituye un testimonio científico irreemplazable del universo que debe ser custodiado a perpetuidad bajo un fideicomiso público internacional, declarando ilegal cualquier subasta o lucro privado.",
+        "cuestionamiento": "Prohibir de forma absoluta el comercio y la posesión privada desincentiva por completo que compañías comerciales inviertan su capital en recolectar y transportar nuevas muestras cósmicas que el presupuesto público no puede financiar."
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "Los Estados y agencias exploradoras pueden vender o subastar una porción limitada de sus muestras únicamente si los fondos recaudados se reinvierten íntegramente en financiar la educación científica y la investigación espacial de países en desarrollo.",
+        "cuestionamiento": "Permitir la venta comercial condicionada a causas nobles sigue abriendo la puerta a que piezas del cosmos se transformen en artículos de lujo para coleccionistas millonarios mientras se justifique con fines filantrópicos."
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "Las muestras traídas a la Tierra deben dividirse estrictamente en dos categorías; aquellas de valor geológico único reservadas exclusivamente a la ciencia abierta, y materiales abundantes que puedan ser comercializados bajo licencias industriales controladas.",
+        "cuestionamiento": "¿Cómo predecir hoy qué minerales o rocas carecen de valor científico futuro, cuando nuevas tecnologías analíticas del siglo venidero podrían descubrir secretos cósmicos vitales en lo que hoy consideramos polvo ordinario?"
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "La propiedad privada de muestras lunares solo debería reconocerse si el extractor garantiza el acceso libre y no destructivo a cualquier laboratorio científico del mundo que solicite analizarlas para avanzar en el conocimiento humano.",
+        "cuestionamiento": "Imponer la obligación de prestar gratuitamente los bienes adquiridos a laboratorios de terceros anula en la práctica el derecho de propiedad y generaría conflictos legales interminables sobre el desgaste o custodia de las piezas."
+      }
+    ]
+  },
+  {
+    "id": "p3_orbita_geoestacionaria_bogota",
+    "numero": 3,
+    "fotoVinculadaId": "foto_orbita_bogota",
+    "tituloCaso": "La Declaración de Bogotá y la Órbita Geoestacionaria",
+    "descripcionDetallada": [
+      "En 1976, ocho países de la línea ecuatorial suscribieron la Declaración de Bogotá, reclamando soberanía sobre los segmentos de la órbita geoestacionaria situados verticalmente sobre sus territorios. Denunciaban que las potencias industrializadas estaban ocupando las posiciones orbitales más ventajosas y saturando el espectro de radiofrecuencias antes de que los países del Sur Global tuvieran los medios para lanzar sus propios satélites.",
+      "El reclamo de soberanía fue desestimado por el Tratado del Espacio de 1967, pero obligó a la Unión Internacional de Telecomunicaciones (UIT) a admitir que la órbita sincrónica es un recurso natural finito y escaso, abriendo un debate no resuelto entre el principio tradicional de «primer llegado, primer servido» y el principio de justicia distributiva internacional."
+    ],
+    "pregunta": "¿Cómo deben asignarse las posiciones y frecuencias en recursos orbitales limitados y escasos: priorizando la capacidad tecnológica inmediata o reservando cuotas obligatorias para las naciones en desarrollo?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "Los recursos orbitales deben asignarse a quienes tengan la capacidad tecnológica y económica para ocuparlos y ponerlos en servicio de inmediato, ya que congelar posiciones vacías a la espera de futuros desarrollos frena el avance global de las telecomunicaciones.",
+        "cuestionamiento": "Asignar las órbitas por orden de llegada técnica condena a los países en desarrollo a una dependencia tecnológica perpetua, dejándolos sin acceso a las rutas espaciales más estratégicas sobre su propio territorio."
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "Debe establecerse una reserva soberana permanente de frecuencias y posiciones orbitales para cada nación del planeta, garantizando que ningún satélite extranjero pueda operar sobre un país sin su autorización expresa y compensación económica.",
+        "cuestionamiento": "Fragmentar el espacio en parcelas soberanas nacionales destruye el principio fundacional de que el cosmos es libre de fronteras y podría dejar inutilizadas órbitas clave durante décadas por países que no planean lanzar satélites."
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "La asignación de órbitas escasas debe someterse a un sistema de cuotas administrado por la ONU, donde las potencias espaciales que utilicen más de su parte justa paguen un canon redistributivo directo para financiar programas espaciales en el Sur Global.",
+        "cuestionamiento": "Cobrar un canon compensatorio permite que las potencias mantengan el monopolio de las mejores frecuencias a cambio de dinero, transformando la justicia distributiva en un simple precio de alquiler que los más ricos pueden pagar sin ceder poder real."
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "Toda posición orbital de alto valor debe subastarse periódicamente en un mercado internacional abierto, asignando los derechos por periodos acotados de tiempo para incentivar la máxima eficiencia tecnológica y evitar la ocupación ociosa.",
+        "cuestionamiento": "Un sistema de subastas al mejor postor entregaría de facto el control absoluto del cielo a los gigantes tecnológicos y corporaciones multinacionales con mayor liquidez, expulsando a proyectos de interés social o de países emergentes."
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "Las posiciones estratégicas deben asignarse exclusivamente a proyectos satelitales multinacionales compartidos, obligando a los países desarrollados a asociarse con naciones emergentes como requisito previo para autorizar cualquier lanzamiento.",
+        "cuestionamiento": "Exigir consorcios multinacionales obligatorios para cada satélite podría ralentizar enormemente la innovación y provocar que las potencias decidan operar al margen de los tratados para no compartir su tecnología estratégica."
+      }
+    ]
+  },
+  {
+    "id": "p4_mineria_artemisa",
+    "numero": 4,
+    "fotoVinculadaId": "foto_mineria_artemisa",
+    "tituloCaso": "Minería lunar y los Acuerdos de Artemisa",
+    "descripcionDetallada": [
+      "Con el impulso de empresas mineras privadas como Moon Express y Planetary Resources, Estados Unidos aprobó en 2015 una ley que faculta a sus ciudadanos a poseer, transportar y vender los recursos que extraigan de la Luna o asteroides. En 2020, consolidó esta política impulsando los Acuerdos de Artemisa, un pacto bilateral que consagra el derecho a extraer recursos espaciales y a delimitar «zonas de seguridad» para evitar interferencias operativas.",
+      "Numerosas naciones no firmantes y expertos internacionales han denunciado que este enfoque elude el marco multilateral de las Naciones Unidas y transgrede el principio de que los cuerpos celestes son Patrimonio Común de la Humanidad, consagrado en el Acuerdo de la Luna de 1979."
+    ],
+    "pregunta": "¿Es éticamente legítimo que un grupo de naciones y sus empresas privadas establezcan unilateralmente reglas de extracción y zonas de seguridad en la Luna, al margen del consenso multilateral de las Naciones Unidas?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "Las naciones pioneras y sus empresas tienen pleno derecho a crear marcos operativos ágiles y zonas de seguridad bilateral, porque la parálisis de los foros de la ONU no puede convertirse en un freno al desarrollo de la economía y la civilización espacial.",
+        "cuestionamiento": "Avalar que un club selecto de naciones fije las reglas del juego a través de acuerdos bilaterales resucita la lógica imperial del colonialismo terrestre, donde quienes tienen la fuerza imponen el derecho sobre los bienes comunes."
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "Toda actividad de extracción de recursos espaciales debe quedar estrictamente prohibida hasta que la Asamblea General de la ONU logre un tratado universal vinculante que regule cada gramo de mineral y garantice el reparto común de beneficios.",
+        "cuestionamiento": "Exigir la unanimidad diplomática de casi 200 países sobre un tratado vinculante antes de tocar una roca podría aplazar la utilización de recursos espaciales por siglos, frenando misiones que podrían salvar a la Tierra de crisis de recursos."
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "Las empresas privadas pueden extraer y vender recursos cósmicos, pero el derecho internacional debe prohibir taxativamente las zonas de seguridad exclusivas para asegurar que ninguna entidad impida el libre tránsito ni reclame jurisdicción territorial de facto.",
+        "cuestionamiento": "Sin zonas de seguridad que eviten interferencias o peligros de colisión y polvo entre excavaciones vecinas, la minería espacial se convertiría en un terreno anárquico propenso a sabotajes, accidentes catastróficos y conflictos armados."
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "Debe crearse una empresa pública planetaria dependiente de la ONU que sea la única autorizada para explotar recursos en asteroides, subcontratando a empresas privadas pero manteniendo la propiedad y las ganancias bajo soberanía común de la humanidad.",
+        "cuestionamiento": "Centralizar la minería espacial en un monopolio burocrático internacional corre el riesgo de ahogar la innovación técnica, inflar costos astronómicos y depender de presupuestos diplomáticos inestables."
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "La minería extraterrestre solo debe permitirse si los minerales extraídos se destinan exclusivamente a abastecer misiones de exploración científica e infraestructura en el espacio, prohibiendo expresamente su importación para venta comercial en la Tierra.",
+        "cuestionamiento": "Prohibir el retorno de minerales y metales estratégicos a los mercados terrestres elimina el principal incentivo económico de los inversores privados y priva a la transición energética terrestre de recursos que evitarían la destrucción de ecosistemas en nuestro planeta."
+      }
+    ]
+  },
+  {
+    "id": "p5_basura_espacial_kessler",
+    "numero": 5,
+    "fotoVinculadaId": "foto_basura_orbital",
+    "tituloCaso": "Saturación orbital, fragmentaciones y la tragedia de los comunes",
+    "descripcionDetallada": [
+      "Más de 35.000 piezas de basura espacial de más de 10 cm giran a 28.000 km/h en la órbita baja de la Tierra, fruto de colisiones como la de Cosmos e Iridium en 2009 y de explosiones propulsoras no mitigadas. En paralelo, empresas privadas están desplegando megaconstelaciones de miles de satélites para proveer internet satelital global, proyectando hasta 100.000 artefactos en órbita para los próximos años.",
+      "Científicos alertan sobre la inminencia del síndrome de Kessler: una reacción en cadena donde las colisiones generen tal densidad de metralla que vuelva inaccesible el espacio orbital para cualquier satélite durante generaciones enteras. Cada operador comercial busca maximizar su cuota de mercado, trasladando el riesgo ambiental a toda la comunidad global."
+    ],
+    "pregunta": "¿Qué límites éticos y legales deben imponerse al despliegue de megaconstelaciones comerciales en órbita baja para evitar una catástrofe irreversible por acumulación de basura espacial?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "La conectividad global a internet para millones de personas en zonas aisladas es una prioridad humanitaria y económica tan urgente que no debe frenarse con cuotas rígidas ni moratorias al lanzamiento de satélites comerciales.",
+        "cuestionamiento": "Priorizar la conectividad inmediata sin límites estrictos traslada un riesgo catastrófico al futuro; una colisión en cadena podría destruir satélites meteorológicos, de navegación y de rescate de los que depende la seguridad del planeta entero."
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "Debe decretarse una moratoria internacional inmediata que congele el lanzamiento de nuevas constelaciones de satélites hasta que la industria limpie y retire de órbita una masa equivalente de chatarra espacial previa.",
+        "cuestionamiento": "Paralizar los lanzamientos privaría a millones de comunidades rurales y emergentes de acceso a telecomunicaciones esenciales y castigaría a empresas que utilizan diseños satelitales modernos que no generan basura."
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "Las compañías que operan megaconstelaciones deben pagar un impuesto ambiental obligatorio por cada satélite lanzado, destinado a un fondo internacional para financiar misiones autónomas de caza y limpieza de escombros espaciales.",
+        "cuestionamiento": "Un impuesto por satélite permite a las corporaciones multimillonarias 'comprar el derecho a contaminar', convirtiendo la sostenibilidad orbital en un simple gasto operativo asumible solo por monopolios gigantes."
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "Todo satélite comercial debe incorporar obligatoriamente sistemas redundantes de propulsión capaces de desorbitarlo y quemarlo en la atmósfera en un plazo máximo de cinco años tras concluir su vida útil, asumiendo la pérdida de la licencia en caso de incumplimiento.",
+        "cuestionamiento": "Exigir sistemas de propulsión redundantes encarece de forma dramática los satélites pequeños y universitarios, cerrando el acceso al espacio para países emergentes e instituciones académicas con presupuestos modestos."
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "La gestión orbital debe regirse por un sistema de cuotas de densidad asignadas por sorteo internacional transparente, impidiendo legalmente que ninguna corporación o Estado controle más del cinco por ciento del total de artefactos en órbita baja.",
+        "cuestionamiento": "Limitar la cuota por empresa por debajo de la masa crítica que requiere una red de telecomunicaciones eficiente podría fragmentar el mercado en cientos de operadores pequeños y descoordinados, aumentando el caos en el tráfico espacial."
+      }
+    ]
+  },
+  {
+    "id": "p6_ciencia_vs_comercio",
+    "numero": 6,
+    "fotoVinculadaId": "foto_mineria_artemisa",
+    "tituloCaso": "Dilema General A: Investigación científica pura vs. Explotación comercial",
+    "descripcionDetallada": [
+      "En un cráter permanentemente ensombrecido del polo sur lunar se ha descubierto un yacimiento único y concentrado de hielo de agua. Existen dos proyectos incompatibles que solicitan instalarse sobre el mismo depósito: un observatorio astrobiológico internacional sin fines de lucro para estudiar los orígenes del sistema solar, y una refinería comercial privada que transformará el agua en hidrógeno líquido para abastecer a naves espaciales.",
+      "Para posturas filosóficas clásicas como la de Santo Tomás de Aquino, los bienes de la naturaleza deben subordinarse ante todo al perfeccionamiento humano mediante la contemplación de la verdad. Por el contrario, posturas utilitarias sostienen que la ciencia pura no puede desarrollarse sin la riqueza y la infraestructura logística que solo el comercio privado y la energía son capaces de generar."
+    ],
+    "pregunta": "Si en un cráter lunar se descubre un depósito único de agua helada, ¿a qué objetivo fundamental debe subordinarse ese bien escaso: a la investigación científica del origen cósmico o a la producción comercial de combustible para cohetes?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "El conocimiento de la verdad y el desentrañamiento de los orígenes del sistema solar constituyen el fin supremo de la razón humana; el cráter debe protegerse intacto como santuario científico, vetando cualquier perforación industrial.",
+        "cuestionamiento": "Priorizar la contemplación científica pura de forma absoluta bloquea el desarrollo de una infraestructura espacial que, mediante la producción de combustible, podría permitir al ser humano explorar mundos mucho más lejanos o salvar a la Tierra de catástrofes."
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "El agua lunar debe destinarse con urgencia a producir combustible y oxígeno para abaratar los viajes espaciales y permitir la expansión humana definitiva, pues un recurso inanimado no tiene valor hasta que sirve a la vida y a la acción humana.",
+        "cuestionamiento": "Destruir el hielo para quemarlo en motores de cohetes consume en pocas décadas un archivo geológico irrepetible que tardó miles de millones de años en formarse, borrando para siempre pistas cruciales sobre cómo surgió el agua y la vida en la Tierra."
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "Debe autorizarse un reparto del cincuenta por ciento del depósito para la ciencia y el otro cincuenta por ciento para refinerías comerciales, asegurando que ambos intereses convivan de manera equilibrada y pragmática.",
+        "cuestionamiento": "Partir el cráter a la mitad no resuelve la contradicción física: la vibración, el calor, los gases de escape y el polvo generados por la maquinaria minera contaminarán inevitablemente el entorno prístino que el laboratorio científico necesita para sus mediciones."
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "La extracción comercial debe postergarse temporalmente durante un periodo de dos décadas para permitir que los científicos analicen y tomen muestras del hielo, autorizando la explotación industrial una vez concluida la investigación básica.",
+        "cuestionamiento": "Establecer una tregua temporal asume que veinte años bastan para agotar la curiosidad científica, cuando nuevos instrumentos del futuro podrían descubrir en ese hielo capas de información que la ciencia actual ni siquiera sospecha."
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "El uso del agua debe condicionarse a que la refinería comercial suministre de forma prioritaria y gratuita soporte vital y combustible a los laboratorios de investigación científica pública antes de vender sus excedentes en el mercado.",
+        "cuestionamiento": "Subordinar el modelo comercial al subsidio de la ciencia obligaría a las empresas a asumir sobrecostos enormes, encareciendo el combustible espacial y alejando a los inversores que financian los viajes al cosmos."
+      }
+    ]
+  },
+  {
+    "id": "p7_propiedad_nozick_rawls",
+    "numero": 7,
+    "fotoVinculadaId": "foto_apolo_muestras",
+    "tituloCaso": "Dilema General B: Propiedad por trabajo e inversión vs. Justicia distributiva global",
+    "descripcionDetallada": [
+      "Un consorcio aeroespacial privado invierte 5.000 millones de dólares de capital de riesgo, desarrolla tecnología robótica de vanguardia y logra capturar un asteroide metálico cercano a la Tierra, extrayendo platino y tierras raras valorados en decenas de miles de millones.",
+      "Bajo la teoría de Robert Nozick, quien mezcla legítimamente su trabajo y capital con un bien que no pertenecía a nadie adquiere propiedad indiscutible sobre él, y exigirle tributos obligatorios atenta contra sus derechos morales. Sin embargo, desde la perspectiva de John Rawls y el Acuerdo de la Luna de 1979, los recursos extraterrestres son patrimonio de la especie y las desigualdades solo se justifican si mejoran prioritariamente la situación de los más desaventajados del planeta."
+    ],
+    "pregunta": "Si una empresa privada arriesga miles de millones de dólares en extraer metales preciosos de un asteroide, ¿debe conservar el 100% de las ganancias o está obligada a tributar para beneficio de los sectores más desaventajados del mundo?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "La empresa debe conservar la totalidad absoluta de las ganancias que obtuvo con su capital y su trabajo, ya que obligarla a entregar parte de sus beneficios a quienes no asumieron ningún riesgo equivale éticamente a un trabajo forzado.",
+        "cuestionamiento": "Permitir que los inversores privados se queden con el cien por ciento de la riqueza extraída de cuerpos celestes profundizará brutalmente la brecha de desigualdad global, creando una élite cósmica multimillonaria mientras miles de millones de personas continúan en la miseria en la Tierra."
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "Todo beneficio financiero derivado de bienes extraterrestres debe someterse a un impuesto internacional progresivo gestionado por la ONU, destinado a erradicar el hambre, construir infraestructura sanitaria y financiar la transición ecológica en el Sur Global.",
+        "cuestionamiento": "Imponer fuertes tributos internacionales a expediciones de alto riesgo podría hacer inviable el modelo de negocio, provocando que los inversores retiren su capital y que la humanidad nunca desarrolle las tecnologías para aprovechar los recursos del cosmos."
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "Las corporaciones mineras no deberían pagar tributos en dinero, sino estar obligadas por ley a transferir gratuitamente sus patentes y tecnologías de extracción a países en desarrollo para nivelar sus capacidades industriales.",
+        "cuestionamiento": "Obligar a una compañía a regalar su propiedad intelectual y secretos técnicos destruye el incentivo de innovar y podría provocar que las empresas operen en secreto bajo jurisdicciones sin controles."
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "La recaudación de tributos espaciales no debe dirigirse a mitigar problemas sociales terrestres ordinarios, sino reservarse exclusivamente para crear un fondo soberano global que financie la futura exploración espacial pública de todas las naciones.",
+        "cuestionamiento": "Gastar los ingresos de la minería de asteroides únicamente en cohetes y telescopios mientras comunidades de la Tierra sufren crisis humanitarias inmediatas desatiende la urgencia moral del sufrimiento humano presente."
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "Solo debe exigirse una contribución distributiva a la empresa si sus operaciones mineras provocan un perjuicio directo comprobable a terceros o reducen la disponibilidad de recursos accesibles para el resto de la humanidad.",
+        "cuestionamiento": "En el espacio profundo es casi imposible demostrar que minar un asteroide remoto empeora directamente la situación de alguien en la Tierra; bajo este criterio, casi ninguna corporación pagaría jamás un centavo por explotar el cosmos."
+      }
+    ]
+  },
+  {
+    "id": "p8_sostenibilidad_intergeneracional",
+    "numero": 8,
+    "fotoVinculadaId": "foto_peregrine",
+    "tituloCaso": "Dilema General D: Explotación presente vs. Sostenibilidad intergeneracional",
+    "descripcionDetallada": [
+      "Frente al agotamiento de materias primas en la Tierra y la urgencia de descarbonizar la matriz energética global, se propone construir macrocomplejos de minería lunar para extraer helio-3 y metales raros durante el próximo medio siglo, abasteciendo reactores de fusión en la Tierra a costa de transformar para siempre la topografía visible y la geología del satélite.",
+      "Los defensores argumentan que la Luna carece de biosfera que contaminar y que su sacrificio salvará los ecosistemas terrestres. Por el contrario, la ética ambiental espacial y la justicia intergeneracional advierten que explotar masivamente recursos finitos en beneficio de nuestra generación despoja a los seres humanos del futuro de un patrimonio cósmico irremplazable."
+    ],
+    "pregunta": "¿Es moralmente admisible agotar y alterar intensamente los minerales y paisajes de la Luna hoy para resolver las crisis energéticas y climáticas de nuestra generación, o tenemos el deber de preservarlos para los siglos futuros?",
+    "alternativas": [
+      {
+        "id": "A",
+        "letra": "A",
+        "texto": "Salvar la vida y la estabilidad de la Tierra en el presente es una urgencia moral impostergable; si industrializar la Luna y agotar sus minerales permite frenar la catástrofe climática terrestre, debe hacerse sin vacilación ecológica.",
+        "cuestionamiento": "Consumir apresuradamente los depósitos de recursos no renovables de la Luna para alimentar nuestro modelo de consumo presente privará a las generaciones futuras del sistema solar de los materiales básicos que necesitarán para subsistir y viajar por el espacio."
+      },
+      {
+        "id": "B",
+        "letra": "B",
+        "texto": "La superficie lunar debe ser preservada intacta como un paisaje geológico que pertenece por igual a los habitantes de los próximos milenios; resolver nuestras crisis energéticas terrestres saqueando otro cuerpo celeste es una cobardía moral inaceptable.",
+        "cuestionamiento": "Negarse a utilizar los recursos minerales y energéticos de la Luna en nombre de humanos hipotéticos del futuro condena a millones de personas del presente a sufrir las consecuencias de la escasez energética y el colapso ambiental en la Tierra."
+      },
+      {
+        "id": "C",
+        "letra": "C",
+        "texto": "Solo debe permitirse una tasa de extracción minera que garantice que al menos el ochenta por ciento de las reservas minerales y del paisaje visible de la Luna permanezcan inalterados para la posteridad de los próximos siglos.",
+        "cuestionamiento": "Fijar un porcentaje arbitrario de preservación hoy presupone que conocemos las necesidades técnicas que tendrá la humanidad en trescientos años, pudiendo resultar o demasiado permisivo o innecesariamente restrictivo."
+      },
+      {
+        "id": "D",
+        "letra": "D",
+        "texto": "La minería intensiva de recursos lunares solo es admisible si las industrias que la ejecutan se comprometen legalmente a desarrollar tecnologías alternativas de reciclaje infinito que hagan innecesaria la extracción futura.",
+        "cuestionamiento": "Confiar en promesas corporativas de que la tecnología inventará soluciones de reciclaje perfecto en el futuro es una apuesta ciega que suele fallar, dejando tras de sí entornos naturales devastados e irreparables."
+      },
+      {
+        "id": "E",
+        "letra": "E",
+        "texto": "Los recursos de la Luna deben explotarse con intensidad únicamente durante el tiempo estrictamente necesario para estabilizar la crisis climática terrestre, decretando el cierre total y definitivo de las minas en un plazo improrrogable de cincuenta años.",
+        "cuestionamiento": "La historia demuestra que una vez que se instalan infraestructuras industriales multimillonarias y mercados que dependen de una materia prima, cerrar voluntariamente esas industrias resulta casi políticamente imposible."
+      }
+    ]
+  }
+]
