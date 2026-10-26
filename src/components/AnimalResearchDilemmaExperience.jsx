@@ -19,9 +19,18 @@ import { calcularAfinidadFilosofica } from '../utils/calcularAfinidad'
 
 const ANIMALES_STORAGE_KEY = 'orbita_etica_directriz_animales_v1'
 
+const resolverRutaImagen = (ruta) => {
+  if (!ruta) return ''
+  if (ruta.startsWith('http://') || ruta.startsWith('https://')) return ruta
+  const limpia = ruta.replace(/^\.?\//, '')
+  const base = import.meta.env.BASE_URL || './'
+  return `${base}${limpia}`
+}
+
 export function AnimalResearchDilemmaExperience({ onVolverAlCatalogo, onGuardarGlobal }) {
   // fases: 'caso' | 'preguntas' | 'reflexion' | 'test' | 'resultados'
   const [faseActual, setFaseActual] = useState('caso')
+  const [fotoCarruselIdx, setFotoCarruselIdx] = useState(0)
   const [indicePregunta, setIndicePregunta] = useState(0)
   const [indiceReflexion, setIndiceReflexion] = useState(0)
   const [indiceAfirmacion, setIndiceAfirmacion] = useState(0)
@@ -60,6 +69,15 @@ export function AnimalResearchDilemmaExperience({ onVolverAlCatalogo, onGuardarG
       // Continuar con valores iniciales
     }
   }, [])
+
+  // Carrusel automático en la fase de contexto (cambia cada 8 segundos)
+  useEffect(() => {
+    if (faseActual !== 'caso') return
+    const interval = setInterval(() => {
+      setFotoCarruselIdx((prev) => (prev + 1) % 5)
+    }, 8000)
+    return () => clearInterval(interval)
+  }, [faseActual])
 
   const onGuardarGlobalRef = useRef(onGuardarGlobal)
   useEffect(() => {
@@ -120,6 +138,7 @@ export function AnimalResearchDilemmaExperience({ onVolverAlCatalogo, onGuardarG
       })
       setRespuestasTest({})
       setFaseActual('caso')
+      setFotoCarruselIdx(0)
       setIndicePregunta(0)
       setIndiceReflexion(0)
       setIndiceAfirmacion(0)
@@ -138,7 +157,13 @@ export function AnimalResearchDilemmaExperience({ onVolverAlCatalogo, onGuardarG
   const afinidadDetalle = afinidadesCalculadas.find((a) => a.autorId === autorSeleccionadoId)
 
   // Datos actuales
+  const carruselFase1 = casoData.carruselFotos?.slice(0, 5) || []
+  const fotoActual = carruselFase1[fotoCarruselIdx] || carruselFase1[0]
   const preguntaActual = preguntasData[indicePregunta]
+  const fotoDePregunta = preguntaActual?.fotoVinculadaId
+    ? casoData.carruselFotos?.find((f) => f.id === preguntaActual.fotoVinculadaId)
+    : null
+
   const respuestaSeleccionadaPregunta = respuestasPreguntas[preguntaActual?.id]
   const alternativaSeleccionada = preguntaActual?.alternativas?.find(
     (alt) => alt.id === respuestaSeleccionadaPregunta
@@ -147,7 +172,7 @@ export function AnimalResearchDilemmaExperience({ onVolverAlCatalogo, onGuardarG
   const afirmacionActual = testData.afirmaciones?.[indiceAfirmacion]
   const valorSeleccionadoAfirmacion = respuestasTest[afirmacionActual?.id]
 
-  // Tiempo de lectura adaptativo
+  // Tiempo de lectura adaptativo (base 8 segundos, escalando hasta 12s para textos más extensos)
   const calcularTiempoLecturaMs = (texto) => {
     if (!texto) return 8000
     const segs = Math.max(8, Math.min(12, Math.round(texto.length / 22)))
@@ -324,7 +349,7 @@ export function AnimalResearchDilemmaExperience({ onVolverAlCatalogo, onGuardarG
           onClick={() => setFaseActual('reflexion')}
         >
           <span className="pilot-step-num">3</span>
-          <span className="pilot-step-label">Autores filosóficos (4)</span>
+          <span className="pilot-step-label">Reflexión filosófica (4)</span>
         </button>
 
         <button
@@ -339,914 +364,825 @@ export function AnimalResearchDilemmaExperience({ onVolverAlCatalogo, onGuardarG
         >
           <span className="pilot-step-num">4</span>
           <span className="pilot-step-label">
-            Matriz ética ({Object.keys(respuestasTest).length}/{testData.afirmaciones.length})
+            Test afinidad ({Object.keys(respuestasTest).length}/{testData.afirmaciones.length})
           </span>
         </button>
 
         <button
-          className={`pilot-step-btn ${faseActual === 'resultados' ? 'active' : ''}`}
+          className={`pilot-step-btn ${
+            faseActual === 'resultados'
+              ? 'active'
+              : Object.keys(respuestasTest).length === testData.afirmaciones.length
+              ? 'completed'
+              : ''
+          }`}
           onClick={() => setFaseActual('resultados')}
         >
           <span className="pilot-step-num">5</span>
-          <span className="pilot-step-label">Afinidad y conclusiones</span>
+          <span className="pilot-step-label">Resultados</span>
         </button>
       </nav>
 
-      {/* ============================================================== */}
-      {/* ETAPA 1: CONTEXTUALIZACIÓN Y EXPLORACIÓN DE CASOS REALES      */}
-      {/* ============================================================== */}
+      {/* ========================================================================= */}
+      {/* ETAPA 1: CONTEXTO GENERAL Y FOTOS                                         */}
+      {/* ========================================================================= */}
       {faseActual === 'caso' && (
-        <section className="pilot-section-view">
-          <div className="section-heading-block">
-            <h2 style={{ fontSize: '1.25rem', color: '#F8FAFC', marginBottom: '8px' }}>
-              Marco bioético y antecedentes de la experimentación animal en el espacio
-            </h2>
-            <div style={{ color: '#CBD5E1', fontSize: '0.95rem', lineHeight: '1.7' }}>
-              {casoData.parrafos?.map((parrafo, idx) => (
-                <p key={idx} style={{ marginBottom: '16px' }}>
-                  {parrafo}
-                </p>
-              ))}
+        <div className="pilot-stage-card stage-card env-stage1-card">
+          {/* GRID PRINCIPAL: LECTURA A LA IZQUIERDA, CARRUSEL A LA DERECHA */}
+          <div className="env-stage1-grid">
+            <div className="env-stage1-text-col">
+              <h2 className="env-context-title">
+                {casoData.tituloSeccion || 'Uso de animales en la investigación y experimentación espacial'}
+              </h2>
+              <div className="env-context-scrollbox">
+                {casoData.parrafos?.map((parrafo, idx) => (
+                  <p key={idx}>{parrafo}</p>
+                ))}
+              </div>
             </div>
-          </div>
 
-          {/* LISTA COMPLETA DE LOS 5 CASOS REALES DOCUMENTADOS */}
-          <div style={{ marginTop: '2.5rem' }}>
-            <h3
-              style={{
-                fontSize: '1.15rem',
-                color: '#DDD6FE',
-                marginBottom: '1rem',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '8px',
-              }}
-            >
-              <IconBook size={18} /> Casos históricos documentados para deliberar
-            </h3>
-
-            <div style={{ display: 'grid', gap: '1.25rem' }}>
-              {casoData.casosDocumentados?.map((caso) => (
-                <article
-                  key={caso.id}
-                  style={{
-                    background: 'rgba(15, 23, 42, 0.75)',
-                    border: '1px solid rgba(221, 214, 254, 0.18)',
-                    borderRadius: '12px',
-                    padding: '20px 24px',
-                    boxShadow: '0 8px 24px rgba(0, 0, 0, 0.3)',
-                  }}
-                >
+            <div className="env-stage1-carousel-col">
+              <div className="env-auto-carousel-card">
+                <div className="env-auto-img-frame">
+                  {fotoActual?.archivoImagen ? (
+                    <img
+                      src={resolverRutaImagen(fotoActual.archivoImagen)}
+                      alt={fotoActual.titulo}
+                      className="env-auto-img"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none'
+                        if (e.currentTarget.nextElementSibling) {
+                          e.currentTarget.nextElementSibling.style.display = 'flex'
+                        }
+                      }}
+                    />
+                  ) : null}
                   <div
+                    className="env-auto-placeholder"
                     style={{
-                      display: 'flex',
+                      display: fotoActual?.archivoImagen ? 'none' : 'flex',
+                      flexDirection: 'column',
                       alignItems: 'center',
-                      justifyContent: 'space-between',
-                      flexWrap: 'wrap',
-                      gap: '8px',
-                      marginBottom: '8px',
+                      justifyContent: 'center',
+                      height: '100%',
+                      background: 'radial-gradient(circle at center, #1E293B, #0F172A)',
+                      padding: '24px',
+                      textAlign: 'center',
                     }}
                   >
-                    <span
-                      style={{
-                        color: '#DDD6FE',
-                        fontSize: '0.82rem',
-                        fontWeight: 700,
-                        textTransform: 'uppercase',
-                        letterSpacing: '0.04em',
-                      }}
-                    >
-                      Caso {caso.numero} · {caso.fecha}
-                    </span>
-                    <span
-                      style={{
-                        color: '#94A3B8',
-                        fontSize: '0.8rem',
-                        background: 'rgba(255, 255, 255, 0.06)',
-                        padding: '3px 10px',
-                        borderRadius: '20px',
-                      }}
-                    >
-                      {caso.actores}
-                    </span>
-                  </div>
-
-                  <h4 style={{ margin: '0 0 6px', color: '#F8FAFC', fontSize: '1.1rem' }}>
-                    {caso.titulo}
-                  </h4>
-                  <p style={{ margin: '0 0 12px', color: '#CBD5E1', fontSize: '0.88rem', fontStyle: 'italic' }}>
-                    {caso.subtitulo}
-                  </p>
-
-                  <p style={{ margin: '0 0 12px', color: '#E2E8F0', fontSize: '0.92rem', lineHeight: '1.6' }}>
-                    {caso.hechosReales}
-                  </p>
-
-                  <div
-                    style={{
-                      background: 'rgba(40, 30, 50, 0.5)',
-                      borderLeft: '3px solid #DDD6FE',
-                      padding: '10px 14px',
-                      borderRadius: '0 8px 8px 0',
-                      marginTop: '10px',
-                    }}
-                  >
-                    <strong style={{ color: '#DDD6FE', fontSize: '0.85rem' }}>
-                      Tensión bioética clave:{' '}
+                    <IconGlobe size={44} style={{ color: '#D97706', marginBottom: '12px' }} />
+                    <strong style={{ fontSize: '15px', color: '#F8FAFC', marginBottom: '6px' }}>
+                      {fotoActual?.titulo}
                     </strong>
-                    <span style={{ color: '#CBD5E1', fontSize: '0.85rem' }}>{caso.tensionEtica}</span>
+                    <span style={{ fontSize: '12.5px', color: '#94A3B8' }}>{fotoActual?.eje}</span>
                   </div>
-                </article>
-              ))}
+                </div>
+
+                <div className="env-auto-caption">
+                  <div className="env-auto-caption-header">
+                    <span className="env-auto-badge">Caso {fotoCarruselIdx + 1} de 5</span>
+                    <span className="small-muted">{fotoActual?.eje}</span>
+                  </div>
+                  <p className="env-auto-caption-title">{fotoActual?.titulo}</p>
+                  <p className="env-auto-caption-desc">{fotoActual?.descripcion}</p>
+                  <span className="small-muted" style={{ display: 'block', marginTop: '6px' }}>
+                    Crédito: {fotoActual?.credito}
+                  </span>
+                </div>
+
+                <div className="env-carousel-dots">
+                  {carruselFase1.map((_, idx) => (
+                    <button
+                      key={idx}
+                      className={`env-dot-btn ${idx === fotoCarruselIdx ? 'active' : ''}`}
+                      onClick={() => setFotoCarruselIdx(idx)}
+                      title={`Ir a imagen ${idx + 1}`}
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
 
+          {/* BOTÓN INFERIOR ALINEADO A LA DERECHA */}
           <div
+            className="env-stage1-action-row"
             style={{
-              marginTop: '2.5rem',
               display: 'flex',
-              justifyContent: 'flex-end',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              flexWrap: 'wrap',
+              gap: '16px',
+              marginTop: '36px',
+              paddingTop: '22px',
+              borderTop: '1px solid var(--border-color)',
             }}
           >
             <button
-              className="btn-primary btn-lg"
+              className="text-button icon-btn"
+              onClick={() => setMostrarFuentesModal(!mostrarFuentesModal)}
+            >
+              <IconBook size={16} />
+              {mostrarFuentesModal
+                ? 'Ocultar fuentes bibliográficas'
+                : `Fuentes bibliográficas y bioéticas (${fuentesData.length})`}
+            </button>
+
+            <button
+              className="btn-primary btn-lg env-btn-next-right"
+              style={{ marginLeft: 'auto' }}
               onClick={() => {
                 setFaseActual('preguntas')
                 setIndicePregunta(0)
-                window.scrollTo({ top: 0, behavior: 'smooth' })
               }}
             >
-              Iniciar deliberación ética →
+              Comenzar el recorrido de decisiones ({preguntasData.length} preguntas) →
             </button>
           </div>
-        </section>
-      )}
 
-      {/* ============================================================== */}
-      {/* ETAPA 2: PREGUNTAS ÉTICAS Y SITUACIONES (CASOS + TRANSVERSALES) */}
-      {/* ============================================================== */}
-      {faseActual === 'preguntas' && preguntaActual && (
-        <section className="pilot-section-view">
-          {/* INTERLUDIO PEDAGÓGICO DE CUESTIONAMIENTO */}
-          {interludioCuestionamiento && (
-            <div
-              className={`cuestionamiento-interludio ${
-                estaSaliendoInterludio ? 'anim-salida' : 'anim-entrada'
-              }`}
-              style={{
-                position: 'fixed',
-                inset: 0,
-                zIndex: 9999,
-                background: 'rgba(5, 7, 14, 0.88)',
-                backdropFilter: 'blur(16px)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                padding: '24px',
-              }}
-            >
-              <div
-                style={{
-                  maxWidth: '680px',
-                  background: 'rgba(15, 23, 42, 0.96)',
-                  border: '1px solid rgba(221, 214, 254, 0.3)',
-                  borderRadius: '16px',
-                  padding: '32px 36px',
-                  boxShadow: '0 20px 50px rgba(0, 0, 0, 0.6)',
-                  textAlign: 'center',
-                }}
-              >
-                <div
-                  style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '8px',
-                    color: '#DDD6FE',
-                    fontSize: '0.85rem',
-                    fontWeight: 700,
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.05em',
-                    marginBottom: '12px',
-                  }}
-                >
-                  <IconSpark size={16} /> Reflexión dialéctica sobre tu elección (Opción{' '}
-                  {interludioCuestionamiento.letra})
-                </div>
-
-                <p
-                  style={{
-                    color: '#F8FAFC',
-                    fontSize: '1.15rem',
-                    lineHeight: '1.65',
-                    fontStyle: 'italic',
-                    marginBottom: '24px',
-                  }}
-                >
-                  "{interludioCuestionamiento.cuestionamiento}"
-                </p>
-
-                <button className="btn-primary" onClick={iniciarSalidaInterludio}>
-                  {interludioCuestionamiento.esUltimaPregunta
-                    ? 'Continuar a las perspectivas de los filósofos →'
-                    : 'Continuar a la siguiente decisión →'}
-                </button>
+          {/* PANEL DE FUENTES BIBLIOGRÁFICAS */}
+          {mostrarFuentesModal && (
+            <div className="pilot-sources-panel" style={{ marginTop: '24px' }}>
+              <h3 className="icon-heading" style={{ fontSize: '17px', marginBottom: '14px' }}>
+                <IconGlobe size={18} /> Fuentes bioéticas, jurídicas y testimoniales de la directriz
+              </h3>
+              <div className="pilot-sources-grid">
+                {fuentesData.map((f) => (
+                  <article key={f.id} className="pilot-source-card">
+                    <span className="source-inst-tag">{f.tipo}</span>
+                    <h4>{f.titulo}</h4>
+                    <p style={{ fontSize: '12px', color: '#94A3B8', marginBottom: '6px' }}>
+                      <strong>{f.autor}</strong> ({f.año}) · {f.publicacion}
+                    </p>
+                    <p style={{ fontSize: '12.5px' }}>{f.descripcion}</p>
+                    {f.citasRelevantes && (
+                      <blockquote
+                        style={{
+                          margin: '8px 0 0',
+                          padding: '6px 10px',
+                          borderLeft: '2px solid #D97706',
+                          fontSize: '11.5px',
+                          fontStyle: 'italic',
+                          color: '#CBD5E1',
+                        }}
+                      >
+                        {f.citasRelevantes}
+                      </blockquote>
+                    )}
+                  </article>
+                ))}
               </div>
             </div>
           )}
+        </div>
+      )}
 
-          {/* BARRA DE PROGRESO DE PREGUNTAS */}
-          <div
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              marginBottom: '1rem',
-              color: '#94A3B8',
-              fontSize: '0.85rem',
-            }}
-          >
-            <span>
-              Decisión {indicePregunta + 1} de {preguntasData.length}
+      {/* ========================================================================= */}
+      {/* ETAPA 2: RECORRIDO DE DECISIONES CON 5 ALTERNATIVAS (A, B, C, D, E)        */}
+      {/* ========================================================================= */}
+      {faseActual === 'preguntas' && interludioCuestionamiento && (
+        <div
+          className={`pilot-stage-card stage-card env-interlude-card ${
+            estaSaliendoInterludio ? 'env-interlude-exiting' : ''
+          }`}
+        >
+          <div className="env-interlude-content">
+            <span className="env-interlude-title-plain">
+              CUESTIONAMIENTO A TU ELECCIÓN · OPCIÓN {interludioCuestionamiento.letra}
             </span>
-            <div
-              style={{
-                width: '180px',
-                height: '6px',
-                background: 'rgba(255, 255, 255, 0.1)',
-                borderRadius: '3px',
-                overflow: 'hidden',
-              }}
-            >
+
+            <blockquote className="env-interlude-quote">
+              «{interludioCuestionamiento.cuestionamiento}»
+            </blockquote>
+
+            <div className="env-interlude-progress-track">
               <div
+                className="env-interlude-progress-bar"
+                style={{
+                  animationDuration: `${interludioCuestionamiento.duracionSegundos || 8}s`,
+                }}
+              />
+            </div>
+
+            <button
+              className="btn-secondary btn-sm env-interlude-skip-btn"
+              onClick={iniciarSalidaInterludio}
+              disabled={estaSaliendoInterludio}
+            >
+              Continuar ahora →
+            </button>
+          </div>
+        </div>
+      )}
+
+      {faseActual === 'preguntas' && !interludioCuestionamiento && preguntaActual && (
+        <div
+          key={`pregunta-card-${preguntaActual.id}`}
+          className="pilot-stage-card stage-card env-stage2-card-enter"
+        >
+          {/* HEADER */}
+          <div className="pilot-question-header" style={{ marginBottom: '14px' }}>
+            <div className="pilot-question-meta" style={{ justifyContent: 'flex-end' }}>
+              <span className="pilot-progress-counter">
+                Pregunta {indicePregunta + 1} de {preguntasData.length}
+              </span>
+            </div>
+            <div className="reading-progress" style={{ marginTop: '6px' }}>
+              <span
                 style={{
                   width: `${((indicePregunta + 1) / preguntasData.length) * 100}%`,
-                  height: '100%',
-                  background: '#DDD6FE',
-                  transition: 'width 0.3s ease',
                 }}
               />
             </div>
           </div>
 
-          <div
-            style={{
-              background: 'rgba(15, 23, 42, 0.85)',
-              border: '1px solid rgba(221, 214, 254, 0.18)',
-              borderRadius: '16px',
-              padding: '28px 32px',
-              boxShadow: '0 12px 36px rgba(0, 0, 0, 0.4)',
-            }}
-          >
-            <h3 style={{ margin: '0 0 12px', color: '#F8FAFC', fontSize: '1.25rem' }}>
-              {preguntaActual.tituloCaso}
-            </h3>
-
-            {preguntaActual.descripcionDetallada?.map((p, idx) => (
-              <p
-                key={idx}
-                style={{
-                  color: '#CBD5E1',
-                  fontSize: '0.92rem',
-                  lineHeight: '1.65',
-                  marginBottom: '12px',
-                }}
-              >
-                {p}
-              </p>
-            ))}
-
-            <div
-              style={{
-                margin: '20px 0 24px',
-                padding: '16px 20px',
-                background: 'rgba(40, 30, 50, 0.55)',
-                borderLeft: '4px solid #DDD6FE',
-                borderRadius: '0 10px 10px 0',
-              }}
-            >
-              <h4 style={{ margin: '0 0 6px', color: '#DDD6FE', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
-                Pregunta ética central
-              </h4>
-              <p style={{ margin: 0, color: '#F8FAFC', fontSize: '1.05rem', fontWeight: 600, lineHeight: '1.5' }}>
-                {preguntaActual.pregunta}
-              </p>
+          {/* ESTRUCTURA CON TEXTO DESCRIPTIVO E IMAGEN / ILUSTRACIÓN */}
+          <div className="env-stage1-grid env-stage2-case-grid">
+            <div className="env-stage1-text-col">
+              <h3 className="env-context-title" style={{ fontSize: '18.5px', marginBottom: '8px' }}>
+                {preguntaActual.tituloCaso}
+              </h3>
+              <div className="env-stage2-desc-box">
+                {preguntaActual.descripcionDetallada?.map((parrafo, idx) => (
+                  <p key={idx} className="env-stage2-desc-p">
+                    {parrafo}
+                  </p>
+                ))}
+              </div>
             </div>
 
-            {/* OPCIONES DE RESPUESTA */}
-            <div style={{ display: 'grid', gap: '12px' }}>
+            <div className="env-stage1-carousel-col">
+              <div className="env-auto-carousel-card">
+                <div className="env-auto-img-frame" style={{ minHeight: '220px', maxHeight: '280px' }}>
+                  {fotoDePregunta?.archivoImagen ? (
+                    <img
+                      src={resolverRutaImagen(fotoDePregunta.archivoImagen)}
+                      alt={fotoDePregunta.titulo}
+                      className="env-auto-img"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none'
+                        if (e.currentTarget.nextElementSibling) {
+                          e.currentTarget.nextElementSibling.style.display = 'flex'
+                        }
+                      }}
+                    />
+                  ) : null}
+                  <div
+                    className="env-auto-placeholder"
+                    style={{
+                      display: fotoDePregunta?.archivoImagen ? 'none' : 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      height: '100%',
+                      background: 'radial-gradient(circle at center, #1E293B, #0F172A)',
+                      padding: '20px',
+                      textAlign: 'center',
+                    }}
+                  >
+                    <IconGlobe size={36} style={{ color: '#D97706', marginBottom: '10px' }} />
+                    <strong style={{ fontSize: '14px', color: '#F8FAFC', marginBottom: '4px' }}>
+                      {fotoDePregunta?.titulo || preguntaActual.tituloCaso}
+                    </strong>
+                    <span style={{ fontSize: '12px', color: '#94A3B8' }}>
+                      {fotoDePregunta?.eje || 'Uso de animales en la investigación espacial'}
+                    </span>
+                  </div>
+                </div>
+                {fotoDePregunta && (
+                  <div className="env-auto-caption">
+                    <p className="env-auto-caption-title">{fotoDePregunta.titulo}</p>
+                    <span className="small-muted">Crédito: {fotoDePregunta.credito}</span>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+
+          {/* SECCIÓN INFERIOR: PREGUNTA Y ALTERNATIVAS */}
+          <div className="env-stage2-qa-section" style={{ marginTop: '24px' }}>
+            <h2
+              className="pilot-question-title"
+              style={{
+                marginTop: '0',
+                fontSize: '18px',
+                lineHeight: '1.45',
+                width: '100%',
+                maxWidth: '100%',
+              }}
+            >
+              {preguntaActual.pregunta}
+            </h2>
+
+            <p
+              className="pilot-question-instruction"
+              style={{ marginBottom: '16px', width: '100%', maxWidth: '100%' }}
+            >
+              Evalúa la situación y selecciona la postura que mejor represente tu criterio:
+            </p>
+
+            {/* LAS 5 ALTERNATIVAS (A, B, C, D, E) */}
+            <div className="pilot-options-list">
               {preguntaActual.alternativas?.map((alt) => {
-                const seleccionada = respuestaSeleccionadaPregunta === alt.id
+                const estaSeleccionada = respuestaSeleccionadaPregunta === alt.id
                 return (
                   <button
                     key={alt.id}
+                    className={`pilot-option-btn ${estaSeleccionada ? 'selected' : ''}`}
                     onClick={() => handleSeleccionarAlternativa(alt.id)}
-                    style={{
-                      display: 'flex',
-                      alignItems: 'flex-start',
-                      gap: '14px',
-                      padding: '14px 18px',
-                      background: seleccionada
-                        ? 'rgba(221, 214, 254, 0.14)'
-                        : 'rgba(15, 23, 42, 0.65)',
-                      border: seleccionada
-                        ? '1.5px solid #DDD6FE'
-                        : '1px solid rgba(255, 255, 255, 0.1)',
-                      borderRadius: '10px',
-                      color: '#F8FAFC',
-                      cursor: 'pointer',
-                      textAlign: 'left',
-                      transition: 'all 0.2s ease',
-                    }}
                   >
-                    <span
-                      style={{
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        width: '26px',
-                        height: '26px',
-                        borderRadius: '50%',
-                        background: seleccionada ? '#DDD6FE' : 'rgba(255, 255, 255, 0.1)',
-                        color: seleccionada ? '#0F172A' : '#94A3B8',
-                        fontWeight: 700,
-                        fontSize: '0.85rem',
-                        flexShrink: 0,
-                      }}
-                    >
-                      {alt.letra}
-                    </span>
-                    <span style={{ fontSize: '0.92rem', lineHeight: '1.55', color: '#E2E8F0' }}>
-                      {alt.texto}
-                    </span>
+                    <span className="pilot-option-letter">{alt.letra}</span>
+                    <span className="pilot-option-text">{alt.texto}</span>
                   </button>
                 )
               })}
             </div>
-
-            {/* BOTONES DE NAVEGACIÓN */}
-            <div
-              style={{
-                marginTop: '28px',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-              }}
-            >
-              <button className="btn-secondary" onClick={handleAnteriorPregunta}>
-                ← Anterior
-              </button>
-
-              <button
-                className="btn-primary"
-                disabled={!respuestaSeleccionadaPregunta}
-                onClick={handleSiguientePregunta}
-                style={{
-                  opacity: respuestaSeleccionadaPregunta ? 1 : 0.5,
-                  cursor: respuestaSeleccionadaPregunta ? 'pointer' : 'not-allowed',
-                }}
-              >
-                {indicePregunta === preguntasData.length - 1
-                  ? 'Finalizar decisiones y ver filósofos →'
-                  : 'Registrar postura y continuar →'}
-              </button>
-            </div>
           </div>
-        </section>
+
+          {/* NAVEGACIÓN INFERIOR DE PREGUNTAS */}
+          <div className="stage-footer" style={{ marginTop: '30px' }}>
+            <button className="btn-secondary icon-btn" onClick={handleAnteriorPregunta}>
+              ← {indicePregunta === 0 ? 'Volver al contexto' : 'Pregunta anterior'}
+            </button>
+
+            <button
+              className="btn-primary btn-lg icon-btn"
+              onClick={handleSiguientePregunta}
+              disabled={!respuestaSeleccionadaPregunta}
+            >
+              {indicePregunta === preguntasData.length - 1
+                ? 'Confirmar y pasar a la reflexión filosófica →'
+                : 'Confirmar elección y ver cuestionamiento →'}
+            </button>
+          </div>
+        </div>
       )}
 
-      {/* ============================================================== */}
-      {/* ETAPA 3: CONFRONTACIÓN CON AUTORES FILOSÓFICOS                */}
-      {/* ============================================================== */}
+      {/* ========================================================================= */}
+      {/* ETAPA 3: REFLEXIÓN FILOSÓFICA (BENTHAM, SINGER, REGAN, NUSSBAUM)          */}
+      {/* ========================================================================= */}
       {faseActual === 'reflexion' && (
-        <section className="pilot-section-view">
-          <div className="section-heading-block">
-            <h2 style={{ fontSize: '1.25rem', color: '#F8FAFC', marginBottom: '8px' }}>
-              Confrontación con las tradiciones filosóficas de la ética animal
-            </h2>
-            <p style={{ color: '#CBD5E1', fontSize: '0.92rem' }}>
-              Evalúa los argumentos de los cuatro grandes pensadores que transformaron la bioética
-              animal. Responde a la pregunta de reflexión de cada autor para confrontar tus propias
-              intuiciones éticas.
+        <div className="pilot-stage-card stage-card">
+          <div className="stage-header">
+            <h2>Reflexión Filosófica: Cuatro Autores Clave</h2>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '14.5px', maxWidth: '75ch' }}>
+              Formula tu postura con tus propias palabras a partir de las doctrinas de Jeremy Bentham,
+              Peter Singer, Tom Regan y Martha C. Nussbaum. Lee la contextualización previa antes de responder.
             </p>
           </div>
 
-          {/* TARJETA UNIFICADA CON FONDO CÁLIDO/PASTEL (UN AUTOR A LA VEZ) */}
+          {/* PREGUNTA ABIERTA ACTUAL */}
           {reflexionData[indiceReflexion] && (
-            <div
-              style={{
-                background: 'rgba(38, 28, 48, 0.65)',
-                border: '1px solid rgba(221, 214, 254, 0.22)',
-                borderLeft: '4px solid #DDD6FE',
-                borderRadius: '14px',
-                padding: '28px 32px',
-                boxShadow: '0 12px 36px rgba(0, 0, 0, 0.45)',
-                marginTop: '1.5rem',
-              }}
-            >
+            <div className="env-reflection-card">
+              {/* RECUADRO ÚNICO CON FONDO CÁLIDO/ÁMBAR Y LÍNEA A LA IZQUIERDA */}
               <div
                 style={{
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  alignItems: 'center',
-                  marginBottom: '14px',
-                  color: '#DDD6FE',
-                  fontSize: '0.85rem',
-                  fontWeight: 700,
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.04em',
+                  background: 'var(--bg-subtle)',
+                  border: '1px solid var(--border-color)',
+                  borderLeft: '4px solid var(--accent-amber)',
+                  borderRadius: '8px',
+                  padding: '16px 20px',
+                  margin: '14px 0 20px',
                 }}
               >
-                <span>
-                  Perspectiva {indiceReflexion + 1} de {reflexionData.length} ·{' '}
-                  {reflexionData[indiceReflexion].autor}
-                </span>
-                <span style={{ color: '#94A3B8', fontWeight: 400, textTransform: 'none' }}>
-                  Paso {indiceReflexion + 1}/{reflexionData.length}
-                </span>
+                {reflexionData[indiceReflexion].contextualizacionPrevia && (
+                  <p
+                    style={{
+                      margin: '0 0 12px',
+                      fontSize: '14px',
+                      color: 'var(--text-secondary)',
+                      lineHeight: '1.65',
+                      textAlign: 'justify',
+                    }}
+                  >
+                    {reflexionData[indiceReflexion].contextualizacionPrevia}
+                  </p>
+                )}
+                {reflexionData[indiceReflexion].citaDocumento && (
+                  <p
+                    style={{
+                      margin: 0,
+                      fontStyle: 'italic',
+                      fontSize: '13.5px',
+                      color: 'var(--text-primary)',
+                      lineHeight: '1.6',
+                    }}
+                  >
+                    {reflexionData[indiceReflexion].citaDocumento}
+                  </p>
+                )}
               </div>
 
-              <h3 style={{ margin: '0 0 14px', color: '#F8FAFC', fontSize: '1.3rem' }}>
-                {reflexionData[indiceReflexion].titulo}
+              {/* ENUNCIADO DE LA PREGUNTA */}
+              <h3
+                style={{
+                  fontSize: '18px',
+                  fontWeight: '600',
+                  margin: '0 0 16px',
+                  lineHeight: '1.45',
+                  color: 'var(--text-primary)',
+                }}
+              >
+                {reflexionData[indiceReflexion].enunciado}
               </h3>
 
-              <p style={{ color: '#CBD5E1', fontSize: '0.95rem', lineHeight: '1.65', marginBottom: '16px' }}>
-                {reflexionData[indiceReflexion].contextualizacionPrevia}
-              </p>
-
-              <blockquote
-                style={{
-                  margin: '18px 0',
-                  padding: '14px 18px',
-                  background: 'rgba(15, 23, 42, 0.65)',
-                  borderLeft: '3px solid #DDD6FE',
-                  borderRadius: '0 8px 8px 0',
-                  color: '#F8FAFC',
-                  fontSize: '0.96rem',
-                  fontStyle: 'italic',
-                  lineHeight: '1.6',
+              <textarea
+                className="pilot-textarea"
+                rows={6}
+                placeholder="Escribe tu razonamiento detallado aquí..."
+                value={respuestasReflexion[reflexionData[indiceReflexion].id] || ''}
+                onChange={(e) => {
+                  const val = e.target.value
+                  setRespuestasReflexion((prev) => ({
+                    ...prev,
+                    [reflexionData[indiceReflexion].id]: val,
+                  }))
                 }}
-              >
-                {reflexionData[indiceReflexion].citaDocumento}
-              </blockquote>
+              />
 
-              <div style={{ marginTop: '20px' }}>
-                <label
-                  style={{
-                    display: 'block',
-                    color: '#DDD6FE',
-                    fontSize: '0.95rem',
-                    fontWeight: 600,
-                    marginBottom: '8px',
-                    lineHeight: '1.45',
-                  }}
-                >
-                  {reflexionData[indiceReflexion].enunciado}
-                </label>
-
-                <textarea
-                  value={respuestasReflexion[reflexionData[indiceReflexion].id] || ''}
-                  onChange={(e) =>
-                    setRespuestasReflexion((prev) => ({
-                      ...prev,
-                      [reflexionData[indiceReflexion].id]: e.target.value,
-                    }))
-                  }
-                  placeholder="Escribe tu reflexión argumentada aquí..."
-                  rows={4}
-                  style={{
-                    width: '100%',
-                    background: 'rgba(15, 23, 42, 0.75)',
-                    border: '1px solid rgba(221, 214, 254, 0.25)',
-                    borderRadius: '8px',
-                    color: '#F8FAFC',
-                    padding: '12px 14px',
-                    fontSize: '0.92rem',
-                    lineHeight: '1.5',
-                    fontFamily: 'inherit',
-                    resize: 'vertical',
-                    boxSizing: 'border-box',
-                  }}
-                />
-              </div>
-
-              {/* BOTONES DE NAVEGACIÓN ENTRE AUTORES */}
               <div
                 style={{
-                  marginTop: '24px',
                   display: 'flex',
                   justifyContent: 'space-between',
                   alignItems: 'center',
+                  marginTop: '8px',
+                  fontSize: '12px',
+                  color: 'var(--text-muted)',
                 }}
               >
-                <button
-                  className="btn-secondary"
-                  onClick={() => {
-                    if (indiceReflexion > 0) {
-                      setIndiceReflexion((prev) => prev - 1)
-                    } else {
-                      setFaseActual('preguntas')
-                      setIndicePregunta(preguntasData.length - 1)
-                    }
-                  }}
-                >
-                  ← Anterior
-                </button>
-
-                <button
-                  className="btn-primary"
-                  onClick={() => {
-                    if (indiceReflexion < reflexionData.length - 1) {
-                      setIndiceReflexion((prev) => prev + 1)
-                    } else {
-                      setFaseActual('test')
-                      setIndiceAfirmacion(0)
-                      window.scrollTo({ top: 0, behavior: 'smooth' })
-                    }
-                  }}
-                >
-                  {indiceReflexion === reflexionData.length - 1
-                    ? 'Avanzar al test de afinidad ética →'
-                    : 'Ver siguiente perspectiva de autor →'}
-                </button>
+                <span>Tus respuestas se guardan automáticamente en tu navegador.</span>
+                <span>
+                  {(respuestasReflexion[reflexionData[indiceReflexion].id] || '').trim().length} caracteres
+                </span>
               </div>
             </div>
           )}
-        </section>
+
+          {/* BARRA INFERIOR DE NAVEGACIÓN */}
+          <div className="stage-footer" style={{ marginTop: '32px' }}>
+            {indiceReflexion === 0 ? (
+              <button
+                className="btn-secondary icon-btn"
+                onClick={() => {
+                  setFaseActual('preguntas')
+                  setIndicePregunta(preguntasData.length - 1)
+                }}
+              >
+                ← Volver a decisiones (Pregunta {preguntasData.length})
+              </button>
+            ) : (
+              <button
+                className="btn-secondary icon-btn"
+                onClick={() => setIndiceReflexion((prev) => Math.max(0, prev - 1))}
+              >
+                ← Pregunta de reflexión anterior
+              </button>
+            )}
+
+            {indiceReflexion < reflexionData.length - 1 ? (
+              <button
+                className="btn-primary icon-btn"
+                onClick={() => setIndiceReflexion((prev) => Math.min(reflexionData.length - 1, prev + 1))}
+              >
+                Siguiente reflexión ({indiceReflexion + 2}/{reflexionData.length}) →
+              </button>
+            ) : (
+              <button
+                className="btn-primary btn-lg icon-btn"
+                onClick={() => {
+                  setFaseActual('test')
+                  setIndiceAfirmacion(0)
+                }}
+              >
+                Continuar a la Etapa 4: Test de afinidad ética ({testData.afirmaciones.length} afirmaciones) →
+              </button>
+            )}
+          </div>
+        </div>
       )}
 
-      {/* ============================================================== */}
-      {/* ETAPA 4: MATRIZ Y TEST DE AFINIDAD ÉTICA                       */}
-      {/* ============================================================== */}
+      {/* ========================================================================= */}
+      {/* ETAPA 4: TEST DE AFINIDAD FILOSÓFICA (8 AFIRMACIONES LIKERT 1-5)         */}
+      {/* ========================================================================= */}
       {faseActual === 'test' && afirmacionActual && (
-        <section className="pilot-section-view">
-          <div
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              marginBottom: '1rem',
-              color: '#94A3B8',
-              fontSize: '0.85rem',
-            }}
-          >
-            <span>
-              Afirmación {indiceAfirmacion + 1} de {testData.afirmaciones.length}
-            </span>
-            <div
-              style={{
-                width: '180px',
-                height: '6px',
-                background: 'rgba(255, 255, 255, 0.1)',
-                borderRadius: '3px',
-                overflow: 'hidden',
-              }}
-            >
-              <div
+        <div className="pilot-stage-card stage-card">
+          {/* HEADER */}
+          <div className="pilot-question-header">
+            <div className="pilot-question-meta" style={{ justifyContent: 'flex-end' }}>
+              <span className="pilot-progress-counter">
+                Afirmación {indiceAfirmacion + 1} de {testData.afirmaciones.length}
+              </span>
+            </div>
+            <div className="reading-progress" style={{ marginTop: '8px' }}>
+              <span
                 style={{
                   width: `${((indiceAfirmacion + 1) / testData.afirmaciones.length) * 100}%`,
-                  height: '100%',
-                  background: '#DDD6FE',
-                  transition: 'width 0.3s ease',
                 }}
               />
             </div>
           </div>
 
-          <div
-            style={{
-              background: 'rgba(15, 23, 42, 0.85)',
-              border: '1px solid rgba(221, 214, 254, 0.2)',
-              borderRadius: '16px',
-              padding: '32px',
-              boxShadow: '0 12px 36px rgba(0, 0, 0, 0.4)',
-            }}
-          >
-            <span
-              style={{
-                color: '#DDD6FE',
-                fontSize: '0.82rem',
-                fontWeight: 700,
-                textTransform: 'uppercase',
-                letterSpacing: '0.04em',
-              }}
-            >
-              Eje de evaluación: {afirmacionActual.eje}
-            </span>
-
-            <h3
-              style={{
-                margin: '14px 0 28px',
-                color: '#F8FAFC',
-                fontSize: '1.2rem',
-                lineHeight: '1.6',
-              }}
-            >
-              "{afirmacionActual.texto}"
-            </h3>
-
-            {/* ESCALA LIKERT DE 1 A 5 */}
-            <div
-              style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(5, 1fr)',
-                gap: '10px',
-                marginBottom: '28px',
-              }}
-            >
-              {[
-                { val: 1, label: 'Totalmente en desacuerdo' },
-                { val: 2, label: 'En desacuerdo' },
-                { val: 3, label: 'Neutro / Depende' },
-                { val: 4, label: 'De acuerdo' },
-                { val: 5, label: 'Totalmente de acuerdo' },
-              ].map((opcion) => {
-                const seleccionada = valorSeleccionadoAfirmacion === opcion.val
-                return (
-                  <button
-                    key={opcion.val}
-                    onClick={() => handleSeleccionarLikert(opcion.val)}
-                    style={{
-                      padding: '14px 8px',
-                      background: seleccionada
-                        ? 'rgba(221, 214, 254, 0.2)'
-                        : 'rgba(255, 255, 255, 0.04)',
-                      border: seleccionada
-                        ? '2px solid #DDD6FE'
-                        : '1px solid rgba(255, 255, 255, 0.1)',
-                      borderRadius: '10px',
-                      color: '#F8FAFC',
-                      cursor: 'pointer',
-                      textAlign: 'center',
-                      display: 'flex',
-                      flexDirection: 'column',
-                      alignItems: 'center',
-                      gap: '6px',
-                      transition: 'all 0.2s ease',
-                    }}
-                  >
-                    <span style={{ fontSize: '1.25rem', fontWeight: 700, color: seleccionada ? '#DDD6FE' : '#94A3B8' }}>
-                      {opcion.val}
-                    </span>
-                    <span style={{ fontSize: '0.75rem', color: '#CBD5E1', lineHeight: '1.2' }}>
-                      {opcion.label}
-                    </span>
-                  </button>
-                )
-              })}
-            </div>
-
-            <div
-              style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-              }}
-            >
-              <button className="btn-secondary" onClick={handleAnteriorAfirmacion}>
-                ← Anterior
-              </button>
-
-              <button
-                className="btn-primary"
-                disabled={!valorSeleccionadoAfirmacion}
-                onClick={handleSiguienteAfirmacion}
-                style={{
-                  opacity: valorSeleccionadoAfirmacion ? 1 : 0.5,
-                  cursor: valorSeleccionadoAfirmacion ? 'pointer' : 'not-allowed',
-                }}
-              >
-                {indiceAfirmacion === testData.afirmaciones.length - 1
-                  ? 'Ver resultados y síntesis de afinidad →'
-                  : 'Siguiente afirmación →'}
-              </button>
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* ============================================================== */}
-      {/* ETAPA 5: RESULTADOS Y SÍNTESIS DE AFINIDAD FILOSÓFICA          */}
-      {/* ============================================================== */}
-      {faseActual === 'resultados' && (
-        <section className="pilot-section-view">
-          <div className="section-heading-block">
-            <h2 style={{ fontSize: '1.25rem', color: '#F8FAFC', marginBottom: '8px' }}>
-              Tu perfil ético en el debate sobre animales en el espacio
-            </h2>
-            <p style={{ color: '#CBD5E1', fontSize: '0.92rem' }}>
-              A partir de tus respuestas en las decisiones y en la matriz ética, se calculó tu
-              afinidad con los cuatro marcos de pensamiento bioético.
+          <div className="stage-header" style={{ marginTop: '14px' }}>
+            <h2>Test de afinidad sobre bioética y uso de animales en el espacio</h2>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '13.5px' }}>
+              Señala tu grado de acuerdo con la siguiente afirmación para comparar tu postura con las de
+              Jeremy Bentham, Peter Singer, Tom Regan y Martha C. Nussbaum:
             </p>
           </div>
 
-          {/* CUADRÍCULA DE LOS 4 AUTORES CON PORCENTAJES Y ESPACIO PARA FOTO */}
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-              gap: '14px',
-              marginTop: '1.5rem',
-            }}
-          >
-            {autoresData.map((autor) => {
-              const afinidad = afinidadesCalculadas.find((a) => a.autorId === autor.id)
-              const porcentaje = afinidad ? afinidad.porcentaje : 0
-              const seleccionado = autor.id === autorSeleccionadoId
+          <div className="pilot-statement-box">
+            <span className="pilot-statement-quote">“</span>
+            <p className="pilot-statement-text">{afirmacionActual.texto}</p>
+          </div>
 
+          {/* ESCALA LIKERT 1 A 5 */}
+          <div className="pilot-likert-scale">
+            {[
+              { val: 1, label: 'Totalmente en desacuerdo' },
+              { val: 2, label: 'En desacuerdo' },
+              { val: 3, label: 'Neutro / Indeciso' },
+              { val: 4, label: 'De acuerdo' },
+              { val: 5, label: 'Totalmente de acuerdo' },
+            ].map((item) => {
+              const seleccionado = valorSeleccionadoAfirmacion === item.val
               return (
+                <button
+                  key={item.val}
+                  className={`pilot-likert-btn ${seleccionado ? 'selected' : ''}`}
+                  onClick={() => handleSeleccionarLikert(item.val)}
+                >
+                  <span className="likert-value">{item.val}</span>
+                  <span className="likert-label">{item.label}</span>
+                </button>
+              )
+            })}
+          </div>
+
+          {/* NAVEGACIÓN TEST */}
+          <div className="stage-footer" style={{ marginTop: '36px' }}>
+            <button className="btn-secondary icon-btn" onClick={handleAnteriorAfirmacion}>
+              ← {indiceAfirmacion === 0 ? 'Volver a reflexión' : 'Afirmación anterior'}
+            </button>
+
+            <button
+              className="btn-primary btn-lg icon-btn"
+              onClick={handleSiguienteAfirmacion}
+              disabled={!valorSeleccionadoAfirmacion}
+            >
+              {indiceAfirmacion === testData.afirmaciones.length - 1
+                ? 'Ver afinidades y análisis de autores →'
+                : 'Siguiente afirmación →'}
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* ========================================================================= */}
+      {/* ETAPA 5: RESULTADOS: GRÁFICO DE AFINIDAD Y AUTORES CON FOTO Y CITAS       */}
+      {/* ========================================================================= */}
+      {faseActual === 'resultados' && (
+        <div className="pilot-stage-card stage-card">
+          <div className="stage-header">
+            <h2>Afinidad con las Corrientes Filosóficas</h2>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '14.5px', maxWidth: '75ch' }}>
+              Grado de concordancia entre tus respuestas y las posturas documentadas de Jeremy Bentham
+              (Utilitarismo Clásico), Peter Singer (Antiespecismo), Tom Regan (Deontología de Derechos)
+              y Martha C. Nussbaum (Enfoque de las Capacidades).
+            </p>
+          </div>
+
+          {/* GRÁFICO DE BARRAS DE AFINIDAD */}
+          <div className="pilot-affinity-chart-card">
+            <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '20px', color: 'var(--text-primary)' }}>
+              Porcentaje de afinidad estimado en el test:
+            </h3>
+
+            <div className="pilot-bars-container">
+              {afinidadesCalculadas.map((item) => (
                 <div
-                  key={autor.id}
-                  onClick={() => setAutorSeleccionadoId(autor.id)}
+                  key={item.autorId}
+                  className={`pilot-bar-row ${autorSeleccionadoId === item.autorId ? 'active-author' : ''}`}
+                  onClick={() => setAutorSeleccionadoId(item.autorId)}
+                  role="button"
+                  tabIndex={0}
+                >
+                  <div className="pilot-bar-label-col">
+                    <strong>{item.nombre}</strong>
+                    <span className="pilot-bar-sub">{item.enfoque.split(',')[0]}</span>
+                  </div>
+
+                  <div className="pilot-bar-track-col">
+                    <div className="pilot-bar-track">
+                      <div
+                        className="pilot-bar-fill"
+                        style={{
+                          width: `${item.porcentaje}%`,
+                          backgroundColor:
+                            item.autorId === 'bentham'
+                              ? '#B45309'
+                              : item.autorId === 'singer'
+                              ? '#0284C7'
+                              : item.autorId === 'regan'
+                              ? '#059669'
+                              : '#7C3AED',
+                        }}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="pilot-bar-value-col">
+                    <span className="pilot-percent-tag">{item.porcentaje}%</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <p style={{ fontSize: '11px', color: 'var(--text-muted)', marginTop: '16px', fontStyle: 'italic' }}>
+              * Los porcentajes representan afinidad con las afirmaciones evaluadas en este test, no una medición definitiva
+              de la totalidad de la obra de cada autor.
+            </p>
+          </div>
+
+          {/* FICHA DETALLADA DEL AUTOR CON BOTONERA ESTILIZADA Y FOTO DEL FILÓSOFO */}
+          {autorDetalle && afinidadDetalle && (
+            <div className="pilot-author-details-box" style={{ marginTop: '28px' }}>
+              <div className="pilot-author-tabs">
+                {afinidadesCalculadas.map((item) => (
+                  <button
+                    key={item.autorId}
+                    className={`pilot-author-tab-btn ${autorSeleccionadoId === item.autorId ? 'active' : ''}`}
+                    onClick={() => setAutorSeleccionadoId(item.autorId)}
+                  >
+                    {item.nombre} ({item.porcentaje}%)
+                  </button>
+                ))}
+              </div>
+
+              <div className="pilot-author-card-body">
+                {/* CABECERA CON ESPACIO PARA FOTO DEL FILÓSOFO */}
+                <div
                   style={{
-                    background: seleccionado
-                      ? 'rgba(40, 30, 50, 0.75)'
-                      : 'rgba(15, 23, 42, 0.65)',
-                    border: seleccionado
-                      ? '2px solid #DDD6FE'
-                      : '1px solid rgba(255, 255, 255, 0.1)',
-                    borderRadius: '12px',
-                    padding: '16px',
-                    cursor: 'pointer',
-                    transition: 'all 0.2s ease',
-                    boxShadow: seleccionado ? '0 8px 24px rgba(221, 214, 254, 0.15)' : 'none',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '20px',
+                    flexWrap: 'wrap',
+                    marginBottom: '18px',
                   }}
                 >
-                  {/* ESPACIO RESERVADO PARA FOTO DEL AUTOR */}
                   <div
                     style={{
-                      width: '68px',
-                      height: '68px',
+                      width: '84px',
+                      height: '84px',
                       borderRadius: '50%',
-                      background: 'rgba(221, 214, 254, 0.15)',
-                      border: '1.5px solid rgba(221, 214, 254, 0.35)',
-                      margin: '0 auto 10px',
+                      background: 'var(--bg-subtle)',
+                      border: '2px solid var(--accent-amber)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      color: '#DDD6FE',
-                      fontWeight: 700,
-                      fontSize: '1.1rem',
                       overflow: 'hidden',
+                      flexShrink: 0,
                     }}
                   >
-                    {autor.fotoUrl ? (
+                    {autorDetalle.fotoUrl || autorDetalle.foto ? (
                       <img
-                        src={autor.fotoUrl}
-                        alt={autor.nombre}
+                        src={resolverRutaImagen(autorDetalle.fotoUrl || autorDetalle.foto)}
+                        alt={autorDetalle.nombre}
                         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                         onError={(e) => {
                           e.currentTarget.style.display = 'none'
                         }}
                       />
-                    ) : (
-                      autor.nombre
+                    ) : null}
+                    <span style={{ fontSize: '24px', fontWeight: '700', color: 'var(--accent-amber)' }}>
+                      {autorDetalle.nombre
                         .split(' ')
                         .map((n) => n[0])
                         .join('')
-                        .slice(0, 2)
-                    )}
+                        .slice(0, 2)}
+                    </span>
                   </div>
 
-                  <h4 style={{ margin: '0 0 4px', color: '#F8FAFC', fontSize: '1rem', textAlign: 'center' }}>
-                    {autor.nombre}
-                  </h4>
-                  <p
-                    style={{
-                      margin: '0 0 10px',
-                      color: '#94A3B8',
-                      fontSize: '0.78rem',
-                      textAlign: 'center',
-                      minHeight: '28px',
-                    }}
-                  >
-                    {autor.enfoque.split(',')[0]}
-                  </p>
-
-                  <div style={{ textAlign: 'center' }}>
-                    <span
+                  <div style={{ flex: 1, minWidth: '220px' }}>
+                    <div
                       style={{
-                        fontSize: '1.4rem',
-                        fontWeight: 700,
-                        color: porcentaje >= 65 ? '#A7F3D0' : porcentaje >= 45 ? '#DDD6FE' : '#94A3B8',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'flex-start',
+                        flexWrap: 'wrap',
+                        gap: '10px',
                       }}
                     >
-                      {porcentaje}%
-                    </span>
-                    <span style={{ fontSize: '0.75rem', color: '#94A3B8', display: 'block' }}>
-                      afinidad con tus respuestas
-                    </span>
+                      <div>
+                        <h3 style={{ fontSize: '22px', fontWeight: '700', margin: '0 0 4px', color: 'var(--text-primary)' }}>
+                          {autorDetalle.nombre}
+                        </h3>
+                        <p style={{ color: 'var(--text-secondary)', fontSize: '13.5px', margin: 0 }}>
+                          Obra de referencia: <em>{autorDetalle.obraReferencia}</em>
+                        </p>
+                      </div>
+                      <span className="pilot-affinity-score-badge">
+                        Afinidad: {afinidadDetalle.porcentaje}%
+                      </span>
+                    </div>
                   </div>
                 </div>
-              )
-            })}
-          </div>
 
-          {/* DETALLE DEL AUTOR SELECCIONADO EN CAJA CÁLIDA/PASTEL */}
-          {autorDetalle && (
-            <div
-              style={{
-                marginTop: '1.75rem',
-                background: 'rgba(38, 28, 48, 0.65)',
-                border: '1px solid rgba(221, 214, 254, 0.22)',
-                borderLeft: '4px solid #DDD6FE',
-                borderRadius: '14px',
-                padding: '24px 28px',
-                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.35)',
-              }}
-            >
-              <div
-                style={{
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  alignItems: 'baseline',
-                  flexWrap: 'wrap',
-                  gap: '8px',
-                  marginBottom: '10px',
-                }}
-              >
-                <h3 style={{ margin: 0, color: '#F8FAFC', fontSize: '1.25rem' }}>
-                  {autorDetalle.nombre} · {afinidadDetalle?.porcentaje || 0}% de coincidencia
-                </h3>
-                <span style={{ color: '#DDD6FE', fontSize: '0.85rem', fontStyle: 'italic' }}>
-                  {autorDetalle.obraReferencia}
-                </span>
-              </div>
-
-              <p style={{ color: '#CBD5E1', fontSize: '0.94rem', lineHeight: '1.65', marginBottom: '16px' }}>
-                {autorDetalle.resumenArgumento}
-              </p>
-
-              {afinidadDetalle?.descripcionAfinidad && (
+                {/* DESCRIPCIÓN DE LA AFINIDAD */}
                 <div
                   style={{
-                    padding: '12px 16px',
-                    background: 'rgba(15, 23, 42, 0.6)',
+                    background: 'var(--bg-subtle)',
+                    border: '1px solid var(--border-color)',
                     borderRadius: '8px',
-                    borderLeft: '3px solid #A7F3D0',
-                    marginBottom: '16px',
+                    padding: '14px 18px',
+                    margin: '18px 0',
                   }}
                 >
-                  <strong style={{ color: '#A7F3D0', fontSize: '0.85rem' }}>
-                    Diagnóstico de afinidad:{' '}
+                  <strong
+                    style={{
+                      fontSize: '12px',
+                      color: 'var(--primary-solid)',
+                      textTransform: 'uppercase',
+                      display: 'block',
+                      marginBottom: '4px',
+                    }}
+                  >
+                    Interpretación de tu afinidad:
                   </strong>
-                  <span style={{ color: '#E2E8F0', fontSize: '0.88rem', lineHeight: '1.5' }}>
+                  <p style={{ margin: 0, fontSize: '14px', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
                     {afinidadDetalle.descripcionAfinidad}
-                  </span>
+                  </p>
                 </div>
-              )}
 
-              {/* APLICACIÓN AL DEBATE ESPACIAL */}
-              <div style={{ marginTop: '16px' }}>
-                <h4
+                {/* APLICACIÓN AL DEBATE CON RECUADRO CÁLIDO */}
+                <div
                   style={{
-                    margin: '0 0 6px',
-                    color: '#DDD6FE',
-                    fontSize: '0.85rem',
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.04em',
+                    background: 'var(--bg-subtle)',
+                    border: '1px solid var(--border-color)',
+                    borderLeft: '4px solid var(--accent-amber)',
+                    borderRadius: '8px',
+                    padding: '14px 18px',
+                    margin: '18px 0',
                   }}
                 >
-                  Aplicación al debate sobre el espacio y la investigación animal:
-                </h4>
-                <p style={{ margin: 0, color: '#E2E8F0', fontSize: '0.92rem', lineHeight: '1.6' }}>
-                  {autorDetalle.aplicacionCaso}
-                </p>
+                  <strong
+                    style={{
+                      fontSize: '12px',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.05em',
+                      color: 'var(--accent-amber)',
+                      display: 'block',
+                      marginBottom: '6px',
+                    }}
+                  >
+                    Aplicación al debate sobre el espacio y la investigación animal:
+                  </strong>
+                  <p style={{ margin: 0, fontSize: '13.5px', color: 'var(--text-secondary)', lineHeight: '1.65', textAlign: 'justify' }}>
+                    {autorDetalle.aplicacionCaso}
+                  </p>
+                </div>
+
+                {/* CITAS TEXTUALES CLAVE DEL DOCUMENTO */}
+                <div style={{ marginTop: '16px' }}>
+                  <h4 style={{ fontSize: '15px', marginBottom: '10px', color: 'var(--text-primary)' }}>
+                    Citas textuales verificadas:
+                  </h4>
+                  <div style={{ display: 'grid', gap: '12px' }}>
+                    {autorDetalle.citasClave?.map((c, idx) => (
+                      <div
+                        key={idx}
+                        style={{
+                          background: 'var(--bg-subtle)',
+                          borderLeft: '3px solid var(--accent-amber)',
+                          padding: '10px 14px',
+                          borderRadius: '6px',
+                        }}
+                      >
+                        <p style={{ margin: '0 0 6px', fontStyle: 'italic', fontSize: '13px', color: 'var(--text-primary)' }}>
+                          «{c.cita}»
+                        </p>
+                        <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>{c.referencia}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           )}
 
-          {/* BOTÓN INFERIOR DE FINALIZACIÓN ALINEADO A LA DERECHA */}
-          <div
-            style={{
-              marginTop: '2.5rem',
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              flexWrap: 'wrap',
-              gap: '12px',
-            }}
-          >
-            <button
-              className="btn-secondary"
-              onClick={() => {
-                setFaseActual('test')
-                setIndiceAfirmacion(testData.afirmaciones.length - 1)
-              }}
-            >
-              ← Revisar matriz ética
+          {/* BOTONES FINALES: FINALIZAR EXPERIENCIA */}
+          <div className="stage-footer" style={{ marginTop: '36px' }}>
+            <button className="btn-secondary icon-btn" onClick={onVolverAlCatalogo}>
+              ← Volver al catálogo de dilemas
             </button>
 
             <button
-              className="btn-primary"
-              onClick={() => {
-                alert('¡Has completado el recorrido de la Tercera Directriz sobre bioética animal en el espacio!')
-                onVolverAlCatalogo?.()
-              }}
+              className="btn-primary btn-lg icon-btn"
+              onClick={onVolverAlCatalogo}
             >
               Finalizar recorrido ético ✓
             </button>
           </div>
-        </section>
+        </div>
       )}
     </div>
   )

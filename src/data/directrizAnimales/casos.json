@@ -76,5 +76,88 @@
       "tensionEtica": "La disparidad entre la rigurosa supervisión y rescate exigidos en bioterios terrestres frente a la tolerancia de altas tasas de mortalidad por contingencias mecánicas en misiones espaciales automáticas desprovistas de cuidado humano directo.",
       "fotoId": "foto_bion_m1"
     }
+  ],
+  "carruselFotos": [
+    {
+      "id": "foto_laika",
+      "numero": 1,
+      "titulo": "Laika en el Sputnik 2 (1957)",
+      "descripcion": "La perra callejera moscovita Laika fue el primer ser vivo en orbitar la Tierra, en una misión sin reentrada programada.",
+      "eje": "Misiones sin retorno frente a protección vital de seres sintientes",
+      "archivoImagen": "./images/animales/foto1_laika.jpg",
+      "credito": "Roscosmos / Sputnik Archives / RIA Novosti"
+    },
+    {
+      "id": "foto_ham",
+      "numero": 2,
+      "titulo": "El chimpancé Ham en Mercury-Redstone 2 (1961)",
+      "descripcion": "Vuelo suborbital para evaluar reflejos psicomotores y operación de palancas bajo condicionamiento operante.",
+      "eje": "Condicionamiento aversivo y secuelas de confinamiento en primates",
+      "archivoImagen": "./images/animales/foto2_ham.jpg",
+      "credito": "NASA / Holloman Air Force Base"
+    },
+    {
+      "id": "foto_felicette",
+      "numero": 3,
+      "titulo": "La gata Félicette en Véronique AGI 47 (1963)",
+      "descripcion": "Primer y único felino en el espacio con electrodos intracraneales, recuperada viva y eutanasiada dos meses después.",
+      "eje": "Deber de retiro digno frente a eutanasia metodológica post-vuelo",
+      "archivoImagen": "./images/animales/foto3_felicette.jpg",
+      "credito": "CERMA / CNES Francia / Archivo Histórico"
+    },
+    {
+      "id": "foto_multik",
+      "numero": 4,
+      "titulo": "El macaco Multik en la misión Bion 11 (1996)",
+      "descripcion": "Vuelo orbital ruso-estadounidense de 14 días. Multik falleció al día siguiente por paro anestésico en una biopsia.",
+      "eje": "Límites a la invasividad quirúrgica post-vuelo y política de la NASA",
+      "archivoImagen": "./images/animales/foto4_multik.jpg",
+      "credito": "IBMP Moscú / NASA Ames Research Center"
+    },
+    {
+      "id": "foto_bion_m1",
+      "numero": 5,
+      "titulo": "Misión biológica orbital Bion-M1 (2013)",
+      "descripcion": "Biosatélite ruso con 45 ratones durante 30 días, con alta mortandad por fallas técnicas en dispensadores de alimento.",
+      "eje": "Riesgo admisible en naves autónomas frente a sustitución biotecnológica",
+      "archivoImagen": "./images/animales/foto5_bion_m1.jpg",
+      "credito": "Roscosmos / TsSKB Progress / IBMP"
+    },
+    {
+      "id": "foto_apolo17_ratones",
+      "numero": 6,
+      "titulo": "Experimento BIOCORE en Apolo 17 (1972)",
+      "descripcion": "Cinco ratones de bolsillo orbitaron la Luna con detectores de radiación cósmica implantados bajo el cuero cabelludo.",
+      "eje": "Traslado de riesgos cósmicos a especies no voluntarias",
+      "archivoImagen": "./images/animales/foto6_apolo17_ratones.jpg",
+      "credito": "NASA / Apollo 17 Bio-astronautics Program"
+    },
+    {
+      "id": "foto_organoides_esa",
+      "numero": 7,
+      "titulo": "Modelos celulares y sustitución 3R en la ESA (2010)",
+      "descripcion": "Decisión institucional de vetar primates y priorizar organoides, cultivos celulares y astronautas voluntarios.",
+      "eje": "Principio de Reemplazo e investigación biomédica sintética",
+      "archivoImagen": "./images/animales/foto7_organoides_esa.jpg",
+      "credito": "ESA / EAC Biomedicine Laboratory"
+    },
+    {
+      "id": "foto_santuario_ham",
+      "numero": 8,
+      "titulo": "El retiro de primates espaciales y santuarios",
+      "descripcion": "Contraste entre la eutanasia programada y el traslado a zoológicos o santuarios especializados para sujetos veteranos.",
+      "eje": "Deber ético de retiro digno frente a eutanasia metodológica",
+      "archivoImagen": "./images/animales/foto8_santuario_ham.jpg",
+      "credito": "National Zoological Park / Save the Chimps Sanctuary"
+    },
+    {
+      "id": "foto_beresheet_tardigrados",
+      "numero": 9,
+      "titulo": "Sonda Beresheet y organismos en el NewSpace (2019)",
+      "descripcion": "Miles de tardígrados deshidratados estrellados en la Luna a bordo de una nave comercial privada.",
+      "eje": "Vacíos normativos internacionales y experimentación privada comercial",
+      "archivoImagen": "./images/animales/foto9_beresheet_tardigrados.jpg",
+      "credito": "SpaceIL / Arch Mission Foundation"
+    }
   ]
 }
