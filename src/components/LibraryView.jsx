@@ -19,7 +19,7 @@ export function LibraryView() {
       : AUTORES_BIBLIOTECA.filter((a) => a.directrizId === filtroDirectriz)
 
   const rutaMarcoDorado = resolverRutaImagen('images/filosofos/marco_2_ovalado.png')
-  const rutaFondo = resolverRutaImagen('images/filosofos/foto filosofica fondo vertical.jpeg')
+  const rutaFondo = resolverRutaImagen('images/filosofos/vertical2.jpg')
 
   return (
     <div className="library-view-fullbleed">
