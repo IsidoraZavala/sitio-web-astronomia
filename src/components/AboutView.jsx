@@ -3,12 +3,51 @@ import {
   IconCompass,
   IconLayers,
   IconScale,
+  IconUsers,
 } from './Icons'
 import { TypewriterTitle } from './TypewriterTitle'
 
+const resolverRutaImagen = (ruta) => {
+  if (!ruta) return ''
+  if (ruta.startsWith('http://') || ruta.startsWith('https://')) return ruta
+  const limpia = ruta.replace(/^\.?\//, '')
+  const base = import.meta.env.BASE_URL || './'
+  return `${base}${limpia}`
+}
+
 export function AboutView({ onExploreDilemmas }) {
+  const rutaFondo = resolverRutaImagen('images/filosofos/foto filosofica fondo.webp')
+  const rutaMarcoCuadrado = resolverRutaImagen('images/filosofos/marco_cuadrado_transparente.png')
+
+  // Tres autores del proyecto (espacios preparados para nombre, carrera y foto)
+  const autoresEquipo = [
+    {
+      id: 'autor-1',
+      nombre: 'Nombre de autor/a',
+      carrera: 'Carrera',
+      fotoUrl: '',
+    },
+    {
+      id: 'autor-2',
+      nombre: 'Nombre de autor/a',
+      carrera: 'Carrera',
+      fotoUrl: '',
+    },
+    {
+      id: 'autor-3',
+      nombre: 'Nombre de autor/a',
+      carrera: 'Carrera',
+      fotoUrl: '',
+    },
+  ]
+
   return (
-    <div className="about-view">
+    <div
+      className="about-view"
+      style={{
+        backgroundImage: `linear-gradient(rgba(246, 245, 240, 0.78), rgba(246, 245, 240, 0.86)), url("${rutaFondo}")`,
+      }}
+    >
       <div className="page-title-block">
         <TypewriterTitle as="h1" text="Sobre Órbita Ética" speed={28} />
         <p>Plataforma educativa e interactiva de deliberación ética sobre la exploración espacial.</p>
@@ -71,6 +110,56 @@ export function AboutView({ onExploreDilemmas }) {
             </p>
           </section>
         </div>
+
+        {/* SECCIÓN DE AUTORES DEL PROYECTO (SOMOS TRES) */}
+        <section className="about-team-section">
+          <div className="about-team-header">
+            <h2 className="icon-heading">
+              <IconUsers size={24} /> Autores del proyecto
+            </h2>
+            <p>Equipo responsable del desarrollo, investigación y diseño de Órbita Ética.</p>
+          </div>
+
+          <div className="about-team-grid">
+            {autoresEquipo.map((autor, idx) => (
+              <article key={autor.id} className="team-member-card">
+                <div className="team-frame-container">
+                  <div className="team-frame-inner">
+                    {autor.fotoUrl ? (
+                      <img
+                        src={resolverRutaImagen(autor.fotoUrl)}
+                        alt={autor.nombre}
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none'
+                          if (e.currentTarget.nextElementSibling) {
+                            e.currentTarget.nextElementSibling.style.display = 'flex'
+                          }
+                        }}
+                      />
+                    ) : null}
+                    <div
+                      className="team-placeholder-inner"
+                      style={{ display: autor.fotoUrl ? 'none' : 'flex' }}
+                    >
+                      <IconUsers size={32} />
+                      <span>Autor {idx + 1}</span>
+                    </div>
+                  </div>
+                  <img
+                    src={rutaMarcoCuadrado}
+                    alt="Marco cuadrado dorado"
+                    className="team-frame-overlay"
+                  />
+                </div>
+
+                <div className="team-member-info">
+                  <h3 className="team-member-name">{autor.nombre}</h3>
+                  <p className="team-member-career">{autor.carrera}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
       </div>
 
       {/* BANNER INFERIOR DE ACCIÓN */}

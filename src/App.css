@@ -1591,8 +1591,15 @@
 /* SECCIÓN SOBRE ÓRBITA ÉTICA (CARDS CÁLIDAS CON BORDE ACENTUADO)*/
 /* ============================================================ */
 .about-view {
-  max-width: 1060px;
+  max-width: 1080px;
   margin: 0 auto;
+  padding: 2.25rem 2.25rem 3rem 2.25rem;
+  border-radius: 18px;
+  border: 1px solid var(--border-color);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
 }
 
 .about-grid-layout {
@@ -1675,6 +1682,148 @@
   border-top: 5px solid var(--accent-amber);
 }
 
+/* ============================================================ */
+/* SECCIÓN DE AUTORES / EQUIPO EN SOBRE ÓRBITA ÉTICA            */
+/* ============================================================ */
+.about-team-section {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(214, 211, 201, 0.6);
+}
+
+.about-team-header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.about-team-header h2 {
+  font-family: var(--font-sans);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 6px 0;
+}
+
+.about-team-header p {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.about-team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.team-member-card {
+  background-color: #EDE5D8;
+  border: 1px solid var(--border-color);
+  border-top: 5px solid var(--accent-amber);
+  border-radius: 12px;
+  padding: 24px 20px 22px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-member-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(70, 40, 15, 0.12);
+  border-top-color: #92400E;
+}
+
+/* MARCO CUADRADO */
+.team-frame-container {
+  position: relative;
+  width: 170px;
+  height: 202px;
+  margin: 0 auto 16px auto;
+  flex-shrink: 0;
+  transition: transform 0.28s ease;
+}
+
+.team-member-card:hover .team-frame-container {
+  transform: scale(1.03);
+}
+
+.team-frame-inner {
+  position: absolute;
+  top: 7.5%;
+  left: 9%;
+  width: 81.5%;
+  height: 84.5%;
+  border-radius: 4px;
+  overflow: hidden;
+  background: radial-gradient(circle at center, #1E293B, #0B1120);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.team-frame-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.team-placeholder-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: #D97706;
+}
+
+.team-placeholder-inner span {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.team-frame-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 2;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35));
+}
+
+.team-member-info {
+  text-align: center;
+  width: 100%;
+}
+
+.team-member-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 4px 0;
+}
+
+.team-member-career {
+  font-size: 0.88rem;
+  color: var(--accent-amber);
+  font-weight: 600;
+  margin: 0;
+}
+
 @media (max-width: 960px) {
   .about-subgrid {
     grid-template-columns: 1fr;
@@ -1687,6 +1836,18 @@
 
   .about-card-main h2 {
     font-size: 1.3rem;
+  }
+
+  .about-team-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-view {
+    padding: 1.5rem 1rem 2rem 1rem;
+    border-radius: 12px;
   }
 }
 
