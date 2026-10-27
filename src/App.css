@@ -1588,25 +1588,89 @@
 }
 
 /* ============================================================ */
-/* SECCIÓN SOBRE ÓRBITA ÉTICA (CARDS CÁLIDAS CON BORDE ACENTUADO)*/
+/* SECCIÓN SOBRE ÓRBITA ÉTICA (FULLBLEED DE BORDE A BORDE)      */
 /* ============================================================ */
-.about-view {
+.about-view-fullbleed {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: -2.5rem;
+  margin-bottom: -4rem;
+  padding: 3.5rem 1.5rem 5rem 1.5rem;
+  min-height: calc(100vh - 78px);
+  overflow: hidden;
+}
+
+.about-bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  filter: brightness(0.92) contrast(0.94) blur(1.5px);
+  transform: scale(1.02);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.about-bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 12, 8, 0.28) 0%,
+    rgba(15, 12, 8, 0.42) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.about-content-inner {
+  position: relative;
+  z-index: 2;
   max-width: 1080px;
   margin: 0 auto;
-  padding: 2.25rem 2.25rem 3rem 2.25rem;
-  border-radius: 18px;
+}
+
+.about-title-block {
+  background-color: rgba(237, 229, 216, 0.94);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid var(--border-color);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+  border-left: 5px solid var(--accent-amber);
+  border-radius: 12px;
+  padding: 24px 30px;
+  margin-bottom: 24px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-title-block h1 {
+  margin: 0 0 8px 0;
+  font-size: 2.1rem;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.about-title-block p {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
 }
 
 .about-grid-layout {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-top: 1.75rem;
 }
 
 .about-card {
@@ -1617,12 +1681,13 @@
   position: relative;
   overflow: hidden;
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 .about-card:hover {
   transform: translateY(-3px);
   border-color: var(--border-strong);
-  box-shadow: 0 14px 30px rgba(70, 40, 15, 0.12), 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 14px 30px rgba(70, 40, 15, 0.16);
 }
 
 .about-card h2 {
@@ -1686,29 +1751,34 @@
 /* SECCIÓN DE AUTORES / EQUIPO EN SOBRE ÓRBITA ÉTICA            */
 /* ============================================================ */
 .about-team-section {
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid rgba(214, 211, 201, 0.6);
+  margin-top: 1.25rem;
 }
 
 .about-team-header {
-  margin-bottom: 1.5rem;
-  text-align: center;
+  background-color: rgba(237, 229, 216, 0.94);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-left: 5px solid var(--accent-amber);
+  border-radius: 12px;
+  padding: 18px 24px;
+  margin-bottom: 22px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 
 .about-team-header h2 {
   font-family: var(--font-sans);
-  font-size: 1.35rem;
+  font-size: 1.28rem;
   font-weight: 700;
   color: var(--text-primary);
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 10px;
-  margin: 0 0 6px 0;
+  margin: 0 0 4px 0;
 }
 
 .about-team-header p {
-  font-size: 0.92rem;
+  font-size: 0.90rem;
   color: var(--text-secondary);
   margin: 0;
 }
@@ -1731,11 +1801,12 @@
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 .team-member-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 14px 30px rgba(70, 40, 15, 0.12);
+  box-shadow: 0 14px 30px rgba(70, 40, 15, 0.16);
   border-top-color: #92400E;
 }
 
@@ -1825,6 +1896,12 @@
 }
 
 @media (max-width: 960px) {
+  .about-view-fullbleed {
+    margin-top: -24px;
+    margin-bottom: -52px;
+    padding: 2.25rem 1.25rem 3.5rem 1.25rem;
+  }
+
   .about-subgrid {
     grid-template-columns: 1fr;
     gap: 18px;
@@ -1845,9 +1922,18 @@
 }
 
 @media (max-width: 600px) {
-  .about-view {
-    padding: 1.5rem 1rem 2rem 1rem;
-    border-radius: 12px;
+  .about-view-fullbleed {
+    margin-top: -18px;
+    margin-bottom: -42px;
+    padding: 1.75rem 0.9rem 2.5rem 0.9rem;
+  }
+
+  .about-title-block {
+    padding: 18px 20px;
+  }
+
+  .about-title-block h1 {
+    font-size: 1.6rem;
   }
 }
 
