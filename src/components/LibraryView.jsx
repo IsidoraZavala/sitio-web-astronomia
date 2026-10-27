@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { TypewriterTitle } from './TypewriterTitle'
 import { AUTORES_BIBLIOTECA } from '../data/autoresBibliotecaData'
 
@@ -12,6 +12,14 @@ const resolverRutaImagen = (ruta) => {
 
 export function LibraryView() {
   const [filtroDirectriz, setFiltroDirectriz] = useState('todas')
+  const scrollContainerRef = useRef(null)
+
+  const cambiarFiltro = (nuevoFiltro) => {
+    setFiltroDirectriz(nuevoFiltro)
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }
 
   const autoresFiltrados =
     filtroDirectriz === 'todas'
@@ -19,17 +27,17 @@ export function LibraryView() {
       : AUTORES_BIBLIOTECA.filter((a) => a.directrizId === filtroDirectriz)
 
   const rutaMarcoDorado = resolverRutaImagen('images/filosofos/marco_2_ovalado.png')
-  const rutaFondo = resolverRutaImagen('images/filosofos/vertical2.jpg')
+  const rutaFondo = encodeURI(resolverRutaImagen('images/filosofos/La Escuela de Atenas.jpg'))
 
   return (
     <div className="library-view-fullbleed">
-      {/* CAPA DE FONDO CON FOTO FILOSÓFICA VERTICAL EN SU COLOR NATURAL SUAVIZADA */}
+      {/* CAPA DE FONDO CON LA ESCUELA DE ATENAS EN SU COLOR NATURAL SUAVIZADA */}
       <div
         className="library-bg-layer"
         style={{ backgroundImage: `url("${rutaFondo}")` }}
       />
 
-      {/* CONTENIDO CENTRADO CON TARJETAS LEVEMENTE TRANSLÚCIDAS */}
+      {/* CONTENIDO CENTRADO CON DESLIZADOR INTERNO */}
       <div className="library-content-inner">
         <div className="library-title-block">
           <TypewriterTitle as="h1" text="Perspectivas éticas y autores" speed={24} />
@@ -43,85 +51,87 @@ export function LibraryView() {
             <button
               className={`filter-btn ${filtroDirectriz === 'todas' ? 'active' : ''}`}
               aria-pressed={filtroDirectriz === 'todas'}
-              onClick={() => setFiltroDirectriz('todas')}
+              onClick={() => cambiarFiltro('todas')}
             >
               Todos los autores ({AUTORES_BIBLIOTECA.length})
             </button>
             <button
               className={`filter-btn ${filtroDirectriz === 'ambiental' ? 'active' : ''}`}
               aria-pressed={filtroDirectriz === 'ambiental'}
-              onClick={() => setFiltroDirectriz('ambiental')}
+              onClick={() => cambiarFiltro('ambiental')}
             >
               Preservación ambiental espacial (3)
             </button>
             <button
               className={`filter-btn ${filtroDirectriz === 'uso-espacio' ? 'active' : ''}`}
               aria-pressed={filtroDirectriz === 'uso-espacio'}
-              onClick={() => setFiltroDirectriz('uso-espacio')}
+              onClick={() => cambiarFiltro('uso-espacio')}
             >
               Uso de bienes y propiedad (3)
             </button>
             <button
               className={`filter-btn ${filtroDirectriz === 'animales' ? 'active' : ''}`}
               aria-pressed={filtroDirectriz === 'animales'}
-              onClick={() => setFiltroDirectriz('animales')}
+              onClick={() => cambiarFiltro('animales')}
             >
               Bioética y uso de animales (4)
             </button>
           </div>
         </div>
 
-        {/* GALERÍA DE AUTORES EN HILERAS DE 3 CON MARCO ANTIGUO DORADO */}
-        <div className="authors-grid-three-col">
-          {autoresFiltrados.map((autor) => {
-            const urlFoto = autor.fotoUrl ? resolverRutaImagen(autor.fotoUrl) : ''
-            const iniciales = autor.nombre
-              .split(' ')
-              .map((n) => n[0])
-              .join('')
-              .slice(0, 2)
+        {/* CONTENEDOR CON DESLIZADOR INTERNO PARA VER LOS FILÓSOFOS AL BAJAR */}
+        <div className="authors-scroll-container" ref={scrollContainerRef}>
+          <div className="authors-grid-three-col">
+            {autoresFiltrados.map((autor) => {
+              const urlFoto = autor.fotoUrl ? resolverRutaImagen(autor.fotoUrl) : ''
+              const iniciales = autor.nombre
+                .split(' ')
+                .map((n) => n[0])
+                .join('')
+                .slice(0, 2)
 
-            return (
-              <article key={autor.id} className="author-museum-card">
-                {/* RETRATO OVALADO CON EL MARCO ANTIGUO DORADO */}
-                <div className="author-frame-container">
-                  <div className="author-frame-inner">
-                    {urlFoto ? (
-                      <img
-                        src={urlFoto}
-                        alt={autor.nombre}
-                        onError={(e) => {
-                          e.currentTarget.style.display = 'none'
-                          if (e.currentTarget.nextElementSibling) {
-                            e.currentTarget.nextElementSibling.style.display = 'block'
-                          }
-                        }}
-                      />
-                    ) : null}
-                    <span
-                      className="author-initials-fallback"
-                      style={{ display: urlFoto ? 'none' : 'block' }}
-                    >
-                      {iniciales}
-                    </span>
+              return (
+                <article key={autor.id} className="author-museum-card">
+                  {/* RETRATO OVALADO CON EL MARCO ANTIGUO DORADO */}
+                  <div className="author-frame-container">
+                    <div className="author-frame-inner">
+                      {urlFoto ? (
+                        <img
+                          src={urlFoto}
+                          alt={autor.nombre}
+                          onError={(e) => {
+                            e.currentTarget.style.display = 'none'
+                            if (e.currentTarget.nextElementSibling) {
+                              e.currentTarget.nextElementSibling.style.display = 'block'
+                            }
+                          }}
+                        />
+                      ) : null}
+                      <span
+                        className="author-initials-fallback"
+                        style={{ display: urlFoto ? 'none' : 'block' }}
+                      >
+                        {iniciales}
+                      </span>
+                    </div>
+
+                    {/* SUPERPOSICIÓN DEL MARCO DORADO ANTIGUO */}
+                    <img
+                      src={rutaMarcoDorado}
+                      alt="Marco antiguo dorado ovalado"
+                      className="author-frame-overlay"
+                    />
                   </div>
 
-                  {/* SUPERPOSICIÓN DEL MARCO DORADO ANTIGUO */}
-                  <img
-                    src={rutaMarcoDorado}
-                    alt="Marco antiguo dorado ovalado"
-                    className="author-frame-overlay"
-                  />
-                </div>
-
-                {/* CONTENIDO: NOMBRE Y PÁRRAFO ÚNICO */}
-                <div className="author-card-content">
-                  <h2 className="author-card-title">{autor.nombre}</h2>
-                  <p className="author-card-posture">{autor.posturaResumida}</p>
-                </div>
-              </article>
-            )
-          })}
+                  {/* CONTENIDO: NOMBRE Y PÁRRAFO ÚNICO */}
+                  <div className="author-card-content">
+                    <h2 className="author-card-title">{autor.nombre}</h2>
+                    <p className="author-card-posture">{autor.posturaResumida}</p>
+                  </div>
+                </article>
+              )
+            })}
+          </div>
         </div>
       </div>
     </div>
