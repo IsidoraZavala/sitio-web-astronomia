@@ -344,8 +344,8 @@
 .journey-card-top h2 { font-size: 28px; }
 .journey-extra-notes { font-size: 13px; }
 .journey-card-actions { margin-top: 24px; }
-.solid-footer { background: var(--bg-page); padding: 28px 40px; font-size: 11px; letter-spacing: .02em; }
-.solid-footer strong { color: var(--text-primary); font-family: var(--font-serif); font-size: 17px; margin-right: 12px; }
+.solid-footer { background: #060B18; border-top: 1px solid #141E2E; padding: 28px 40px; font-size: 11px; letter-spacing: .02em; color: #94A3B8; }
+.solid-footer strong { color: #F8FAFC; font-family: var(--font-serif); font-size: 17px; margin-right: 12px; }
 @media (max-width: 1150px) {
   .navbar-inner { gap: 15px; padding: 20px 28px; }
   .nav-item-btn { padding: 10px 8px; font-size: 11px; }
