@@ -147,7 +147,7 @@ function App() {
         </div>
       </header>
 
-      <main className="main-content-wrapper">
+      <main className={`main-content-wrapper ${seccionActiva === 'proyecto' ? 'main-project-fullbleed' : ''}`}>
         {seccionActiva === 'inicio' && (
           <HomeView
             onExploreDilemmas={() => navegarSeccion('catalogo')}

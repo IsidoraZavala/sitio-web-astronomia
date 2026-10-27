@@ -1590,15 +1590,20 @@
 /* ============================================================ */
 /* SECCIÓN SOBRE ÓRBITA ÉTICA (FULLBLEED DE BORDE A BORDE)      */
 /* ============================================================ */
+.main-project-fullbleed {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  background-color: #060B18 !important;
+}
+
 .about-view-fullbleed {
   position: relative;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  margin-top: -2.5rem;
-  margin-bottom: -4rem;
-  padding: 3.5rem 1.5rem 5rem 1.5rem;
-  min-height: calc(100vh - 78px);
+  width: 100%;
+  margin: 0;
+  padding: 3.5rem 1.5rem 4.5rem 1.5rem;
+  min-height: calc(100vh - 140px);
   overflow: hidden;
   background-color: #060B18;
 }
@@ -1612,25 +1617,9 @@
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  filter: brightness(0.85) contrast(0.96) blur(1.5px);
+  filter: brightness(0.96) contrast(0.96) blur(1.5px);
   transform: scale(1.02);
   z-index: 0;
-  pointer-events: none;
-}
-
-.about-bg-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(6, 12, 26, 0.76) 0%,
-    rgba(8, 16, 36, 0.84) 50%,
-    rgba(5, 10, 22, 0.92) 100%
-  );
-  z-index: 1;
   pointer-events: none;
 }
 
@@ -1642,15 +1631,15 @@
 }
 
 .about-title-block {
-  background-color: rgba(237, 229, 216, 0.88);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(214, 211, 201, 0.8);
+  background-color: rgba(237, 229, 216, 0.70);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(214, 211, 201, 0.6);
   border-left: 5px solid var(--accent-amber);
   border-radius: 12px;
   padding: 24px 30px;
   margin-bottom: 24px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .about-title-block h1 {
@@ -1676,23 +1665,23 @@
 }
 
 .about-card {
-  background-color: rgba(237, 229, 216, 0.88);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(214, 211, 201, 0.8);
+  background-color: rgba(237, 229, 216, 0.70);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(214, 211, 201, 0.6);
   border-radius: 12px;
   padding: 26px 28px;
   position: relative;
   overflow: hidden;
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .about-card:hover {
   transform: translateY(-3px);
-  background-color: rgba(240, 233, 222, 0.93);
+  background-color: rgba(240, 233, 222, 0.82);
   border-color: var(--border-strong);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
 }
 
 .about-card h2 {
@@ -1760,15 +1749,15 @@
 }
 
 .about-team-header {
-  background-color: rgba(237, 229, 216, 0.88);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(214, 211, 201, 0.8);
+  background-color: rgba(237, 229, 216, 0.70);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(214, 211, 201, 0.6);
   border-left: 5px solid var(--accent-amber);
   border-radius: 12px;
   padding: 18px 24px;
   margin-bottom: 22px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .about-team-header h2 {
@@ -1795,10 +1784,10 @@
 }
 
 .team-member-card {
-  background-color: rgba(237, 229, 216, 0.88);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(214, 211, 201, 0.8);
+  background-color: rgba(237, 229, 216, 0.70);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(214, 211, 201, 0.6);
   border-top: 5px solid var(--accent-amber);
   border-radius: 12px;
   padding: 24px 20px 22px 20px;
@@ -1808,7 +1797,14 @@
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.team-member-card:hover {
+  transform: translateY(-3px);
+  background-color: rgba(240, 233, 222, 0.82);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
+  border-top-color: #92400E;
 }
 
 .team-member-card:hover {
@@ -2005,4 +2001,9 @@
   text-align: center;
   font-size: 0.86rem;
   color: #94A3B8;
+  margin: 0;
+}
+
+.solid-footer p {
+  margin: 0;
 }

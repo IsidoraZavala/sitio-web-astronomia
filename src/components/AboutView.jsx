@@ -43,14 +43,13 @@ export function AboutView() {
 
   return (
     <div className="about-view-fullbleed">
-      {/* CAPA DE FONDO CON IMAGEN FILOSÓFICA SUAVIZADA (SIN CAPA BLANCA) */}
+      {/* CAPA DE FONDO CON IMAGEN FILOSÓFICA EN SU COLOR NATURAL SUAVIZADA */}
       <div
         className="about-bg-layer"
         style={{ backgroundImage: `url("${rutaFondo}")` }}
       />
-      <div className="about-bg-overlay" />
 
-      {/* CONTENIDO CENTRADO Y NÍTIDO */}
+      {/* CONTENIDO CENTRADO CON BLOQUES LEVEMENTE TRANSLÚCIDOS */}
       <div className="about-content-inner">
         {/* BLOQUE DE TÍTULO */}
         <div className="about-title-block">
