@@ -1,6 +1,17 @@
 // Imágenes de respaldo de altísima resolución seleccionadas de NASA APOD y Archivo Oficial James Webb/Hubble
 export const APOD_CURADAS = [
   {
+    id: 'mars-cloud-apod-today',
+    title: 'A Long Cloud on Mars',
+    date: 'NASA APOD · 2026-11-02',
+    credit: 'ESA, DLR, FU Berlin; Processing & License: J. Cowart',
+    copyright: 'ESA, DLR, FU Berlin; Processing & License: J. Cowart',
+    url: 'https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/MonsCloud_MarsExpress_1920.jpg?w=1920&h=1200&fit=clip&crop=faces%2Cfocalpoint',
+    hdurl: 'https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/MonsCloud_MarsExpress_1920.jpg?w=1920&h=1200&fit=clip&crop=faces%2Cfocalpoint',
+    explanation:
+      '¿Qué causa esta inusual nube alargada en Marte? Conocida como la Nube Alargada de Arsia Mons (AMEC), se forma cerca del volcán Arsia Mons durante las mañanas de primavera y verano marcianos, extendiéndose a favor del viento por más de 1.500 kilómetros a través de la atmósfera del planeta rojo.',
+  },
+  {
     id: 'wolf-rayet-140',
     title: 'Anillos de polvo en el sistema binario Wolf-Rayet 140 (Telescopio James Webb)',
     date: 'NASA / Telescopio Espacial James Webb (MIRI)',

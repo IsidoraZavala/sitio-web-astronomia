@@ -2,21 +2,15 @@ export function NasaAnimalResearchCardVisual() {
   return (
     <div className="dilemma-card-img-wrapper">
       <img
-        src="https://images-assets.nasa.gov/image/S61-00813/S61-00813~medium.jpg"
-        alt="Cápsula de vuelo biomédico Mercury-Redstone 2 (NASA)"
+        src="https://images-assets.nasa.gov/image/S61-00203/S61-00203~medium.jpg"
+        alt="Chimpancé Ham y cápsula de ensayo biomédico (NASA, Proyecto Mercury)"
         onError={(e) => {
           e.currentTarget.src =
-            'https://images-assets.nasa.gov/image/ARC-1961-A-27986/ARC-1961-A-27986~medium.jpg'
+            'https://images-assets.nasa.gov/image/g61-00337/g61-00337~medium.jpg'
         }}
         className="dilemma-card-img"
-        style={{ objectPosition: 'center 35%' }}
+        style={{ objectPosition: 'center 25%' }}
       />
-      <span className="dilemma-card-source-tag">nasa.gov</span>
-      <div className="dilemma-card-bookmark-btn" aria-hidden="true">
-        <svg width="12" height="13" viewBox="0 0 12 14" fill="#FFFFFF">
-          <path d="M1 1a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v12.2a.5.5 0 0 1-.8.4L6 10.3l-4.2 3.3a.5.5 0 0 1-.8-.4V1z" />
-        </svg>
-      </div>
     </div>
   )
 }

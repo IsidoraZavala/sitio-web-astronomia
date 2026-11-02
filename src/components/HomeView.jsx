@@ -21,19 +21,41 @@ export function HomeView({
     let cancelado = false
     const fetchApod = async () => {
       try {
-        const res = await fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+        // Nueva API oficial de NASA Science para Astronomy Picture of the Day (APOD)
+        const res = await fetch('https://science.nasa.gov/wp-json/wp/v2/apod-basic/?per_page=1')
         if (!res.ok) throw new Error('Status ' + res.status)
-        const data = await res.json()
-        if (
-          !cancelado &&
-          data.media_type === 'image' &&
-          data.url &&
-          !data.url.includes('nasa-logo')
-        ) {
-          setApod(data)
+        const list = await res.json()
+        const data = Array.isArray(list) ? list[0] : list
+
+        if (!cancelado && data && (data.hdurl || data.url)) {
+          const cleanExplanation = (data.explanation || '')
+            .replace(/<[^>]+>/g, ' ')
+            .replace(/\s+/g, ' ')
+            .trim()
+            .replace(/^Explanation:\s*/i, '')
+            .replace(/Tomorrow'?s picture:.*$/i, '')
+            .trim()
+
+          const cleanCopyright = (data.copyright || data.credit || '')
+            .replace(/<[^>]+>/g, ' ')
+            .replace(/\s+/g, ' ')
+            .trim()
+
+          const imageUrl = data.hdurl || data.url
+
+          setApod({
+            title: data.title || 'Foto Astronómica del Día',
+            date: data.date ? `NASA APOD · ${data.date}` : 'NASA APOD',
+            credit: cleanCopyright,
+            copyright: cleanCopyright,
+            url: imageUrl,
+            hdurl: imageUrl,
+            permalink: data.permalink || data.url,
+            explanation: cleanExplanation,
+          })
         }
-      } catch {
-        // En caso de tasa límite o sin conexión, se mantiene la imagen curada oficial de NASA
+      } catch (err) {
+        console.warn('Fallo al obtener NASA APOD de la nueva API, usando respaldo curado:', err)
       }
     }
     fetchApod()
