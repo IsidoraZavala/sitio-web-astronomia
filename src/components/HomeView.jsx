@@ -2,10 +2,6 @@ import { useState, useEffect } from 'react'
 import {
   IconBook,
   IconChatBranch,
-  IconCheckCircle,
-  IconCompass,
-  IconGlobe,
-  IconShieldQuestion,
 } from './Icons'
 import { NasaTracesCardVisual } from './NasaTracesCardVisual'
 import { NasaAsteroidMonitorVisual } from './NasaAsteroidMonitorVisual'
@@ -139,66 +135,14 @@ export function HomeView({
         </div>
       </section>
 
-      {/* RUTA VISUAL EN 5 PASOS CON ICONOS FLOTANTES */}
-      <section style={{ marginTop: '3.5rem', marginBottom: '3.5rem' }}>
-        <div className="section-heading-block" style={{ textAlign: 'center' }}>
-          <TypewriterTitle
-            as="h2"
-            text="Ruta de deliberación en 5 pasos"
-            speed={28}
-          />
-        </div>
-
-        <div className="steps-floating-grid">
-          <div className="step-floating-item">
-            <div className="step-floating-icon-wrap">
-              <div className="step-floating-icon">
-                <IconGlobe size={28} />
-              </div>
-              <span className="step-floating-badge">1</span>
-            </div>
-            <span className="step-floating-title">1. El dilema</span>
-          </div>
-
-          <div className="step-floating-item">
-            <div className="step-floating-icon-wrap">
-              <div className="step-floating-icon">
-                <IconChatBranch size={28} />
-              </div>
-              <span className="step-floating-badge">2</span>
-            </div>
-            <span className="step-floating-title">2. Diálogo</span>
-          </div>
-
-          <div className="step-floating-item">
-            <div className="step-floating-icon-wrap">
-              <div className="step-floating-icon">
-                <IconCompass size={28} />
-              </div>
-              <span className="step-floating-badge">3</span>
-            </div>
-            <span className="step-floating-title">3. Perspectivas</span>
-          </div>
-
-          <div className="step-floating-item">
-            <div className="step-floating-icon-wrap">
-              <div className="step-floating-icon">
-                <IconShieldQuestion size={28} />
-              </div>
-              <span className="step-floating-badge">4</span>
-            </div>
-            <span className="step-floating-title">4. Objeciones</span>
-          </div>
-
-          <div className="step-floating-item">
-            <div className="step-floating-icon-wrap">
-              <div className="step-floating-icon">
-                <IconCheckCircle size={28} />
-              </div>
-              <span className="step-floating-badge">5</span>
-            </div>
-            <span className="step-floating-title">5. Cierre</span>
-          </div>
+      {/* CITA EDITORIAL: NEIL DEGRASSE TYSON */}
+      <section className="quote-interlude-single">
+        <span className="quote-interlude-kicker">UNA IDEA PARA DETENERSE</span>
+        <blockquote className="quote-interlude-text">
+          «No hay vergüenza en no saber. El problema surge cuando el pensamiento irracional llena ese vacío».
+        </blockquote>
+        <div className="quote-interlude-author">
+          Neil deGrasse Tyson
         </div>
       </section>
 
@@ -290,95 +234,26 @@ export function HomeView({
         </div>
       </section>
 
-      {/* SECCIÓN DE GRANDES DIVULGADORES CIENTÍFICOS */}
-      <section className="home-quotes-section">
-        <div className="section-heading-block">
-          <span className="section-kicker">Pensamiento crítico y ética de la exploración</span>
-          <TypewriterTitle
-            as="h2"
-            text="Voces de la ciencia y la filosofía"
-            speed={28}
-          />
-          <p>
-            Reflexiones de grandes divulgadores e investigadores sobre la razón, el coraje de cuestionar y la responsabilidad humana ante el cosmos.
-          </p>
+      {/* CITAS EDITORIALES DEBAJO DE LAS TARJETAS DE DILEMAS */}
+      <section className="quotes-interlude-pair">
+        <div className="quote-interlude-col">
+          <span className="quote-interlude-kicker">UNA IDEA PARA DETENERSE</span>
+          <blockquote className="quote-interlude-text">
+            «Si anhelamos que nuestro planeta sea importante, hay algo que podemos hacer al respecto: hacemos que nuestro mundo sea significativo por el valor de nuestras preguntas y por la profundidad de nuestras respuestas».
+          </blockquote>
+          <div className="quote-interlude-author">
+            Carl Sagan
+          </div>
         </div>
 
-        <div className="home-quotes-grid">
-          {/* CITA 1: GALILEO GALILEI */}
-          <article className="home-quote-card">
-            <div className="quote-card-header">
-              <span className="quote-card-badge">Razón e Independencia</span>
-              <span className="quote-mark-icon" aria-hidden="true">“</span>
-            </div>
-            <div className="quote-card-body">
-              <blockquote className="quote-text-primary">
-                «[...] in matters of knowledge the authority of a thousand people’s opinion is not equal to the spark of reason of a single individual».
-              </blockquote>
-              <p className="quote-text-translation">
-                «En cuestiones de conocimiento, la autoridad de la opinión de mil personas no equivale al destello de razón de un solo individuo».
-              </p>
-            </div>
-            <footer className="quote-card-footer">
-              <div className="quote-author-name">Galileo Galilei</div>
-              <div className="quote-author-work">
-                <em>On Sunspots</em>, carta: <em>“Third letter of Signor Galileo Galilei to Signor Marc Welser about the solar spots...”</em>, p. 266.
-              </div>
-              <div className="quote-apa-ref">
-                <strong>Ref. APA 7:</strong> Galilei, G., & Scheiner, C. (2010). <em>On Sunspots</em> (E. Reeves & A. Van Helden, Trads.). University of Chicago Press.
-              </div>
-            </footer>
-          </article>
-
-          {/* CITA 2: CARL SAGAN */}
-          <article className="home-quote-card">
-            <div className="quote-card-header">
-              <span className="quote-card-badge">Responsabilidad Planetaria</span>
-              <span className="quote-mark-icon" aria-hidden="true">“</span>
-            </div>
-            <div className="quote-card-body">
-              <blockquote className="quote-text-primary">
-                «If we long for our planet to be important, there is something we can do about it. We make our world significant by the courage of our questions and by the depth of our answers».
-              </blockquote>
-              <p className="quote-text-translation">
-                «Si anhelamos que nuestro planeta sea importante, hay algo que podemos hacer al respecto: hacemos que nuestro mundo sea significativo por el valor de nuestras preguntas y por la profundidad de nuestras respuestas».
-              </p>
-            </div>
-            <footer className="quote-card-footer">
-              <div className="quote-author-name">Carl Sagan</div>
-              <div className="quote-author-work">
-                <em>Cosmos</em>, capítulo: <em>“The Backbone of Night”</em>, p. 160.
-              </div>
-              <div className="quote-apa-ref">
-                <strong>Ref. APA 7:</strong> Sagan, C. (1980). <em>Cosmos</em>. Random House.
-              </div>
-            </footer>
-          </article>
-
-          {/* CITA 3: NEIL DEGRASSE TYSON */}
-          <article className="home-quote-card">
-            <div className="quote-card-header">
-              <span className="quote-card-badge">Conocimiento y Ética</span>
-              <span className="quote-mark-icon" aria-hidden="true">“</span>
-            </div>
-            <div className="quote-card-body">
-              <blockquote className="quote-text-primary">
-                «[...] there is no shame in not knowing. The problem arises when irrational thought and attendant behavior fill vacuum left by ignorance».
-              </blockquote>
-              <p className="quote-text-translation">
-                «[...] no hay vergüenza en no saber. El problema surge cuando el pensamiento irracional y la conducta que lo acompaña llenan el vacío que deja la ignorancia».
-              </p>
-            </div>
-            <footer className="quote-card-footer">
-              <div className="quote-author-name">Neil deGrasse Tyson</div>
-              <div className="quote-author-work">
-                <em>The Sky Is Not The Limit: Adventures of an Urban Astrophysicist</em>, capítulo: <em>“Night Vision”</em>, p. 18.
-              </div>
-              <div className="quote-apa-ref">
-                <strong>Ref. APA 7:</strong> Tyson, N. deG. (2004). <em>The Sky Is Not My Limit: Adventures of an Urban Astrophysicist</em>. Prometheus Books.
-              </div>
-            </footer>
-          </article>
+        <div className="quote-interlude-col">
+          <span className="quote-interlude-kicker">UNA IDEA PARA DETENERSE</span>
+          <blockquote className="quote-interlude-text">
+            «En cuestiones de conocimiento, la autoridad de la opinión de mil personas no equivale al destello de razón de un solo individuo».
+          </blockquote>
+          <div className="quote-interlude-author">
+            Galileo Galilei
+          </div>
         </div>
       </section>
 
