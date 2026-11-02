@@ -3,21 +3,16 @@ import './App.css'
 import './design.css'
 import { AboutView } from './components/AboutView'
 import { CatalogView } from './components/CatalogView'
-import { DilemmaExperience } from './components/DilemmaExperience'
-import { PilotDilemmaExperience } from './components/PilotDilemmaExperience'
 import { EnvironmentalDilemmaExperience } from './components/EnvironmentalDilemmaExperience'
 import { SpaceUseDilemmaExperience } from './components/SpaceUseDilemmaExperience'
 import { AnimalResearchDilemmaExperience } from './components/AnimalResearchDilemmaExperience'
 import { HomeView } from './components/HomeView'
 import {
-  IconBook,
-  IconCheckCircle,
   IconCompass,
   IconGlobe,
   IconHome,
   IconLayers,
 } from './components/Icons'
-import { JourneyView } from './components/JourneyView'
 import { LibraryView } from './components/LibraryView'
 import { DILEMAS_CATALOGO, PERSPECTIVAS_BIBLIOTECA } from './data/dilemasData'
 
@@ -61,11 +56,6 @@ function App() {
     })
   }, [])
 
-  const limpiarTodoElRecorrido = () => {
-    setProgresoGuardado({})
-    localStorage.removeItem(STORAGE_KEY)
-  }
-
   const abrirDilema = (id) => {
     setDilemaActivoId(id)
     setSeccionActiva('experiencia-dilema')
@@ -83,7 +73,6 @@ function App() {
   }
 
   const dilemaSeleccionado = DILEMAS_CATALOGO.find((d) => d.id === dilemaActivoId)
-  const cantidadReflexiones = Object.keys(progresoGuardado).length
 
   return (
     <div className="orbita-app">
@@ -134,15 +123,6 @@ function App() {
             >
               <IconLayers size={14} /> Proyecto
             </button>
-            <button
-              className={`nav-item-btn icon-btn ${seccionActiva === 'recorrido' ? 'active' : ''}`}
-              onClick={() => navegarSeccion('recorrido')}
-            >
-              <IconCheckCircle size={14} /> Mi recorrido
-              {cantidadReflexiones > 0 && (
-                <span className="nav-count-pill">{cantidadReflexiones}</span>
-              )}
-            </button>
           </nav>
         </div>
       </header>
@@ -152,7 +132,7 @@ function App() {
           <HomeView
             onExploreDilemmas={() => navegarSeccion('catalogo')}
             onOpenLibrary={() => navegarSeccion('biblioteca')}
-            onStartFeaturedDilemma={() => abrirDilema('mision-marte')}
+            onStartFeaturedDilemma={() => abrirDilema('huellas-exploracion-espacial')}
             onSelectSpecificDilemma={abrirDilema}
           />
         )}
@@ -178,27 +158,11 @@ function App() {
               onVolverAlCatalogo={() => navegarSeccion('catalogo')}
               onGuardarGlobal={guardarProgresoDilema}
             />
-          ) : dilemaSeleccionado.esDirectrizAnimales || dilemaSeleccionado.id === 'uso-animales-investigacion-espacial' ? (
+          ) : (
             <AnimalResearchDilemmaExperience
               key={dilemaSeleccionado.id}
               onVolverAlCatalogo={() => navegarSeccion('catalogo')}
               onGuardarGlobal={guardarProgresoDilema}
-            />
-          ) : dilemaSeleccionado.esPilotoNuevo || dilemaSeleccionado.id === 'megaconstelaciones-astronomia' ? (
-            <PilotDilemmaExperience
-              key={dilemaSeleccionado.id}
-              onVolverAlCatalogo={() => navegarSeccion('catalogo')}
-              onGuardarGlobal={guardarProgresoDilema}
-            />
-          ) : (
-            <DilemmaExperience
-              key={dilemaSeleccionado.id}
-              dilema={dilemaSeleccionado}
-              progresoInicial={progresoGuardado[dilemaSeleccionado.id]}
-              perspectivasBiblioteca={PERSPECTIVAS_BIBLIOTECA}
-              onSaveProgress={guardarProgresoDilema}
-              onBackToCatalog={() => navegarSeccion('catalogo')}
-              onGoToJourney={() => navegarSeccion('recorrido')}
             />
           )
         )}
@@ -208,15 +172,6 @@ function App() {
             perspectivas={PERSPECTIVAS_BIBLIOTECA}
             onExploreDilemmas={() => navegarSeccion('catalogo')}
             onSelectSpecificDilemma={abrirDilema}
-          />
-        )}
-
-        {seccionActiva === 'recorrido' && (
-          <JourneyView
-            progresoGuardado={progresoGuardado}
-            onOpenDilema={abrirDilema}
-            onClearProgress={limpiarTodoElRecorrido}
-            onExploreDilemmas={() => navegarSeccion('catalogo')}
           />
         )}
 

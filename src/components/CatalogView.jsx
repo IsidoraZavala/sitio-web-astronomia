@@ -48,11 +48,12 @@ export function CatalogView({ dilemas, progresoGuardado, onSelectDilema }) {
                     className="pilot-badge-tag"
                     style={{
                       marginBottom: '10px',
-                      borderColor: 'var(--accent-green)',
-                      color: 'var(--accent-green)',
+                      borderColor: 'rgba(110, 231, 183, 0.45)',
+                      color: '#A7F3D0',
+                      background: 'rgba(110, 231, 183, 0.12)',
                     }}
                   >
-                    Directriz Ambiental · Caso Especial
+                    Ética Ambiental
                   </span>
                 )}
                 {dilema.esDirectrizUsoEspacio && (
@@ -60,11 +61,12 @@ export function CatalogView({ dilemas, progresoGuardado, onSelectDilema }) {
                     className="pilot-badge-tag"
                     style={{
                       marginBottom: '10px',
-                      borderColor: '#D97706',
-                      color: '#D97706',
+                      borderColor: 'rgba(254, 215, 170, 0.45)',
+                      color: '#FED7AA',
+                      background: 'rgba(254, 215, 170, 0.12)',
                     }}
                   >
-                    Uso del Espacio y Propiedad · Nueva Dimensión
+                    Bienes y Propiedad
                   </span>
                 )}
                 {dilema.esDirectrizAnimales && (
@@ -72,16 +74,12 @@ export function CatalogView({ dilemas, progresoGuardado, onSelectDilema }) {
                     className="pilot-badge-tag"
                     style={{
                       marginBottom: '10px',
-                      borderColor: '#DDD6FE',
+                      borderColor: 'rgba(221, 214, 254, 0.45)',
                       color: '#DDD6FE',
+                      background: 'rgba(221, 214, 254, 0.12)',
                     }}
                   >
-                    Bioética Animal · Tercera Directriz
-                  </span>
-                )}
-                {dilema.esPilotoNuevo && (
-                  <span className="pilot-badge-tag" style={{ marginBottom: '10px' }}>
-                    Caso Piloto · Nueva Ruta
+                    Bioética Animal
                   </span>
                 )}
                 <h2>
