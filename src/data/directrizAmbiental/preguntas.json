@@ -19,7 +19,7 @@
       {
         "id": "B",
         "letra": "B",
-        "texto": "Hay que resguardar la pureza de un planeta virgen [Cockell].",
+        "texto": "Hay que resguardar la pureza de un planeta virgen.",
         "cuestionamiento": "Priorizar la pureza intocada de un entorno inerte por sobre el retorno seguro de la tripulación, ¿no implicaría valorar más un paisaje sin vida que la existencia consciente de seres humanos?"
       },
       {
@@ -56,7 +56,7 @@
       {
         "id": "B",
         "letra": "B",
-        "texto": "No tienen una funcionalidad al requerir reparaciones por lo que pueden ser consideradas basura y causa de daño para el paisaje natural del planeta [Patrick Lin].",
+        "texto": "No tienen una funcionalidad al requerir reparaciones por lo que pueden ser consideradas basura y causa de daño para el paisaje natural del planeta.",
         "cuestionamiento": "Calificar de simple basura tecnológica a los módulos pioneros, ¿no significaría borrar la memoria histórica material y el mayor hito de exploración de nuestra especie?"
       },
       {
@@ -68,7 +68,7 @@
       {
         "id": "D",
         "letra": "D",
-        "texto": "Son basura debido a que en el futuro pueden generar polución espacial [Patrick Lin].",
+        "texto": "Son basura debido a que en el futuro pueden generar polución espacial.",
         "cuestionamiento": "Asumir que todo objeto artificial devendrá inevitablemente en polución, ¿justificaría desmantelar o retirar monumentos históricos antes de evaluar protocolos de preservación limpia in situ?"
       }
     ]
@@ -87,7 +87,7 @@
       {
         "id": "A",
         "letra": "A",
-        "texto": "Pagando multas [Newman].",
+        "texto": "Pagando multas.",
         "cuestionamiento": "Pagar multas económicas, ¿no terminaría funcionando como la compra de un 'permiso para contaminar', accesible solo para las naciones o agencias más ricas sin solucionar el daño físico al entorno?"
       },
       {
@@ -105,7 +105,7 @@
       {
         "id": "D",
         "letra": "D",
-        "texto": "El Estado que autoriza la misión debería asegurarse de que durante la misión se cumpla un procedimiento regulado hacia el cuerpo celeste que se visita [Newman].",
+        "texto": "El Estado que autoriza la misión debería asegurarse de que durante la misión se cumpla un procedimiento regulado hacia el cuerpo celeste que se visita.",
         "cuestionamiento": "Si cada Estado nacional fija sus propios procedimientos y regulaciones, ¿cómo evitar que países con estándares ambientales laxos generen una competencia desleal y descuiden el entorno cósmico común?"
       }
     ]
@@ -136,7 +136,7 @@
       {
         "id": "C",
         "letra": "C",
-        "texto": "No, si se desprenden se deben recoger para no dañar el paisaje natural [Patrick Lin].",
+        "texto": "No, si se desprenden se deben recoger para no dañar el paisaje natural.",
         "cuestionamiento": "Destinar tiempo, energía y robots a buscar y recoger piezas dispersadas por kilómetros en la arena marciana, ¿no restaría recursos críticos para el estudio de la habitabilidad y la geología del planeta?"
       },
       {
@@ -167,13 +167,13 @@
       {
         "id": "B",
         "letra": "B",
-        "texto": "Si ignoramos o no nos hacemos responsables con un plan de acción adecuado, estaríamos repitiendo lo que ha sucedido con la biosfera de nuestro planeta [Patrick Lin].",
+        "texto": "Si ignoramos o no nos hacemos responsables con un plan de acción adecuado, estaríamos repitiendo lo que ha sucedido con la biosfera de nuestro planeta.",
         "cuestionamiento": "¿Podemos equiparar mecánicamente la polución en un desierto estéril marciano con la destrucción de la biosfera viva de la Tierra, o sus implicancias éticas responden a categorías distintas?"
       },
       {
         "id": "C",
         "letra": "C",
-        "texto": "Debería implementarse una misión dedicada a limpiar toda la basura espacial dejada en otro cuerpo celeste [Newman].",
+        "texto": "Debería implementarse una misión dedicada a limpiar toda la basura espacial dejada en otro cuerpo celeste.",
         "cuestionamiento": "Enviar naves y cohetes adicionales con el único fin de recoger basura anterior, ¿no generaría en sí mismo un mayor consumo de recursos energéticos y nuevas emisiones contaminantes en la Tierra y el espacio?"
       },
       {
@@ -204,7 +204,7 @@
       {
         "id": "B",
         "letra": "B",
-        "texto": "Tienen un valor intrínseco [Cockell].",
+        "texto": "Tienen un valor intrínseco.",
         "cuestionamiento": "Si reconocemos un valor moral intrínseco a rocas inertes y desiertos vacíos, ¿cómo resolveríamos el conflicto cuando la supervivencia o la expansión humana requiera extraer minerales o agua de esos lugares?"
       },
       {
@@ -216,7 +216,7 @@
       {
         "id": "D",
         "letra": "D",
-        "texto": "Incluso si aún no tenemos un consenso acerca de su valor, debemos ser precavidos y evitar transformar irreversiblemente entornos que no comprendemos en su mayoría [Cockell].",
+        "texto": "Incluso si aún no tenemos un consenso acerca de su valor, debemos ser precavidos y evitar transformar irreversiblemente entornos que no comprendemos en su mayoría.",
         "cuestionamiento": "Un principio de precaución tan estricto ante nuestra ignorancia cósmica, ¿no podría traducirse en una parálisis absoluta que frene cualquier paso audaz en la exploración espacial?"
       }
     ]
