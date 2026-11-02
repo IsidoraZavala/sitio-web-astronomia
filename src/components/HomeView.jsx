@@ -78,7 +78,7 @@ export function HomeView({
                 className="btn-primary btn-lg icon-btn"
                 onClick={() => onSelectSpecificDilemma?.('huellas-exploracion-espacial')}
               >
-                <IconChatBranch size={17} /> Comenzar deliberación →
+                <IconChatBranch size={17} /> Comenzar deliberación
               </button>
             </div>
 
@@ -246,31 +246,12 @@ export function HomeView({
               
               <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: 'auto' }}>
                 <button
-                  style={{
-                    background: 'rgba(110, 231, 183, 0.16)',
-                    color: '#A7F3D0',
-                    border: '1px solid rgba(110, 231, 183, 0.5)',
-                    borderRadius: '8px',
-                    padding: '7px 16px',
-                    fontSize: '11.5px',
-                    fontWeight: 600,
-                    cursor: 'pointer',
-                    width: 'fit-content',
-                    transition: 'all 0.2s ease',
-                  }}
+                  className="btn-primary btn-sm"
                   onClick={() =>
                     onSelectSpecificDilemma?.('huellas-exploracion-espacial')
                   }
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.background = '#A7F3D0'
-                    e.currentTarget.style.color = '#064E3B'
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.background = 'rgba(110, 231, 183, 0.16)'
-                    e.currentTarget.style.color = '#A7F3D0'
-                  }}
                 >
-                  Iniciar recorrido ético
+                  Iniciar deliberación
                 </button>
               </div>
             </div>
@@ -309,31 +290,12 @@ export function HomeView({
               
               <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: 'auto' }}>
                 <button
-                  style={{
-                    background: 'rgba(254, 215, 170, 0.16)',
-                    color: '#FED7AA',
-                    border: '1px solid rgba(254, 215, 170, 0.5)',
-                    borderRadius: '8px',
-                    padding: '7px 16px',
-                    fontSize: '11.5px',
-                    fontWeight: 600,
-                    cursor: 'pointer',
-                    width: 'fit-content',
-                    transition: 'all 0.2s ease',
-                  }}
+                  className="btn-secondary btn-sm"
                   onClick={() =>
                     onSelectSpecificDilemma?.('uso-bienes-materiales-propiedad')
                   }
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.background = '#FED7AA'
-                    e.currentTarget.style.color = '#431407'
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.background = 'rgba(254, 215, 170, 0.16)'
-                    e.currentTarget.style.color = '#FED7AA'
-                  }}
                 >
-                  Iniciar recorrido ético
+                  Iniciar deliberación
                 </button>
               </div>
             </div>
@@ -372,31 +334,12 @@ export function HomeView({
               
               <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: 'auto' }}>
                 <button
-                  style={{
-                    background: 'rgba(221, 214, 254, 0.16)',
-                    color: '#DDD6FE',
-                    border: '1px solid rgba(221, 214, 254, 0.5)',
-                    borderRadius: '8px',
-                    padding: '7px 16px',
-                    fontSize: '11.5px',
-                    fontWeight: 600,
-                    cursor: 'pointer',
-                    width: 'fit-content',
-                    transition: 'all 0.2s ease',
-                  }}
+                  className="btn-primary btn-sm"
                   onClick={() =>
                     onSelectSpecificDilemma?.('uso-animales-investigacion-espacial')
                   }
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.background = '#DDD6FE'
-                    e.currentTarget.style.color = '#2E1065'
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.background = 'rgba(221, 214, 254, 0.16)'
-                    e.currentTarget.style.color = '#DDD6FE'
-                  }}
                 >
-                  Iniciar recorrido ético
+                  Iniciar deliberación
                 </button>
               </div>
             </div>
@@ -413,7 +356,7 @@ export function HomeView({
             <p>Consulta las fichas breves de cada corriente filosófica.</p>
           </div>
           <button className="btn-secondary icon-btn" onClick={onOpenLibrary}>
-            Ver perspectivas →
+            Ver perspectivas
           </button>
         </div>
       </section>

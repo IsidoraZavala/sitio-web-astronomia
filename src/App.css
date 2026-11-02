@@ -116,40 +116,76 @@
   flex: 1;
 }
 
-/* Botones sólidos */
+/* Botones sólidos táctiles con efecto 3D */
 .btn-primary {
-  background-color: var(--primary-solid);
+  background-color: #EA580C;
   color: #FFFFFF;
-  border: 1px solid var(--primary-solid);
+  border: 1px solid #C2410C;
+  box-shadow: 0 4px 0 #9A3412;
   padding: 0.65rem 1.25rem;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  transition: transform 0.08s ease, box-shadow 0.08s ease, background-color 0.15s ease;
 }
 
 .btn-primary:hover:not(:disabled) {
-  background-color: var(--primary-solid-hover);
+  background-color: #F97316;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 0 #9A3412;
+}
+
+.btn-primary:active:not(:disabled) {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #9A3412;
 }
 
 .btn-primary:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
 }
 
 .btn-secondary {
-  background-color: var(--bg-surface);
-  color: var(--text-primary);
-  border: 1px solid var(--border-strong);
+  background-color: #1E293B;
+  color: #F8FAFC;
+  border: 1px solid #334155;
+  box-shadow: 0 4px 0 #0F172A;
   padding: 0.65rem 1.25rem;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  transition: transform 0.08s ease, box-shadow 0.08s ease, background-color 0.15s ease;
 }
 
-.btn-secondary:hover {
-  background-color: var(--bg-subtle);
+.btn-secondary:hover:not(:disabled) {
+  background-color: #334155;
+  color: #FFFFFF;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 0 #0F172A;
+}
+
+.btn-secondary:active:not(:disabled) {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #0F172A;
+}
+
+.btn-secondary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
 }
 
 .btn-lg {

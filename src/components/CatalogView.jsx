@@ -96,8 +96,8 @@ export function CatalogView({ dilemas, progresoGuardado, onSelectDilema }) {
                     {estaCompletado
                       ? 'Revisar deliberación'
                       : enCurso
-                      ? `Continuar en Paso ${momentoActual}`
-                      : 'Iniciar diálogo →'}
+                      ? `Continuar (Paso ${momentoActual})`
+                      : 'Iniciar deliberación'}
                   </button>
                 </div>
               </div>

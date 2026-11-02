@@ -290,7 +290,7 @@ export function AnimalResearchDilemmaExperience({ onVolverAlCatalogo, onGuardarG
         }}
       >
         <button className="text-button icon-btn" onClick={onVolverAlCatalogo}>
-          ← Volver al catálogo de dilemas
+          Volver al catálogo
         </button>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -496,7 +496,7 @@ export function AnimalResearchDilemmaExperience({ onVolverAlCatalogo, onGuardarG
                 setIndicePregunta(0)
               }}
             >
-              Comenzar el recorrido de decisiones ({preguntasData.length} preguntas) →
+              Comenzar decisiones
             </button>
           </div>
 
@@ -569,7 +569,7 @@ export function AnimalResearchDilemmaExperience({ onVolverAlCatalogo, onGuardarG
               onClick={iniciarSalidaInterludio}
               disabled={estaSaliendoInterludio}
             >
-              Continuar ahora →
+              Continuar
             </button>
           </div>
         </div>
@@ -702,7 +702,7 @@ export function AnimalResearchDilemmaExperience({ onVolverAlCatalogo, onGuardarG
           {/* NAVEGACIÓN INFERIOR DE PREGUNTAS */}
           <div className="stage-footer" style={{ marginTop: '30px' }}>
             <button className="btn-secondary icon-btn" onClick={handleAnteriorPregunta}>
-              ← {indicePregunta === 0 ? 'Volver al contexto' : 'Pregunta anterior'}
+              {indicePregunta === 0 ? 'Volver' : 'Anterior'}
             </button>
 
             <button
@@ -711,8 +711,8 @@ export function AnimalResearchDilemmaExperience({ onVolverAlCatalogo, onGuardarG
               disabled={!respuestaSeleccionadaPregunta}
             >
               {indicePregunta === preguntasData.length - 1
-                ? 'Confirmar y pasar a la reflexión filosófica →'
-                : 'Confirmar elección y ver cuestionamiento →'}
+                ? 'Pasar a reflexión'
+                : 'Confirmar respuesta'}
             </button>
           </div>
         </div>
@@ -828,14 +828,14 @@ export function AnimalResearchDilemmaExperience({ onVolverAlCatalogo, onGuardarG
                   setIndicePregunta(preguntasData.length - 1)
                 }}
               >
-                ← Volver a decisiones (Pregunta {preguntasData.length})
+                Volver a decisiones
               </button>
             ) : (
               <button
                 className="btn-secondary icon-btn"
                 onClick={() => setIndiceReflexion((prev) => Math.max(0, prev - 1))}
               >
-                ← Pregunta de reflexión anterior
+                Anterior
               </button>
             )}
 
@@ -844,7 +844,7 @@ export function AnimalResearchDilemmaExperience({ onVolverAlCatalogo, onGuardarG
                 className="btn-primary icon-btn"
                 onClick={() => setIndiceReflexion((prev) => Math.min(reflexionData.length - 1, prev + 1))}
               >
-                Siguiente reflexión ({indiceReflexion + 2}/{reflexionData.length}) →
+                Siguiente
               </button>
             ) : (
               <button
@@ -854,7 +854,7 @@ export function AnimalResearchDilemmaExperience({ onVolverAlCatalogo, onGuardarG
                   setIndiceAfirmacion(0)
                 }}
               >
-                Continuar a la Etapa 4: Test de afinidad ética ({testData.afirmaciones.length} afirmaciones) →
+                Realizar test de afinidad
               </button>
             )}
           </div>
@@ -921,7 +921,7 @@ export function AnimalResearchDilemmaExperience({ onVolverAlCatalogo, onGuardarG
           {/* NAVEGACIÓN TEST */}
           <div className="stage-footer" style={{ marginTop: '36px' }}>
             <button className="btn-secondary icon-btn" onClick={handleAnteriorAfirmacion}>
-              ← {indiceAfirmacion === 0 ? 'Volver a reflexión' : 'Afirmación anterior'}
+              {indiceAfirmacion === 0 ? 'Volver a reflexión' : 'Anterior'}
             </button>
 
             <button
@@ -930,8 +930,8 @@ export function AnimalResearchDilemmaExperience({ onVolverAlCatalogo, onGuardarG
               disabled={!valorSeleccionadoAfirmacion}
             >
               {indiceAfirmacion === testData.afirmaciones.length - 1
-                ? 'Ver afinidades y análisis de autores →'
-                : 'Siguiente afirmación →'}
+                ? 'Ver resultados'
+                : 'Siguiente'}
             </button>
           </div>
         </div>
@@ -1172,14 +1172,14 @@ export function AnimalResearchDilemmaExperience({ onVolverAlCatalogo, onGuardarG
           {/* BOTONES FINALES: FINALIZAR EXPERIENCIA */}
           <div className="stage-footer" style={{ marginTop: '36px' }}>
             <button className="btn-secondary icon-btn" onClick={onVolverAlCatalogo}>
-              ← Volver al catálogo de dilemas
+              Volver a dilemas
             </button>
 
             <button
               className="btn-primary btn-lg icon-btn"
               onClick={onVolverAlCatalogo}
             >
-              Finalizar recorrido ético ✓
+              Finalizar deliberación
             </button>
           </div>
         </div>

@@ -291,7 +291,7 @@ export function EnvironmentalDilemmaExperience({ onVolverAlCatalogo, onGuardarGl
         }}
       >
         <button className="text-button icon-btn" onClick={onVolverAlCatalogo}>
-          ← Volver al catálogo de dilemas
+          Volver al catálogo
         </button>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -464,7 +464,7 @@ export function EnvironmentalDilemmaExperience({ onVolverAlCatalogo, onGuardarGl
                 setIndicePregunta(0)
               }}
             >
-              Comenzar el recorrido de decisiones
+              Comenzar decisiones
             </button>
           </div>
 
@@ -531,7 +531,7 @@ export function EnvironmentalDilemmaExperience({ onVolverAlCatalogo, onGuardarGl
               onClick={iniciarSalidaInterludio}
               disabled={estaSaliendoInterludio}
             >
-              Continuar ahora →
+              Continuar
             </button>
           </div>
         </div>
@@ -657,7 +657,7 @@ export function EnvironmentalDilemmaExperience({ onVolverAlCatalogo, onGuardarGl
           {/* BOTONES ANTERIOR / SIGUIENTE */}
           <div className="stage-footer" style={{ marginTop: '30px' }}>
             <button className="btn-secondary icon-btn" onClick={handleAnteriorPregunta}>
-              ← {indicePregunta === 0 ? 'Volver al contexto' : 'Pregunta anterior'}
+              {indicePregunta === 0 ? 'Volver' : 'Anterior'}
             </button>
 
             <button
@@ -666,8 +666,8 @@ export function EnvironmentalDilemmaExperience({ onVolverAlCatalogo, onGuardarGl
               disabled={!respuestaSeleccionadaPregunta}
             >
               {indicePregunta === preguntasData.length - 1
-                ? 'Pasar a la reflexión personal (3 preguntas) →'
-                : 'Siguiente pregunta →'}
+                ? 'Pasar a reflexión'
+                : 'Siguiente'}
             </button>
           </div>
         </div>
@@ -780,14 +780,14 @@ export function EnvironmentalDilemmaExperience({ onVolverAlCatalogo, onGuardarGl
                   setIndicePregunta(preguntasData.length - 1)
                 }}
               >
-                ← Volver a decisiones (Pregunta 8)
+                Volver a decisiones
               </button>
             ) : (
               <button
                 className="btn-secondary icon-btn"
                 onClick={() => setIndiceReflexion((prev) => Math.max(0, prev - 1))}
               >
-                ← Pregunta de reflexión anterior
+                Anterior
               </button>
             )}
 
@@ -796,7 +796,7 @@ export function EnvironmentalDilemmaExperience({ onVolverAlCatalogo, onGuardarGl
                 className="btn-primary icon-btn"
                 onClick={() => setIndiceReflexion((prev) => Math.min(reflexionData.length - 1, prev + 1))}
               >
-                Siguiente pregunta de reflexión →
+                Siguiente
               </button>
             ) : (
               <button
@@ -806,7 +806,7 @@ export function EnvironmentalDilemmaExperience({ onVolverAlCatalogo, onGuardarGl
                   setIndiceAfirmacion(0)
                 }}
               >
-                Continuar a la Etapa 4: Test de afinidad ética (8 afirmaciones) →
+                Realizar test de afinidad
               </button>
             )}
           </div>
@@ -872,7 +872,7 @@ export function EnvironmentalDilemmaExperience({ onVolverAlCatalogo, onGuardarGl
           {/* BOTONES ANTERIOR / SIGUIENTE */}
           <div className="stage-footer" style={{ marginTop: '36px' }}>
             <button className="btn-secondary icon-btn" onClick={handleAnteriorAfirmacion}>
-              ← {indiceAfirmacion === 0 ? 'Volver a reflexión' : 'Afirmación anterior'}
+              {indiceAfirmacion === 0 ? 'Volver a reflexión' : 'Anterior'}
             </button>
 
             <button
@@ -881,8 +881,8 @@ export function EnvironmentalDilemmaExperience({ onVolverAlCatalogo, onGuardarGl
               disabled={!valorSeleccionadoAfirmacion}
             >
               {indiceAfirmacion === testData.afirmaciones.length - 1
-                ? 'Ver afinidades y citas de autores →'
-                : 'Siguiente afirmación →'}
+                ? 'Ver resultados'
+                : 'Siguiente'}
             </button>
           </div>
         </div>
@@ -1089,15 +1089,15 @@ export function EnvironmentalDilemmaExperience({ onVolverAlCatalogo, onGuardarGl
           {/* BOTONES FINALES */}
           <div className="stage-footer" style={{ marginTop: '30px' }}>
             <button className="btn-secondary icon-btn" onClick={() => setFaseActual('test')}>
-              ← Revisar test de afirmaciones
+              Revisar test
             </button>
 
             <button className="btn-secondary icon-btn" onClick={reiniciarRecorrido}>
-              Reiniciar recorrido ambiental ↻
+              Reiniciar
             </button>
 
             <button className="btn-primary btn-lg icon-btn" onClick={onVolverAlCatalogo}>
-              <IconCompass size={18} /> Explorar otros dilemas espaciales →
+              <IconCompass size={18} /> Volver a dilemas
             </button>
           </div>
         </div>
