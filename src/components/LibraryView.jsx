@@ -42,8 +42,7 @@ export function LibraryView() {
         <div className="library-title-block">
           <TypewriterTitle as="h1" text="Perspectivas éticas y autores" speed={24} />
           <p>
-            Conoce a los autores y pensadores fundamentales que guían la deliberación ética de
-            la exploración espacial humana y sus posturas filosóficas frente a estos desafíos.
+            Autores y pensadores fundamentales que guían la deliberación ética en la exploración espacial humana.
           </p>
 
           {/* FILTROS POR DIRECTRIZ ÉTICA */}
