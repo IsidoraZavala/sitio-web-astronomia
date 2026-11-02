@@ -135,14 +135,14 @@ export function HomeView({
         </div>
       </section>
 
-      {/* CITA EDITORIAL: NEIL DEGRASSE TYSON */}
+      {/* CITA EDITORIAL SUPERIOR: CARL SAGAN */}
       <section className="quote-interlude-single">
-        <span className="quote-interlude-kicker">UNA IDEA PARA DETENERSE</span>
+        <span className="quote-interlude-kicker">En palabras de...</span>
         <blockquote className="quote-interlude-text">
-          «No hay vergüenza en no saber. El problema surge cuando el pensamiento irracional llena ese vacío».
+          «Si anhelamos que nuestro planeta sea importante, hay algo que podemos hacer al respecto: hacemos que nuestro mundo sea significativo por el valor de nuestras preguntas y por la profundidad de nuestras respuestas».
         </blockquote>
         <div className="quote-interlude-author">
-          Neil deGrasse Tyson
+          Carl Sagan
         </div>
       </section>
 
@@ -237,17 +237,15 @@ export function HomeView({
       {/* CITAS EDITORIALES DEBAJO DE LAS TARJETAS DE DILEMAS */}
       <section className="quotes-interlude-pair">
         <div className="quote-interlude-col">
-          <span className="quote-interlude-kicker">UNA IDEA PARA DETENERSE</span>
           <blockquote className="quote-interlude-text">
-            «Si anhelamos que nuestro planeta sea importante, hay algo que podemos hacer al respecto: hacemos que nuestro mundo sea significativo por el valor de nuestras preguntas y por la profundidad de nuestras respuestas».
+            «No hay vergüenza en no saber. El problema surge cuando el pensamiento irracional llena ese vacío».
           </blockquote>
           <div className="quote-interlude-author">
-            Carl Sagan
+            Neil deGrasse Tyson
           </div>
         </div>
 
         <div className="quote-interlude-col">
-          <span className="quote-interlude-kicker">UNA IDEA PARA DETENERSE</span>
           <blockquote className="quote-interlude-text">
             «En cuestiones de conocimiento, la autoridad de la opinión de mil personas no equivale al destello de razón de un solo individuo».
           </blockquote>
