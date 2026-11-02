@@ -1,4 +1,3 @@
-import { IconChatBranch } from './Icons'
 import { NasaTracesCardVisual } from './NasaTracesCardVisual'
 import { NasaAsteroidMonitorVisual } from './NasaAsteroidMonitorVisual'
 import { NasaAnimalResearchCardVisual } from './NasaAnimalResearchCardVisual'
@@ -17,14 +16,10 @@ export function CatalogView({ dilemas, progresoGuardado, onSelectDilema }) {
           const registro = progresoGuardado[dilema.id]
           const estaCompletado = registro?.completado
           const enCurso = registro && !registro.completado
-          const momentoActual = registro?.momentoActual || registro?.etapaActual || 1
 
           return (
             <article key={dilema.id} className="dilemma-catalog-card">
-              <div
-                className="dilemma-card-visual"
-                style={{ background: '#05060A', padding: '12px' }}
-              >
+              <div className="dilemma-card-visual">
                 {dilema.esDirectrizAmbiental ? (
                   <NasaTracesCardVisual />
                 ) : dilema.esDirectrizUsoEspacio ? (
@@ -32,54 +27,22 @@ export function CatalogView({ dilemas, progresoGuardado, onSelectDilema }) {
                 ) : dilema.esDirectrizAnimales ? (
                   <NasaAnimalResearchCardVisual />
                 ) : null}
-                {estaCompletado && (
-                  <span className="dilemma-status-badge status-done">✓ Completado</span>
-                )}
-                {enCurso && (
-                  <span className="dilemma-status-badge status-progress">
-                    Paso {momentoActual}/5
-                  </span>
-                )}
               </div>
 
               <div className="dilemma-card-body">
                 {dilema.esDirectrizAmbiental && (
-                  <span
-                    className="pilot-badge-tag"
-                    style={{
-                      marginBottom: '10px',
-                      borderColor: 'rgba(110, 231, 183, 0.45)',
-                      color: '#A7F3D0',
-                      background: 'rgba(110, 231, 183, 0.12)',
-                    }}
-                  >
-                    Ética Ambiental
+                  <span className="dilemma-category-pill cat-ambiental">
+                    Ética ambiental
                   </span>
                 )}
                 {dilema.esDirectrizUsoEspacio && (
-                  <span
-                    className="pilot-badge-tag"
-                    style={{
-                      marginBottom: '10px',
-                      borderColor: 'rgba(254, 215, 170, 0.45)',
-                      color: '#FED7AA',
-                      background: 'rgba(254, 215, 170, 0.12)',
-                    }}
-                  >
-                    Bienes y Propiedad
+                  <span className="dilemma-category-pill cat-propiedad">
+                    Bienes y propiedad
                   </span>
                 )}
                 {dilema.esDirectrizAnimales && (
-                  <span
-                    className="pilot-badge-tag"
-                    style={{
-                      marginBottom: '10px',
-                      borderColor: 'rgba(221, 214, 254, 0.45)',
-                      color: '#DDD6FE',
-                      background: 'rgba(221, 214, 254, 0.12)',
-                    }}
-                  >
-                    Bioética Animal
+                  <span className="dilemma-category-pill cat-animal">
+                    Bioética animal
                   </span>
                 )}
                 <h2>
@@ -89,14 +52,13 @@ export function CatalogView({ dilemas, progresoGuardado, onSelectDilema }) {
 
                 <div className="dilemma-card-actions">
                   <button
-                    className="btn-primary btn-full icon-btn"
+                    className="dilemma-card-action-btn"
                     onClick={() => onSelectDilema(dilema.id)}
                   >
-                    <IconChatBranch size={16} />
                     {estaCompletado
                       ? 'Revisar deliberación'
                       : enCurso
-                      ? `Continuar (Paso ${momentoActual})`
+                      ? 'Continuar'
                       : 'Iniciar deliberación'}
                   </button>
                 </div>

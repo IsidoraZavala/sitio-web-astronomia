@@ -213,40 +213,21 @@ export function HomeView({
         </div>
 
         <div className="catalog-grid">
-          {/* DILEMA 1: ÉTICA AMBIENTAL (VERDE MENTA PASTEL) */}
-          <article
-            className="dilemma-catalog-card"
-            style={{
-              borderColor: 'rgba(110, 231, 183, 0.45)',
-              boxShadow: '0 4px 20px rgba(110, 231, 183, 0.05)',
-            }}
-          >
-            <div className="dilemma-card-visual" style={{ background: '#05060A', padding: '10px' }}>
+          {/* DILEMA 1: ÉTICA AMBIENTAL */}
+          <article className="dilemma-catalog-card">
+            <div className="dilemma-card-visual">
               <NasaTracesCardVisual />
             </div>
             <div className="dilemma-card-body">
-              <span
-                style={{
-                  alignSelf: 'flex-start',
-                  marginBottom: '10px',
-                  padding: '3px 10px',
-                  fontSize: '11px',
-                  fontWeight: 600,
-                  letterSpacing: '0.04em',
-                  borderRadius: '20px',
-                  background: 'rgba(110, 231, 183, 0.12)',
-                  border: '1px solid rgba(110, 231, 183, 0.35)',
-                  color: '#A7F3D0',
-                }}
-              >
-                Ética Ambiental
+              <span className="dilemma-category-pill cat-ambiental">
+                Ética ambiental
               </span>
               <h2>¿Bajo qué criterios y límites resulta éticamente aceptable alterar o dejar huellas en otros cuerpos celestes, y qué responsabilidades asume la humanidad ante el impacto de su presencia en el espacio?</h2>
               <p>Materiales y residuos en la Luna y Marte: necesidad técnica, valor del entorno y responsabilidad futura.</p>
               
-              <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: 'auto' }}>
+              <div className="dilemma-card-actions">
                 <button
-                  className="btn-primary btn-sm"
+                  className="dilemma-card-action-btn"
                   onClick={() =>
                     onSelectSpecificDilemma?.('huellas-exploracion-espacial')
                   }
@@ -257,40 +238,21 @@ export function HomeView({
             </div>
           </article>
 
-          {/* DILEMA 2: BIENES Y PROPIEDAD (DURAZNO / ÁMBAR PASTEL) */}
-          <article
-            className="dilemma-catalog-card"
-            style={{
-              borderColor: 'rgba(254, 215, 170, 0.45)',
-              boxShadow: '0 4px 20px rgba(254, 215, 170, 0.05)',
-            }}
-          >
-            <div className="dilemma-card-visual" style={{ background: '#05060A', padding: '10px' }}>
+          {/* DILEMA 2: BIENES Y PROPIEDAD */}
+          <article className="dilemma-catalog-card">
+            <div className="dilemma-card-visual">
               <NasaAsteroidMonitorVisual />
             </div>
             <div className="dilemma-card-body">
-              <span
-                style={{
-                  alignSelf: 'flex-start',
-                  marginBottom: '10px',
-                  padding: '3px 10px',
-                  fontSize: '11px',
-                  fontWeight: 600,
-                  letterSpacing: '0.04em',
-                  borderRadius: '20px',
-                  background: 'rgba(254, 215, 170, 0.12)',
-                  border: '1px solid rgba(254, 215, 170, 0.35)',
-                  color: '#FED7AA',
-                }}
-              >
-                Bienes y Propiedad
+              <span className="dilemma-category-pill cat-propiedad">
+                Bienes y propiedad
               </span>
               <h2>¿Qué principios éticos deberían regular el uso de bienes materiales extraterrestres y a qué objetivos deben subordinarse tales bienes?</h2>
               <p>Minería lunar, memoriales privados y soberanía extraterrestre: libertarismo, justicia distributiva y bien común.</p>
               
-              <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: 'auto' }}>
+              <div className="dilemma-card-actions">
                 <button
-                  className="btn-secondary btn-sm"
+                  className="dilemma-card-action-btn"
                   onClick={() =>
                     onSelectSpecificDilemma?.('uso-bienes-materiales-propiedad')
                   }
@@ -301,40 +263,21 @@ export function HomeView({
             </div>
           </article>
 
-          {/* DILEMA 3: BIOÉTICA ANIMAL (LAVANDA PASTEL) */}
-          <article
-            className="dilemma-catalog-card"
-            style={{
-              borderColor: 'rgba(221, 214, 254, 0.45)',
-              boxShadow: '0 4px 20px rgba(221, 214, 254, 0.05)',
-            }}
-          >
-            <div className="dilemma-card-visual" style={{ background: '#05060A', padding: '10px' }}>
+          {/* DILEMA 3: BIOÉTICA ANIMAL */}
+          <article className="dilemma-catalog-card">
+            <div className="dilemma-card-visual">
               <NasaAnimalResearchCardVisual />
             </div>
             <div className="dilemma-card-body">
-              <span
-                style={{
-                  alignSelf: 'flex-start',
-                  marginBottom: '10px',
-                  padding: '3px 10px',
-                  fontSize: '11px',
-                  fontWeight: 600,
-                  letterSpacing: '0.04em',
-                  borderRadius: '20px',
-                  background: 'rgba(221, 214, 254, 0.12)',
-                  border: '1px solid rgba(221, 214, 254, 0.35)',
-                  color: '#DDD6FE',
-                }}
-              >
-                Bioética Animal
+              <span className="dilemma-category-pill cat-animal">
+                Bioética animal
               </span>
               <h2>¿Cómo debe conciliarse el valor moral de los animales con las necesidades científicas y de seguridad de la exploración espacial humana?</h2>
               <p>Vuelos pioneros, adiestramiento aversivo, eutanasia post-misión y el principio de reemplazo: Bentham, Singer, Regan y Nussbaum.</p>
               
-              <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: 'auto' }}>
+              <div className="dilemma-card-actions">
                 <button
-                  className="btn-primary btn-sm"
+                  className="dilemma-card-action-btn"
                   onClick={() =>
                     onSelectSpecificDilemma?.('uso-animales-investigacion-espacial')
                   }

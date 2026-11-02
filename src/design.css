@@ -230,28 +230,167 @@
 @media (max-width: 680px) {
   .catalog-grid { grid-template-columns: 1fr; }
 }
+/* ========================================================================= */
+/* NUEVO DISEÑO DE TARJETAS DE DILEMAS (ÓRBITA ÉTICA)                        */
+/* ========================================================================= */
 .dilemma-catalog-card {
-  border-radius: 12px;
-  background: #070A13;
+  border-radius: 20px;
+  background: #0B0F19;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   overflow: hidden;
+  padding: 18px;
   display: flex;
   flex-direction: column;
-  transition: border-color .2s, box-shadow .2s, transform .2s;
+  transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
 }
 .dilemma-catalog-card:hover {
-  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4);
-  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55);
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.16);
 }
-.dilemma-card-visual { background: #05060A; }
-.card-svg { height: 160px; width: 100%; display: block; }
-.dilemma-number-badge { top: 14px; left: 16px; background: #0F172A; border: 1px solid #475569; border-radius: 30px; font-size: 10px; letter-spacing: .06em; padding: 4px 10px; }
-.dilemma-card-visual .dilemma-status-badge { top: 14px; right: 14px; }
-.dilemma-card-body { padding: 18px 20px; display: flex; flex-direction: column; flex: 1; }
-.dilemma-theme-tag { font-size: 10px; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 10px; }
-.dilemma-card-body h2 { font-size: 16px; font-weight: 600; line-height: 1.4; margin-bottom: 10px; color: #F8FAFC; }
-.dilemma-card-body p { font-size: 12.5px; line-height: 1.6; color: #94A3B8; margin-bottom: 16px; flex: 1; }
-.dilemma-card-meta { font-size: 11px; flex-wrap: wrap; gap: 10px; padding-top: 18px; margin-bottom: 20px; }
-.dilemma-status-badge { font-size: 10px; border-radius: 20px; }
+.dilemma-card-visual {
+  background: transparent;
+  padding: 0;
+  border: none;
+  width: 100%;
+}
+.dilemma-card-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #05070E;
+}
+.dilemma-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.dilemma-card-source-tag {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(4px);
+  color: #E2E8F0;
+  font-size: 10.5px;
+  font-weight: 500;
+  padding: 2.5px 8px;
+  border-radius: 6px;
+  letter-spacing: 0.02em;
+  z-index: 2;
+}
+.dilemma-card-bookmark-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.dilemma-card-body {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* 3. Etiquetas de categoría */
+.dilemma-category-pill {
+  border-radius: 999px;
+  padding: 5px 14px;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-top: 18px;
+  margin-bottom: 14px;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border: none;
+  line-height: 1.3;
+}
+.dilemma-category-pill.cat-ambiental {
+  background-color: #554879;
+  color: #E5DDFB;
+}
+.dilemma-category-pill.cat-propiedad {
+  background-color: #5A4333;
+  color: #FED7AA;
+}
+.dilemma-category-pill.cat-animal {
+  background-color: #274940;
+  color: #A7F3D0;
+}
+
+/* 4. Pregunta principal */
+.dilemma-card-body h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  margin: 0 0 12px 0;
+  color: #FFFFFF;
+}
+
+/* 5. Descripción secundaria */
+.dilemma-card-body p {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #94A3B8;
+  margin: 0 0 24px 0;
+  flex: 1;
+}
+
+/* 6. Botones de acción ovalados */
+.dilemma-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+  padding-top: 8px;
+}
+.dilemma-card-action-btn {
+  background-color: #FFA500;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 999px;
+  border: none;
+  min-width: 170px;
+  height: 48px;
+  padding: 0 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: auto;
+  box-shadow: 0 2px 10px rgba(255, 165, 0, 0.22);
+  transition: transform 0.08s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+  user-select: none;
+  text-decoration: none;
+}
+.dilemma-card-action-btn:hover {
+  background-color: #FF9200;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(255, 165, 0, 0.35);
+}
+.dilemma-card-action-btn:active {
+  transform: translateY(2px);
+  background-color: #E68900;
+  box-shadow: 0 1px 4px rgba(255, 165, 0, 0.2);
+}
 .dilemma-workspace { max-width: 1040px; margin: 0 auto; }
 .workspace-top-bar { margin-bottom: 22px; }
 .topic-tag { background: transparent; border: 0; font-size: 11px; }
